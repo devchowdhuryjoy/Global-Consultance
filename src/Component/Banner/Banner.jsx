@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="bg-gradient-to-b from-black to-cyan-700 py-20 text-center text-white relative overflow-hidden">
+    <div className="bg-[#252364] from-black to-cyan-700 py-20 text-center text-white relative overflow-hidden">
       <h1 className="text-4xl md:text-5xl font-bold">
         Your Study Abroad Dream
         <br />

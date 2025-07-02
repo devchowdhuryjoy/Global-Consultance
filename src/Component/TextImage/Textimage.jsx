@@ -51,7 +51,7 @@ const Textimage = () => {
         </span>
       </h2>
       <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-        PFEC Global is a partner of renowned institutions across 11 countries.
+        Global Routways is a partner of renowned institutions across 11 countries.
         Pick a destination below and learn everything you need to make an informed decision.
       </p>
 

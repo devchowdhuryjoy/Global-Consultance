@@ -31,7 +31,7 @@ const StudyAbroadServices = () => {
         {/* Left Content */}
         <div>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug">
-            How PFEC Global <span className="text-blue-900 font-bold">Simplifies your Study Abroad Journey?</span>
+            How Global Routways <span className="text-blue-900 font-bold">Simplifies your Study Abroad Journey?</span>
           </h2>
           <p className="mt-4 text-gray-600 text-base max-w-md">
             Our services provide end-to-end assistance to study abroad aspirants. We make the journey hassle-free!
