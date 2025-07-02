@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import userImage from '../../assets/logo.png';
 
 const EducationService = () => {
   return (
@@ -8,11 +9,15 @@ const EducationService = () => {
 
         {/* Left Column - Logo and About */}
         <div className="sm:col-span-2">
-          <img
+          {/* <img
             src="https://www.pfecglobal.com/images/logo/logo-pfec-global.svg"
             alt="Global Routways"
             className="h-10 mb-4"
-          />
+          /> */}
+           <img
+              src={userImage}
+              className="h-10 w-auto object-contain"
+            />
           <p className="mb-4">
             Since the establishment of Global Routways in 2006, we have been
             offering higher education consultancy services to students who are

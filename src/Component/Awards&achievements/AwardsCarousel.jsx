@@ -1,80 +1,4 @@
-// import React from 'react';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Navigation } from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
 
-// const awards = [
-//   {
-//     img: '', // Placeholder for image
-//     title: 'Double Platinum Eagle Award (2023)',
-//     subtitle: 'Awarded by La Trobe University',
-//   },
-//   {
-//     img: '',
-//     title: 'Best Conversion & Emerging Partner Award (2025)',
-//     subtitle: 'Awarded by UWE Bristol',
-//   },
-//   {
-//     img: '',
-//     title: 'Outstanding Agency Performance (South Asia Region)',
-//     subtitle: 'Awarded by Kaplan Business School',
-//   },
-//   {
-//     img: '',
-//     title: 'Partner of the Year (2024) Diamond Category',
-//     subtitle: 'Awarded by the University of Adelaide',
-//   },
-//   {
-//     img: '',
-//     title: '2024 Outstanding Achievement Partner (2024)',
-//     subtitle: 'Awarded by Western Sydney University',
-//   },
-// ];
-
-// const AwardsCarousel = () => {
-//   return (
-//     <div className="py-12 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
-//       <h2 className="text-3xl font-bold mb-8">
-//         Awards <span className="text-gray-700">&</span> achievements
-//       </h2>
-
-//       <Swiper
-//         modules={[Navigation]}
-//         navigation
-//         spaceBetween={20}
-//         breakpoints={{
-//           320: { slidesPerView: 1 },
-//           640: { slidesPerView: 2 },
-//           1024: { slidesPerView: 3 },
-//           1280: { slidesPerView: 4 },
-//         }}
-//         className="pb-10"
-//       >
-//         {awards.map((award, idx) => (
-//           <SwiperSlide key={idx}>
-//             <div className="bg-white shadow-md rounded-xl overflow-hidden mx-auto max-w-xs">
-//               <div className="w-full h-72 bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
-//                 Image Placeholder
-//               </div>
-//               <div className="p-4">
-//                 <h3 className="text-md font-semibold mb-1">{award.title}</h3>
-//                 <hr className="my-2 border-gray-200" />
-//                 <p className="text-xs font-medium text-gray-600">{award.subtitle}</p>
-//               </div>
-//             </div>
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
-
-//       <button className="mt-6 bg-[#f16f22] hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-full transition duration-300">
-//         Explore All
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default AwardsCarousel;
 
 
 import React, { useRef } from 'react';
@@ -85,27 +9,27 @@ import 'swiper/css/navigation';
 
 const awards = [
   {
-    img: '',
+    img: '/studyuk.jpg',
     title: 'Double Platinum Eagle Award (2023)',
     subtitle: 'Awarded by La Trobe University',
   },
   {
-    img: '',
+    img: '/studyusa.jpg',
     title: 'Best Conversion & Emerging Partner Award (2025)',
     subtitle: 'Awarded by UWE Bristol',
   },
   {
-    img: '',
+    img: 'studyuk.jpg',
     title: 'Outstanding Agency Performance (South Asia Region)',
     subtitle: 'Awarded by Kaplan Business School',
   },
   {
-    img: '',
+    img: 'studyusa.jpg',
     title: 'Partner of the Year (2024) Diamond Category',
     subtitle: 'Awarded by the University of Adelaide',
   },
   {
-    img: '',
+    img: 'studyuk.jpg',
     title: '2024 Outstanding Achievement Partner (2024)',
     subtitle: 'Awarded by Western Sydney University',
   },
@@ -177,7 +101,18 @@ const AwardsCarousel = () => {
           <SwiperSlide key={idx}>
             <div className="bg-white shadow-md rounded-xl overflow-hidden mx-auto max-w-xs">
               <div className="w-full h-72 bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
-                Image Placeholder
+                {award.img ? (
+                    <img
+                      src={award.img}
+                      alt={award.title}
+                      className="w-full h-72 object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-72 bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
+                      Image Not Available
+                    </div>
+      )}
+
               </div>
               <div className="p-4">
                 <h3 className="text-md font-semibold mb-1">{award.title}</h3>
