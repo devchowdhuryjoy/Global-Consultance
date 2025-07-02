@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaCrown } from 'react-icons/fa';
+import React from "react";
+import { FaCrown } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
@@ -38,67 +38,66 @@ const ContactUs = () => {
               <input
                 type="text"
                 placeholder="First Name"
-                className="border border-red-400 rounded-lg px-4 py-2 w-full"
+                className="border border-black rounded-lg px-4 py-2 w-full"
               />
               <input
                 type="text"
                 placeholder="Last Name"
-                className="border border-red-400 rounded-lg px-4 py-2 w-full"
+                className="border border-black  rounded-lg px-4 py-2 w-full"
               />
             </div>
             <input
               type="email"
               placeholder="Email"
-              className="border border-red-400 rounded-lg px-4 py-2 w-full"
+              className="border border-black rounded-lg px-4 py-2 w-full"
             />
             <div className="grid grid-cols-[80px_1fr] gap-2">
               <input
                 type="text"
                 value="+880"
                 readOnly
-                className="border border-red-400 rounded-lg px-4 py-2 w-full bg-gray-100"
+                className="border border-black rounded-lg px-4 py-2 w-full bg-gray-100"
               />
               <input
                 type="text"
                 placeholder="Mobile Number"
-                className="border border-red-400 rounded-lg px-4 py-2 w-full"
+                className="border border-black rounded-lg px-4 py-2 w-full"
               />
             </div>
-            <select className="border border-red-400 rounded-lg px-4 py-2 w-full">
+            <select className="border border-black  rounded-lg px-4 py-2 w-full">
               <option>Your Nearest Global Routways Office</option>
             </select>
-            <select className="border border-red-400 rounded-lg px-4 py-2 w-full">
+            <select className="border border-black rounded-lg px-4 py-2 w-full">
               <option>Your Preferred Study Destination</option>
             </select>
-            <select className="border border-red-400 rounded-lg px-4 py-2 w-full">
+            <select className="border border-black rounded-lg px-4 py-2 w-full">
               <option>English Language Test Status</option>
             </select>
             <input
               type="text"
               placeholder="How do you plan to fund your studies"
-              className="border border-red-400 rounded-lg px-4 py-2 w-full"
+              className="border border-blackrounded-lg px-4 py-2 w-full"
             />
 
             {/* Terms and checkbox */}
             <div className="flex items-start gap-2 text-sm">
               <input type="checkbox" defaultChecked className="mt-1" />
               <p>
-                By clicking, you agree to our{' '}
+                By clicking, you agree to our{" "}
                 <a href="#" className="text-blue-600 underline">
                   Privacy Policy
-                </a>{' '}
-                and{' '}
+                </a>{" "}
+                and{" "}
                 <a href="#" className="text-blue-600 underline">
                   Terms & Conditions
                 </a>
               </p>
             </div>
-           <div className="flex justify-center">
-               <button className="mt-6 bg-[#f16f22] hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-full transition duration-300">
-                    Submit
-                </button>
+            <div className="flex justify-center">
+              <button className="mt-6 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300">
+                Submit
+              </button>
             </div>
-
           </form>
         </div>
       </div>

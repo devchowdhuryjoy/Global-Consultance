@@ -51,8 +51,9 @@ const Textimage = () => {
         </span>
       </h2>
       <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-        Global Routways is a partner of renowned institutions across 11 countries.
-        Pick a destination below and learn everything you need to make an informed decision.
+        Global Routways is a partner of renowned institutions across 11
+        countries. Pick a destination below and learn everything you need to
+        make an informed decision.
       </p>
 
       <Slider {...settings}>
@@ -74,7 +75,7 @@ const Textimage = () => {
       </Slider>
 
       <div className="mt-10">
-        <button className="bg-[#f16f22] hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-full transition-all">
+        <button className="bg-[#f16f22] hover:bg-[#252364] text-white font-semibold py-3 px-6 rounded-full transition-all">
           Book a FREE Consultation
         </button>
       </div>
@@ -83,4 +84,3 @@ const Textimage = () => {
 };
 
 export default Textimage;
-

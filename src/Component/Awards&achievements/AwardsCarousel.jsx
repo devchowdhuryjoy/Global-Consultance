@@ -1,37 +1,34 @@
-
-
-
-import React, { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const awards = [
   {
-    img: '/studyuk.jpg',
-    title: 'Double Platinum Eagle Award (2023)',
-    subtitle: 'Awarded by La Trobe University',
+    img: "/studyuk.jpg",
+    title: "Double Platinum Eagle Award (2023)",
+    subtitle: "Awarded by La Trobe University",
   },
   {
-    img: '/studyusa.jpg',
-    title: 'Best Conversion & Emerging Partner Award (2025)',
-    subtitle: 'Awarded by UWE Bristol',
+    img: "/studyusa.jpg",
+    title: "Best Conversion & Emerging Partner Award (2025)",
+    subtitle: "Awarded by UWE Bristol",
   },
   {
-    img: 'studyuk.jpg',
-    title: 'Outstanding Agency Performance (South Asia Region)',
-    subtitle: 'Awarded by Kaplan Business School',
+    img: "studyuk.jpg",
+    title: "Outstanding Agency Performance (South Asia Region)",
+    subtitle: "Awarded by Kaplan Business School",
   },
   {
-    img: 'studyusa.jpg',
-    title: 'Partner of the Year (2024) Diamond Category',
-    subtitle: 'Awarded by the University of Adelaide',
+    img: "studyusa.jpg",
+    title: "Partner of the Year (2024) Diamond Category",
+    subtitle: "Awarded by the University of Adelaide",
   },
   {
-    img: 'studyuk.jpg',
-    title: '2024 Outstanding Achievement Partner (2024)',
-    subtitle: 'Awarded by Western Sydney University',
+    img: "studyuk.jpg",
+    title: "2024 Outstanding Achievement Partner (2024)",
+    subtitle: "Awarded by Western Sydney University",
   },
 ];
 
@@ -57,7 +54,11 @@ const AwardsCarousel = () => {
           strokeWidth="2"
           viewBox="0 0 24 24"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
         </svg>
       </div>
 
@@ -102,29 +103,30 @@ const AwardsCarousel = () => {
             <div className="bg-white shadow-md rounded-xl overflow-hidden mx-auto max-w-xs">
               <div className="w-full h-72 bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
                 {award.img ? (
-                    <img
-                      src={award.img}
-                      alt={award.title}
-                      className="w-full h-72 object-cover"
-                    />
-                  ) : (
-                    <div className="w-full h-72 bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
-                      Image Not Available
-                    </div>
-      )}
-
+                  <img
+                    src={award.img}
+                    alt={award.title}
+                    className="w-full h-72 object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-72 bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
+                    Image Not Available
+                  </div>
+                )}
               </div>
               <div className="p-4">
                 <h3 className="text-md font-semibold mb-1">{award.title}</h3>
                 <hr className="my-2 border-gray-200" />
-                <p className="text-xs font-medium text-gray-600">{award.subtitle}</p>
+                <p className="text-xs font-medium text-gray-600">
+                  {award.subtitle}
+                </p>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      <button className="mt-6 bg-[#f16f22] hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-full transition duration-300">
+      <button className="mt-6 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300">
         Explore All
       </button>
     </div>
