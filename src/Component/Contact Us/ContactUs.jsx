@@ -3,7 +3,7 @@ import { FaCrown } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
-    <div className="bg-gray-100 py-10 px-4 md:px-16">
+    <div className="bg-gray-100 py-10 px-4 md:px-16 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Left Section */}
         <div className="space-y-6 text-center md:text-left">
