@@ -42,7 +42,7 @@ const AwardsSection = () => {
           {/* Image */}
           <div className="md:w-1/2">
             <img
-              src="src/assets/aboutus.webp" // 👈 Replace with your actual image path
+              src="/studyuk.jpg" // 👈 Replace with your actual image path
               alt="Awards Banner"
               className="w-full max-w-md mx-auto"
             />
