@@ -34,7 +34,7 @@ const AwardsSection = () => {
               Our efforts have been recognized with many prestigious accolades
               over the years.
             </p>
-            <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-md font-semibold transition-all">
+            <button className="bg-[#f16f22] hover:bg-[#252364] text-white px-6 py-3 rounded-md font-semibold transition-all">
               Book a FREE Consultation →
             </button>
           </div>

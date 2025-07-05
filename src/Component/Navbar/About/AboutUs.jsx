@@ -19,7 +19,7 @@ const AboutUs = () => {
       <div className="max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-md">
         <img
           src="/studyuk.jpg" // Replace with your image path"// Replace with your image path
-          alt="PFEC Global Team"
+          alt="Global Routeways Team"
           className="w-full h-auto object-cover"
         />
       </div>
