@@ -22,6 +22,11 @@ import AdmissionSupport from './Component/Navbar/OurService/AdmissionSupport';
 import Blog from './Component/Navbar/Resource/Blog';
 import ScolarshipInAustralia from './Component/Navbar/Scolarship/ScolarshipInAustralia';
 import ScolarshipInUk from './Component/Navbar/Scolarship/ScolarshipInUk';
+import HealthInsurance from './Component/Navbar/OurService/HealthInsurance';
+import StudenntsAccom from './Component/Navbar/OurService/StudenntsAccom';
+import VisaService from './Component/Navbar/OurService/VisaService';
+import Course from './Component/Navbar/Resource/Course';
+
 
 
 function App() {
@@ -58,11 +63,15 @@ function App() {
         
         {/* Our Services */}
         <Route path="/admission-support" element={<AdmissionSupport/>} />
-        <Route path="/counseling" element={<div className="min-h-[50vh] text-center py-10 text-xl">Counseling Page</div>} />
+         <Route path="/health-insurance" element={<HealthInsurance/>} />
+         <Route path="/studennts-accom" element={<StudenntsAccom/>} />
+         <Route path="/visa-service" element={<VisaService/>} />
+        
         {/* Our Services */}
 
         {/* Blog */}
         <Route path="/blogs" element={<Blog/>} />
+        <Route path="/courses" element={<Course/>} />
         {/* Blog */}
 
         {/* Scholarship */}

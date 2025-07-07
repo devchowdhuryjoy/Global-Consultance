@@ -42,7 +42,7 @@ const Navbar = () => {
       submenu: [
         { label: "Admission Support", link: "/admission-support" },
         { label: "Health insurance", link: "/health-insurance" },
-        { label: "Student Accommodation", link: "/student-accommodation" },
+        { label: "Student Accommodation", link: "/studennts-accom" },
         { label: "Visa Services", link: "/visa-service" },
       ],
     },
@@ -159,7 +159,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        {menuOpen && (
+        {/* {menuOpen && (
           <div className="mt-4 flex flex-col space-y-2 text-black md:hidden">
             {menuItems
               .filter(
@@ -188,7 +188,7 @@ const Navbar = () => {
                         </svg>
                       </button>
 
-                      {/* Submenu */}
+                      
                       <div
                         className={`overflow-hidden transition-all duration-300 ${
                           openIndex === i ? "max-h-screen mt-2" : "max-h-0"
@@ -220,8 +220,73 @@ const Navbar = () => {
                 </div>
               ))}
           </div>
-        )}
+        )} */}
 
+        {menuOpen && (
+          <div className="mt-4 flex flex-col divide-y divide-gray-200 md:hidden bg-white shadow-sm rounded-lg overflow-hidden">
+            {menuItems
+              .filter(
+                (item) =>
+                  item.label !== "About us" && item.label !== "Destination"
+              )
+              .map((item, i) => (
+                <div key={i} className="px-4 py-3">
+                  {item.submenu ? (
+                    <>
+                      {/* Main Menu Button */}
+                      <button
+                        onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                        className="w-full flex items-center justify-between text-[#252364] font-semibold"
+                      >
+                        <span>{item.label}</span>
+                        <svg
+                          className={`w-4 h-4 text-gray-500 transition-transform duration-300 ${
+                            openIndex === i ? "rotate-180" : ""
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+
+                      {/* Submenu Items */}
+                      <div
+                        className={`transition-all duration-300 overflow-hidden ${
+                          openIndex === i ? "max-h-screen mt-3" : "max-h-0"
+                        }`}
+                      >
+                        <div className="pl-4 flex flex-col space-y-2 mt-1">
+                          {item.submenu.map((subItem, subIndex) => (
+                            <Link
+                              key={subIndex}
+                              to={subItem.link}
+                              className="text-sm text-gray-700 hover:text-[#f16f22] transition flex items-center gap-2"
+                              onClick={() => setMenuOpen(false)}
+                            >
+                              <span className="text-lg leading-none">›</span>
+                              {subItem.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <Link
+                      to={item.link}
+                      className="block text-[#252364] font-semibold hover:text-[#f16f22] transition"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
+                </div>
+              ))}
+          </div>
+        )}
+        
       </nav>
 
       {/* Modal */}
