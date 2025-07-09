@@ -66,12 +66,15 @@ const ContactUs = () => {
             </div>
             <select className="border border-black  rounded-lg px-4 py-2 w-full">
               <option>Your Nearest Global Routways Office</option>
+              <option>Global Routways Office</option>
             </select>
             <select className="border border-black rounded-lg px-4 py-2 w-full">
               <option>Your Preferred Study Destination</option>
+              <option>Destination</option>
             </select>
             <select className="border border-black rounded-lg px-4 py-2 w-full">
               <option>English Language Test Status</option>
+              <option>English Language</option>
             </select>
             <input
               type="text"
