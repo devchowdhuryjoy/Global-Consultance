@@ -6,12 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 // Destination Data
 const destinations = [
-  { title: "Study in UK", image: "/studyuk.jpg" },
-  { title: "Study in Canada", image: "/studyusa.jpg" },
-  { title: "Study in Germany", image: "/studyuk.jpg" },
-  { title: "Study in USA", image: "/studyusa.jpg" },
-  { title: "Study in Ireland", image: "/studyuk.jpg" },
-  { title: "Study in New Zealand", image: "/studyusa.jpg" },
+  { title: "Study in UK", image: "/study1.jpg" },
+  { title: "Study in Canada", image: "/study4.jpg" },
+  { title: "Study in Germany", image: "/study3.png" },
+  { title: "Study in USA", image: "/study6.jpg" },
+  { title: "Study in Ireland", image: "/study4.jpg" },
+  { title: "Study in New Zealand", image: "/study3.png" },
 ];
 
 // Custom Arrow Component

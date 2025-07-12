@@ -5,7 +5,7 @@ const Blog = () => {
   // 2nd section
   const blogData = [
     {
-      image: "/studyuk.jpg", // Update with your actual image path
+      image: "/study6.jpg", // Update with your actual image path
       title: "How Much Does it Cost to Study Abroad in 2024?",
       excerpt:
         "SummaryIELTS is a globally recognized English proficiency test for study, work, and migration. It assesses Listening, Reading, Writing, and Speaking through Academic and General Training formats. A...",
@@ -14,7 +14,7 @@ const Blog = () => {
       tag: "IELTS",
     },
     {
-      image: "/studyuk.jpg",
+      image: "/study1.jpg",
       title: "Visa Requirements for Studying in UK",
       excerpt:
         "SummaryIELTS is a globally recognized English proficiency test for study, work, and migration. It assesses Listening, Reading, Writing, and Speaking through Academic and General Training formats. A...",
@@ -23,7 +23,7 @@ const Blog = () => {
       tag: "IELTS",
     },
     {
-      image: "/studyuk.jpg",
+      image: "/study4.jpg",
       title: "Why Your Partner’s Visa Application May Be Rejected?",
       excerpt:
         "SummaryIELTS is a globally recognized English proficiency test for study, work, and migration. It assesses Listening, Reading, Writing, and Speaking through Academic and General Training formats. A...",
@@ -71,7 +71,7 @@ const Blog = () => {
               Blogs
             </h2>
             <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
-              Welcome to PFEC Bangladesh blog—your trusted guide for everything
+              Welcome to Global Routeway Bangladesh blog—your trusted guide for everything
               you need to know about studying and living Down Under. From expert
               insights on universities and visas to inspiring student success
               stories, we’re here to help you take the next step toward your
@@ -109,8 +109,8 @@ const Blog = () => {
 
             {/* Main Image */}
             <img
-              src="/studyuk.jpg" // Replace with your actual path
-              alt="PFEC Blog"
+              src="/award1.jpg" // Replace with your actual path
+              alt="Global Routeway Blog"
               className="relative z-10 max-w-full h-auto"
             />
           </div>

@@ -42,7 +42,7 @@ const Navbar = () => {
       submenu: [
         { label: "Admission Support", link: "/admission-support" },
         { label: "Health insurance", link: "/health-insurance" },
-        { label: "Student Accommodation", link: "/studennts-accom" },
+        // { label: "Student Accommodation", link: "/studennts-accom" },
         { label: "Visa Services", link: "/visa-service" },
       ],
     },
@@ -257,6 +257,52 @@ const Navbar = () => {
         </div>
       </nav>
 
+      {/* Mobile Menu (Dropdown Accordion) */}
+      {menuOpen && (
+        <div className="md:hidden mt-4" ref={dropdownRef}>
+          <ul className="space-y-2">
+            {menuItems.map((item, index) => (
+              <li key={index} className="border-b border-gray-200">
+                <div
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
+                  className="flex justify-between items-center py-2 font-semibold text-gray-800 cursor-pointer px-2"
+                >
+                  <Link
+                    to={item.link}
+                    onClick={() => setMenuOpen(false)}
+                    className="flex-1"
+                  >
+                    {item.label}
+                  </Link>
+                  {item.submenu && (
+                    <span className="text-xl">
+                      {openIndex === index ? "▲" : "▼"}
+                    </span>
+                  )}
+                </div>
+                {item.submenu && openIndex === index && (
+                  <ul className="pl-4 pb-2">
+                    {item.submenu.map((subItem, subIndex) => (
+                      <li key={subIndex}>
+                        <Link
+                          to={subItem.link}
+                          onClick={() => setMenuOpen(false)}
+                          className="block py-1 text-sm text-gray-700 hover:text-[#f16f22]"
+                        >
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {/* Registration Form Modal */}
       {showForm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-50 px-4">
@@ -400,9 +446,7 @@ const Navbar = () => {
             {message && (
               <p
                 className={`mt-4 text-center font-semibold ${
-                  message.startsWith("Error")
-                    ? "text-black"
-                    : "text-green-600"
+                  message.startsWith("Error") ? "text-black" : "text-green-600"
                 }`}
               >
                 {message}
@@ -416,4 +460,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

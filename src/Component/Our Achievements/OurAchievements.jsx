@@ -1,5 +1,5 @@
 import React from "react";
-import userMap from "../../assets/map1.jpg"; // Replace with actual image path
+// import userMap from "../../maps.jpg"; // Replace with actual image path
 
 const OurAchievements = () => {
   const achievements = [
@@ -10,10 +10,10 @@ const OurAchievements = () => {
   ];
 
   const locations = [
-    { name: "USA", offices: "4 Offices", top: "34%", left: "60%" },
-    { name: "India", offices: "2 Offices", top: "39%", left: "14%" },
-    { name: "Sri Lanka", offices: "1 Office", top: "46%", left: "27%" },
-    { name: "Australia", offices: "4 Offices", top: "75%", left: "44%" },
+    { name: "USA", offices: "1 Offices", top: "34%", left: "60%" },
+    { name: "Uk", offices: "1 Offices", top: "39%", left: "44%" },
+    { name: "Canada", offices: "1 Office", top: "46%", left: "27%" },
+    { name: "Australia", offices: "1 Offices", top: "75%", left: "44%" },
   ];
 
   return (
@@ -41,7 +41,7 @@ const OurAchievements = () => {
           {/* Right: Map with locations */}
           <div className="relative">
             <img
-              src={userMap}
+              src="maps2.png"
               alt="World Map"
               className="w-[700px] h-[270px]"
             />

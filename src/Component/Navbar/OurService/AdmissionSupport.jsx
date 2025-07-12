@@ -11,55 +11,56 @@ const AdmissionSupport = () => {
     {
       country: "Malaysia",
       logos: [
-        "src/assets/logo.png",
-        "src/assets/logo.png",
-        "src/assets/logo.png",
-        "src/assets/logo.png",
+        "malishia.jpg",
+        "malishia.jpg",
+        "malishia.jpg",
+        "malishia.jpg",
       ],
     },
     {
       country: "Australia",
       logos: [
-        "/logos/victoria.png",
-        "/logos/federation.png",
-        "/logos/canberra.png",
-        "/logos/wollongong.png",
+        "austrolia.jpg",
+        "austrolia.jpg",
+        "austrolia.jpg",
+        "austrolia.jpg",
       ],
     },
     {
       country: "UK",
       logos: [
-        "/logos/hertfordshire.png",
-        "/logos/nottingham.png",
-        "/logos/birmingham.png",
-        "/logos/york.png",
+        "uklogo.png",
+        "uklogo.png",
+        "uklogo.png",
+        "uklogo.png",
       ],
     },
     {
       country: "USA",
       logos: [
-        "/logos/utah.png",
-        "/logos/northeastern.png",
-        "/logos/texas.png",
-        "/logos/webster.png",
+        "usa.png",
+        "usa.png",
+        "usa.png",
+        "usa.png",
       ],
     },
     {
       country: "Canada",
       logos: [
-        "/logos/ontario.png",
-        "/logos/brock.png",
-        "/logos/laurier.png",
-        "/logos/ucw.png",
+        "canada.jpg",
+        "canada.jpg",
+        "canada.jpg",
+        "canada.jpg",
+       
       ],
     },
     {
       country: "Ireland",
       logos: [
-        "/logos/trinity.png",
-        "/logos/ucc.png",
-        "/logos/galway.png",
-        "/logos/limerick.png",
+        "ireland.jpg",
+        "ireland.jpg",
+        "ireland.jpg",
+        "ireland.jpg",
       ],
     },
   ];
@@ -244,7 +245,7 @@ const AdmissionSupport = () => {
           <div className="w-full lg:w-1/2 relative flex justify-center">
             <div className="relative z-10">
               <img
-                src="/studyuk.jpg" // Replace with your image path
+                src="/study3.png" // Replace with your image path
                 alt="Consultation"
                 className="w-full max-w-md sm:max-w-lg rounded-lg object-cover"
               />
@@ -404,7 +405,7 @@ const AdmissionSupport = () => {
           {/* Left: Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/studyuk.jpg" // 🖼️ Replace with actual image path (e.g., /assets/target.jpg)
+              src="/study6.jpg" // 🖼️ Replace with actual image path (e.g., /assets/target.jpg)
               alt="Target with Darts"
               className="w-full rounded-lg shadow-md object-cover"
             />
@@ -427,7 +428,7 @@ const AdmissionSupport = () => {
             </p>
 
             <p className="text-base sm:text-lg text-justify">
-              At PFEC Global, we believe every student profile is unique, thus,
+              At Global Routeway Global, we believe every student profile is unique, thus,
               focusing on evaluating each profile with time and care,
               considering past education qualifications and job experience
               through recognition of prior learning (RPL). Indeed, the extensive
@@ -483,7 +484,7 @@ const AdmissionSupport = () => {
           {/* Right: Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/studyuk.jpg" // 🖼️ Replace with actual image path
+              src="/study4.jpg" // 🖼️ Replace with actual image path
               alt="Preparing documents"
               className="w-full rounded-lg shadow-md object-cover"
             />
@@ -498,7 +499,7 @@ const AdmissionSupport = () => {
           {/* Left: Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/studyuk.jpg" // 🖼️ Replace with your actual image path
+              src="/study1.jpg" // 🖼️ Replace with your actual image path
               alt="Interactive video session"
               className="w-full rounded-lg shadow-md object-cover"
             />
@@ -510,7 +511,7 @@ const AdmissionSupport = () => {
               Interactive Sessions for Admission Help
             </h2>
             <p className="text-base sm:text-lg text-justify">
-              PFEC Global is an official representative of institutes around the
+              Global Routeway Global is an official representative of institutes around the
               world to provide authentic services to students in Bangladesh. On
               this ground, we arrange regular seminars where prominent
               educational institutions take part and conduct informative
@@ -731,7 +732,7 @@ const AdmissionSupport = () => {
                     {review.name}
                   </h4>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_2015_logo.svg"
+                    src="src/assets/Google-Logo.png"
                     alt="Google Reviews"
                     className="w-24 mt-2"
                   />

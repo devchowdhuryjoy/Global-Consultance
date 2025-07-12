@@ -6,27 +6,27 @@ import "swiper/css/navigation";
 
 const awards = [
   {
-    img: "/studyuk.jpg",
+    img: "Award3.jpg",
     title: "Double Platinum Eagle Award (2023)",
     subtitle: "Awarded by La Trobe University",
   },
   {
-    img: "/studyusa.jpg",
+    img: "award4.png",
     title: "Best Conversion & Emerging Partner Award (2025)",
     subtitle: "Awarded by UWE Bristol",
   },
   {
-    img: "studyuk.jpg",
+    img: "award2.jpg",
     title: "Outstanding Agency Performance (South Asia Region)",
     subtitle: "Awarded by Kaplan Business School",
   },
   {
-    img: "studyusa.jpg",
+    img: "award1.jpg",
     title: "Partner of the Year (2024) Diamond Category",
     subtitle: "Awarded by the University of Adelaide",
   },
   {
-    img: "studyuk.jpg",
+    img: "award4.png",
     title: "2024 Outstanding Achievement Partner (2024)",
     subtitle: "Awarded by Western Sydney University",
   },

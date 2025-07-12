@@ -29,9 +29,9 @@ const HealthInsurance = () => {
         "Visa processing time varies depending on the country and application type.",
     },
     {
-      question: "Does PFEC provide assistance with visa interviews?",
+      question: "Does Global Routeway provide assistance with visa interviews?",
       answer:
-        "Yes, PFEC offers guidance and support for visa interview preparation.",
+        "Yes, Global Routeway offers guidance and support for visa interview preparation.",
     },
     {
       question: "Can I apply for a visa extension after my studies?",
@@ -178,7 +178,7 @@ const HealthInsurance = () => {
           {/* Right Image */}
           <div className="w-full lg:w-1/2 mb-10 lg:mb-0 flex justify-center">
             <img
-              src="/studyuk.jpg" // Replace with your image path
+              src="/study3.png" // Replace with your image path
               alt="Consultation"
               className="max-w-full h-auto"
             />
@@ -447,7 +447,7 @@ const HealthInsurance = () => {
               <div className="bg-transparent w-[40%] h-[80%]"></div>
             </div>
             <img
-              src="/studyuk.jpg" // Replace with your actual image path
+              src="/university.jpg" // Replace with your actual image path
               alt="Benefits of Health Cover"
               className="relative z-10 rounded-xl border border-[#252364] max-w-full h-auto"
             />
@@ -463,7 +463,7 @@ const HealthInsurance = () => {
           <div className="relative w-full">
             <div className="relative z-10 rounded-xl overflow-hidden">
               <img
-                src="/studyuk.jpg" // Replace with your image path
+                src="/study6.jpg" // Replace with your image path
                 alt="Doctor"
                 className="rounded-xl border border-white w-full h-auto object-cover"
               />
@@ -594,11 +594,11 @@ const HealthInsurance = () => {
               You can buy a health insurance plan online by accessing the health
               insurance provider’s official website within a few minutes.
               However, for more clarity about the best insurance providers in
-              your host country, you can take the assistance of PFEC.
+              your host country, you can take the assistance of Global Routeway.
             </p>
             <p className="text-gray-700 mb-6">
-              PFEC coordinates with the best insurance providers across the
-              globe. Whichever country you choose to study abroad, PFEC will
+              Global Routeway coordinates with the best insurance providers across the
+              globe. Whichever country you choose to study abroad, Global Routeway will
               help you get the best insurance providers who offer:
             </p>
 
@@ -623,7 +623,7 @@ const HealthInsurance = () => {
           {/* Right Image Section */}
           <div className="flex justify-center lg:justify-end">
             <img
-              src="/studyuk.jpg"
+              src="/study1.jpg"
               alt="Doctor consultation"
               className="max-w-full h-auto"
             />
@@ -642,7 +642,7 @@ const HealthInsurance = () => {
               <div className="w-20 h-6 bg-[#d0c9f5] rotate-[15deg]"></div>
             </div>
             <img
-              src="/studyuk.jpg"
+              src="/study4.jpg"
               alt="Consultation"
               className="relative z-10 w-full rounded-xl shadow-lg"
             />
@@ -847,7 +847,7 @@ const HealthInsurance = () => {
                     {review.name}
                   </h4>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_2015_logo.svg"
+                    src="src/assets/Google-Logo.png"
                     alt="Google Reviews"
                     className="w-24 mt-2"
                   />

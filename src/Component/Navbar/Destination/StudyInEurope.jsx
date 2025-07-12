@@ -326,7 +326,7 @@ const StudyInEurope = () => {
           <div className="flex-1 relative">
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
-                src="/studyuk.jpg" // Replace with your actual image path
+                src="/university.jpg" // Replace with your actual image path
                 alt="Study in the Europe"
                 className="w-full object-cover"
               />
@@ -390,7 +390,7 @@ const StudyInEurope = () => {
           <div className="bg-[#ffeeed] p-6 rounded-xl shadow-sm text-center">
             <div className="text-3xl mb-4">👋</div>
             <p className="text-lg font-semibold text-black mb-6">
-              Get Started on your Study Abroad Dream with PFEC Global
+              Get Started on your Study Abroad Dream with Global Routeway Global
             </p>
             <button className="hover:bg-[#252364] bg-[#f16f22] text-white font-semibold px-6 py-3 rounded-lg transition duration-300">
               Book Free Consultation →
@@ -927,7 +927,7 @@ const StudyInEurope = () => {
             The Europe offers several scholarship opportunities for Bangladeshi
             students, including government, university-specific, and regional
             options. To secure these scholarships, it is essential to start the
-            application process early. PFEC Global can help you find the perfect
+            application process early. Global Routeway Global can help you find the perfect
             scholarship that suits your needs.
           </p>
           <p>

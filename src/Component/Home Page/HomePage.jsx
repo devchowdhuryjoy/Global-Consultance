@@ -7,7 +7,7 @@ import SimpleSteps from '../Simple Steps/SimpleSteps';
 import OurAchievements from '../Our Achievements/OurAchievements';
 import AwardsCarousel from '../Awards&achievements/AwardsCarousel';
 import SuccessStories from '../SuccessStories/SuccessStories';
-import ContactUs from '../Contact Us/ContactUs';
+
 // import EducationService from '../Education Service/EducationService';
 
 const HomePage = () => {
@@ -21,7 +21,7 @@ const HomePage = () => {
       <OurAchievements />
       <AwardsCarousel />
       <SuccessStories />
-      <ContactUs />
+      
       {/* <EducationService /> */}
     </>
   );

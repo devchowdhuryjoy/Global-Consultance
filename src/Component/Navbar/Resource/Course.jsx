@@ -9,23 +9,23 @@ const Course = () => {
   const courses = [
     {
       title: "Accounting",
-      image: "/studyuk.jpg",
+      image: "/study1.jpg",
     },
     {
       title: "Nursing",
-      image: "/studyuk.jpg",
+      image: "/study3.png",
     },
     {
       title: "Engineering",
-      image: "/studyuk.jpg",
+      image: "/study4.jpg",
     },
     {
       title: "Business Analytics",
-      image: "/studyuk.jpg",
+      image: "/study6.jpg",
     },
     {
       title: "Food Science",
-      image: "/studyuk.jpg",
+      image: "/university.jpg",
     },
   ];
   // 2nd section
@@ -323,7 +323,7 @@ const Course = () => {
                     {review.name}
                   </h4>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_2015_logo.svg"
+                    src="src/assets/Google-Logo.png"
                     alt="Google Reviews"
                     className="w-24 mt-2"
                   />

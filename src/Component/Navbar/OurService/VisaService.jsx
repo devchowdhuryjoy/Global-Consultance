@@ -13,32 +13,32 @@ const VisaService = () => {
       heading: "Visa Consultation:",
       description:
         "Personalized guidance on visa requirements and eligibility.",
-      image: "/studyuk.jpg",
+      image: "/study1.jpg",
     },
     {
       title: "Step 2",
       heading: "Document Preparation:",
       description: "Assistance in gathering and verifying necessary documents.",
-      image: "/studyuk.jpg",
+      image: "/study6.jpg",
     },
     {
       title: "Step 3",
       heading: "Visa Application Submission:",
       description: "Accurate and timely submission to the appropriate embassy.",
-      image: "/studyuk.jpg",
+      image: "/study3.png",
     },
     {
       title: "Step 4",
       heading: "Interview Preparation:",
       description:
         "Mock interviews and coaching to ensure confidence in visa interviews.",
-      image: "/studyuk.jpg",
+      image: "/study4.jpg",
     },
     {
       title: "Step 5",
       heading: "Visa Grant & Post-Arrival Support:",
       description: "Guidance on visa approval, travel, and settlement.",
-      image: "/studyuk.jpg",
+      image: "/university.jpg",
     },
   ];
   // 3th Section
@@ -125,7 +125,7 @@ const VisaService = () => {
         "Visa processing time varies by country and application type, typically ranging from a few weeks to a couple of months.",
     },
     {
-      question: "Does PFEC provide assistance with visa interviews?",
+      question: "Does Global Routeway provide assistance with visa interviews?",
       answer:
         "Yes, we provide coaching and mock interviews to help you prepare confidently for visa interviews.",
     },
@@ -164,7 +164,7 @@ const VisaService = () => {
           {/* Right Image */}
           <div className="lg:w-1/2 w-full relative">
             <img
-              src="/studyuk.jpg" // Replace with your actual image
+              src="/study3.png" // Replace with your actual image
               alt="Visa Services"
               className="w-full max-w-md mx-auto lg:max-w-full"
             />
@@ -179,7 +179,7 @@ const VisaService = () => {
           <div className="space-y-12">
             {/* Top Image */}
             <img
-              src="/studyuk.jpg" // Replace with your actual image
+              src="/study6.jpg" // Replace with your actual image
               alt="Register"
               className="w-full max-w-lg mx-auto"
             />
@@ -434,7 +434,7 @@ const VisaService = () => {
                     {review.name}
                   </h4>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_2015_logo.svg"
+                    src="src/assets/Google-Logo.png"
                     alt="Google Reviews"
                     className="w-24 mt-2"
                   />

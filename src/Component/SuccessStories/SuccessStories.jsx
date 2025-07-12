@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import googleLogo from "../../assets/Google-Logo.png";
 
 const reviews = [
   {
@@ -70,7 +71,7 @@ const SuccessStories = () => {
     <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
       <h2 className="text-2xl sm:text-3xl font-bold mb-10">
         22,000+ Success Stories{' '}
-        <span className="text-blue-700">Your could be the next.</span>
+        <span className="text-[#f16f22]">Your could be the next.</span>
       </h2>
 
       {/* Custom Navigation Buttons */}
@@ -132,11 +133,7 @@ const SuccessStories = () => {
               </p>
               <div className="mt-auto">
                 <h4 className="font-semibold text-sm text-gray-900">{review.name}</h4>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_2015_logo.svg"
-                  alt="Google Reviews"
-                  className="w-24 mt-2"
-                />
+                <img src={googleLogo} alt="Google Reviews" className="w-24 mt-2" />
                 <div className="text-yellow-500 text-xs mt-1">★★★★★</div>
               </div>
             </div>

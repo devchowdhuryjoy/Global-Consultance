@@ -96,32 +96,32 @@ const ScolarshipInAustralia = () => {
     {
       step: "Step 1",
       text: "Get your profile assessed & Receive Recommendations from Expert Counsellors",
-      img: "/studyuk.jpg", // replace with your actual image path
+      img: "/study1.jpg", // replace with your actual image path
     },
     {
       step: "Step 2",
       text: "Shortlist your preferred institutions and courses based on your aspirations",
-      img: "/studyuk.jpg",
+      img: "/study6.jpg",
     },
     {
       step: "Step 3",
       text: "Complete the application process & secure scholarships with our comprehensive assistance",
-      img: "/studyuk.jpg",
+      img: "/study3.png",
     },
     {
       step: "Step 4",
       text: "Receive the offer letter from the institution & complete the necessary steps to finalize your seat",
-      img: "/studyuk.jpg",
+      img: "/study4.jpg",
     },
     {
       step: "Step 5",
       text: "Apply & prepare for visa interviews. Our team will guide you at every single step of the way.",
-      img: "/studyuk.jpg",
+      img: "/university.jpg",
     },
     {
       step: "Step 6",
       text: "Prepare for take-off! Get ready to board the flight and begin your first day at the institution abroad!",
-      img: "/studyuk.jpg",
+      img: "/award1.jpg",
     },
   ];
   // 7th section
@@ -208,7 +208,7 @@ const ScolarshipInAustralia = () => {
             </h2>
 
             <p className="text-gray-700 text-base sm:text-lg mb-6">
-              Find the best scholarships in Australia and apply with PFEC
+              Find the best scholarships in Australia and apply with Global Routeway
               Global’s expert guidance – 100% Free Assistance
             </p>
 
@@ -221,7 +221,7 @@ const ScolarshipInAustralia = () => {
           <div className="flex-1 relative">
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
-                src="src/assets/scolarship.webp" // Replace with your actual image path
+                src="university.jpg" // Replace with your actual image path
                 alt="Study in the Australia"
                 className="w-full object-cover"
               />
@@ -491,7 +491,7 @@ const ScolarshipInAustralia = () => {
           {/* Left Image */}
           <div className="w-full lg:w-1/2 flex justify-center relative">
             <img
-              src="/studyuk.jpg" // replace with your image path
+              src="study6.jpg" // replace with your image path
               alt="Students"
               className="max-w-full h-auto z-10 relative"
             />
@@ -561,7 +561,7 @@ const ScolarshipInAustralia = () => {
             <span className="text-[#252364]">6 Simple Steps</span>
           </h2>
           <p className="text-gray-500 mb-10 text-sm sm:text-base">
-            With PFEC Global by your side, you can make the whole process a
+            With Global Routeway Global by your side, you can make the whole process a
             breeze!
           </p>
 
@@ -671,7 +671,7 @@ const ScolarshipInAustralia = () => {
                     {review.name}
                   </h4>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_2015_logo.svg"
+                    src="src/assets/Google-Logo.png"
                     alt="Google Reviews"
                     className="w-24 mt-2"
                   />
@@ -691,7 +691,7 @@ const ScolarshipInAustralia = () => {
             About Global Routeway
           </h2>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto mb-10">
-            Beginning in 2006, PFEC Global’s expertise in student migration
+            Beginning in 2006, Global Routeway Global’s expertise in student migration
             consultancy evolved from a single Melbourne office to a
             multinational presence, spanning Australia, Bangladesh, Sri Lanka,
             and India. We now proudly represent international educational

@@ -60,7 +60,7 @@ const EducationService = () => {
         </div>
 
         {/* Column 5 - Scholarships */}
-        <div>
+        {/* <div>
           <h4 className="text-black font-semibold mb-2">Scholarships</h4>
           <ul className="space-y-1">
             <li>Australia Scholarships</li>
@@ -73,7 +73,7 @@ const EducationService = () => {
             <li>Upcoming Events</li>
             <li>Careers</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Column 6 - About Global Routways */}
         <div>
@@ -81,13 +81,14 @@ const EducationService = () => {
             About Global Routways
           </h4>
           <ul className="space-y-1">
-            <li>About PFEC Bangladesh</li>
+            <li>About Global Routeway</li>
             <li>Our Leadership</li>
             <li>Awards & Achievements</li>
             <li>Testimonials</li>
             <li>Contact Us</li>
           </ul>
         </div>
+
       </div>
     </div>
   );
