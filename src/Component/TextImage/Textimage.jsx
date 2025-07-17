@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 // Destination Data
 const destinations = [
-  { title: "Study in UK", image: "/study1.jpg" },
+  { title: "Study in UK", image: "/src/assets/images/Uk.jpg" },
   { title: "Study in Canada", image: "/study4.jpg" },
   { title: "Study in Germany", image: "/study3.png" },
   { title: "Study in USA", image: "/study6.jpg" },

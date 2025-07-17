@@ -75,11 +75,11 @@ const Navbar = () => {
 
   // Form state and handlers
   const [showForm, setShowForm] = useState(false);
-  const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    mobile: "",
+    phone: "",
     nearestOffice: "",
     studyDestination: "",
     englishTestStatus: "",
@@ -95,7 +95,8 @@ const Navbar = () => {
     setMessage("");
   };
 
-  const handleChange = (e) => {
+  
+   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -105,62 +106,50 @@ const Navbar = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!formData.agreeTerms) {
-      Swal.fire({
-        title: "Required",
-        text: "You must agree to Privacy Policy and Terms & Conditions.",
-        icon: "warning",
-        confirmButtonColor: "#f16f22",
-      });
-      return;
-    }
-
     setLoading(true);
-    setMessage("");
 
     try {
-      const response = await fetch(`${BASE_URL}/registration`, {
+      const sendData = {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phone: formData.phone.startsWith("+880") ? formData.phone : "+880" + formData.phone,
+        nearestOffice: formData.nearestOffice,
+        preferredDestination: formData.studyDestination,
+        testStatus: formData.englishTestStatus,
+        fundingPlan: formData.fundingPlan,
+      };
+
+      const response = await fetch(`${BASE_URL}register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          firstName: formData.firstName,
-          lastName: formData.lastName,
-          email: formData.email,
-          mobile: formData.mobile,
-          nearestOffice: formData.nearestOffice,
-          studyDestination: formData.studyDestination,
-          englishTestStatus: formData.englishTestStatus,
-          fundingPlan: formData.fundingPlan,
-        }),
+        body: JSON.stringify(sendData),
       });
 
+      const data = await response.json();
+
       if (!response.ok) {
-        const errorText = await response.text();
-        throw new Error(errorText || "Failed to submit");
+        throw new Error(data.message || "Submission failed");
       }
 
       Swal.fire({
         title: "Success!",
-        text: "Registration submitted successfully!",
+        text: data.message,
         icon: "success",
         confirmButtonColor: "#f16f22",
-        confirmButtonText: "OK",
       });
 
       setFormData({
         firstName: "",
         lastName: "",
         email: "",
-        mobile: "",
+        phone: "",
         nearestOffice: "",
         studyDestination: "",
         englishTestStatus: "",
         fundingPlan: "",
         agreeTerms: false,
       });
-
-      setShowForm(false);
     } catch (error) {
       Swal.fire({
         title: "Error!",
@@ -172,6 +161,7 @@ const Navbar = () => {
       setLoading(false);
     }
   };
+
 
   return (
     <>
@@ -317,7 +307,7 @@ const Navbar = () => {
             <h3 className="text-lg md:text-xl font-semibold mb-4 text-center">
               Register with Us to Take the Next Step
             </h3>
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
@@ -328,7 +318,6 @@ const Navbar = () => {
                   onChange={handleChange}
                   required
                 />
-
                 <input
                   type="text"
                   name="lastName"
@@ -339,6 +328,7 @@ const Navbar = () => {
                   required
                 />
               </div>
+
               <input
                 type="email"
                 name="email"
@@ -348,6 +338,7 @@ const Navbar = () => {
                 onChange={handleChange}
                 required
               />
+
               <div className="grid grid-cols-[80px_1fr] gap-2">
                 <input
                   type="text"
@@ -357,14 +348,15 @@ const Navbar = () => {
                 />
                 <input
                   type="number"
-                  name="mobile"
+                  name="phone"
                   placeholder="Mobile Number"
                   className="border border-black rounded-lg px-4 py-2 w-full"
-                  value={formData.mobile}
+                  value={formData.phone}
                   onChange={handleChange}
                   required
                 />
               </div>
+
               <select
                 name="nearestOffice"
                 className="border border-black rounded-lg px-4 py-2 w-full"
@@ -373,10 +365,11 @@ const Navbar = () => {
                 required
               >
                 <option value="">Your Nearest Global Routways Office</option>
-                <option value="Global Routways Office">
-                  Global Routways Office
-                </option>
+                <option value="Mohammadpur">Mohammadpur</option>
+                {/* <option value="Dhanmondi">Dhanmondi</option>
+                <option value="Mirpur">Mirpur</option> */}
               </select>
+
               <select
                 name="studyDestination"
                 className="border border-black rounded-lg px-4 py-2 w-full"
@@ -385,11 +378,18 @@ const Navbar = () => {
                 required
               >
                 <option value="">Your Preferred Study Destination</option>
-                <option value="Canada">Canada</option>
-                <option value="USA">USA</option>
                 <option value="UK">UK</option>
-                {/* Add more options as needed */}
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Europe">Europe</option>
               </select>
+
               <select
                 name="englishTestStatus"
                 className="border border-black rounded-lg px-4 py-2 w-full"
@@ -398,18 +398,26 @@ const Navbar = () => {
                 required
               >
                 <option value="">English Language Test Status</option>
-                <option value="Completed">Completed</option>
-                <option value="Not Completed">Not Completed</option>
+                <option value="I have the Scores available">I have the Scores available</option>
+                <option value="My exams are scheduled">My exams are scheduled</option>
+                <option value="I have not appeared for any exams">I have not appeared for any exams</option>
+                <option value="I am planning to reappear soon">I am planning to reappear soon</option>
               </select>
-              <input
-                type="text"
+
+              <select
                 name="fundingPlan"
-                placeholder="How do you plan to fund your studies"
                 className="border border-black rounded-lg px-4 py-2 w-full"
                 value={formData.fundingPlan}
                 onChange={handleChange}
                 required
-              />
+              >
+                <option value="">How do you plan to fund your studies</option>
+                <option value="I have my own funds">I have my own funds</option>
+                <option value="I am looking for education loans">I am looking for education loans</option>
+                <option value="My parents or siblings will fund my studies">My parents or siblings will fund my studies</option>
+                <option value="I don't have Source of funds">I don't have Source of funds</option>
+              </select>
+
               <div className="flex items-start gap-2 text-sm">
                 <input
                   type="checkbox"
@@ -421,33 +429,28 @@ const Navbar = () => {
                 />
                 <p>
                   By clicking, you agree to our{" "}
-                  <a href="#" className="text-blue-600 underline">
-                    Privacy Policy
-                  </a>{" "}
-                  and{" "}
-                  <a href="#" className="text-blue-600 underline">
-                    Terms & Conditions
-                  </a>
+                  <a href="#" className="text-blue-600 underline">Privacy Policy</a> and{" "}
+                  <a href="#" className="text-blue-600 underline">Terms & Conditions</a>
                 </p>
               </div>
+
               <div className="flex justify-center">
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`mt-6 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${
-                    loading ? "opacity-50 cursor-not-allowed" : ""
-                  }`}
+                  className={`mt-4 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${loading ? "opacity-50 cursor-not-allowed" : ""
+                    }`}
                 >
                   {loading ? "Submitting..." : "Submit"}
                 </button>
               </div>
             </form>
 
+
             {message && (
               <p
-                className={`mt-4 text-center font-semibold ${
-                  message.startsWith("Error") ? "text-black" : "text-green-600"
-                }`}
+                className={`mt-4 text-center font-semibold ${message.startsWith("Error") ? "text-black" : "text-green-600"
+                  }`}
               >
                 {message}
               </p>

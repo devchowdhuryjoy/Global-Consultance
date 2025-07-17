@@ -41,7 +41,7 @@ const OurAchievements = () => {
           {/* Right: Map with locations */}
           <div className="relative">
             <img
-              src="maps2.png"
+              src="/src/assets/images/map.jpg" // Replace with actual image path
               alt="World Map"
               className="w-[700px] h-[270px]"
             />

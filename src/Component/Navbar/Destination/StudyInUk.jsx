@@ -326,7 +326,7 @@ const StudyInUk = () => {
           <div className="flex-1 relative">
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
-                src="/university.jpg" // Replace with your actual image path
+                src="/src/assets/images/Destination.jpg" // Replace with your actual image path
                 alt="Study in the UK"
                 className="w-full object-cover"
               />

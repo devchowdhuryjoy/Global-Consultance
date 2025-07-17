@@ -9,8 +9,8 @@ const offices = [
   // },
   {
     name: "Mohammadpur",
-    address: `N Islam Tower, Block-F, Ring Road, Shamoly, Mohammadpur, Dhaka 1207, Bangladesh`,
-    phone: "+880 9609 80 07 00",
+    address: `N Islam Tower, 19/C/F Block-F, Ring Road, Shamoly, Mohammadpur, Dhaka 1207, Bangladesh`,
+    phone: "01618-858541",
   },
   // {
   //   name: "Chattogram",
