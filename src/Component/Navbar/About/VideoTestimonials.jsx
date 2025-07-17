@@ -9,17 +9,19 @@ import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 
 
 const VideoTestimonials = () => {
-  const videos = [
-    {
-      url: "https://www.youtube.com/embed/K-0RG9cU3wQ",
-    },
-    {
-      url: "https://www.youtube.com/embed/xNNO7PIUSeE",
-    },
-    {
-      url: "https://www.youtube.com/embed/Y0EBlvhb7qA",
-    },
+  const rawVideos = [
+    { url: "https://www.youtube.com/shorts/imoKV4RqMTM" },
+    { url: "https://www.youtube.com/shorts/S3eF3HfpEYU" },
+    { url: "https://www.youtube.com/shorts/aby-fBeq_Y0" },
   ];
+
+  // Convert shorts URL to embeddable format
+  const videos = rawVideos.map((video) => {
+    const videoId = video.url.split("/").pop();
+    return {
+      url: `https://www.youtube.com/embed/${videoId}`,
+    };
+  });
 
   const reviews = [
     {
@@ -164,15 +166,13 @@ const VideoTestimonials = () => {
         </div>
 
         {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto p-4">
           {videos.map((video, index) => (
             <div
               key={index}
               className="rounded-xl overflow-hidden shadow-md bg-white"
             >
               <iframe
-                width="100%"
-                height="315"
                 src={video.url}
                 title={`Testimonial Video ${index + 1}`}
                 frameBorder="0"
@@ -183,6 +183,7 @@ const VideoTestimonials = () => {
             </div>
           ))}
         </div>
+
       </section>
 
       <div className="bg-[#252364] py-12 px-4 md:px-16 text-white">
