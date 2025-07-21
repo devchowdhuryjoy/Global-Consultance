@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import ConsultationModal from "../../Modal/ConsultationModal";
 
 const awards = [
   {
@@ -33,6 +34,11 @@ const awards = [
 ];
 
 const AwardsCarousel = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
@@ -126,9 +132,15 @@ const AwardsCarousel = () => {
         ))}
       </Swiper>
 
-      <button className="mt-6 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300">
+      <button
+        onClick={handleOpenModal}
+        className="mt-6 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300"
+      >
         Explore All
       </button>
+
+      {/* ✅ Modal */}
+      <ConsultationModal show={showModal} onClose={handleCloseModal} />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ConsultationModal from "../../../Modal/ConsultationModal";
 
 import {
   FaGavel,
@@ -19,6 +20,11 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 //6th Section
 
 const StudyInAustralia = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
   // 3rd Section
   const reasons = [
     {
@@ -317,9 +323,15 @@ const StudyInAustralia = () => {
               Get comprehensive guidance & end-to-end assistance from expert
               study abroad mentors for FREE!
             </p>
-            <button className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300">
+            <button
+              onClick={handleOpenModal}
+              className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300"
+            >
               Book a FREE Consultation →
             </button>
+
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
 
           {/* Image Section */}
@@ -371,8 +383,8 @@ const StudyInAustralia = () => {
               high-quality education, attracting a significant number of
               international students each year. Its universities have
               established a strong reputation for nurturing academic talent. One
-              of the notable advantages of studying in the Australia is the wide range
-              of degree programs available, complemented by relatively
+              of the notable advantages of studying in the Australia is the wide
+              range of degree programs available, complemented by relatively
               affordable tuition fees compared to many other countries.
             </p>
             <p className="text-gray-600 text-base leading-relaxed">
@@ -381,8 +393,8 @@ const StudyInAustralia = () => {
               courses. Once students secure a relevant job, they can apply for
               residency and become a citizen over time. The visa application and
               university admission processes are generally straightforward,
-              making the Australia an attractive destination for those looking to
-              further their education abroad.
+              making the Australia an attractive destination for those looking
+              to further their education abroad.
             </p>
           </div>
 
@@ -392,9 +404,15 @@ const StudyInAustralia = () => {
             <p className="text-lg font-semibold text-black mb-6">
               Get Started on your Study Abroad Dream with Global Routeway Global
             </p>
-            <button className="hover:bg-[#252364] bg-[#f16f22] text-white font-semibold px-6 py-3 rounded-lg transition duration-300">
+            <button
+              onClick={handleOpenModal}
+              className="hover:bg-[#252364] bg-[#f16f22] text-white font-semibold px-6 py-3 rounded-lg transition duration-300"
+            >
               Book Free Consultation →
             </button>
+
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
         </div>
       </section>
@@ -465,14 +483,14 @@ const StudyInAustralia = () => {
 
           {/* Paragraph */}
           <p className="text-gray-700 text-base leading-relaxed mb-4">
-            The costs of studying in the Australia can vary significantly, offering a
-            unique opportunity to shape your journey. Choosing a vibrant city
-            near the heart of the Australia may come with higher expenses, but it also
-            provides a dynamic environment for growth. Alternatively,
-            universities located further from the city center typically present
-            more affordable options. Your investment will depend on the specific
-            course you select, with research-based programs often reflecting the
-            depth of knowledge they provide.
+            The costs of studying in the Australia can vary significantly,
+            offering a unique opportunity to shape your journey. Choosing a
+            vibrant city near the heart of the Australia may come with higher
+            expenses, but it also provides a dynamic environment for growth.
+            Alternatively, universities located further from the city center
+            typically present more affordable options. Your investment will
+            depend on the specific course you select, with research-based
+            programs often reflecting the depth of knowledge they provide.
           </p>
           <p className="text-gray-700 text-base leading-relaxed mb-8">
             Generally, undergraduate programs cost around £12,000, with some
@@ -510,11 +528,11 @@ const StudyInAustralia = () => {
           {/* Paragraphs */}
           <div className="space-y-6 text-gray-700 text-base leading-relaxed">
             <p>
-              Bangladeshi students studying in the Australia may be concerned about the
-              cost of living, but with some thoughtful planning, it can be made
-              manageable. The total living expenses in the Australia vary based on
-              several key factors, including accommodation, food, and
-              transportation.
+              Bangladeshi students studying in the Australia may be concerned
+              about the cost of living, but with some thoughtful planning, it
+              can be made manageable. The total living expenses in the Australia
+              vary based on several key factors, including accommodation, food,
+              and transportation.
             </p>
 
             <p>
@@ -525,10 +543,10 @@ const StudyInAustralia = () => {
             </p>
 
             <p>
-              Food costs in the Australia can also add up, but preparing home-cooked
-              meals is an excellent way to save money and enjoy familiar
-              flavors. Experimenting with new cuisines occasionally can be a
-              delightful way to enhance your culinary experience.
+              Food costs in the Australia can also add up, but preparing
+              home-cooked meals is an excellent way to save money and enjoy
+              familiar flavors. Experimenting with new cuisines occasionally can
+              be a delightful way to enhance your culinary experience.
             </p>
 
             <p>
@@ -541,8 +559,8 @@ const StudyInAustralia = () => {
             <p>
               Lastly, it’s wise to set aside a budget for miscellaneous expenses
               that may come up. By being proactive and creating a clear budget
-              plan, you can navigate the financial landscape of living in the Australia
-              with confidence and ease.
+              plan, you can navigate the financial landscape of living in the
+              Australia with confidence and ease.
             </p>
           </div>
         </div>
@@ -611,11 +629,11 @@ const StudyInAustralia = () => {
             Admission Requirements for Studying in the Australia
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            To gain admission to the Australia as a Bangladeshi student, start by
-            gathering the necessary certifications and transcripts. If you’ve
-            completed a bachelor’s degree, pursuing a master’s degree in the Australia
-            is an excellent choice. Ensure that you submit all relevant
-            documents from your undergraduate studies.
+            To gain admission to the Australia as a Bangladeshi student, start
+            by gathering the necessary certifications and transcripts. If you’ve
+            completed a bachelor’s degree, pursuing a master’s degree in the
+            Australia is an excellent choice. Ensure that you submit all
+            relevant documents from your undergraduate studies.
           </p>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
             You will likely need to provide letters of recommendation from
@@ -674,9 +692,15 @@ const StudyInAustralia = () => {
             Check your eligibility and receive end to end assistance for FREE!
           </p>
 
-          <button className="hover:bg-[#252364] bg-[#f16f22] text-white py-2 px-6 rounded-full font-semibold shadow  transition">
+          <button
+            onClick={handleOpenModal}
+            className="hover:bg-[#252364] bg-[#f16f22] text-white py-2 px-6 rounded-full font-semibold shadow  transition"
+          >
             Book a FREE Consultation →
           </button>
+
+          {/* ✅ Modal */}
+          <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
 
         {/* Language Requirements */}
@@ -688,8 +712,8 @@ const StudyInAustralia = () => {
             While English may not be your native language, submitting results
             from an English proficiency test is your first step toward achieving
             your academic dreams. The three most widely accepted tests for
-            university admissions in the Australia are IELTS, TOEFL, and PTE—each
-            offering a path tailored to your strengths.
+            university admissions in the Australia are IELTS, TOEFL, and
+            PTE—each offering a path tailored to your strengths.
           </p>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
             For the IELTS, aim for a minimum overall score of 6.0, though
@@ -763,10 +787,10 @@ const StudyInAustralia = () => {
             Visa Requirements
           </h3>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            The Australia visa process is relatively straightforward, and you can
-            expect to receive your visa within a few weeks. To apply for a Australia
-            student visa, you will need several key documents. First, obtain
-            your Confirmation of Acceptance for Studies (CAS) from your
+            The Australia visa process is relatively straightforward, and you
+            can expect to receive your visa within a few weeks. To apply for a
+            Australia student visa, you will need several key documents. First,
+            obtain your Confirmation of Acceptance for Studies (CAS) from your
             university, which is necessary to begin your application. You will
             also need to provide your passport.
           </p>
@@ -856,11 +880,11 @@ const StudyInAustralia = () => {
         {/* Description */}
         <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-4 mb-10">
           <p>
-            Many students from Bangladesh prefer studying in the Australia because the
-            country offers a work visa for international graduates both during
-            and after their studies. This visa allows them to work for two to
-            three years after graduation, providing ample time to search for
-            suitable job opportunities.
+            Many students from Bangladesh prefer studying in the Australia
+            because the country offers a work visa for international graduates
+            both during and after their studies. This visa allows them to work
+            for two to three years after graduation, providing ample time to
+            search for suitable job opportunities.
           </p>
           <p>
             This period is especially beneficial as it enables students to find
@@ -924,11 +948,11 @@ const StudyInAustralia = () => {
         {/* Content Paragraphs */}
         <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-4">
           <p>
-            The Australia offers several scholarship opportunities for Bangladeshi
-            students, including government, university-specific, and regional
-            options. To secure these scholarships, it is essential to start the
-            application process early. Global Routeway Global can help you find the perfect
-            scholarship that suits your needs.
+            The Australia offers several scholarship opportunities for
+            Bangladeshi students, including government, university-specific, and
+            regional options. To secure these scholarships, it is essential to
+            start the application process early. Global Routeway Global can help
+            you find the perfect scholarship that suits your needs.
           </p>
           <p>
             Key scholarships include the Chevening Scholarship, which covers
@@ -994,19 +1018,19 @@ const StudyInAustralia = () => {
             <p>
               Bangladeshi students often choose research-related subjects, with
               law, medicine, and engineering being the most popular courses to
-              study in the Australia. However, there is a growing trend for students to
-              opt for AI-related subjects, which are becoming increasingly
-              popular due to the enhanced job opportunities they offer
-              graduates.
+              study in the Australia. However, there is a growing trend for
+              students to opt for AI-related subjects, which are becoming
+              increasingly popular due to the enhanced job opportunities they
+              offer graduates.
             </p>
             <p>
               In addition to these traditional fields, students are exploring
               new paths, such as business management, science, and education,
-              which are gaining popularity. Studying in the Australia offers more than
-              just a global education; it also provides access to career-focused
-              programs that lead to real job opportunities, a strong return on
-              investment (ROI), and long-term visa options for Bangladeshi
-              students. Furthermore, each university offers various
+              which are gaining popularity. Studying in the Australia offers
+              more than just a global education; it also provides access to
+              career-focused programs that lead to real job opportunities, a
+              strong return on investment (ROI), and long-term visa options for
+              Bangladeshi students. Furthermore, each university offers various
               specializations within these general courses to accommodate
               diverse interests and career aspirations.
             </p>
@@ -1038,20 +1062,20 @@ const StudyInAustralia = () => {
 
           {/* Paragraph */}
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed text-justify">
-            The Australia has one of the largest selections of universities in the
-            world, attracting Bangladeshi students who seek the best possible
-            opportunities. The University of Cambridge and the University of
-            Oxford are among the oldest and most prestigious institutions in the
-            world. Additionally, the Australia features specialized universities
-            excelling in various fields. For instance, the University of Glasgow
-            is renowned for its programs in law, humanities, and engineering.
-            Swansea University and Cardiff University are recognized for their
-            strong engineering degrees, while Brunel University is well-known
-            for its design programs. For those interested in aerospace
-            engineering, Cranfield University is a top choice. When selecting a
-            university, it is essential to choose one with a strong reputation
-            and good placement opportunities to maximize your educational
-            experience.
+            The Australia has one of the largest selections of universities in
+            the world, attracting Bangladeshi students who seek the best
+            possible opportunities. The University of Cambridge and the
+            University of Oxford are among the oldest and most prestigious
+            institutions in the world. Additionally, the Australia features
+            specialized universities excelling in various fields. For instance,
+            the University of Glasgow is renowned for its programs in law,
+            humanities, and engineering. Swansea University and Cardiff
+            University are recognized for their strong engineering degrees,
+            while Brunel University is well-known for its design programs. For
+            those interested in aerospace engineering, Cranfield University is a
+            top choice. When selecting a university, it is essential to choose
+            one with a strong reputation and good placement opportunities to
+            maximize your educational experience.
           </p>
         </div>
       </div>
@@ -1122,9 +1146,15 @@ const StudyInAustralia = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center">
+          <button
+            onClick={handleOpenModal}
+            className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center"
+          >
             Book a FREE Consultation →
           </button>
+
+          {/* ✅ Modal */}
+          <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
       </div>
       {/* 17th Section */}

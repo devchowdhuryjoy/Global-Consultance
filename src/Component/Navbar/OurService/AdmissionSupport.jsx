@@ -7,8 +7,13 @@ import "swiper/css/navigation";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
+import ConsultationModal from "../../../Modal/ConsultationModal";
 
 const AdmissionSupport = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -41,7 +46,9 @@ const AdmissionSupport = () => {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
-        phone: formData.phone.startsWith("+880") ? formData.phone : "+880" + formData.phone,
+        phone: formData.phone.startsWith("+880")
+          ? formData.phone
+          : "+880" + formData.phone,
         nearestOffice: formData.nearestOffice,
         preferredDestination: formData.studyDestination,
         testStatus: formData.englishTestStatus,
@@ -90,17 +97,11 @@ const AdmissionSupport = () => {
     }
   };
 
-
   // 6th Section
   const universityData = [
     {
       country: "Malaysia",
-      logos: [
-        "malishia.jpg",
-        "malishia.jpg",
-        "malishia.jpg",
-        "malishia.jpg",
-      ],
+      logos: ["malishia.jpg", "malishia.jpg", "malishia.jpg", "malishia.jpg"],
     },
     {
       country: "Australia",
@@ -113,40 +114,19 @@ const AdmissionSupport = () => {
     },
     {
       country: "UK",
-      logos: [
-        "uklogo.png",
-        "uklogo.png",
-        "uklogo.png",
-        "uklogo.png",
-      ],
+      logos: ["uklogo.png", "uklogo.png", "uklogo.png", "uklogo.png"],
     },
     {
       country: "USA",
-      logos: [
-        "usa.png",
-        "usa.png",
-        "usa.png",
-        "usa.png",
-      ],
+      logos: ["usa.png", "usa.png", "usa.png", "usa.png"],
     },
     {
       country: "Canada",
-      logos: [
-        "canada.jpg",
-        "canada.jpg",
-        "canada.jpg",
-        "canada.jpg",
-       
-      ],
+      logos: ["canada.jpg", "canada.jpg", "canada.jpg", "canada.jpg"],
     },
     {
       country: "Ireland",
-      logos: [
-        "ireland.jpg",
-        "ireland.jpg",
-        "ireland.jpg",
-        "ireland.jpg",
-      ],
+      logos: ["ireland.jpg", "ireland.jpg", "ireland.jpg", "ireland.jpg"],
     },
   ];
   // 6th Section
@@ -264,43 +244,42 @@ const AdmissionSupport = () => {
   //8th section
 
   // 9th section
-    const [openIndex, setOpenIndex] = useState(0);
-  
-    const toggle = (index) => {
-      setOpenIndex(openIndex === index ? -1 : index);
-    };
-  
-    const faqData = [
-      {
-        question:
-          "What are the academic and language requirements for Bangladeshi students applying to Australia universities?",
-        answer:
-          "The academic requirements for Bangladeshi students applying to Australia universities depend on the subjects you are applying to. For the English language requirements, you will need to take the IELTS (with a score of 6.0 to 7.5), TOEFL (with a score of 80 to 100), or PTE (with a score of 51 to 67).",
-      },
-      {
-        question:
-          "What is the cost of studying and living in the Australia for a student from Bangladesh?",
-        answer: "",
-      },
-      {
-        question:
-          "What visa requirements do Bangladeshi students need to fulfill to study in the Australia?",
-        answer: "",
-      },
-      {
-        question:
-          "Are there scholarships specifically available for Bangladeshi students in the Australia?",
-        answer: "",
-      },
-      {
-        question:
-          "What are the post-study work opportunities for Bangladeshi students after graduation in the Australia?",
-        answer: "",
-      },
-    ];
+  const [openIndex, setOpenIndex] = useState(0);
 
-    // 9th section
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? -1 : index);
+  };
 
+  const faqData = [
+    {
+      question:
+        "What are the academic and language requirements for Bangladeshi students applying to Australia universities?",
+      answer:
+        "The academic requirements for Bangladeshi students applying to Australia universities depend on the subjects you are applying to. For the English language requirements, you will need to take the IELTS (with a score of 6.0 to 7.5), TOEFL (with a score of 80 to 100), or PTE (with a score of 51 to 67).",
+    },
+    {
+      question:
+        "What is the cost of studying and living in the Australia for a student from Bangladesh?",
+      answer: "",
+    },
+    {
+      question:
+        "What visa requirements do Bangladeshi students need to fulfill to study in the Australia?",
+      answer: "",
+    },
+    {
+      question:
+        "Are there scholarships specifically available for Bangladeshi students in the Australia?",
+      answer: "",
+    },
+    {
+      question:
+        "What are the post-study work opportunities for Bangladeshi students after graduation in the Australia?",
+      answer: "",
+    },
+  ];
+
+  // 9th section
 
   return (
     <>
@@ -321,9 +300,15 @@ const AdmissionSupport = () => {
               Unlock global opportunities with seamless guidance from
               application to acceptance.
             </p>
-            <button className="mt-2 px-6 py-3 hover:bg-[#252364] bg-[#f16f22] text-white font-semibold rounded  transition duration-300 flex items-center gap-2">
+            <button
+              onClick={handleOpenModal}
+              className="mt-2 px-6 py-3 hover:bg-[#252364] bg-[#f16f22] text-white font-semibold rounded  transition duration-300 flex items-center gap-2"
+            >
               Book a Free Consultation <FaArrowRight />
             </button>
+
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
 
           {/* Right Image */}
@@ -413,145 +398,166 @@ const AdmissionSupport = () => {
               <h3 className="text-lg md:text-xl font-semibold mb-4 text-center">
                 Register with Us to Take the Next Step
               </h3>
-             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    className="border border-black rounded-lg px-4 py-2 w-full"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    className="border border-black rounded-lg px-4 py-2 w-full"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
                 <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
                   className="border border-black rounded-lg px-4 py-2 w-full"
-                  value={formData.firstName}
+                  value={formData.email}
                   onChange={handleChange}
                   required
                 />
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
+
+                <div className="grid grid-cols-[80px_1fr] gap-2">
+                  <input
+                    type="text"
+                    value="+880"
+                    readOnly
+                    className="border border-black rounded-lg px-4 py-2 w-full bg-gray-100"
+                  />
+                  <input
+                    type="number"
+                    name="phone"
+                    placeholder="Mobile Number"
+                    className="border border-black rounded-lg px-4 py-2 w-full"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <select
+                  name="nearestOffice"
                   className="border border-black rounded-lg px-4 py-2 w-full"
-                  value={formData.lastName}
+                  value={formData.nearestOffice}
                   onChange={handleChange}
                   required
-                />
-              </div>
-
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                className="border border-black rounded-lg px-4 py-2 w-full"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-
-              <div className="grid grid-cols-[80px_1fr] gap-2">
-                <input
-                  type="text"
-                  value="+880"
-                  readOnly
-                  className="border border-black rounded-lg px-4 py-2 w-full bg-gray-100"
-                />
-                <input
-                  type="number"
-                  name="phone"
-                  placeholder="Mobile Number"
-                  className="border border-black rounded-lg px-4 py-2 w-full"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <select
-                name="nearestOffice"
-                className="border border-black rounded-lg px-4 py-2 w-full"
-                value={formData.nearestOffice}
-                onChange={handleChange}
-                required
-              >
-                <option value="">Your Nearest Global Routways Office</option>
-                <option value="Mohammadpur">Mohammadpur</option>
-                {/* <option value="Dhanmondi">Dhanmondi</option>
-                <option value="Mirpur">Mirpur</option> */}
-              </select>
-
-              <select
-                name="studyDestination"
-                className="border border-black rounded-lg px-4 py-2 w-full"
-                value={formData.studyDestination}
-                onChange={handleChange}
-                required
-              >
-                <option value="">Your Preferred Study Destination</option>
-                <option value="UK">UK</option>
-                <option value="USA">USA</option>
-                <option value="Canada">Canada</option>
-                <option value="Hungary">Hungary</option>
-                <option value="Denmark">Denmark</option>
-                <option value="Finland">Finland</option>
-                <option value="Sweden">Sweden</option>
-                <option value="Dubai">Dubai</option>
-                <option value="Malaysia">Malaysia</option>
-                <option value="Europe">Europe</option>
-              </select>
-
-              <select
-                name="englishTestStatus"
-                className="border border-black rounded-lg px-4 py-2 w-full"
-                value={formData.englishTestStatus}
-                onChange={handleChange}
-                required
-              >
-                <option value="">English Language Test Status</option>
-                <option value="I have the Scores available">I have the Scores available</option>
-                <option value="My exams are scheduled">My exams are scheduled</option>
-                <option value="I have not appeared for any exams">I have not appeared for any exams</option>
-                <option value="I am planning to reappear soon">I am planning to reappear soon</option>
-              </select>
-
-              <select
-                name="fundingPlan"
-                className="border border-black rounded-lg px-4 py-2 w-full"
-                value={formData.fundingPlan}
-                onChange={handleChange}
-                required
-              >
-                <option value="">How do you plan to fund your studies</option>
-                <option value="I have my own funds">I have my own funds</option>
-                <option value="I am looking for education loans">I am looking for education loans</option>
-                <option value="My parents or siblings will fund my studies">My parents or siblings will fund my studies</option>
-                <option value="I don't have Source of funds">I don't have Source of funds</option>
-              </select>
-
-              <div className="flex items-start gap-2 text-sm">
-                <input
-                  type="checkbox"
-                  name="agreeTerms"
-                  checked={formData.agreeTerms}
-                  onChange={handleChange}
-                  required
-                  className="mt-1"
-                />
-                <p>
-                  By clicking, you agree to our{" "}
-                  <a href="#" className="text-blue-600 underline">Privacy Policy</a> and{" "}
-                  <a href="#" className="text-blue-600 underline">Terms & Conditions</a>
-                </p>
-              </div>
-
-              <div className="flex justify-center">
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className={`mt-4 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${loading ? "opacity-50 cursor-not-allowed" : ""
-                    }`}
                 >
-                  {loading ? "Submitting..." : "Submit"}
-                </button>
-              </div>
-            </form>
+                  <option value="">Your Nearest Global Routways Office</option>
+                  <option value="Mohammadpur">Mohammadpur</option>
+                  {/* <option value="Dhanmondi">Dhanmondi</option>
+                <option value="Mirpur">Mirpur</option> */}
+                </select>
 
+                <select
+                  name="studyDestination"
+                  className="border border-black rounded-lg px-4 py-2 w-full"
+                  value={formData.studyDestination}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Your Preferred Study Destination</option>
+                  <option value="UK">UK</option>
+                  <option value="USA">USA</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Finland">Finland</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Dubai">Dubai</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Europe">Europe</option>
+                </select>
+
+                <select
+                  name="englishTestStatus"
+                  className="border border-black rounded-lg px-4 py-2 w-full"
+                  value={formData.englishTestStatus}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">English Language Test Status</option>
+                  <option value="I have the Scores available">
+                    I have the Scores available
+                  </option>
+                  <option value="My exams are scheduled">
+                    My exams are scheduled
+                  </option>
+                  <option value="I have not appeared for any exams">
+                    I have not appeared for any exams
+                  </option>
+                  <option value="I am planning to reappear soon">
+                    I am planning to reappear soon
+                  </option>
+                </select>
+
+                <select
+                  name="fundingPlan"
+                  className="border border-black rounded-lg px-4 py-2 w-full"
+                  value={formData.fundingPlan}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">How do you plan to fund your studies</option>
+                  <option value="I have my own funds">
+                    I have my own funds
+                  </option>
+                  <option value="I am looking for education loans">
+                    I am looking for education loans
+                  </option>
+                  <option value="My parents or siblings will fund my studies">
+                    My parents or siblings will fund my studies
+                  </option>
+                  <option value="I don't have Source of funds">
+                    I don't have Source of funds
+                  </option>
+                </select>
+
+                <div className="flex items-start gap-2 text-sm">
+                  <input
+                    type="checkbox"
+                    name="agreeTerms"
+                    checked={formData.agreeTerms}
+                    onChange={handleChange}
+                    required
+                    className="mt-1"
+                  />
+                  <p>
+                    By clicking, you agree to our{" "}
+                    <a href="#" className="text-blue-600 underline">
+                      Privacy Policy
+                    </a>{" "}
+                    and{" "}
+                    <a href="#" className="text-blue-600 underline">
+                      Terms & Conditions
+                    </a>
+                  </p>
+                </div>
+
+                <div className="flex justify-center">
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className={`mt-4 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${
+                      loading ? "opacity-50 cursor-not-allowed" : ""
+                    }`}
+                  >
+                    {loading ? "Submitting..." : "Submit"}
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -587,9 +593,9 @@ const AdmissionSupport = () => {
             </p>
 
             <p className="text-base sm:text-lg text-justify">
-              At Global Routeway Global, we believe every student profile is unique, thus,
-              focusing on evaluating each profile with time and care,
-              considering past education qualifications and job experience
+              At Global Routeway Global, we believe every student profile is
+              unique, thus, focusing on evaluating each profile with time and
+              care, considering past education qualifications and job experience
               through recognition of prior learning (RPL). Indeed, the extensive
               research on individual applicants leads us to choose what form of
               education will best fit their interests and prepare the supporting
@@ -670,17 +676,17 @@ const AdmissionSupport = () => {
               Interactive Sessions for Admission Help
             </h2>
             <p className="text-base sm:text-lg text-justify">
-              Global Routeway Global is an official representative of institutes around the
-              world to provide authentic services to students in Bangladesh. On
-              this ground, we arrange regular seminars where prominent
-              educational institutions take part and conduct informative
-              sessions, followed by on-spot admission for potential candidates.
-              This process breeds trust and confidence among the students and
-              makes us a trustworthy student visa consultant in Bangladesh.
-              Moreover, through interactive sessions, students get the golden
-              opportunity to know about their dream institution and destination
-              from QA sessions with institute representatives both in our
-              onshore and offshore offices.
+              Global Routeway Global is an official representative of institutes
+              around the world to provide authentic services to students in
+              Bangladesh. On this ground, we arrange regular seminars where
+              prominent educational institutions take part and conduct
+              informative sessions, followed by on-spot admission for potential
+              candidates. This process breeds trust and confidence among the
+              students and makes us a trustworthy student visa consultant in
+              Bangladesh. Moreover, through interactive sessions, students get
+              the golden opportunity to know about their dream institution and
+              destination from QA sessions with institute representatives both
+              in our onshore and offshore offices.
             </p>
           </div>
         </div>
@@ -905,7 +911,7 @@ const AdmissionSupport = () => {
       {/* 8th Section */}
 
       {/* 9th section */}
-       <div className="bg-gray-100 px-4 sm:px-6 lg:px-8 py-12">
+      <div className="bg-gray-100 px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold text-center mb-6">
             Frequently Asked Questions
@@ -939,13 +945,18 @@ const AdmissionSupport = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center">
+          <button
+            onClick={handleOpenModal}
+            className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center"
+          >
             Book a FREE Consultation →
           </button>
+
+          {/* ✅ Modal */}
+          <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
       </div>
       {/* 9th section */}
-
     </>
   );
 };

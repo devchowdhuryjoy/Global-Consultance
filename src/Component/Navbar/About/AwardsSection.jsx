@@ -3,6 +3,7 @@ import { FaCrown } from "react-icons/fa";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
+import ConsultationModal from "../../../Modal/ConsultationModal";
 
 // Awards Data
 const awards = [
@@ -21,6 +22,10 @@ const awards = [
 ];
 
 const AwardsSection = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -53,7 +58,9 @@ const AwardsSection = () => {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
-        phone: formData.phone.startsWith("+880") ? formData.phone : "+880" + formData.phone,
+        phone: formData.phone.startsWith("+880")
+          ? formData.phone
+          : "+880" + formData.phone,
         nearestOffice: formData.nearestOffice,
         preferredDestination: formData.studyDestination,
         testStatus: formData.englishTestStatus,
@@ -102,7 +109,6 @@ const AwardsSection = () => {
     }
   };
 
-
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -120,9 +126,14 @@ const AwardsSection = () => {
               Our efforts have been recognized with many prestigious accolades
               over the years.
             </p>
-            <button className="bg-[#f16f22] hover:bg-[#252364] text-white px-6 py-3 rounded-md font-semibold transition-all">
+            <button
+              onClick={handleOpenModal}
+              className="bg-[#f16f22] hover:bg-[#252364] text-white px-6 py-3 rounded-md font-semibold transition-all"
+            >
               Book a FREE Consultation →
             </button>
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
 
           {/* Image */}
@@ -146,13 +157,13 @@ const AwardsSection = () => {
               <span className="text-black">Highlights</span>
             </h2>
             <p className="text-gray-800 text-base md:text-lg mb-4">
-              Earning a multitude of esteemed awards and honors, Global Routeway Global
-              stands tall in its years of remarkable operation.
+              Earning a multitude of esteemed awards and honors, Global Routeway
+              Global stands tall in its years of remarkable operation.
             </p>
             <p className="text-gray-800 text-base md:text-lg mb-4">
-              With a rich history of more than a decade, Global Routeway Global boasts
-              numerous honors and awards that set us apart and fuel our drive to
-              gain industry-wide acclaim.
+              With a rich history of more than a decade, Global Routeway Global
+              boasts numerous honors and awards that set us apart and fuel our
+              drive to gain industry-wide acclaim.
             </p>
             <p className="text-gray-800 text-base md:text-lg mb-4">
               Our team's unmatched expertise and unwavering dedication are key
@@ -324,10 +335,18 @@ const AwardsSection = () => {
                 required
               >
                 <option value="">English Language Test Status</option>
-                <option value="I have the Scores available">I have the Scores available</option>
-                <option value="My exams are scheduled">My exams are scheduled</option>
-                <option value="I have not appeared for any exams">I have not appeared for any exams</option>
-                <option value="I am planning to reappear soon">I am planning to reappear soon</option>
+                <option value="I have the Scores available">
+                  I have the Scores available
+                </option>
+                <option value="My exams are scheduled">
+                  My exams are scheduled
+                </option>
+                <option value="I have not appeared for any exams">
+                  I have not appeared for any exams
+                </option>
+                <option value="I am planning to reappear soon">
+                  I am planning to reappear soon
+                </option>
               </select>
 
               <select
@@ -339,9 +358,15 @@ const AwardsSection = () => {
               >
                 <option value="">How do you plan to fund your studies</option>
                 <option value="I have my own funds">I have my own funds</option>
-                <option value="I am looking for education loans">I am looking for education loans</option>
-                <option value="My parents or siblings will fund my studies">My parents or siblings will fund my studies</option>
-                <option value="I don't have Source of funds">I don't have Source of funds</option>
+                <option value="I am looking for education loans">
+                  I am looking for education loans
+                </option>
+                <option value="My parents or siblings will fund my studies">
+                  My parents or siblings will fund my studies
+                </option>
+                <option value="I don't have Source of funds">
+                  I don't have Source of funds
+                </option>
               </select>
 
               <div className="flex items-start gap-2 text-sm">
@@ -355,8 +380,13 @@ const AwardsSection = () => {
                 />
                 <p>
                   By clicking, you agree to our{" "}
-                  <a href="#" className="text-blue-600 underline">Privacy Policy</a> and{" "}
-                  <a href="#" className="text-blue-600 underline">Terms & Conditions</a>
+                  <a href="#" className="text-blue-600 underline">
+                    Privacy Policy
+                  </a>{" "}
+                  and{" "}
+                  <a href="#" className="text-blue-600 underline">
+                    Terms & Conditions
+                  </a>
                 </p>
               </div>
 
@@ -364,16 +394,15 @@ const AwardsSection = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`mt-4 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${loading ? "opacity-50 cursor-not-allowed" : ""
-                    }`}
+                  className={`mt-4 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${
+                    loading ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
                 >
                   {loading ? "Submitting..." : "Submit"}
                 </button>
               </div>
             </form>
-
           </div>
-
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import ConsultationModal from "../../../Modal/ConsultationModal";
+
 import {
   FaGavel,
   FaStethoscope,
@@ -19,6 +21,10 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 //6th Section
 
 const StudyInUsa = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
   // 3rd Section
   const reasons = [
     {
@@ -317,9 +323,15 @@ const StudyInUsa = () => {
               Get comprehensive guidance & end-to-end assistance from expert
               study abroad mentors for FREE!
             </p>
-            <button className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300">
+            <button
+              onClick={handleOpenModal}
+              className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300"
+            >
               Book a FREE Consultation →
             </button>
+
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
 
           {/* Image Section */}
@@ -392,9 +404,15 @@ const StudyInUsa = () => {
             <p className="text-lg font-semibold text-black mb-6">
               Get Started on your Study Abroad Dream with Global Routeway Global
             </p>
-            <button className="hover:bg-[#252364] bg-[#f16f22] text-white font-semibold px-6 py-3 rounded-lg transition duration-300">
+            <button
+              onClick={handleOpenModal}
+              className="hover:bg-[#252364] bg-[#f16f22] text-white font-semibold px-6 py-3 rounded-lg transition duration-300"
+            >
               Book Free Consultation →
             </button>
+
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
         </div>
       </section>
@@ -510,10 +528,10 @@ const StudyInUsa = () => {
           {/* Paragraphs */}
           <div className="space-y-6 text-gray-700 text-base leading-relaxed">
             <p>
-              Bangladeshi students studying in the Usa may be concerned about the
-              cost of living, but with some thoughtful planning, it can be made
-              manageable. The total living expenses in the Usa vary based on
-              several key factors, including accommodation, food, and
+              Bangladeshi students studying in the Usa may be concerned about
+              the cost of living, but with some thoughtful planning, it can be
+              made manageable. The total living expenses in the Usa vary based
+              on several key factors, including accommodation, food, and
               transportation.
             </p>
 
@@ -541,8 +559,8 @@ const StudyInUsa = () => {
             <p>
               Lastly, it’s wise to set aside a budget for miscellaneous expenses
               that may come up. By being proactive and creating a clear budget
-              plan, you can navigate the financial landscape of living in the Usa
-              with confidence and ease.
+              plan, you can navigate the financial landscape of living in the
+              Usa with confidence and ease.
             </p>
           </div>
         </div>
@@ -674,9 +692,15 @@ const StudyInUsa = () => {
             Check your eligibility and receive end to end assistance for FREE!
           </p>
 
-          <button className="hover:bg-[#252364] bg-[#f16f22] text-white py-2 px-6 rounded-full font-semibold shadow  transition">
+          <button
+            onClick={handleOpenModal}
+            className="hover:bg-[#252364] bg-[#f16f22] text-white py-2 px-6 rounded-full font-semibold shadow  transition"
+          >
             Book a FREE Consultation →
           </button>
+
+          {/* ✅ Modal */}
+          <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
 
         {/* Language Requirements */}
@@ -927,8 +951,8 @@ const StudyInUsa = () => {
             The Usa offers several scholarship opportunities for Bangladeshi
             students, including government, university-specific, and regional
             options. To secure these scholarships, it is essential to start the
-            application process early. Global Routeway Global can help you find the perfect
-            scholarship that suits your needs.
+            application process early. Global Routeway Global can help you find
+            the perfect scholarship that suits your needs.
           </p>
           <p>
             Key scholarships include the Chevening Scholarship, which covers
@@ -994,8 +1018,8 @@ const StudyInUsa = () => {
             <p>
               Bangladeshi students often choose research-related subjects, with
               law, medicine, and engineering being the most popular courses to
-              study in the Usa. However, there is a growing trend for students to
-              opt for AI-related subjects, which are becoming increasingly
+              study in the Usa. However, there is a growing trend for students
+              to opt for AI-related subjects, which are becoming increasingly
               popular due to the enhanced job opportunities they offer
               graduates.
             </p>
@@ -1122,9 +1146,15 @@ const StudyInUsa = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center">
+          <button
+            onClick={handleOpenModal}
+            className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center"
+          >
             Book a FREE Consultation →
           </button>
+
+          {/* ✅ Modal */}
+          <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
       </div>
       {/* 17th Section */}

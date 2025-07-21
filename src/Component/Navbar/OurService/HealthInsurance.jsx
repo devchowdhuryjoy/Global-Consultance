@@ -9,8 +9,13 @@ import "swiper/css/navigation";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
+import ConsultationModal from "../../../Modal/ConsultationModal";
 
 const HealthInsurance = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
   {
     /* 4rd section */
   }
@@ -186,7 +191,9 @@ const HealthInsurance = () => {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
-        phone: formData.phone.startsWith("+880") ? formData.phone : "+880" + formData.phone,
+        phone: formData.phone.startsWith("+880")
+          ? formData.phone
+          : "+880" + formData.phone,
         nearestOffice: formData.nearestOffice,
         preferredDestination: formData.studyDestination,
         testStatus: formData.englishTestStatus,
@@ -235,8 +242,6 @@ const HealthInsurance = () => {
     }
   };
 
-
-
   return (
     <>
       {/* 1st Section */}
@@ -255,9 +260,15 @@ const HealthInsurance = () => {
               Discover various options that will help you take care of your
               health without breaking the bank.
             </p>
-            <button className="mt-4 inline-flex items-center justify-center bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-3 rounded transition duration-300">
+            <button
+              onClick={handleOpenModal}
+              className="mt-4 inline-flex items-center justify-center bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-3 rounded transition duration-300"
+            >
               Book a Free Consultation →
             </button>
+
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
 
           {/* Right Image */}
@@ -440,10 +451,18 @@ const HealthInsurance = () => {
                 required
               >
                 <option value="">English Language Test Status</option>
-                <option value="I have the Scores available">I have the Scores available</option>
-                <option value="My exams are scheduled">My exams are scheduled</option>
-                <option value="I have not appeared for any exams">I have not appeared for any exams</option>
-                <option value="I am planning to reappear soon">I am planning to reappear soon</option>
+                <option value="I have the Scores available">
+                  I have the Scores available
+                </option>
+                <option value="My exams are scheduled">
+                  My exams are scheduled
+                </option>
+                <option value="I have not appeared for any exams">
+                  I have not appeared for any exams
+                </option>
+                <option value="I am planning to reappear soon">
+                  I am planning to reappear soon
+                </option>
               </select>
 
               <select
@@ -455,9 +474,15 @@ const HealthInsurance = () => {
               >
                 <option value="">How do you plan to fund your studies</option>
                 <option value="I have my own funds">I have my own funds</option>
-                <option value="I am looking for education loans">I am looking for education loans</option>
-                <option value="My parents or siblings will fund my studies">My parents or siblings will fund my studies</option>
-                <option value="I don't have Source of funds">I don't have Source of funds</option>
+                <option value="I am looking for education loans">
+                  I am looking for education loans
+                </option>
+                <option value="My parents or siblings will fund my studies">
+                  My parents or siblings will fund my studies
+                </option>
+                <option value="I don't have Source of funds">
+                  I don't have Source of funds
+                </option>
               </select>
 
               <div className="flex items-start gap-2 text-sm">
@@ -471,8 +496,13 @@ const HealthInsurance = () => {
                 />
                 <p>
                   By clicking, you agree to our{" "}
-                  <a href="#" className="text-blue-600 underline">Privacy Policy</a> and{" "}
-                  <a href="#" className="text-blue-600 underline">Terms & Conditions</a>
+                  <a href="#" className="text-blue-600 underline">
+                    Privacy Policy
+                  </a>{" "}
+                  and{" "}
+                  <a href="#" className="text-blue-600 underline">
+                    Terms & Conditions
+                  </a>
                 </p>
               </div>
 
@@ -480,14 +510,14 @@ const HealthInsurance = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`mt-4 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${loading ? "opacity-50 cursor-not-allowed" : ""
-                    }`}
+                  className={`mt-4 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${
+                    loading ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
                 >
                   {loading ? "Submitting..." : "Submit"}
                 </button>
               </div>
             </form>
-
           </div>
         </div>
       </div>
@@ -589,9 +619,15 @@ const HealthInsurance = () => {
 
             {/* CTA Button */}
             <div className="mt-6">
-              <button className="bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-3 rounded transition duration-300">
+              <button
+                onClick={handleOpenModal}
+                className="bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-3 rounded transition duration-300"
+              >
                 Book a Free Consultation →
               </button>
+
+              {/* ✅ Modal */}
+              <ConsultationModal show={showModal} onClose={handleCloseModal} />
             </div>
           </div>
 
@@ -672,9 +708,15 @@ const HealthInsurance = () => {
               OSHC provides coverage for accidental injuries, whether minor or
               major, ensuring you get healthcare promptly.
             </p>
-            <button className="bg-[#f16f22] hover:bg-[#fff] hover:text-[#252364] text-white font-semibold px-6 py-3 rounded transition duration-300">
+            <button
+              onClick={handleOpenModal}
+              className="bg-[#f16f22] hover:bg-[#fff] hover:text-[#252364] text-white font-semibold px-6 py-3 rounded transition duration-300"
+            >
               Book a Free Consultation →
             </button>
+
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
         </div>
       </div>
@@ -755,9 +797,10 @@ const HealthInsurance = () => {
               your host country, you can take the assistance of Global Routeway.
             </p>
             <p className="text-gray-700 mb-6">
-              Global Routeway coordinates with the best insurance providers across the
-              globe. Whichever country you choose to study abroad, Global Routeway will
-              help you get the best insurance providers who offer:
+              Global Routeway coordinates with the best insurance providers
+              across the globe. Whichever country you choose to study abroad,
+              Global Routeway will help you get the best insurance providers who
+              offer:
             </p>
 
             {/* Bullet Points */}
@@ -773,9 +816,15 @@ const HealthInsurance = () => {
             </p>
 
             {/* Button */}
-            <button className="bg-[#f16f22] hover:bg-[#252364] transition text-white px-6 py-3 rounded flex items-center gap-2 font-semibold">
+            <button
+              onClick={handleOpenModal}
+              className="bg-[#f16f22] hover:bg-[#252364] transition text-white px-6 py-3 rounded flex items-center gap-2 font-semibold"
+            >
               Book a Free Consultation <FiArrowRight />
             </button>
+
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
 
           {/* Right Image Section */}
@@ -849,49 +898,21 @@ const HealthInsurance = () => {
               student health coverage for you.
             </p>
 
-            <button className="mt-4 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center">
+            <button
+              onClick={handleOpenModal}
+              className="mt-4 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center"
+            >
               Book a Free Consultation →
             </button>
+
+            {/* ✅ Modal */}
+            <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
         </div>
       </div>
       {/* 8th section */}
 
       {/* 9th section */}
-      {/* <div className="bg-[#fafafa] py-16 px-4 sm:px-6 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-4">
-            Documents Required to Buy Health Insurance Plan
-          </h2>
-          <p className="text-gray-700 mb-10">
-            The documents required to buy a health insurance plan are:
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-4">
-            {documents.map((doc, index) => (
-              <div
-                key={index}
-                className="flex items-center bg-white rounded-xl shadow-md px-5 py-3 text-[#252364] font-semibold text-sm sm:text-base"
-              >
-                <div className="w-6 h-6 bg-[#f44336] text-white flex items-center justify-center rounded-full mr-2 text-xs">
-                  {index + 1}
-                </div>
-                {doc}
-              </div>
-            ))}
-          </div>
-
-          <p className="text-gray-700 mt-10 mb-6">
-            The team will help you compare policies and get the most relevant
-            and affordable student health coverage for you.
-          </p>
-
-          <button className="mt-2 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300">
-            Book a Free Consultation →
-          </button>
-        </div>
-      </div> */}
-
       <div className="bg-[#fafafa] py-16 px-4 sm:px-6 lg:px-20">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#252364] mb-4">
@@ -920,9 +941,15 @@ const HealthInsurance = () => {
             and affordable student health coverage for you.
           </p>
 
-          <button className="mt-2 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300">
+          <button
+            onClick={handleOpenModal}
+            className="mt-2 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300"
+          >
             Book a Free Consultation →
           </button>
+
+          {/* ✅ Modal */}
+          <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
       </div>
 
@@ -1054,9 +1081,15 @@ const HealthInsurance = () => {
             dream.
           </p>
 
-          <button className="bg-[#f16f22] hover:bg-[#252364] transition text-white font-semibold px-6 py-3 rounded">
+          <button
+            onClick={handleOpenModal}
+            className="bg-[#f16f22] hover:bg-[#252364] transition text-white font-semibold px-6 py-3 rounded"
+          >
             Book a Free Consultation →
           </button>
+
+          {/* ✅ Modal */}
+          <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
       </div>
       {/* 11th section */}
