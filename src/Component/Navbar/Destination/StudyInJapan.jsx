@@ -36,28 +36,28 @@ const StudyInJapan = () => {
     {
       title: "600,000+",
       description:
-        "International students opting for higher studies in the Japan (20% rise from 2021)",
+        "International students opting for higher studies in the Finland (20% rise from 2021)",
       bg: "bg-blue-100",
       emoji: "🎓",
     },
     {
       title: "500,000 + Visas",
       description:
-        "In June 2023, the Japan granted nearly 500,000 sponsored study visas (23% increase from 2022)",
+        "In June 2023, the Finland granted nearly 500,000 sponsored study visas (23% increase from 2022)",
       bg: "bg-rose-100",
       emoji: "🛂",
     },
     {
       title: "Global Recognition",
       description:
-        "Japan degrees and qualifications are recognized and respected internationally.",
+        "Finland degrees and qualifications are recognized and respected internationally.",
       bg: "bg-green-100",
       emoji: "🌍",
     },
     {
       title: "Up to 20 Hours",
       description:
-        "International students in the Japan are allowed to work part-time up to 20 hours per week while studying, and full-time during semester breaks.",
+        "International students in the Finland are allowed to work part-time up to 20 hours per week while studying, and full-time during semester breaks.",
       bg: "bg-neutral-100",
       emoji: "⏰",
     },
@@ -142,7 +142,7 @@ const StudyInJapan = () => {
   const scholarships = [
     {
       name: "British Chevening",
-      description: "Japan Government’s international scholarship",
+      description: "Finland Government’s international scholarship",
       eligibility: "Postgraduate students with leadership potential",
       amount: "£20,000",
     },
@@ -160,7 +160,7 @@ const StudyInJapan = () => {
     },
     {
       name: "Great Scholarships",
-      description: "For various Japan universities",
+      description: "For various Finland universities",
       eligibility: "Postgraduate students from selected countries",
       amount: "£10,000",
     },
@@ -171,8 +171,8 @@ const StudyInJapan = () => {
       amount: "£5,000",
     },
     {
-      name: "Japan Alumni Scholarship",
-      description: "For students with family alumni in the Japan",
+      name: "Finland Alumni Scholarship",
+      description: "For students with family alumni in the Finland",
       eligibility: "Undergraduate & Postgraduate students",
       amount: "£8,000",
     },
@@ -279,28 +279,28 @@ const StudyInJapan = () => {
   const faqData = [
     {
       question:
-        "What are the academic and language requirements for Bangladeshi students applying to Japan universities?",
+        "What are the academic and language requirements for Bangladeshi students applying to Finland universities?",
       answer:
-        "The academic requirements for Bangladeshi students applying to Japan universities depend on the subjects you are applying to. For the English language requirements, you will need to take the IELTS (with a score of 6.0 to 7.5), TOEFL (with a score of 80 to 100), or PTE (with a score of 51 to 67).",
+        "The academic requirements for Bangladeshi students applying to Finland universities depend on the subjects you are applying to. For the English language requirements, you will need to take the IELTS (with a score of 6.0 to 7.5), TOEFL (with a score of 80 to 100), or PTE (with a score of 51 to 67).",
     },
     {
       question:
-        "What is the cost of studying and living in the Japan for a student from Bangladesh?",
+        "What is the cost of studying and living in the Finland for a student from Bangladesh?",
       answer: "",
     },
     {
       question:
-        "What visa requirements do Bangladeshi students need to fulfill to study in the Japan?",
+        "What visa requirements do Bangladeshi students need to fulfill to study in the Finland?",
       answer: "",
     },
     {
       question:
-        "Are there scholarships specifically available for Bangladeshi students in the Japan?",
+        "Are there scholarships specifically available for Bangladeshi students in the Finland?",
       answer: "",
     },
     {
       question:
-        "What are the post-study work opportunities for Bangladeshi students after graduation in the Japan?",
+        "What are the post-study work opportunities for Bangladeshi students after graduation in the Finland?",
       answer: "",
     },
   ];
@@ -315,7 +315,7 @@ const StudyInJapan = () => {
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#252364]">
-              Study in the Japan <br />
+              Study in the Finland <br />
               <span className="text-black">with Expert Guidance</span>
             </h2>
             <p className="text-gray-700 mt-4 text-base md:text-lg">
@@ -338,7 +338,7 @@ const StudyInJapan = () => {
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
                 src="/src/assets/images/Destination.jpg" // Replace with your actual image path
-                alt="Study in the Japan"
+                alt="Study in the Finland"
                 className="w-full object-cover"
               />
             </div>
@@ -373,7 +373,7 @@ const StudyInJapan = () => {
 
             {/* Heading */}
             <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-4">
-              Why Study in the Japan?
+              Why Study in the Finland?
             </h2>
 
             {/* Paragraphs */}
@@ -382,17 +382,17 @@ const StudyInJapan = () => {
               high-quality education, attracting a significant number of
               international students each year. Its universities have
               established a strong reputation for nurturing academic talent. One
-              of the notable advantages of studying in the Japan is the wide
+              of the notable advantages of studying in the Finland is the wide
               range of degree programs available, complemented by relatively
               affordable tuition fees compared to many other countries.
             </p>
             <p className="text-gray-600 text-base leading-relaxed">
-              Moreover, the Japan offers a post-study visa option, enabling
+              Moreover, the Finland offers a post-study visa option, enabling
               graduates to seek employment immediately after finishing their
               courses. Once students secure a relevant job, they can apply for
               residency and become a citizen over time. The visa application and
               university admission processes are generally straightforward,
-              making the Japan an attractive destination for those looking to
+              making the Finland an attractive destination for those looking to
               further their education abroad.
             </p>
           </div>
@@ -422,7 +422,7 @@ const StudyInJapan = () => {
         <div className="max-w-6xl mx-auto">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-[#252364] mb-10 text-center">
-            Top 5 Reasons <br className="md:hidden" /> to Study in the Japan
+            Top 5 Reasons <br className="md:hidden" /> to Study in the Finland
           </h2>
 
           {/* Grid */}
@@ -477,19 +477,19 @@ const StudyInJapan = () => {
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-6">
-            Cost of Studying in the Japan
+            Cost of Studying in the Finland
           </h2>
 
           {/* Paragraph */}
           <p className="text-gray-700 text-base leading-relaxed mb-4">
-            The costs of studying in the Japan can vary significantly, offering
-            a unique opportunity to shape your journey. Choosing a vibrant city
-            near the heart of the Japan may come with higher expenses, but it
-            also provides a dynamic environment for growth. Alternatively,
-            universities located further from the city center typically present
-            more affordable options. Your investment will depend on the specific
-            course you select, with research-based programs often reflecting the
-            depth of knowledge they provide.
+            The costs of studying in the Finland can vary significantly,
+            offering a unique opportunity to shape your journey. Choosing a
+            vibrant city near the heart of the Finland may come with higher
+            expenses, but it also provides a dynamic environment for growth.
+            Alternatively, universities located further from the city center
+            typically present more affordable options. Your investment will
+            depend on the specific course you select, with research-based
+            programs often reflecting the depth of knowledge they provide.
           </p>
           <p className="text-gray-700 text-base leading-relaxed mb-8">
             Generally, undergraduate programs cost around £12,000, with some
@@ -521,17 +521,17 @@ const StudyInJapan = () => {
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-6">
-            Cost of Living in the Japan
+            Cost of Living in the Finland
           </h2>
 
           {/* Paragraphs */}
           <div className="space-y-6 text-gray-700 text-base leading-relaxed">
             <p>
-              Bangladeshi students studying in the Japan may be concerned about
-              the cost of living, but with some thoughtful planning, it can be
-              made manageable. The total living expenses in the Japan vary based
-              on several key factors, including accommodation, food, and
-              transportation.
+              Bangladeshi students studying in the Finland may be concerned
+              about the cost of living, but with some thoughtful planning, it
+              can be made manageable. The total living expenses in the Finland
+              vary based on several key factors, including accommodation, food,
+              and transportation.
             </p>
 
             <p>
@@ -542,10 +542,10 @@ const StudyInJapan = () => {
             </p>
 
             <p>
-              Food costs in the Japan can also add up, but preparing home-cooked
-              meals is an excellent way to save money and enjoy familiar
-              flavors. Experimenting with new cuisines occasionally can be a
-              delightful way to enhance your culinary experience.
+              Food costs in the Finland can also add up, but preparing
+              home-cooked meals is an excellent way to save money and enjoy
+              familiar flavors. Experimenting with new cuisines occasionally can
+              be a delightful way to enhance your culinary experience.
             </p>
 
             <p>
@@ -559,7 +559,7 @@ const StudyInJapan = () => {
               Lastly, it’s wise to set aside a budget for miscellaneous expenses
               that may come up. By being proactive and creating a clear budget
               plan, you can navigate the financial landscape of living in the
-              Japan with confidence and ease.
+              Finland with confidence and ease.
             </p>
           </div>
         </div>
@@ -625,13 +625,13 @@ const StudyInJapan = () => {
       <section className="bg-[#f9f6f6] py-12 px-4 md:px-8 lg:px-16">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-4">
-            Admission Requirements for Studying in the Japan
+            Admission Requirements for Studying in the Finland
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            To gain admission to the Japan as a Bangladeshi student, start by
+            To gain admission to the Finland as a Bangladeshi student, start by
             gathering the necessary certifications and transcripts. If you’ve
             completed a bachelor’s degree, pursuing a master’s degree in the
-            Japan is an excellent choice. Ensure that you submit all relevant
+            Finland is an excellent choice. Ensure that you submit all relevant
             documents from your undergraduate studies.
           </p>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
@@ -654,7 +654,7 @@ const StudyInJapan = () => {
         <div className="bg-[#ffeae4] rounded-xl px-6 py-10 md:px-12 text-center max-w-6xl mx-auto shadow-md">
           <h2 className="text-xl md:text-2xl font-semibold text-black mb-6">
             You may be eligible for up to 50% Scholarship at a renowned
-            Institution in the Japan
+            Institution in the Finland
           </h2>
 
           {/* Logos Row */}
@@ -711,7 +711,7 @@ const StudyInJapan = () => {
             While English may not be your native language, submitting results
             from an English proficiency test is your first step toward achieving
             your academic dreams. The three most widely accepted tests for
-            university admissions in the Japan are IELTS, TOEFL, and PTE—each
+            university admissions in the Finland are IELTS, TOEFL, and PTE—each
             offering a path tailored to your strengths.
           </p>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
@@ -720,7 +720,7 @@ const StudyInJapan = () => {
             prefer PTE, strive for a score of at least 51. For the TOEFL, a
             score between 80 and 100 is typically required. Choose the language
             test that resonates with you, knowing that universities across the
-            Japan value your efforts.
+            Finland value your efforts.
           </p>
         </div>
       </div>
@@ -786,10 +786,10 @@ const StudyInJapan = () => {
             Visa Requirements
           </h3>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            The Japan visa process is relatively straightforward, and you can
-            expect to receive your visa within a few weeks. To apply for a Japan
-            student visa, you will need several key documents. First, obtain
-            your Confirmation of Acceptance for Studies (CAS) from your
+            The Finland visa process is relatively straightforward, and you can
+            expect to receive your visa within a few weeks. To apply for a
+            Finland student visa, you will need several key documents. First,
+            obtain your Confirmation of Acceptance for Studies (CAS) from your
             university, which is necessary to begin your application. You will
             also need to provide your passport.
           </p>
@@ -809,7 +809,7 @@ const StudyInJapan = () => {
       <div className="bg-white py-12 px-4 md:px-8 max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-6">
-          Intakes in the Japan
+          Intakes in the Finland
         </h2>
 
         {/* Paragraph Section */}
@@ -873,13 +873,13 @@ const StudyInJapan = () => {
       <div className="bg-white py-12 px-4 md:px-8 max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-6">
-          Post-Study Work Opportunities in the Japan
+          Post-Study Work Opportunities in the Finland
         </h2>
 
         {/* Description */}
         <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-4 mb-10">
           <p>
-            Many students from Bangladesh prefer studying in the Japan because
+            Many students from Bangladesh prefer studying in the Finland because
             the country offers a work visa for international graduates both
             during and after their studies. This visa allows them to work for
             two to three years after graduation, providing ample time to search
@@ -941,13 +941,13 @@ const StudyInJapan = () => {
       <div className="bg-white py-12 px-4 md:px-8 max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-6">
-          Scholarships in the Japan
+          Scholarships in the Finland
         </h2>
 
         {/* Content Paragraphs */}
         <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-4">
           <p>
-            The Japan offers several scholarship opportunities for Bangladeshi
+            The Finland offers several scholarship opportunities for Bangladeshi
             students, including government, university-specific, and regional
             options. To secure these scholarships, it is essential to start the
             application process early. Global Routeway Global can help you find
@@ -956,7 +956,7 @@ const StudyInJapan = () => {
           <p>
             Key scholarships include the Chevening Scholarship, which covers
             full tuition fees for international students, and the GREAT
-            Scholarships for master’s degree applicants. The Japan Alumni
+            Scholarships for master’s degree applicants. The Finland Alumni
             Scholarship provides approximately £8,000 per year to eligible
             students. Additionally, many universities offer merit-based
             scholarships that are awarded based on academic performance, with
@@ -971,7 +971,7 @@ const StudyInJapan = () => {
       <div className="px-4 sm:px-6 lg:px-8 py-10">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-[#1a1a1a]">
-            Japan Scholarships for International Students
+            Finland Scholarships for International Students
           </h2>
 
           <div className="overflow-x-auto bg-white shadow-md rounded-xl border">
@@ -1009,7 +1009,7 @@ const StudyInJapan = () => {
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl sm:text-3xl font-bold text-[#1a1a6f] text-center">
-            Top Courses to Study in the Japan
+            Top Courses to Study in the Finland
           </h2>
 
           {/* Description */}
@@ -1017,15 +1017,15 @@ const StudyInJapan = () => {
             <p>
               Bangladeshi students often choose research-related subjects, with
               law, medicine, and engineering being the most popular courses to
-              study in the Japan. However, there is a growing trend for students
-              to opt for AI-related subjects, which are becoming increasingly
-              popular due to the enhanced job opportunities they offer
-              graduates.
+              study in the Finland. However, there is a growing trend for
+              students to opt for AI-related subjects, which are becoming
+              increasingly popular due to the enhanced job opportunities they
+              offer graduates.
             </p>
             <p>
               In addition to these traditional fields, students are exploring
               new paths, such as business management, science, and education,
-              which are gaining popularity. Studying in the Japan offers more
+              which are gaining popularity. Studying in the Finland offers more
               than just a global education; it also provides access to
               career-focused programs that lead to real job opportunities, a
               strong return on investment (ROI), and long-term visa options for
@@ -1056,16 +1056,16 @@ const StudyInJapan = () => {
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl sm:text-3xl font-bold text-[#1a1a6f] mb-4">
-            Top Universities to Study in the Japan
+            Top Universities to Study in the Finland
           </h2>
 
           {/* Paragraph */}
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed text-justify">
-            The Japan has one of the largest selections of universities in the
+            The Finland has one of the largest selections of universities in the
             world, attracting Bangladeshi students who seek the best possible
             opportunities. The University of Cambridge and the University of
             Oxford are among the oldest and most prestigious institutions in the
-            world. Additionally, the Japan features specialized universities
+            world. Additionally, the Finland features specialized universities
             excelling in various fields. For instance, the University of Glasgow
             is renowned for its programs in law, humanities, and engineering.
             Swansea University and Cardiff University are recognized for their

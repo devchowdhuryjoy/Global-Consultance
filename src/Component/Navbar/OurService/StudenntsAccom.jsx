@@ -1,21 +1,18 @@
-import React from 'react'
+import React from "react";
 import { FaClock } from "react-icons/fa";
 
 const StudenntsAccom = () => {
-
-    
-
-const countries = [
-  "UK",
-  "Ireland",
-  "Australia",
-  "Canada",
-  "New Zealand",
-  "USA",
-  "France",
-  "Germany",
-  "Spain",
-];
+  const countries = [
+    "UK",
+    "Ireland",
+    "Australia",
+    "Canada",
+    "New Zealand",
+    "USA",
+    "France",
+    "Germany",
+    "Spain",
+  ];
 
   return (
     <div className="bg-[#f6f4ff] py-10 px-4 sm:px-6 lg:px-12">
@@ -39,7 +36,10 @@ const countries = [
             How Much Does it Cost to Study Abroad in 2024?
           </h3>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
-            Summary | IELTS is a globally recognized English proficiency test for study, work, and migration. It assesses Listening, Reading, Writing, and Speaking through Academic and General Training formats. A high score boosts […]
+            Summary | IELTS is a globally recognized English proficiency test
+            for study, work, and migration. It assesses Listening, Reading,
+            Writing, and Speaking through Academic and General Training formats.
+            A high score boosts […]
           </p>
           <div className="flex items-center text-gray-500 text-sm gap-2">
             <FaClock />
@@ -57,7 +57,7 @@ const countries = [
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default StudenntsAccom
+export default StudenntsAccom;

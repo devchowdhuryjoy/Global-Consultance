@@ -95,11 +95,15 @@ import ConsultationModal from "../../Modal/ConsultationModal";
 
 const destinations = [
   { title: "Study in UK", image: "/src/assets/images/Uk.jpg", path: "/uk" },
-  { title: "Study in Canada", image: "/study4.jpg", path: "/canada" },
-  { title: "Study in Germany", image: "/study3.png", path: "/germany" },
   { title: "Study in USA", image: "/study6.jpg", path: "/usa" },
-  { title: "Study in Ireland", image: "/study4.jpg", path: "/ireland" },
-  { title: "Study in New Zealand", image: "/study3.png", path: "/new-zealand" },
+  { title: "Study in Canada", image: "/study4.jpg", path: "/canada" },
+  { title: "Study in Australia", image: "/study3.png", path: "/australia" },
+  {
+    title: "Study in Sweden",
+    image: "/src/assets/images/Sweden.jpg",
+    path: "/new-zealand",
+  },
+  { title: "Study in Europe", image: "/study3.png", path: "/europe" },
 ];
 
 const Arrow = ({ className, style, onClick, icon }) => (

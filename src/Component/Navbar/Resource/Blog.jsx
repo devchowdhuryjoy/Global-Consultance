@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { FaUser, FaCalendarAlt, FaTag } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Blog = () => {
+  const navigate = useNavigate();
+
   // 2nd section
   const blogData = [
     {
+      slug: "cost-to-study-abroad-2024",
       image: "/study6.jpg", // Update with your actual image path
       title: "How Much Does it Cost to Study Abroad in 2024?",
       excerpt:
@@ -14,6 +18,7 @@ const Blog = () => {
       tag: "IELTS",
     },
     {
+      slug: "visa-requirements-uk",
       image: "/study1.jpg",
       title: "Visa Requirements for Studying in UK",
       excerpt:
@@ -23,6 +28,7 @@ const Blog = () => {
       tag: "IELTS",
     },
     {
+      slug: "visa-requirements-rejected",
       image: "/study4.jpg",
       title: "Why Your Partner’s Visa Application May Be Rejected?",
       excerpt:
@@ -32,7 +38,8 @@ const Blog = () => {
       tag: "IELTS",
     },
     {
-      image: "/studyuk.jpg",
+      slug: "visa-requirements-uk",
+      image: "/study6.jpg",
       title: "Visa Requirements for Studying in UK",
       excerpt:
         "SummaryIELTS is a globally recognized English proficiency test for study, work, and migration. It assesses Listening, Reading, Writing, and Speaking through Academic and General Training formats. A...",
@@ -41,7 +48,8 @@ const Blog = () => {
       tag: "IELTS",
     },
     {
-      image: "/studyuk.jpg",
+      slug: "visa-requirements-rejected",
+      image: "/study6.jpg",
       title: "Why Your Partner’s Visa Application May Be Rejected?",
       excerpt:
         "SummaryIELTS is a globally recognized English proficiency test for study, work, and migration. It assesses Listening, Reading, Writing, and Speaking through Academic and General Training formats. A...",
@@ -51,7 +59,7 @@ const Blog = () => {
     },
   ];
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 3;
+  const postsPerPage = 10;
 
   const totalPages = Math.ceil(blogData.length / postsPerPage);
 
@@ -71,11 +79,11 @@ const Blog = () => {
               Blogs
             </h2>
             <p className="text-base sm:text-lg text-gray-800 leading-relaxed">
-              Welcome to Global Routeway Bangladesh blog—your trusted guide for everything
-              you need to know about studying and living Down Under. From expert
-              insights on universities and visas to inspiring student success
-              stories, we’re here to help you take the next step toward your
-              Australian dream.
+              Welcome to Global Routeway Bangladesh blog—your trusted guide for
+              everything you need to know about studying and living Down Under.
+              From expert insights on universities and visas to inspiring
+              student success stories, we’re here to help you take the next step
+              toward your Australian dream.
             </p>
           </div>
 
@@ -141,7 +149,13 @@ const Blog = () => {
                   {blog.excerpt}
                 </p>
 
-                <button className="hover:bg-[#252364] bg-[#f16f22] text-white py-2 px-5 rounded-md self-start transition">
+                <button
+                  onClick={() => {
+                    window.scrollTo(0, 0); // Scroll top করে দিচ্ছে
+                    navigate(`/blog/${blog.slug}`);
+                  }}
+                  className="hover:bg-[#252364] bg-[#f16f22] text-white py-2 px-5 rounded-md self-start transition"
+                >
                   Read More
                 </button>
               </div>

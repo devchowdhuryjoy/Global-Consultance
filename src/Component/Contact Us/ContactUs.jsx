@@ -6,7 +6,6 @@ import SuccessStories from "../SuccessStories/SuccessStories";
 const countries = ["Bangladesh", "Australia", "USA", "UK"];
 
 const ContactUs = () => {
-
   const [selectedCountry, setSelectedCountry] = useState("Bangladesh");
 
   return (
@@ -262,10 +261,11 @@ const ContactUs = () => {
               <button
                 key={country}
                 onClick={() => setSelectedCountry(country)}
-                className={`px-5 py-2 rounded-full border transition-all ${selectedCountry === country
-                  ? "bg-[#f16f22] text-white shadow-md"
-                  : "bg-white text-gray-700 border-gray-300 hover:bg-indigo-50"
-                  }`}
+                className={`px-5 py-2 rounded-full border transition-all ${
+                  selectedCountry === country
+                    ? "bg-[#f16f22] text-white shadow-md"
+                    : "bg-white text-gray-700 border-gray-300 hover:bg-indigo-50"
+                }`}
               >
                 {country}
               </button>
@@ -278,9 +278,9 @@ const ContactUs = () => {
                 Mohammadpur
               </h3>
               <p className="text-sm text-gray-700 mb-2">
-                <span className="inline-block text-[#f16f22] mr-1">📍</span>
-                N Islam Tower, Block-F, Ring Road, Shamoly, Mohammadpur,
-                Dhaka 1207, Bangladesh
+                <span className="inline-block text-[#f16f22] mr-1">📍</span>N
+                Islam Tower, Block-F, Ring Road, Shamoly, Mohammadpur, Dhaka
+                1207, Bangladesh
               </p>
               <p className="text-sm text-gray-700 mb-4">
                 <span className="inline-block text-[#f16f22] mr-1">📞</span>

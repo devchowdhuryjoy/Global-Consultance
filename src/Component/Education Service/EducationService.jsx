@@ -88,7 +88,6 @@ const EducationService = () => {
             <li>Contact Us</li>
           </ul>
         </div>
-
       </div>
     </div>
   );

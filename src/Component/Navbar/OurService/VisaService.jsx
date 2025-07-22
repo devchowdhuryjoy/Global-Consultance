@@ -422,7 +422,7 @@ const VisaService = () => {
                 <option value="UK">UK</option>
                 <option value="USA">USA</option>
                 <option value="Canada">Canada</option>
-                <option value="Hungary">Hungary</option>
+                <option value="Australia">Australia</option>
                 <option value="Denmark">Denmark</option>
                 <option value="Finland">Finland</option>
                 <option value="Sweden">Sweden</option>

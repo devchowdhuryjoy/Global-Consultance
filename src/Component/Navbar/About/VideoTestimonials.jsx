@@ -7,14 +7,12 @@ import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 
-
 const VideoTestimonials = () => {
   // const rawVideos = [
   //   { url: "https://www.youtube.com/shorts/imoKV4RqMTM" },
   //   { url: "https://www.youtube.com/shorts/S3eF3HfpEYU" },
   //   { url: "https://www.youtube.com/shorts/aby-fBeq_Y0" },
   // ];
-
 
   // const videos = rawVideos.map((video) => {
   //   const videoId = video.url.split("/").pop();
@@ -26,29 +24,28 @@ const VideoTestimonials = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-  fetch(`${BASE_URL}videos`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      const embeddedVideos = data.map((video) => {
-        const id = video.url.includes("shorts")
-          ? video.url.split("/").pop()
-          : video.url.split("v=")[1];
-        return {
-          ...video,
-          url: `https://www.youtube.com/embed/${id}`,
-        };
-      });
-      console.log("Embedded URLs:", embeddedVideos);
-      setVideos(embeddedVideos);
+    fetch(`${BASE_URL}videos`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
-    .catch((err) => console.error("Error fetching videos:", err));
-}, []);
-
+      .then((res) => res.json())
+      .then((data) => {
+        const embeddedVideos = data.map((video) => {
+          const id = video.url.includes("shorts")
+            ? video.url.split("/").pop()
+            : video.url.split("v=")[1];
+          return {
+            ...video,
+            url: `https://www.youtube.com/embed/${id}`,
+          };
+        });
+        console.log("Embedded URLs:", embeddedVideos);
+        setVideos(embeddedVideos);
+      })
+      .catch((err) => console.error("Error fetching videos:", err));
+  }, []);
 
   const reviews = [
     {
@@ -83,7 +80,6 @@ const VideoTestimonials = () => {
     { name: "Australia", offices: "4 Offices", top: "75%", left: "44%" },
   ];
 
-
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -115,7 +111,9 @@ const VideoTestimonials = () => {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
-        phone: formData.phone.startsWith("+880") ? formData.phone : "+880" + formData.phone,
+        phone: formData.phone.startsWith("+880")
+          ? formData.phone
+          : "+880" + formData.phone,
         nearestOffice: formData.nearestOffice,
         preferredDestination: formData.studyDestination,
         testStatus: formData.englishTestStatus,
@@ -163,8 +161,6 @@ const VideoTestimonials = () => {
       setLoading(false);
     }
   };
-
-
 
   return (
     <>
@@ -252,7 +248,6 @@ const VideoTestimonials = () => {
                 allowFullScreen
                 className="w-full h-64 md:h-80"
               />
-
             </div>
           ))}
         </div>
@@ -442,7 +437,7 @@ const VideoTestimonials = () => {
                 <option value="UK">UK</option>
                 <option value="USA">USA</option>
                 <option value="Canada">Canada</option>
-                <option value="Hungary">Hungary</option>
+                <option value="Australia">Australia</option>
                 <option value="Denmark">Denmark</option>
                 <option value="Finland">Finland</option>
                 <option value="Sweden">Sweden</option>
@@ -459,10 +454,18 @@ const VideoTestimonials = () => {
                 required
               >
                 <option value="">English Language Test Status</option>
-                <option value="I have the Scores available">I have the Scores available</option>
-                <option value="My exams are scheduled">My exams are scheduled</option>
-                <option value="I have not appeared for any exams">I have not appeared for any exams</option>
-                <option value="I am planning to reappear soon">I am planning to reappear soon</option>
+                <option value="I have the Scores available">
+                  I have the Scores available
+                </option>
+                <option value="My exams are scheduled">
+                  My exams are scheduled
+                </option>
+                <option value="I have not appeared for any exams">
+                  I have not appeared for any exams
+                </option>
+                <option value="I am planning to reappear soon">
+                  I am planning to reappear soon
+                </option>
               </select>
 
               <select
@@ -474,9 +477,15 @@ const VideoTestimonials = () => {
               >
                 <option value="">How do you plan to fund your studies</option>
                 <option value="I have my own funds">I have my own funds</option>
-                <option value="I am looking for education loans">I am looking for education loans</option>
-                <option value="My parents or siblings will fund my studies">My parents or siblings will fund my studies</option>
-                <option value="I don't have Source of funds">I don't have Source of funds</option>
+                <option value="I am looking for education loans">
+                  I am looking for education loans
+                </option>
+                <option value="My parents or siblings will fund my studies">
+                  My parents or siblings will fund my studies
+                </option>
+                <option value="I don't have Source of funds">
+                  I don't have Source of funds
+                </option>
               </select>
 
               <div className="flex items-start gap-2 text-sm">
@@ -490,8 +499,13 @@ const VideoTestimonials = () => {
                 />
                 <p>
                   By clicking, you agree to our{" "}
-                  <a href="#" className="text-blue-600 underline">Privacy Policy</a> and{" "}
-                  <a href="#" className="text-blue-600 underline">Terms & Conditions</a>
+                  <a href="#" className="text-blue-600 underline">
+                    Privacy Policy
+                  </a>{" "}
+                  and{" "}
+                  <a href="#" className="text-blue-600 underline">
+                    Terms & Conditions
+                  </a>
                 </p>
               </div>
 
@@ -499,14 +513,14 @@ const VideoTestimonials = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`mt-4 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${loading ? "opacity-50 cursor-not-allowed" : ""
-                    }`}
+                  className={`mt-4 bg-[#f16f22] hover:bg-[#252364] text-white font-semibold px-6 py-2 rounded-full transition duration-300 ${
+                    loading ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
                 >
                   {loading ? "Submitting..." : "Submit"}
                 </button>
               </div>
             </form>
-
           </div>
         </div>
       </div>

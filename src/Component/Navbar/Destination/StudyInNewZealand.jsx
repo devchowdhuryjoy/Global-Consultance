@@ -37,28 +37,28 @@ const StudyInNewZealand = () => {
     {
       title: "600,000+",
       description:
-        "International students opting for higher studies in the NewZealand  (20% rise from 2021)",
+        "International students opting for higher studies in the Sweden  (20% rise from 2021)",
       bg: "bg-blue-100",
       emoji: "🎓",
     },
     {
       title: "500,000 + Visas",
       description:
-        "In June 2023, the NewZealand  granted nearly 500,000 sponsored study visas (23% increase from 2022)",
+        "In June 2023, the Sweden  granted nearly 500,000 sponsored study visas (23% increase from 2022)",
       bg: "bg-rose-100",
       emoji: "🛂",
     },
     {
       title: "Global Recognition",
       description:
-        "NewZealand  degrees and qualifications are recognized and respected internationally.",
+        "Sweden  degrees and qualifications are recognized and respected internationally.",
       bg: "bg-green-100",
       emoji: "🌍",
     },
     {
       title: "Up to 20 Hours",
       description:
-        "International students in the NewZealand  are allowed to work part-time up to 20 hours per week while studying, and full-time during semester breaks.",
+        "International students in the Sweden  are allowed to work part-time up to 20 hours per week while studying, and full-time during semester breaks.",
       bg: "bg-neutral-100",
       emoji: "⏰",
     },
@@ -143,7 +143,7 @@ const StudyInNewZealand = () => {
   const scholarships = [
     {
       name: "British Chevening",
-      description: "NewZealand  Government’s international scholarship",
+      description: "Sweden  Government’s international scholarship",
       eligibility: "Postgraduate students with leadership potential",
       amount: "£20,000",
     },
@@ -161,7 +161,7 @@ const StudyInNewZealand = () => {
     },
     {
       name: "Great Scholarships",
-      description: "For various NewZealand  universities",
+      description: "For various Sweden  universities",
       eligibility: "Postgraduate students from selected countries",
       amount: "£10,000",
     },
@@ -172,8 +172,8 @@ const StudyInNewZealand = () => {
       amount: "£5,000",
     },
     {
-      name: "NewZealand  Alumni Scholarship",
-      description: "For students with family alumni in the NewZealand ",
+      name: "Sweden  Alumni Scholarship",
+      description: "For students with family alumni in the Sweden ",
       eligibility: "Undergraduate & Postgraduate students",
       amount: "£8,000",
     },
@@ -280,28 +280,28 @@ const StudyInNewZealand = () => {
   const faqData = [
     {
       question:
-        "What are the academic and language requirements for Bangladeshi students applying to NewZealand  universities?",
+        "What are the academic and language requirements for Bangladeshi students applying to Sweden  universities?",
       answer:
-        "The academic requirements for Bangladeshi students applying to NewZealand  universities depend on the subjects you are applying to. For the English language requirements, you will need to take the IELTS (with a score of 6.0 to 7.5), TOEFL (with a score of 80 to 100), or PTE (with a score of 51 to 67).",
+        "The academic requirements for Bangladeshi students applying to Sweden  universities depend on the subjects you are applying to. For the English language requirements, you will need to take the IELTS (with a score of 6.0 to 7.5), TOEFL (with a score of 80 to 100), or PTE (with a score of 51 to 67).",
     },
     {
       question:
-        "What is the cost of studying and living in the NewZealand  for a student from Bangladesh?",
+        "What is the cost of studying and living in the Sweden  for a student from Bangladesh?",
       answer: "",
     },
     {
       question:
-        "What visa requirements do Bangladeshi students need to fulfill to study in the NewZealand ?",
+        "What visa requirements do Bangladeshi students need to fulfill to study in the Sweden ?",
       answer: "",
     },
     {
       question:
-        "Are there scholarships specifically available for Bangladeshi students in the NewZealand ?",
+        "Are there scholarships specifically available for Bangladeshi students in the Sweden ?",
       answer: "",
     },
     {
       question:
-        "What are the post-study work opportunities for Bangladeshi students after graduation in the NewZealand ?",
+        "What are the post-study work opportunities for Bangladeshi students after graduation in the Sweden ?",
       answer: "",
     },
   ];
@@ -316,7 +316,7 @@ const StudyInNewZealand = () => {
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#252364]">
-              Study in the NewZealand <br />
+              Study in the Sweden <br />
               <span className="text-black">with Expert Guidance</span>
             </h2>
             <p className="text-gray-700 mt-4 text-base md:text-lg">
@@ -339,7 +339,7 @@ const StudyInNewZealand = () => {
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
                 src="/src/assets/images/Destination.jpg" // Replace with your actual image path
-                alt="Study in the NewZealand "
+                alt="Study in the Sweden "
                 className="w-full object-cover"
               />
             </div>
@@ -374,7 +374,7 @@ const StudyInNewZealand = () => {
 
             {/* Heading */}
             <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-4">
-              Why Study in the NewZealand ?
+              Why Study in the Sweden ?
             </h2>
 
             {/* Paragraphs */}
@@ -383,19 +383,18 @@ const StudyInNewZealand = () => {
               high-quality education, attracting a significant number of
               international students each year. Its universities have
               established a strong reputation for nurturing academic talent. One
-              of the notable advantages of studying in the NewZealand is the
-              wide range of degree programs available, complemented by
-              relatively affordable tuition fees compared to many other
-              countries.
+              of the notable advantages of studying in the Sweden is the wide
+              range of degree programs available, complemented by relatively
+              affordable tuition fees compared to many other countries.
             </p>
             <p className="text-gray-600 text-base leading-relaxed">
-              Moreover, the NewZealand offers a post-study visa option, enabling
+              Moreover, the Sweden offers a post-study visa option, enabling
               graduates to seek employment immediately after finishing their
               courses. Once students secure a relevant job, they can apply for
               residency and become a citizen over time. The visa application and
               university admission processes are generally straightforward,
-              making the NewZealand an attractive destination for those looking
-              to further their education abroad.
+              making the Sweden an attractive destination for those looking to
+              further their education abroad.
             </p>
           </div>
 
@@ -424,8 +423,7 @@ const StudyInNewZealand = () => {
         <div className="max-w-6xl mx-auto">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-[#252364] mb-10 text-center">
-            Top 5 Reasons <br className="md:hidden" /> to Study in the
-            NewZealand
+            Top 5 Reasons <br className="md:hidden" /> to Study in the Sweden
           </h2>
 
           {/* Grid */}
@@ -480,19 +478,19 @@ const StudyInNewZealand = () => {
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-6">
-            Cost of Studying in the NewZealand
+            Cost of Studying in the Sweden
           </h2>
 
           {/* Paragraph */}
           <p className="text-gray-700 text-base leading-relaxed mb-4">
-            The costs of studying in the NewZealand can vary significantly,
-            offering a unique opportunity to shape your journey. Choosing a
-            vibrant city near the heart of the NewZealand may come with higher
-            expenses, but it also provides a dynamic environment for growth.
-            Alternatively, universities located further from the city center
-            typically present more affordable options. Your investment will
-            depend on the specific course you select, with research-based
-            programs often reflecting the depth of knowledge they provide.
+            The costs of studying in the Sweden can vary significantly, offering
+            a unique opportunity to shape your journey. Choosing a vibrant city
+            near the heart of the Sweden may come with higher expenses, but it
+            also provides a dynamic environment for growth. Alternatively,
+            universities located further from the city center typically present
+            more affordable options. Your investment will depend on the specific
+            course you select, with research-based programs often reflecting the
+            depth of knowledge they provide.
           </p>
           <p className="text-gray-700 text-base leading-relaxed mb-8">
             Generally, undergraduate programs cost around £12,000, with some
@@ -524,17 +522,17 @@ const StudyInNewZealand = () => {
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-6">
-            Cost of Living in the NewZealand
+            Cost of Living in the Sweden
           </h2>
 
           {/* Paragraphs */}
           <div className="space-y-6 text-gray-700 text-base leading-relaxed">
             <p>
-              Bangladeshi students studying in the NewZealand may be concerned
-              about the cost of living, but with some thoughtful planning, it
-              can be made manageable. The total living expenses in the
-              NewZealand vary based on several key factors, including
-              accommodation, food, and transportation.
+              Bangladeshi students studying in the Sweden may be concerned about
+              the cost of living, but with some thoughtful planning, it can be
+              made manageable. The total living expenses in the Sweden vary
+              based on several key factors, including accommodation, food, and
+              transportation.
             </p>
 
             <p>
@@ -545,7 +543,7 @@ const StudyInNewZealand = () => {
             </p>
 
             <p>
-              Food costs in the NewZealand can also add up, but preparing
+              Food costs in the Sweden can also add up, but preparing
               home-cooked meals is an excellent way to save money and enjoy
               familiar flavors. Experimenting with new cuisines occasionally can
               be a delightful way to enhance your culinary experience.
@@ -562,7 +560,7 @@ const StudyInNewZealand = () => {
               Lastly, it’s wise to set aside a budget for miscellaneous expenses
               that may come up. By being proactive and creating a clear budget
               plan, you can navigate the financial landscape of living in the
-              NewZealand with confidence and ease.
+              Sweden with confidence and ease.
             </p>
           </div>
         </div>
@@ -628,14 +626,14 @@ const StudyInNewZealand = () => {
       <section className="bg-[#f9f6f6] py-12 px-4 md:px-8 lg:px-16">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-4">
-            Admission Requirements for Studying in the NewZealand
+            Admission Requirements for Studying in the Sweden
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            To gain admission to the NewZealand as a Bangladeshi student, start
-            by gathering the necessary certifications and transcripts. If you’ve
+            To gain admission to the Sweden as a Bangladeshi student, start by
+            gathering the necessary certifications and transcripts. If you’ve
             completed a bachelor’s degree, pursuing a master’s degree in the
-            NewZealand is an excellent choice. Ensure that you submit all
-            relevant documents from your undergraduate studies.
+            Sweden is an excellent choice. Ensure that you submit all relevant
+            documents from your undergraduate studies.
           </p>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
             You will likely need to provide letters of recommendation from
@@ -657,7 +655,7 @@ const StudyInNewZealand = () => {
         <div className="bg-[#ffeae4] rounded-xl px-6 py-10 md:px-12 text-center max-w-6xl mx-auto shadow-md">
           <h2 className="text-xl md:text-2xl font-semibold text-black mb-6">
             You may be eligible for up to 50% Scholarship at a renowned
-            Institution in the NewZealand
+            Institution in the Sweden
           </h2>
 
           {/* Logos Row */}
@@ -714,8 +712,8 @@ const StudyInNewZealand = () => {
             While English may not be your native language, submitting results
             from an English proficiency test is your first step toward achieving
             your academic dreams. The three most widely accepted tests for
-            university admissions in the NewZealand are IELTS, TOEFL, and
-            PTE—each offering a path tailored to your strengths.
+            university admissions in the Sweden are IELTS, TOEFL, and PTE—each
+            offering a path tailored to your strengths.
           </p>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
             For the IELTS, aim for a minimum overall score of 6.0, though
@@ -723,7 +721,7 @@ const StudyInNewZealand = () => {
             prefer PTE, strive for a score of at least 51. For the TOEFL, a
             score between 80 and 100 is typically required. Choose the language
             test that resonates with you, knowing that universities across the
-            NewZealand value your efforts.
+            Sweden value your efforts.
           </p>
         </div>
       </div>
@@ -789,9 +787,9 @@ const StudyInNewZealand = () => {
             Visa Requirements
           </h3>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
-            The NewZealand visa process is relatively straightforward, and you
-            can expect to receive your visa within a few weeks. To apply for a
-            NewZealand student visa, you will need several key documents. First,
+            The Sweden visa process is relatively straightforward, and you can
+            expect to receive your visa within a few weeks. To apply for a
+            Sweden student visa, you will need several key documents. First,
             obtain your Confirmation of Acceptance for Studies (CAS) from your
             university, which is necessary to begin your application. You will
             also need to provide your passport.
@@ -812,7 +810,7 @@ const StudyInNewZealand = () => {
       <div className="bg-white py-12 px-4 md:px-8 max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-6">
-          Intakes in the NewZealand
+          Intakes in the Sweden
         </h2>
 
         {/* Paragraph Section */}
@@ -876,17 +874,17 @@ const StudyInNewZealand = () => {
       <div className="bg-white py-12 px-4 md:px-8 max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-6">
-          Post-Study Work Opportunities in the NewZealand
+          Post-Study Work Opportunities in the Sweden
         </h2>
 
         {/* Description */}
         <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-4 mb-10">
           <p>
-            Many students from Bangladesh prefer studying in the NewZealand
-            because the country offers a work visa for international graduates
-            both during and after their studies. This visa allows them to work
-            for two to three years after graduation, providing ample time to
-            search for suitable job opportunities.
+            Many students from Bangladesh prefer studying in the Sweden because
+            the country offers a work visa for international graduates both
+            during and after their studies. This visa allows them to work for
+            two to three years after graduation, providing ample time to search
+            for suitable job opportunities.
           </p>
           <p>
             This period is especially beneficial as it enables students to find
@@ -944,22 +942,22 @@ const StudyInNewZealand = () => {
       <div className="bg-white py-12 px-4 md:px-8 max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-6">
-          Scholarships in the NewZealand
+          Scholarships in the Sweden
         </h2>
 
         {/* Content Paragraphs */}
         <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-4">
           <p>
-            The NewZealand offers several scholarship opportunities for
-            Bangladeshi students, including government, university-specific, and
-            regional options. To secure these scholarships, it is essential to
-            start the application process early. Global Routeway Global can help
-            you find the perfect scholarship that suits your needs.
+            The Sweden offers several scholarship opportunities for Bangladeshi
+            students, including government, university-specific, and regional
+            options. To secure these scholarships, it is essential to start the
+            application process early. Global Routeway Global can help you find
+            the perfect scholarship that suits your needs.
           </p>
           <p>
             Key scholarships include the Chevening Scholarship, which covers
             full tuition fees for international students, and the GREAT
-            Scholarships for master’s degree applicants. The NewZealand Alumni
+            Scholarships for master’s degree applicants. The Sweden Alumni
             Scholarship provides approximately £8,000 per year to eligible
             students. Additionally, many universities offer merit-based
             scholarships that are awarded based on academic performance, with
@@ -974,7 +972,7 @@ const StudyInNewZealand = () => {
       <div className="px-4 sm:px-6 lg:px-8 py-10">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-[#1a1a1a]">
-            NewZealand Scholarships for International Students
+            Sweden Scholarships for International Students
           </h2>
 
           <div className="overflow-x-auto bg-white shadow-md rounded-xl border">
@@ -1012,7 +1010,7 @@ const StudyInNewZealand = () => {
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl sm:text-3xl font-bold text-[#1a1a6f] text-center">
-            Top Courses to Study in the NewZealand
+            Top Courses to Study in the Sweden
           </h2>
 
           {/* Description */}
@@ -1020,7 +1018,7 @@ const StudyInNewZealand = () => {
             <p>
               Bangladeshi students often choose research-related subjects, with
               law, medicine, and engineering being the most popular courses to
-              study in the NewZealand . However, there is a growing trend for
+              study in the Sweden . However, there is a growing trend for
               students to opt for AI-related subjects, which are becoming
               increasingly popular due to the enhanced job opportunities they
               offer graduates.
@@ -1028,8 +1026,8 @@ const StudyInNewZealand = () => {
             <p>
               In addition to these traditional fields, students are exploring
               new paths, such as business management, science, and education,
-              which are gaining popularity. Studying in the NewZealand offers
-              more than just a global education; it also provides access to
+              which are gaining popularity. Studying in the Sweden offers more
+              than just a global education; it also provides access to
               career-focused programs that lead to real job opportunities, a
               strong return on investment (ROI), and long-term visa options for
               Bangladeshi students. Furthermore, each university offers various
@@ -1059,25 +1057,25 @@ const StudyInNewZealand = () => {
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl sm:text-3xl font-bold text-[#1a1a6f] mb-4">
-            Top Universities to Study in the NewZealand
+            Top Universities to Study in the Sweden
           </h2>
 
           {/* Paragraph */}
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed text-justify">
-            The NewZealand has one of the largest selections of universities in
-            the world, attracting Bangladeshi students who seek the best
-            possible opportunities. The University of Cambridge and the
-            University of Oxford are among the oldest and most prestigious
-            institutions in the world. Additionally, the NewZealand features
-            specialized universities excelling in various fields. For instance,
-            the University of Glasgow is renowned for its programs in law,
-            humanities, and engineering. Swansea University and Cardiff
-            University are recognized for their strong engineering degrees,
-            while Brunel University is well-known for its design programs. For
-            those interested in aerospace engineering, Cranfield University is a
-            top choice. When selecting a university, it is essential to choose
-            one with a strong reputation and good placement opportunities to
-            maximize your educational experience.
+            The Sweden has one of the largest selections of universities in the
+            world, attracting Bangladeshi students who seek the best possible
+            opportunities. The University of Cambridge and the University of
+            Oxford are among the oldest and most prestigious institutions in the
+            world. Additionally, the Sweden features specialized universities
+            excelling in various fields. For instance, the University of Glasgow
+            is renowned for its programs in law, humanities, and engineering.
+            Swansea University and Cardiff University are recognized for their
+            strong engineering degrees, while Brunel University is well-known
+            for its design programs. For those interested in aerospace
+            engineering, Cranfield University is a top choice. When selecting a
+            university, it is essential to choose one with a strong reputation
+            and good placement opportunities to maximize your educational
+            experience.
           </p>
         </div>
       </div>
