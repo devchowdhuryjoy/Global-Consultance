@@ -94,7 +94,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ConsultationModal from "../../Modal/ConsultationModal";
 
 const destinations = [
-  { title: "Study in UK", image: "/src/assets/images/Uk.jpg", path: "/uk" },
+  { title: "Study in UK", image: "/Uk.jpg", path: "/uk" },
   { title: "Study in USA", image: "/study6.jpg", path: "/usa" },
   { title: "Study in Canada", image: "/study4.jpg", path: "/canada" },
   { title: "Study in Australia", image: "/study3.png", path: "/australia" },

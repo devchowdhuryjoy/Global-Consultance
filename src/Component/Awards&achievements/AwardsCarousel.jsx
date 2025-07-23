@@ -7,27 +7,27 @@ import ConsultationModal from "../../Modal/ConsultationModal";
 
 const awards = [
   {
-    img: "Award3.jpg",
+    img: "certificate.jpg",
     title: "Double Platinum Eagle Award (2023)",
     subtitle: "Awarded by La Trobe University",
   },
   {
-    img: "award4.png",
+    img: "certificate1.jpg",
     title: "Best Conversion & Emerging Partner Award (2025)",
     subtitle: "Awarded by UWE Bristol",
   },
   {
-    img: "award2.jpg",
+    img: "certificate2.jpg",
     title: "Outstanding Agency Performance (South Asia Region)",
     subtitle: "Awarded by Kaplan Business School",
   },
   {
-    img: "award1.jpg",
+    img: "certificate.jpg",
     title: "Partner of the Year (2024) Diamond Category",
     subtitle: "Awarded by the University of Adelaide",
   },
   {
-    img: "award4.png",
+    img: "certificate1.jpg",
     title: "2024 Outstanding Achievement Partner (2024)",
     subtitle: "Awarded by Western Sydney University",
   },
@@ -45,7 +45,7 @@ const AwardsCarousel = () => {
   return (
     <div className="relative py-12 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
       <h2 className="text-3xl font-bold mb-8">
-        Awards <span className="text-gray-700">&</span> achievements
+        Collaboration <span className="text-gray-700"></span>
       </h2>
 
       {/* Custom Navigation Buttons */}

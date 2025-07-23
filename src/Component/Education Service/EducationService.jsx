@@ -27,7 +27,7 @@ const EducationService = () => {
           <ul className="space-y-1">
             <li>Admission Support</li>
             <li>Visa Services</li>
-            <li>Health Insurance</li>
+            {/* <li>Health Insurance</li> */}
             <li>Student Accommodation</li>
           </ul>
         </div>
@@ -36,14 +36,16 @@ const EducationService = () => {
         <div>
           <h4 className="text-black font-semibold mb-2">Study Destinations</h4>
           <ul className="space-y-1">
-            <li>Australia</li>
             <li>UK</li>
-            <li>Canada</li>
-            <li>Germany</li>
-            <li>Malaysia</li>
-            <li>Japan</li>
-            <li>Europe</li>
             <li>USA</li>
+            <li>Australia</li>
+            <li>Canada</li>
+            <li>Denmark</li>
+            <li>Finland</li>
+            <li>Sweden</li>
+            <li>Dubai</li>
+            <li>Malaysia</li>
+            <li>Europe</li>
           </ul>
         </div>
 
@@ -58,22 +60,6 @@ const EducationService = () => {
             <li>Food and Hospitality Management</li>
           </ul>
         </div>
-
-        {/* Column 5 - Scholarships */}
-        {/* <div>
-          <h4 className="text-black font-semibold mb-2">Scholarships</h4>
-          <ul className="space-y-1">
-            <li>Australia Scholarships</li>
-            <li>UK Scholarships</li>
-          </ul>
-
-          <h4 className="text-black font-semibold mt-4 mb-2">Resources</h4>
-          <ul className="space-y-1">
-            <li>Blogs</li>
-            <li>Upcoming Events</li>
-            <li>Careers</li>
-          </ul>
-        </div> */}
 
         {/* Column 6 - About Global Routways */}
         <div>

@@ -212,60 +212,36 @@ const StudyInUsa = () => {
   //16th Section
   const universities = [
     {
-      name: "University for the Creative Arts (UCA)",
-      logo: "src/assets/logo.png",
+      // name: "University for the Creative Arts (UCA)",
+      logo: "src/assets/Harvard.png",
     },
     {
-      name: "Canterbury Christ Church University",
-      logo: "src/assets/logo.png",
+      // name: "Canterbury Christ Church University",
+      logo: "src/assets/call.png",
     },
     {
-      name: "Cardiff Metropolitan University",
-      logo: "src/assets/logo.png",
+      // name: "Cardiff Metropolitan University",
+      logo: "src/assets/cikago.png",
     },
     {
-      name: "De Montfort University",
-      logo: "src/assets/logo.png",
+      // name: "De Montfort University",
+      logo: "src/assets/Stand.png",
     },
     {
-      name: "Leeds Arts University",
-      logo: "src/assets/logo.png",
+      // name: "Leeds Arts University",
+      logo: "src/assets/Cornal.png",
     },
     {
-      name: "University of Plymouth",
-      logo: "src/assets/logo.png",
+      // name: "University of Plymouth",
+      logo: "src/assets/mas.png",
     },
     {
-      name: "University of Hertfordshire",
-      logo: "src/assets/logo.png",
+      // name: "University of Hertfordshire",
+      logo: "src/assets/yale.png",
     },
     {
-      name: "University of Northampton",
-      logo: "src/assets/logo.png",
-    },
-    {
-      name: "Brunel University",
-      logo: "src/assets/logo.png",
-    },
-    {
-      name: "University of the West of England",
-      logo: "src/assets/logo.png",
-    },
-    {
-      name: "Swansea University",
-      logo: "src/assets/logo.png",
-    },
-    {
-      name: "Keele University",
-      logo: "src/assets/logo.png",
-    },
-    {
-      name: "Robert Gordon University",
-      logo: "src/assets/logo.png",
-    },
-    {
-      name: "Birmingham City University",
-      logo: "src/assets/logo.png",
+      // name: "University of Northampton",
+      logo: "src/assets/penn.png",
     },
   ];
   //16th Section
@@ -659,7 +635,7 @@ const StudyInUsa = () => {
           </h2>
 
           {/* Logos Row */}
-          <div className="bg-white rounded-lg p-4 shadow-sm flex flex-wrap justify-center items-center gap-6 mb-6">
+          {/* <div className="bg-white rounded-lg p-4 shadow-sm flex flex-wrap justify-center items-center gap-6 mb-6">
             <img
               src="src/assets/logo.png"
               alt="York"
@@ -686,7 +662,7 @@ const StudyInUsa = () => {
               className="h-10 object-contain"
             />
             <span className="text-lg font-semibold">& more</span>
-          </div>
+          </div> */}
 
           <p className="text-gray-700 mb-6">
             Check your eligibility and receive end to end assistance for FREE!
@@ -742,7 +718,7 @@ const StudyInUsa = () => {
               <tr className="border">
                 <td className="border px-4 py-4 flex items-center gap-2">
                   <img
-                    src="src/assets/logo.png"
+                    src="src/assets/ILTS.png"
                     alt="IELTS"
                     className="h-6 w-auto"
                   />
@@ -755,7 +731,7 @@ const StudyInUsa = () => {
               <tr className="border">
                 <td className="border px-4 py-4 flex items-center gap-2">
                   <img
-                    src="src/assets/logo.png"
+                    src="src/assets/Tofel.png"
                     alt="TOEFL"
                     className="h-6 w-auto"
                   />
@@ -768,7 +744,7 @@ const StudyInUsa = () => {
               <tr className="border">
                 <td className="border px-4 py-4 flex items-center gap-2">
                   <img
-                    src="src/assets/logo.png"
+                    src="src/assets/PTE.png"
                     alt="PTE"
                     className="h-6 w-auto"
                   />
@@ -1092,18 +1068,18 @@ const StudyInUsa = () => {
               >
                 <img
                   src={uni.logo}
-                  alt={uni.name}
+                  // alt={uni.name}
                   className="h-16 object-contain mb-4"
                 />
                 <h3 className="text-sm font-semibold text-gray-900 mb-2">
                   {uni.name}
                 </h3>
-                <a
+                {/* <a
                   href="#"
                   className="text-red-500 text-sm font-medium hover:underline"
                 >
                   Learn More &gt;
-                </a>
+                </a> */}
               </div>
             ))}
           </div>

@@ -282,7 +282,7 @@ const HealthInsurance = () => {
         </div>
 
         {/* Partner Logos Section */}
-        <div className="bg-[#f9fbfc] py-10 px-4 sm:px-6 lg:px-8">
+        {/* <div className="bg-[#f9fbfc] py-10 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <h3 className="text-xl font-bold mb-6">Our Partners</h3>
             <div className="flex flex-wrap items-center justify-between gap-6">
@@ -323,7 +323,7 @@ const HealthInsurance = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* 1st Section */}
 
