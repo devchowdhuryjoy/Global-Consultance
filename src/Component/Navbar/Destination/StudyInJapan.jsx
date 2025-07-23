@@ -212,35 +212,35 @@ const StudyInJapan = () => {
   const universities = [
     {
       // name: "University for the Creative Arts (UCA)",
-      logo: "src/assets/Fin1.png",
+      logo: "Fin1.png",
     },
     {
       // name: "Canterbury Christ Church University",
-      logo: "src/assets/Fin2.png",
+      logo: "Fin2.png",
     },
     {
       // name: "Cardiff Metropolitan University",
-      logo: "src/assets/Fin3.png",
+      logo: "Fin3.png",
     },
     {
       // name: "De Montfort University",
-      logo: "src/assets/Fin4.png",
+      logo: "Fin4.png",
     },
     {
       // name: "Leeds Arts University",
-      logo: "src/assets/Fin5.png",
+      logo: "Fin5.png",
     },
     {
       // name: "University of Plymouth",
-      logo: "src/assets/Fin6.png",
+      logo: "Fin6.png",
     },
     {
       // name: "University of Hertfordshire",
-      logo: "src/assets/Fin7.png",
+      logo: "Fin7.png",
     },
     {
       // name: "University of Northampton",
-      logo: "src/assets/Fin8.png",
+      logo: "Fin8.png",
     },
   ];
   //16th Section
@@ -313,7 +313,7 @@ const StudyInJapan = () => {
           <div className="flex-1 relative">
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
-                src="/src/assets/images/Destination.jpg" // Replace with your actual image path
+                src="Studyabroad.jpg" // Replace with your actual image path
                 alt="Study in the Finland"
                 className="w-full object-cover"
               />
@@ -716,11 +716,7 @@ const StudyInJapan = () => {
             <tbody className="text-gray-700">
               <tr className="border">
                 <td className="border px-4 py-4 flex items-center gap-2">
-                  <img
-                    src="src/assets/ILTS.png"
-                    alt="IELTS"
-                    className="h-6 w-auto"
-                  />
+                  <img src="ILTS.png" alt="IELTS" className="h-6 w-auto" />
                 </td>
                 <td className="border px-4 py-4">
                   Most universities look for scores between 6.0 to 7.5, though
@@ -729,11 +725,7 @@ const StudyInJapan = () => {
               </tr>
               <tr className="border">
                 <td className="border px-4 py-4 flex items-center gap-2">
-                  <img
-                    src="src/assets/Tofel.png"
-                    alt="TOEFL"
-                    className="h-6 w-auto"
-                  />
+                  <img src="Tofel.png" alt="TOEFL" className="h-6 w-auto" />
                 </td>
                 <td className="border px-4 py-4">
                   Generally, institutions seek scores ranging from 80 to 100 for
@@ -742,11 +734,7 @@ const StudyInJapan = () => {
               </tr>
               <tr className="border">
                 <td className="border px-4 py-4 flex items-center gap-2">
-                  <img
-                    src="src/assets/PTE.png"
-                    alt="PTE"
-                    className="h-6 w-auto"
-                  />
+                  <img src="PTE.png" alt="PTE" className="h-6 w-auto" />
                 </td>
                 <td className="border px-4 py-4">
                   Institutions typically expect scores between 51 and 67.

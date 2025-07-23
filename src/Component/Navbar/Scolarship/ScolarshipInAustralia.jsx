@@ -364,7 +364,7 @@ const ScolarshipInAustralia = () => {
                 {/* Highlight Box */}
                 <div className="mt-12 bg-[#fff2ed] rounded-xl p-6 shadow-md flex items-start gap-4">
                   <img
-                    src="src/assets/logo.png" // replace with your local emoji/image
+                    src="Studyabroad.jpg" // replace with your local emoji/image
                     alt="Did you know"
                     className="w-12 h-12"
                   />
@@ -881,7 +881,7 @@ const ScolarshipInAustralia = () => {
                     {review.name}
                   </h4>
                   <img
-                    src="src/assets/Google-Logo.png"
+                    src="Google-Logo.png"
                     alt="Google Reviews"
                     className="w-24 mt-2"
                   />

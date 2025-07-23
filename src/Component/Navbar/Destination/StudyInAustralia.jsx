@@ -213,35 +213,35 @@ const StudyInAustralia = () => {
   const universities = [
     {
       // name: "University for the Creative Arts (UCA)",
-      logo: "src/assets/Aus1.png",
+      logo: "Aus1.png",
     },
     {
       // name: "Canterbury Christ Church University",
-      logo: "src/assets/Aus2.png",
+      logo: "Aus2.png",
     },
     {
       // name: "Cardiff Metropolitan University",
-      logo: "src/assets/aus3.png",
+      logo: "aus3.png",
     },
     {
       // name: "De Montfort University",
-      logo: "src/assets/aus4.png",
+      logo: "aus4.png",
     },
     {
       // name: "Leeds Arts University",
-      logo: "src/assets/aus5.png",
+      logo: "aus5.png",
     },
     {
       // name: "University of Plymouth",
-      logo: "src/assets/aus6.png",
+      logo: "aus6.png",
     },
     {
       // name: "University of Hertfordshire",
-      logo: "src/assets/aus7.png",
+      logo: "aus7.png",
     },
     {
       // name: "University of Northampton",
-      logo: "src/assets/aus8.png",
+      logo: "aus8.png",
     },
   ];
   //16th Section
@@ -314,7 +314,7 @@ const StudyInAustralia = () => {
           <div className="flex-1 relative">
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
-                src="/src/assets/images/Destination.jpg" // Replace with your actual image path
+                src="Studyabroad.jpg" // Replace with your actual image path
                 alt="Study in the Australia"
                 className="w-full object-cover"
               />
@@ -717,11 +717,7 @@ const StudyInAustralia = () => {
             <tbody className="text-gray-700">
               <tr className="border">
                 <td className="border px-4 py-4 flex items-center gap-2">
-                  <img
-                    src="src/assets/ILTS.png"
-                    alt="IELTS"
-                    className="h-6 w-auto"
-                  />
+                  <img src="ILTS.png" alt="IELTS" className="h-6 w-auto" />
                 </td>
                 <td className="border px-4 py-4">
                   Most universities look for scores between 6.0 to 7.5, though
@@ -730,11 +726,7 @@ const StudyInAustralia = () => {
               </tr>
               <tr className="border">
                 <td className="border px-4 py-4 flex items-center gap-2">
-                  <img
-                    src="src/assets/Tofel.png"
-                    alt="TOEFL"
-                    className="h-6 w-auto"
-                  />
+                  <img src="Tofel.png" alt="TOEFL" className="h-6 w-auto" />
                 </td>
                 <td className="border px-4 py-4">
                   Generally, institutions seek scores ranging from 80 to 100 for
@@ -743,11 +735,7 @@ const StudyInAustralia = () => {
               </tr>
               <tr className="border">
                 <td className="border px-4 py-4 flex items-center gap-2">
-                  <img
-                    src="src/assets/PTE.png"
-                    alt="PTE"
-                    className="h-6 w-auto"
-                  />
+                  <img src="PTE.png" alt="PTE" className="h-6 w-auto" />
                 </td>
                 <td className="border px-4 py-4">
                   Institutions typically expect scores between 51 and 67.

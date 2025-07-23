@@ -3,6 +3,8 @@ import { FaLeaf, FaBinoculars } from "react-icons/fa";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
+import image from "../../../assets/images/Studyabroad.jpg";
+import image1 from "../../../assets/images/map.jpg";
 
 const AboutUs = () => {
   const [formData, setFormData] = useState({
@@ -121,8 +123,13 @@ const AboutUs = () => {
 
         {/* Image */}
         <div className="max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-md">
+          {/* <img
+            src="/src/assets/images/Studyabroad.jpg"
+            alt="Global Routeways Team"
+            className="w-full h-auto object-cover"
+          /> */}
           <img
-            src="/src/assets/images/Studyabroad.jpg" // Replace with your image path"// Replace with your image path
+            src={image}
             alt="Global Routeways Team"
             className="w-full h-auto object-cover"
           />
@@ -510,7 +517,8 @@ const AboutUs = () => {
             {/* Right: Map with locations */}
             <div className="relative">
               <img
-                src="src/assets/images/map.jpg" // Replace with your image path
+                // src="src/assets/images/map.jpg"
+                src={image1}
                 alt="World Map"
                 className="w-[700px] h-[270px]"
               />

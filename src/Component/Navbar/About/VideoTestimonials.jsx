@@ -306,7 +306,7 @@ const VideoTestimonials = () => {
             {/* Right: Map with locations */}
             <div className="relative">
               <img
-                src="/src/assets/images/map.jpg"
+                src="map.jpg"
                 alt="World Map"
                 className="w-[700px] h-[270px]"
               />

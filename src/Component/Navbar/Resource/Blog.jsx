@@ -283,7 +283,7 @@ const Blog = () => {
               </svg>
             </div>
             <img
-              src="/award1.jpg"
+              src="Studyabroad.jpg"
               alt="Global Routeway Blog"
               className="relative z-10 max-w-full h-auto"
             />

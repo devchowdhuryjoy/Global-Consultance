@@ -8,15 +8,15 @@ import ConsultationModal from "../../../Modal/ConsultationModal";
 // Awards Data
 const awards = [
   {
-    img: "src/assets/images/success1.jpg", // ✅ update with your actual path
+    img: "success1.jpg", // ✅ update with your actual path
     title: "Double Platinum Eagle Award",
   },
   {
-    img: "src/assets/images/success2.jpg",
+    img: "success2.jpg",
     title: "Partner of the Year (2024)",
   },
   {
-    img: "src/assets/images/success1.jpg",
+    img: "success1.jpg",
     title: "Outstanding Service Award",
   },
 ];
@@ -139,7 +139,7 @@ const AwardsSection = () => {
           {/* Image */}
           <div className="md:w-1/2">
             <img
-              src="src/assets/images/success2.jpg" // 👈 Replace with your actual image path
+              src="success2.jpg" // 👈 Replace with your actual image path
               alt="Awards Banner"
               className="w-full max-w-md mx-auto"
             />
@@ -180,7 +180,7 @@ const AwardsSection = () => {
           {/* Image */}
           <div className="md:w-1/2">
             <img
-              src="src/assets/images/success1.jpg" // 👈 Replace with your actual image path
+              src="success1.jpg" // 👈 Replace with your actual image path
               alt="Key Highlights"
               className="w-full max-w-md mx-auto"
             />

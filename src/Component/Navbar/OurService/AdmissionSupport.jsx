@@ -897,7 +897,7 @@ const AdmissionSupport = () => {
                     {review.name}
                   </h4>
                   <img
-                    src="src/assets/Google-Logo.png"
+                    src="Google-Logo.png"
                     alt="Google Reviews"
                     className="w-24 mt-2"
                   />
