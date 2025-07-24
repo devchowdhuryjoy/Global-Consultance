@@ -6,6 +6,7 @@ import { FaCrown } from "react-icons/fa";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
+import IMAGE_BASE_URL from "../../../Api BaseUrl/ImageBaseUrl";
 
 const VideoTestimonials = () => {
   // const rawVideos = [
@@ -162,6 +163,21 @@ const VideoTestimonials = () => {
     }
   };
 
+  const [reviewstwo, setReviewstwo] = useState([]); // ✅ renamed here
+
+  useEffect(() => {
+    fetch(`${BASE_URL}reviewtwoget`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch");
+        return res.json();
+      })
+      .then((data) => {
+        console.log("API Data:", data);
+        setReviewstwo(data); // ✅ renamed here
+      })
+      .catch((err) => console.error("Error fetching reviews:", err));
+  }, []);
+
   return (
     <>
       {/* <section className="bg-[#e8f7fd] py-16 px-4 md:px-8">
@@ -253,7 +269,7 @@ const VideoTestimonials = () => {
         </div>
       </section>
 
-      <div className="bg-[#252364] py-12 px-4 md:px-16 text-white">
+      {/* <div className="bg-[#252364] py-12 px-4 md:px-16 text-white">
         <h2 className="text-center text-2xl md:text-3xl font-bold mb-10">
           Students Reviews
         </h2>
@@ -274,6 +290,46 @@ const VideoTestimonials = () => {
               </div>
             </div>
           ))}
+        </div>
+      </div> */}
+
+      <div className="bg-[#252364] py-12 px-4 md:px-16 text-white">
+        <h2 className="text-center text-2xl md:text-3xl font-bold mb-10">
+          Students Reviews
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {reviewstwo.length === 0 ? (
+            <p className="text-center col-span-3">No reviews found.</p>
+          ) : (
+            reviewstwo.map((review, index) => (
+              <div
+                key={index}
+                className="bg-white text-black rounded-xl p-6 shadow-lg flex flex-col justify-between"
+              >
+                <p className="text-sm leading-relaxed mb-4">
+                  {review.review_text}
+                </p>
+                <div className="flex items-center justify-between mt-auto">
+                  <div className="flex items-center gap-3">
+                    {review.image_url && (
+                      <img
+                        src={`${IMAGE_BASE_URL}${review.image_url}`}
+                        alt={review.name}
+                        className="w-10 h-10 rounded-full object-cover"
+                      />
+                    )}
+                    <strong className="font-semibold">{review.name}</strong>
+                  </div>
+                  {/* <img
+                    src={googleLogo}
+                    alt="Google Reviews"
+                    className="w-24 h-auto"
+                  /> */}
+                </div>
+              </div>
+            ))
+          )}
         </div>
       </div>
 
