@@ -10,6 +10,7 @@ import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 import ConsultationModal from "../../../Modal/ConsultationModal";
+import SuccessStories from "../../SuccessStories/SuccessStories";
 
 const HealthInsurance = () => {
   const [showModal, setShowModal] = useState(false);
@@ -913,7 +914,7 @@ const HealthInsurance = () => {
       {/* 8th section */}
 
       {/* 9th section */}
-      <div className="bg-[#fafafa] py-16 px-4 sm:px-6 lg:px-20">
+      {/* <div className="bg-[#fafafa] py-16 px-4 sm:px-6 lg:px-20">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#252364] mb-4">
             Documents Required to Buy Health Insurance Plan
@@ -948,21 +949,20 @@ const HealthInsurance = () => {
             Book a Free Consultation →
           </button>
 
-          {/* ✅ Modal */}
+          
           <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
-      </div>
-
+      </div> */}
       {/* 9th section */}
 
       {/* 10th section */}
-      <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
+      {/* <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-10">
           22,000+ Success Stories{" "}
           <span className="text-blue-700">Your could be the next.</span>
         </h2>
 
-        {/* Custom Navigation Buttons */}
+        
         <div
           ref={prevRef}
           className="swiper-button-prev-custom absolute left-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
@@ -1042,7 +1042,8 @@ const HealthInsurance = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </div> */}
+      <SuccessStories />
       {/* 10th section */}
 
       {/* 11th section */}

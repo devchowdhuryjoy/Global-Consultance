@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 import ConsultationModal from "../../../Modal/ConsultationModal";
+import SuccessStories from "../../SuccessStories/SuccessStories";
 
 const VisaService = () => {
   const [showModal, setShowModal] = useState(false);
@@ -511,7 +512,7 @@ const VisaService = () => {
       </div>
 
       {/* 3rd section */}
-      <section className="bg-[#f3f7fa] py-14 overflow-hidden">
+      {/* <section className="bg-[#f3f7fa] py-14 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#252364] mb-12">
             How Our Visa Services Work
@@ -542,18 +543,58 @@ const VisaService = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
+      <section className="bg-[#f3f7fa] py-14 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#252364] mb-12">
+            How Our Visa Services Work
+          </h2>
+          <div className="flex flex-wrap items-stretch justify-between gap-6">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="w-full sm:w-[48%] md:w-[18.5%] flex flex-col items-center text-center"
+              >
+                {/* ✅ CHANGED: wrapped image, title, and text in bordered box */}
+                <div className="bg-white p-4 rounded-lg shadow-md w-full border-[2px] border-black flex flex-col items-center">
+                  {" "}
+                  {/* ✅ CHANGED */}
+                  <img
+                    src={step.image}
+                    alt={step.heading}
+                    className="w-32 h-32 object-contain mb-4"
+                  />
+                  <div className="bg-[#252364] text-white px-4 py-1 rounded-full text-sm font-semibold mb-2">
+                    {step.title}
+                  </div>
+                  <h3 className="font-bold text-sm mb-1 text-left w-full">
+                    {" "}
+                    {/* ✅ CHANGED: added w-full for proper alignment */}
+                    {step.heading}
+                  </h3>
+                  <p className="text-sm text-gray-700 text-left w-full">
+                    {" "}
+                    {/* ✅ CHANGED: added w-full for consistent alignment */}
+                    {step.description}
+                  </p>
+                </div>
+                {/* ✅ END OF CHANGED BOX */}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* 3rd section */}
 
       {/* 4rd section */}
-      <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
+      {/* <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-10">
           22,000+ Success Stories{" "}
           <span className="text-blue-700">Your could be the next.</span>
         </h2>
 
-        {/* Custom Navigation Buttons */}
+        
         <div
           ref={prevRef}
           className="swiper-button-prev-custom absolute left-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
@@ -633,7 +674,8 @@ const VisaService = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </div> */}
+      <SuccessStories />
       {/* 4rd section */}
 
       {/* 5th section */}

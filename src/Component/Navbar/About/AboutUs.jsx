@@ -548,7 +548,7 @@ const AboutUs = () => {
       <div className="bg-[#f8fbfd] py-12 px-4 md:px-16">
         {/* Mission and Vision */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          <div className="bg-white p-6 rounded-xl shadow-md relative">
+          <div className="bg-white p-6 rounded-xl shadow-md relative border-[2px] border-black">
             <h3 className="text-xl font-semibold text-[#f16f22] mb-3">
               Mission
             </h3>
@@ -560,7 +560,7 @@ const AboutUs = () => {
             <FaLeaf className="absolute top-6 right-6 text-2xl text-black/60" />
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow-md relative">
+          <div className="bg-white p-6 rounded-xl shadow-md relative border-[2px] border-black">
             <h3 className="text-xl font-semibold text-[#f16f22] mb-3">
               Vision
             </h3>
@@ -582,7 +582,7 @@ const AboutUs = () => {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div>
+          <div className="border-[2px] border-black p-4 rounded-md shadow-sm">
             <h4 className="text-[#f16f22] font-semibold text-lg mb-1">
               Client-centric
             </h4>
@@ -590,13 +590,13 @@ const AboutUs = () => {
               Strive for client satisfaction
             </p>
           </div>
-          <div>
+          <div className="border-[2px] border-black p-4 rounded-md shadow-sm">
             <h4 className="text-[#f16f22] font-semibold text-lg mb-1">
               Ownership
             </h4>
             <p className="text-sm text-gray-700">Deliver as committed</p>
           </div>
-          <div>
+          <div className="border-[2px] border-black p-4 rounded-md shadow-sm">
             <h4 className="text-[#f16f22] font-semibold text-lg mb-1">
               Reliability
             </h4>
@@ -604,7 +604,7 @@ const AboutUs = () => {
               Fostering trust through honesty and openness
             </p>
           </div>
-          <div>
+          <div className="border-[2px] border-black p-4 rounded-md shadow-sm">
             <h4 className="text-[#f16f22] font-semibold text-lg mb-1">
               Teamwork
             </h4>

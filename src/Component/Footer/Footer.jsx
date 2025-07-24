@@ -2,38 +2,26 @@ import React from "react";
 import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 const offices = [
-  // {
-  //   name: "Shamoly",
-  //   address: `SIMA Blossom (5th Floor) Plot 390 (Old), 03 (New), Road-27 (Old) 16, New, Dhaka 1209, Bangladesh`,
-  //   phone: "+880 9609 80 03 00",
-  // },
   {
     name: "Mohammadpur",
     address: `N Islam Tower, 19/C/F Block-F, Ring Road, Shamoly, Mohammadpur, Dhaka 1207, Bangladesh`,
     phone: "01618-858541-9",
   },
-  // {
-  //   name: "Chattogram",
-  //   address: `5th floor, Equity Centrum, O R Nizam Road,\nGEC Circle, Chattogram`,
-  //   phone: "+880 9609 80 04 00",
-  // },
-  // {
-  //   name: "Uttara",
-  //   address: `Level 8, RM Plaza, 20 Sonargaon Jonopath Road,\nSector 11, Dhaka 1230`,
-  //   phone: "+880 9609 80 05 00",
-  // },
 ];
 
 const Footer = () => {
   return (
     <div className="bg-[#f3f3f3] pt-10 pb-4 px-4 sm:px-8 md:px-16 lg:px-24">
-      <h2 className="text-xl sm:text-2xl font-semibold text-black mb-8">
-        Global Routways Offices in Bangladesh
+      <h2 className="text-xl sm:text-2xl font-semibold text-black mb-8 text-center">
+        Global Routways Office in Bangladesh
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-sm text-gray-800">
+      <div className="max-w-3xl mx-auto grid grid-cols-1 gap-6 text-sm text-gray-800">
         {offices.map((office, idx) => (
-          <div key={idx}>
+          <div
+            key={idx}
+            className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+          >
             <h3 className="text-black font-semibold text-lg mb-2">
               {office.name}
             </h3>

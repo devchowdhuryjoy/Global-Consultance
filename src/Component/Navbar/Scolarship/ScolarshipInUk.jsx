@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 import ConsultationModal from "../../../Modal/ConsultationModal";
+import SuccessStories from "../../SuccessStories/SuccessStories";
 
 const ScolarshipInUk = () => {
   const [showModal, setShowModal] = useState(false);
@@ -129,7 +130,7 @@ const ScolarshipInUk = () => {
     {
       step: "Step 6",
       text: "Prepare for take-off! Get ready to board the flight and begin your first day at the institution abroad!",
-      img: "/award1.jpg",
+      img: "/study4.jpg",
     },
   ];
   // 7th section
@@ -778,7 +779,7 @@ const ScolarshipInUk = () => {
             {steps.map((item, idx) => (
               <div
                 key={idx}
-                className="relative flex flex-col items-center text-center bg-white p-5 rounded-xl shadow-sm hover:shadow-lg transition"
+                className="relative flex flex-col items-center text-center max-w-xs bg-white border-[2px] border-black p-5 rounded-md shadow-sm hover:shadow-lg transition"
               >
                 <div className="relative z-10">
                   <img
@@ -804,13 +805,13 @@ const ScolarshipInUk = () => {
       {/* 7th section */}
 
       {/* 8th section */}
-      <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
+      {/* <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-10">
           22,000+ Success Stories{" "}
           <span className="text-blue-700">Your could be the next.</span>
         </h2>
 
-        {/* Custom Navigation Buttons */}
+       
         <div
           ref={prevRef}
           className="swiper-button-prev-custom absolute left-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
@@ -890,7 +891,8 @@ const ScolarshipInUk = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </div> */}
+      <SuccessStories />
       {/* 8th section */}
 
       {/* 9th section */}

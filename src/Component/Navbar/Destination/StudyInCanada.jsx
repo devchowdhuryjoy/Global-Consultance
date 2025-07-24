@@ -216,7 +216,7 @@ const StudyInCanada = () => {
     },
     {
       // name: "Canterbury Christ Church University",
-      logo: "src/assets/Britis.png",
+      logo: "Britis.png",
     },
     {
       // name: "Cardiff Metropolitan University",
@@ -224,7 +224,7 @@ const StudyInCanada = () => {
     },
     {
       // name: "De Montfort University",
-      logo: "src/assets/McMaster.png",
+      logo: "McMaster.png",
     },
     {
       // name: "Leeds Arts University",

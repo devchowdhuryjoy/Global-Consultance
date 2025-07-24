@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
+import SuccessStories from "../../SuccessStories/SuccessStories";
 
 const Course = () => {
   // 2nd section
@@ -426,13 +427,13 @@ const Course = () => {
       {/* 3rd section */}
 
       {/* 5th section */}
-      <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
+      {/* <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-10">
           22,000+ Success Stories{" "}
           <span className="text-blue-700">Your could be the next.</span>
         </h2>
 
-        {/* Custom Navigation Buttons */}
+        
         <div
           ref={prevRef}
           className="swiper-button-prev-custom absolute left-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
@@ -512,7 +513,9 @@ const Course = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </div> */}
+      <SuccessStories />
+
       {/* 5th section */}
     </>
   );

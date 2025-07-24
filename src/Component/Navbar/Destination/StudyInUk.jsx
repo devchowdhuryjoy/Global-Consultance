@@ -225,7 +225,7 @@ const StudyInUk = () => {
     },
     {
       // name: "De Montfort University",
-      logo: "src/assets/oxford.png",
+      logo: "oxford.png",
     },
     {
       // name: "Leeds Arts University",
