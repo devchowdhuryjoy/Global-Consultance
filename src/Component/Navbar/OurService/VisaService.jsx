@@ -729,7 +729,6 @@ const VisaService = () => {
               Book a Free Consultation →
             </button>
 
-            {/* ✅ Modal */}
             <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
         </div>

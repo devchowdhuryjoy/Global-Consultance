@@ -41,7 +41,7 @@ const Navbar = () => {
       link: "/ourservices",
       submenu: [
         { label: "Admission Support", link: "/admission-support" },
-        { label: "Health insurance", link: "/health-insurance" },
+        // { label: "Health insurance", link: "/health-insurance" },
         // { label: "Student Accommodation", link: "/studennts-accom" },
         { label: "Visa Services", link: "/visa-service" },
       ],

@@ -26,6 +26,11 @@ import HealthInsurance from "./Component/Navbar/OurService/HealthInsurance";
 import VisaService from "./Component/Navbar/OurService/VisaService";
 import Course from "./Component/Navbar/Resource/Course";
 import BlogDetails from "./Component/ReadMore/BlogDetails/BlogDetails";
+import Nursing from "./Component/Popular Course/PartOfFive/Nursing";
+import Accounting from "./Component/Popular Course/PartOfFive/Accounting";
+import Engineering from "./Component/Popular Course/PartOfFive/Engineering";
+import FoodandHospitality from "./Component/Popular Course/PartOfFive/FoodandHospitality";
+import BusinessStudies from "./Component/Popular Course/PartOfFive/BusinessStudies";
 
 function App() {
   return (
@@ -88,6 +93,14 @@ function App() {
               </div>
             }
           />
+
+          {/* 5 Section addeed */}
+          <Route path="/nursing" element={<Nursing />} />
+          <Route path="/accounting" element={<Accounting />} />
+          <Route path="/engineering" element={<Engineering />} />
+          <Route path="/hospitality" element={<FoodandHospitality />} />
+          <Route path="/business-studies" element={<BusinessStudies />} />
+          {/* 5 Section addeed */}
 
           {/* Homepage */}
           <Route path="/contactus" element={<ContactUs />} />

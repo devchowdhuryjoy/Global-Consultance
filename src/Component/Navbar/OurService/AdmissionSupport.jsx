@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { FiPlus, FiMinus } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -245,40 +246,39 @@ const AdmissionSupport = () => {
   //8th section
 
   // 9th section
-  const [openIndex, setOpenIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggle = (index) => {
-    setOpenIndex(openIndex === index ? -1 : index);
-  };
-
-  const faqData = [
+  const faqs = [
     {
-      question:
-        "What are the academic and language requirements for Bangladeshi students applying to Australia universities?",
+      question: "What services do you offer?",
       answer:
-        "The academic requirements for Bangladeshi students applying to Australia universities depend on the subjects you are applying to. For the English language requirements, you will need to take the IELTS (with a score of 6.0 to 7.5), TOEFL (with a score of 80 to 100), or PTE (with a score of 51 to 67).",
+        "We offer a range of services including consulting, design, development, and ongoing support for your digital projects.",
     },
     {
-      question:
-        "What is the cost of studying and living in the Australia for a student from Bangladesh?",
-      answer: "",
+      question: "How long does a typical project take?",
+      answer:
+        "Project timelines vary depending on scope and complexity, but most projects range from 4-12 weeks.",
     },
     {
-      question:
-        "What visa requirements do Bangladeshi students need to fulfill to study in the Australia?",
-      answer: "",
+      question: "What are your payment terms?",
+      answer:
+        "We typically require a 50% deposit to begin work, with the remaining balance due upon project completion.",
     },
     {
-      question:
-        "Are there scholarships specifically available for Bangladeshi students in the Australia?",
-      answer: "",
+      question: "Do you provide ongoing support?",
+      answer:
+        "Yes, we offer various support packages to meet your needs after project completion.",
     },
     {
-      question:
-        "What are the post-study work opportunities for Bangladeshi students after graduation in the Australia?",
-      answer: "",
+      question: "Can I see examples of your previous work?",
+      answer:
+        "Absolutely! We'd be happy to share our portfolio with you during our consultation.",
     },
   ];
+
+  const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   // 9th section
 
@@ -914,7 +914,7 @@ const AdmissionSupport = () => {
       {/* 8th Section */}
 
       {/* 9th section */}
-      <div className="bg-gray-100 px-4 sm:px-6 lg:px-8 py-12">
+      {/* <div className="bg-gray-100 px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold text-center mb-6">
             Frequently Asked Questions
@@ -955,10 +955,64 @@ const AdmissionSupport = () => {
             Book a FREE Consultation →
           </button>
 
-          {/* ✅ Modal */}
+          
           <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
-      </div>
+      </div> */}
+
+      <section className="bg-[#f7f5ff] py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-10">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((item, index) => (
+              <div
+                key={index}
+                className={`rounded-xl px-6 py-5 transition-all duration-300 shadow-sm cursor-pointer bg-white ${
+                  activeIndex === index ? "bg-white" : "bg-[#fdfbff]"
+                }`}
+                onClick={() => toggleFAQ(index)}
+              >
+                <div className="flex justify-between items-center">
+                  <h3
+                    className={`text-base md:text-lg font-medium ${
+                      activeIndex === index
+                        ? "text-[#f04438]"
+                        : "text-[#f04438]"
+                    }`}
+                  >
+                    {item.question}
+                  </h3>
+                  <span className="text-xl">
+                    {activeIndex === index ? <FiMinus /> : <FiPlus />}
+                  </span>
+                </div>
+                {activeIndex === index && (
+                  <p className="mt-4 text-sm md:text-base text-gray-600">
+                    {item.answer}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-gray-500 mt-12 text-base sm:text-lg">
+            Our experts are waiting to help you take the next steps towards your
+            dream.
+          </p>
+
+          <div className="mt-6 flex justify-center">
+            <button
+              onClick={handleOpenModal}
+              className="mt-4 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center"
+            >
+              Book a Free Consultation →
+            </button>
+          </div>
+          <ConsultationModal show={showModal} onClose={handleCloseModal} />
+        </div>
+      </section>
       {/* 9th section */}
     </>
   );
