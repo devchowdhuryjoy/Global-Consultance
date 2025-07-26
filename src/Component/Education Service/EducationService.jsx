@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import userImage from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const EducationService = () => {
   return (
@@ -27,9 +28,50 @@ const EducationService = () => {
             Student Services
           </h4>
           <ul className="space-y-2 text-gray-700">
-            <li>Admission Support</li>
-            <li>Visa Services</li>
-            <li>Student Accommodation</li>
+            <li>
+              <Link
+                to="/admission-support"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Admission Support
+              </Link>
+            </li>
+            <li>
+              <Link to="/visa-service" onClick={() => window.scrollTo(0, 0)}>
+                Visa Services
+              </Link>
+            </li>
+            {/* <li>Student Accommodation</li> */}
+          </ul>
+
+          <h4 className="text-[#252364] font-semibold mt-5 mb-3">
+            Scholarships
+          </h4>
+          <ul className="space-y-2 text-gray-700">
+            <li>
+              <Link to="/scholarships" onClick={() => window.scrollTo(0, 0)}>
+                Australia Scholarships
+              </Link>
+            </li>
+            <li>
+              <Link to="/scolarshipinuk" onClick={() => window.scrollTo(0, 0)}>
+                UK Scholarships
+              </Link>
+            </li>
+          </ul>
+
+          <h4 className="text-[#252364] font-semibold mt-5 mb-3">Resources</h4>
+          <ul className="space-y-2 text-gray-700">
+            <li>
+              <Link to="/blogs" onClick={() => window.scrollTo(0, 0)}>
+                Blogs
+              </Link>
+            </li>
+            <li>
+              <Link to="/courses" onClick={() => window.scrollTo(0, 0)}>
+                Course
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -39,16 +81,45 @@ const EducationService = () => {
             Study Destinations
           </h4>
           <ul className="space-y-2 text-gray-700">
-            <li>UK</li>
-            <li>USA</li>
-            <li>Australia</li>
-            <li>Canada</li>
-            <li>Denmark</li>
-            <li>Finland</li>
-            <li>Sweden</li>
-            <li>Dubai</li>
-            <li>Malaysia</li>
-            <li>Europe</li>
+            <li>
+              <Link to="/uk" onClick={() => window.scrollTo(0, 0)}>
+                UK
+              </Link>
+            </li>
+            <li>
+              <Link to="/usa" onClick={() => window.scrollTo(0, 0)}>
+                USA
+              </Link>
+            </li>
+            <li>
+              <Link to="/Australia" onClick={() => window.scrollTo(0, 0)}>
+                Australia
+              </Link>
+            </li>
+            <li>
+              <Link to="/canada" onClick={() => window.scrollTo(0, 0)}>
+                Canada
+              </Link>
+            </li>
+            {/* <li>Denmark</li> */}
+            <li>
+              <Link to="/japan" onClick={() => window.scrollTo(0, 0)}>
+                Finland
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/new-zealand" onClick={() => window.scrollTo(0, 0)}>
+                Sweden
+              </Link>
+            </li>
+            {/* <li>Dubai</li> */}
+            {/* <li>Malaysia</li> */}
+            <li>
+              <Link to="/europe" onClick={() => window.scrollTo(0, 0)}>
+                Europe
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -56,11 +127,39 @@ const EducationService = () => {
         <div>
           <h4 className="text-[#252364] font-semibold mb-3">Courses</h4>
           <ul className="space-y-2 text-gray-700">
-            <li>Nursing</li>
+            {/* <li>Nursing</li>
             <li>Accounting</li>
             <li>Engineering</li>
             <li>Business Studies</li>
-            <li>Food & Hospitality Management</li>
+            <li>Food & Hospitality Management</li> */}
+            <li>
+              <Link to="/nursing" onClick={() => window.scrollTo(0, 0)}>
+                Nursing
+              </Link>
+            </li>
+            <li>
+              <Link to="/accounting" onClick={() => window.scrollTo(0, 0)}>
+                Accounting
+              </Link>
+            </li>
+            <li>
+              <Link to="/engineering" onClick={() => window.scrollTo(0, 0)}>
+                Engineering
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/business-studies"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Business Studies
+              </Link>
+            </li>
+            <li>
+              <Link to="/hospitality" onClick={() => window.scrollTo(0, 0)}>
+                Food & Hospitality Management
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -70,11 +169,36 @@ const EducationService = () => {
             About Global Routeways
           </h4>
           <ul className="space-y-2 text-gray-700">
-            <li>About Global Routeway</li>
+            {/* <li>About Global Routeway</li>
             <li>Our Leadership</li>
             <li>Awards & Achievements</li>
             <li>Testimonials</li>
-            <li>Contact Us</li>
+            <li>Contact Us</li> */}
+            <li>
+              <Link to="/aboutus" onClick={() => window.scrollTo(0, 0)}>
+                About Global Routeway
+              </Link>
+            </li>
+            <li>
+              <Link to="/team" onClick={() => window.scrollTo(0, 0)}>
+                Our Leadership
+              </Link>
+            </li>
+            <li>
+              <Link to="/mission" onClick={() => window.scrollTo(0, 0)}>
+                Awards & Achievements
+              </Link>
+            </li>
+            <li>
+              <Link to="/testimonials" onClick={() => window.scrollTo(0, 0)}>
+                Testimonials
+              </Link>
+            </li>
+            <li>
+              <Link to="/contactus" onClick={() => window.scrollTo(0, 0)}>
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

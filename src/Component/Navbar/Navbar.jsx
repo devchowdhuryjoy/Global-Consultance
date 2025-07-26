@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import userImage from "../../assets/logo.png";
 import Swal from "sweetalert2";
 import BASE_URL from "../../Api BaseUrl/BaseUrl";
+import { AiOutlineDown } from "react-icons/ai";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -192,7 +193,8 @@ const Navbar = () => {
                       className="flex items-center gap-1 cursor-pointer font-bold hover:text-[#f16f22]"
                     >
                       {item.label}
-                      <span>▼</span>
+
+                      <AiOutlineDown className="text-xs mt-[1px]" />
                     </Link>
 
                     <div className="absolute top-full left-0 mt-2 bg-white shadow-md border border-gray-200 rounded-md py-2 min-w-[12rem] z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200">
