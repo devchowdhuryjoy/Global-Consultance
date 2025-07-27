@@ -10,6 +10,7 @@ import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 import ConsultationModal from "../../../Modal/ConsultationModal";
 import SuccessStories from "../../SuccessStories/SuccessStories";
+import SimpleSteps from "../../Simple Steps/SimpleSteps";
 
 const AdmissionSupport = () => {
   const [showModal, setShowModal] = useState(false);
@@ -787,39 +788,7 @@ const AdmissionSupport = () => {
       {/* 6th Section */}
 
       {/* 7th Section */}
-      <div className="bg-white py-10 px-4 sm:px-8 md:px-16 lg:px-24">
-        <div className="text-center mb-12">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
-            Study Abroad in just{" "}
-            <span className="text-[#f16f22]">5 Simple Steps</span>
-          </h1>
-          <p className="mt-4 text-gray-600">
-            With Global Routways by your side, your <br className="sm:hidden" />
-            can make the whole process a breeze!
-          </p>
-        </div>
-
-        <div className="flex flex-col md:flex-row md:justify-between items-center space-y-10 md:space-y-0">
-          {steps.map((step) => (
-            <div
-              key={step.id}
-              className="flex flex-col items-center text-center max-w-xs bg-white border-[2px] border-black p-5 rounded-md shadow"
-            >
-              <div
-                className={`w-20 h-20 rounded-md mb-4 flex items-center justify-center text-white text-2xl font-bold ${step.bg}`}
-              >
-                {step.icon}
-              </div>
-              <h2 className="text-red-600 font-semibold">{step.title}</h2>
-              <h3 className="font-bold text-blue-900 text-lg mb-2">
-                {step.heading}
-              </h3>
-              <p className="text-sm text-gray-600">{step.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
+      <SimpleSteps />
       {/* 7th Section */}
 
       {/* 8th Section */}
@@ -959,7 +928,6 @@ const AdmissionSupport = () => {
           <ConsultationModal show={showModal} onClose={handleCloseModal} />
         </div>
       </div> */}
-
       <section className="bg-[#f7f5ff] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-10">

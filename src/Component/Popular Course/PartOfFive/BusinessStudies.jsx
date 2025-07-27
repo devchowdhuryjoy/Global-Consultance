@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
+import BASE_URL from "../../../Api BaseUrl/BaseUrl";
+import IMAGE_BASE_URL from "../../../Api BaseUrl/ImageBaseUrl";
 
-// Dummy modal component (replace with your actual modal)
 const ConsultationModal = ({ show, onClose }) => {
   if (!show) return null;
-
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white p-6 rounded shadow-lg max-w-md w-full">
@@ -24,43 +24,65 @@ const ConsultationModal = ({ show, onClose }) => {
 const BusinessStudies = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
+  const [BusinessStudiesData, setBusinessStudiesData] = useState({
+    text: "",
+    image: "",
+    content: "",
+  });
 
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
-
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  // Fetch data from GET API
+  useEffect(() => {
+    fetch(`${BASE_URL}course-business-get`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data && data.length > 0) {
+          setBusinessStudiesData({
+            text: data[0].text,
+            image: data[0].image,
+            content: data[0].content,
+          });
+        }
+      })
+      .catch((err) =>
+        console.error("Error fetching BusinessStudies content:", err)
+      );
+  }, []);
+
   const faqs = [
     {
       question:
-        "What are the entry requirements for Business Studies in Australia?",
+        "What are the entry requirements for BusinessStudies in Australia?",
       answer:
         "Entry requirements vary but typically include completion of secondary education, English language proficiency (IELTS 7.0 or equivalent), and meeting specific academic prerequisites for the course level you're applying for.",
     },
     {
       question:
-        "How long does it take to become a registered Business Studies in Australia?",
+        "How long does it take to become a registered business in Australia?",
       answer:
-        "A Bachelor of Business Studies typically takes 3 years of full-time study, while a Diploma of Business Studies takes 18-24 months. After completing your degree, you'll need to register with the Business Studies and Midwifery Board of Australia.",
+        "A Bachelor of BusinessStudies typically takes 3 years of full-time study, while a Diploma of BusinessStudies takes 18-24 months. After completing your degree, you'll need to register with the BusinessStudies and Midwifery Board of Australia.",
     },
     {
       question:
-        "Can international students work as Business Studiess in Australia after graduation?",
+        "Can international students work as businesss in Australia after graduation?",
       answer:
-        "Yes, international students can apply for a post-study work visa after completing their Business Studies qualification. You'll need to meet registration requirements with the Business Studies and Midwifery Board of Australia to practice as a Business Studies.",
+        "Yes, international students can apply for a post-study work visa after completing their BusinessStudies qualification. You'll need to meet registration requirements with the BusinessStudies and Midwifery Board of Australia to practice as a business.",
     },
     {
-      question: "What is the cost of studying Business Studies in Australia?",
+      question: "What is the cost of studying BusinessStudies in Australia?",
       answer:
         "Tuition fees vary by institution and course level. Diploma courses typically range from AUD$15,000-$25,000 per year, while bachelor's degrees range from AUD$30,000-$40,000 per year.",
     },
     {
       question:
-        "Are there scholarships available for international Business Studies students?",
+        "Are there scholarships available for international BusinessStudies students?",
       answer:
-        "Yes, many Australian universities offer scholarships for international students. These can be merit-based, need-based, or specific to certain countries or fields of study like Business Studies.",
+        "Yes, many Australian universities offer scholarships for international students. These can be merit-based, need-based, or specific to certain countries or fields of study like BusinessStudies.",
     },
   ];
 
@@ -74,20 +96,15 @@ const BusinessStudies = () => {
             <h1 className="text-3xl sm:text-4xl font-bold text-[#252364] mb-4">
               Business Studies
             </h1>
-
             <p className="text-gray-700 text-base sm:text-lg mb-6">
-              Get comprehensive guidance & end-to-end assistance from expert
-              study abroad mentors for FREE!
+              {BusinessStudiesData.text}
             </p>
-
             <button
               onClick={handleOpenModal}
               className="mt-2 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center"
             >
               Book a FREE Consultation →
             </button>
-
-            {/* Modal */}
             <ConsultationModal show={showModal} onClose={handleCloseModal} />
           </div>
 
@@ -95,12 +112,11 @@ const BusinessStudies = () => {
           <div className="order-1 lg:order-2 flex-1 relative">
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
-                src="business-studies.jpeg"
+                src={`${IMAGE_BASE_URL}${BusinessStudiesData.image}`}
                 alt="Study in the Australia"
                 className="w-full h-auto object-cover"
               />
             </div>
-
             <div className="absolute right-[-40px] bottom-[-20px] hidden md:block">
               <div className="flex space-x-4">
                 <div className="w-12 h-24 bg-[#5f61c4] rounded-md rotate-12"></div>
@@ -111,121 +127,19 @@ const BusinessStudies = () => {
         </div>
       </div>
 
-      {/* 2nd section - Business Studies Content */}
+      {/* 2nd section - BusinessStudies Content */}
       <div className="py-12 px-4 sm:px-6 lg:px-24 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-6">
             Business Studies
           </h2>
-
-          <div className="prose max-w-none text-gray-700">
-            <p className="mb-4">
-              Pursue Enrolled Business Studies Courses in Australia from
-              Bangladesh, from the urge of humanity & sense the spirit of
-              rewards and individual fulfillment. With the chronic population
-              boom worldwide, the demand for Business Studies courses and
-              proficient Business Studiess in the healthcare system is
-              constantly rising.
-            </p>
-            <p className="mb-4">
-              If you yearn to work in the healthcare industry and serve humanity
-              by creating close bonds and bringing positive changes, studying
-              Business Studies courses in Australia from Bangladesh may be the
-              pertinent path for you. A diploma in Business Studies courses at
-              any globally ranked institute might allow you to kick-start your
-              career as an enrolled Business Studies.
-            </p>
-            <p className="mb-4">
-              You can also study Business Studies for an undergraduate or
-              postgraduate degree, which will enable you to get a license and
-              become a registered Business Studies. Besides, considering
-              Business Studies as a career may entail a journey of healthcare
-              benefits and work-hour flexibility.
-            </p>
-            <p className="mb-4">
-              Moreover, the salary of this profession is also rising as demand
-              for Business Studies services soars. To get admission into
-              world-known colleges or universities in countries like Canada,
-              Australia, the USA, the UK, and Malaysia, you can check the
-              admission requirements stated below on this page.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* 3rd section - Entry Requirements */}
-      <div className="px-4 py-12 sm:px-6 lg:px-24 bg-[#fefefe]">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-[#252364] text-2xl sm:text-3xl font-semibold mb-6">
-            Entry Requirement
-          </h2>
-
-          <div className="overflow-x-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {/* Diploma of Business Studies */}
-              <div className="border border-gray-200 p-5 bg-[#fff4f1] rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-[#252364] mb-3">
-                  Diploma of Business Studies
-                </h3>
-                <ul className="text-gray-700 text-base list-disc list-inside space-y-2">
-                  <li>Education: Class 12th</li>
-                  <li>
-                    English Language: IELTS 7.0 (on each band) or PTE - 65
-                  </li>
-                </ul>
-              </div>
-
-              {/* Bachelor of Business Studies */}
-              <div className="border border-gray-200 p-5 bg-white rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-[#252364] mb-3">
-                  Bachelor of Business Studies
-                </h3>
-                <ul className="text-gray-700 text-base list-disc list-inside space-y-2">
-                  <li>Education: Diploma of Business Studies or Class 12th</li>
-                  <li>English Language: IELTS/PTE score 7 (on each band)</li>
-                </ul>
-              </div>
-
-              {/* Master of Business Studies */}
-              <div className="border border-gray-200 p-5 bg-[#fff4f1] rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-[#252364] mb-3">
-                  Master of Business Studies
-                </h3>
-                <ul className="text-gray-700 text-base list-disc list-inside space-y-2">
-                  <li>Education: An undergraduate degree</li>
-                  <li>
-                    English Language: 6.5 / 7.0 (depending on institution)
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* 4th Section - Career Pathways */}
-      <div className="px-4 py-12 sm:px-6 lg:px-24 bg-[#fefefe]">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-[#252364] text-2xl sm:text-3xl font-semibold mb-4">
-            Career Pathways
-          </h2>
-
-          <h3 className="text-lg font-semibold text-gray-800 mb-3">
-            Career outcome:
-          </h3>
-
-          <ol className="list-decimal list-inside text-gray-700 space-y-1 text-base sm:text-lg">
-            <li>Hospital Orderly</li>
-            <li>Matron</li>
-            <li>Medical Administrator</li>
-            <li>Business Studies Educator</li>
-            <li>Business Studies Researcher</li>
-            <li>
-              Registered Business Studies (under a specific sub-field like
-              community health, aged care, mental health, disability
-              rehabilitation, etc.)
-            </li>
-          </ol>
+          {/* <div className="prose max-w-none text-gray-700">
+            <p className="mb-4 whitespace-pre-line">{BusinessStudiesData.content}</p>
+          </div> */}
+          <div
+            className="prose prose-li:marker:text-black prose-ol:pl-5 prose-ul:pl-5 max-w-none text-gray-800"
+            dangerouslySetInnerHTML={{ __html: BusinessStudiesData.content }}
+          ></div>
         </div>
       </div>
 
