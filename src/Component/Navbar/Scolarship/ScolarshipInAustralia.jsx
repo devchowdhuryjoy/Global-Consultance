@@ -290,11 +290,11 @@ const ScolarshipInAustralia = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
           {/* Left Text Content */}
           <div>
-            <span className="inline-block bg-[#ffe3dd] text-[#f16f22] font-medium px-4 py-1 rounded mb-4">
+            <span className="inline-block bg-[#fff] text-[#f16f22] font-medium px-4 py-1 rounded mb-4">
               Scholarships
             </span>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#252364] mb-4 leading-snug">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#f16f22] mb-4 leading-snug">
               Study in Australia with Scholarships –{" "}
               <br className="hidden sm:block" />
               <span className="text-black">Save big on Tuition Fees</span>
@@ -345,7 +345,7 @@ const ScolarshipInAustralia = () => {
             <div className="bg-white px-4 py-16 sm:px-6 lg:px-20">
               <div className="max-w-5xl mx-auto">
                 {/* Heading */}
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#252364] mb-8">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#f16f22] mb-8">
                   Why Apply for Scholarships in Australia Through Global
                   Routways?
                 </h2>
@@ -354,7 +354,7 @@ const ScolarshipInAustralia = () => {
                 <ul className="space-y-6">
                   {benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="mt-1 w-2 h-5 bg-[#252364] rotate-[20deg] rounded-sm block" />
+                      <span className="mt-1 w-2 h-5 bg-[#f16f22] rotate-[20deg] rounded-sm block" />
                       <p className="text-base text-[#111] font-medium">
                         {benefit}
                       </p>
@@ -370,7 +370,7 @@ const ScolarshipInAustralia = () => {
                     className="w-12 h-12"
                   />
                   <div>
-                    <p className="font-semibold text-[#252364] mb-1">
+                    <p className="font-semibold text-[#f16f22] mb-1">
                       Did you know?
                     </p>
                     <p className="text-[#333] text-[15px]">
@@ -558,7 +558,7 @@ const ScolarshipInAustralia = () => {
 
       {/* 3rd section */}
       <div className="bg-[#f5f9fc] py-12 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-[#252364] mb-10">
+        <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-[#f16f22] mb-10">
           Types of Scholarships Available in Australia
         </h2>
 
@@ -571,7 +571,7 @@ const ScolarshipInAustralia = () => {
               <h3 className="text-[#f16f22] text-lg font-semibold mb-2">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm">{item.description}</p>
+              <p className="text-black-600 text-sm">{item.description}</p>
             </div>
           ))}
         </div>
@@ -581,10 +581,10 @@ const ScolarshipInAustralia = () => {
       {/* 4th section */}
       <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-bold text-center text-[#252364] mb-2">
+          <h2 className="text-xl sm:text-2xl font-bold text-center text-[#f16f22] mb-2">
             Top Scholarships for International Students in Australia
           </h2>
-          <p className="text-center text-sm text-gray-600 mb-6">
+          <p className="text-center text-sm text-black-600 mb-6">
             New scholarships are added regularly. Check the Latest Updates
           </p>
 
@@ -592,16 +592,16 @@ const ScolarshipInAustralia = () => {
             <table className="min-w-full bg-white border border-gray-200 text-sm">
               <thead className="bg-[#ffeee6] text-left">
                 <tr>
-                  <th className="py-3 px-4 font-semibold text-[#252364]">
+                  <th className="py-3 px-4 font-semibold text-[#000]">
                     Scholarship Name
                   </th>
-                  <th className="py-3 px-4 font-semibold text-[#252364]">
+                  <th className="py-3 px-4 font-semibold text-[#000]">
                     Funding Amount
                   </th>
-                  <th className="py-3 px-4 font-semibold text-[#252364]">
+                  <th className="py-3 px-4 font-semibold text-[#000]">
                     Eligibility
                   </th>
-                  <th className="py-3 px-4 font-semibold text-[#252364]">
+                  <th className="py-3 px-4 font-semibold text-[#000]">
                     Campuses
                   </th>
                 </tr>
@@ -609,12 +609,12 @@ const ScolarshipInAustralia = () => {
               <tbody>
                 {scholarship.map((item, idx) => (
                   <tr key={idx} className="border-t border-gray-200">
-                    <td className="py-3 px-4 text-[#252364]">{item.name}</td>
-                    <td className="py-3 px-4 text-gray-700">{item.funding}</td>
-                    <td className="py-3 px-4 text-gray-700">
+                    <td className="py-3 px-4 text-[#000]">{item.name}</td>
+                    <td className="py-3 px-4 text-[#000]">{item.funding}</td>
+                    <td className="py-3 px-4 text-[#000]">
                       {item.eligibility}
                     </td>
-                    <td className="py-3 px-4 text-gray-700">{item.campuses}</td>
+                    <td className="py-3 px-4 text-[#000]">{item.campuses}</td>
                   </tr>
                 ))}
               </tbody>
@@ -623,7 +623,7 @@ const ScolarshipInAustralia = () => {
         </div>
 
         <div className="bg-[#f9f9f9] py-10 px-4 text-center">
-          <p className="text-gray-500 text-base mb-4">
+          <p className="text-[#000] text-base mb-4">
             Not sure which scholarship matches your profile?
           </p>
           <button
@@ -674,7 +674,7 @@ const ScolarshipInAustralia = () => {
 
         {/* CTA Below */}
         <div className="mt-10">
-          <p className="text-gray-500 mb-4 text-sm sm:text-base">
+          <p className="text-black-500 mb-4 text-sm sm:text-base">
             Not sure which scholarship matches your profile?
           </p>
           <button
@@ -705,7 +705,7 @@ const ScolarshipInAustralia = () => {
 
           {/* Right Text Content */}
           <div className="w-full lg:w-1/2">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-[#252364] mb-6">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-[#f16f22] mb-6">
               Who Can Apply? (Eligibility Criteria)
             </h2>
 
@@ -736,17 +736,17 @@ const ScolarshipInAustralia = () => {
                   key={idx}
                   className="bg-[#f4f7fb] p-4 rounded-xl shadow-sm border hover:shadow-md transition"
                 >
-                  <h3 className="font-semibold text-[#252364] text-base mb-1">
+                  <h3 className="font-semibold text-[#000] text-base mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-gray-600">{item.desc}</p>
+                  <p className="text-sm text-[#000]">{item.desc}</p>
                 </div>
               ))}
             </div>
 
             {/* CTA Button */}
             <div className="mt-10 text-center">
-              <p className="text-gray-500 mb-4 text-sm sm:text-base">
+              <p className="text-[#000] mb-4 text-sm sm:text-base">
                 Not sure which scholarship matches your profile?
               </p>
               <button
@@ -767,11 +767,11 @@ const ScolarshipInAustralia = () => {
       {/* 7th section */}
       <div className="bg-[#f3f7fb] py-14 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-[#252364] mb-2">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-[#000] mb-2">
             Study Abroad in just{" "}
-            <span className="text-[#252364]">6 Simple Steps</span>
+            <span className="text-[#f16f22]">6 Simple Steps</span>
           </h2>
-          <p className="text-gray-500 mb-10 text-sm sm:text-base">
+          <p className="text-[#000] mb-10 text-sm sm:text-base">
             With Global Routeway Global by your side, you can make the whole
             process a breeze!
           </p>
@@ -780,7 +780,7 @@ const ScolarshipInAustralia = () => {
             {steps.map((item, idx) => (
               <div
                 key={idx}
-                className="relative flex flex-col items-center text-center max-w-xs bg-white border-[2px] border-black p-5 rounded-md shadow-sm hover:shadow-lg transition"
+                className=" relative flex flex-col items-center text-center max-w-xs bg-white border-[2px] border-black p-5 rounded-md shadow-sm hover:shadow-lg transition"
               >
                 <div className="relative z-10">
                   <img
@@ -794,10 +794,10 @@ const ScolarshipInAustralia = () => {
                   {item.step}
                 </span>
 
-                <p className="text-sm text-gray-600">{item.text}</p>
+                <p className="text-sm text-black-500 text-justify">{item.text}</p>
 
                 {/* Decorative background box */}
-                <div className="absolute top-10 left-1/2 -translate-x-1/2 w-48 h-48 bg-[#e4e7f8] rotate-3 -z-0 rounded-xl opacity-50"></div>
+                {/* <div className="absolute top-10 left-1/2 -translate-x-1/2 w-48 h-48 bg-[#e4e7f8] rotate-3 -z-0 rounded-xl opacity-50"></div> */}
               </div>
             ))}
           </div>
@@ -899,11 +899,11 @@ const ScolarshipInAustralia = () => {
       {/* 9th section */}
       <div className="bg-[#f3f7fb] py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#252364] mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#f16f22] mb-6">
             About Global Routeway
           </h2>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto mb-10">
-            Beginning in 2006, Global Routeway Global’s expertise in student
+          <p className="text-black-600 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto mb-10">
+            Beginning in 2024, Global Routeway Global’s expertise in student
             migration consultancy evolved from a single Melbourne office to a
             multinational presence, spanning Australia, Bangladesh, Sri Lanka,
             and India. We now proudly represent international educational
@@ -916,13 +916,13 @@ const ScolarshipInAustralia = () => {
               <p className="text-[#f16f22] text-xl sm:text-2xl font-bold">
                 22,000+
               </p>
-              <p className="text-sm text-gray-700">Students Assisted</p>
+              <p className="text-sm text-black-700">Students Assisted</p>
             </div>
             <div>
               <p className="text-[#f16f22] text-xl sm:text-2xl font-bold">
                 550+
               </p>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-black-700">
                 Institutions across
                 <br />
                 11 Countries
@@ -932,11 +932,11 @@ const ScolarshipInAustralia = () => {
               <p className="text-[#f16f22] text-xl sm:text-2xl font-bold">
                 18+
               </p>
-              <p className="text-sm text-gray-700">Years of Experience</p>
+              <p className="text-sm text-black-700">Years of Experience</p>
             </div>
             <div>
               <p className="text-[#f16f22] text-xl sm:text-2xl font-bold">9</p>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-black-700">
                 Offices across
                 <br />
                 the Globe

@@ -15,14 +15,14 @@ const ContactUs = () => {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
           {/* Left Section */}
           <div className="mb-10 lg:mb-0 lg:w-1/2">
-            <button className="bg-red-100 text-red-600 px-4 py-1 rounded mb-4">
+            <button className="bg-[#fff] text-[#f16f22] px-4 py-1 rounded mb-4">
               Contact us
             </button>
-            <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#000] mb-4">
               Reach out to us and get started on <br />
-              your <span className="text-blue-900">Study Abroad Dreams</span>
+              your <span className="text-[#f16f22]">Study Abroad Dreams</span>
             </h1>
-            <p className="text-gray-700 text-lg mb-6">
+            <p className="text-black-700 text-lg mb-6">
               Our team of experts are waiting to assist you further. You can get
               in touch by:
             </p>
@@ -43,13 +43,13 @@ const ContactUs = () => {
       {/* 2nd section */}
       <div className="bg-white text-center py-12 px-4 sm:px-6 lg:px-12">
         {/* Main Heading */}
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-          Schedule an Appointment <br /> with your nearest Global Routeway
-          Office
+        <h2 className="text-2xl sm:text-3xl font-bold text-black-900 mb-4">
+          Schedule an Appointment with your nearest<br /><span className="text-[#f16f22]">Global Routeway Office</span>
+          
         </h2>
 
         {/* Subheading */}
-        <p className="text-gray-500 text-base md:text-lg max-w-3xl w-full md:w-4/5 lg:w-3/4 mx-auto mb-8 text-center">
+        <p className="text-black-500 text-base md:text-lg max-w-3xl w-full md:w-4/5 lg:w-3/4 mx-auto mb-8 text-center">
           Whether you want to meet us virtually or in-person, we’ve got you
           covered. Here’s what you need:
         </p>
@@ -86,7 +86,7 @@ const ContactUs = () => {
             Our Services can be Availed in{" "}
             <span className="text-[#f16f22]">4 Countries</span>
           </h1>
-          <p className="text-gray-600 mb-6">
+          <p className="text-black-600 mb-6">
             Pick a country and get the details to connect with our team located
             near you:
           </p>
@@ -109,7 +109,7 @@ const ContactUs = () => {
 
           {selectedCountry === "Bangladesh" && (
             <div className="bg-white rounded-xl shadow-md p-6 max-w-md mx-auto">
-              <h3 className="text-lg font-semibold text-blue-800 mb-3">
+              <h3 className="text-lg font-semibold text-[#f16f22] mb-3">
                 Mohammadpur
               </h3>
               <p className="text-sm text-gray-700 mb-2">

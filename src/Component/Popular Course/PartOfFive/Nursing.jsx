@@ -90,7 +90,7 @@ const Nursing = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
           {/* Left Text Content */}
           <div className="order-2 lg:order-1">
-            <h1 className="text-3xl sm:text-4xl font-bold text-[#252364] mb-4">
+            <h1 className="text-3xl sm:text-4xl font-bold text-[#f16f22] mb-4">
               Nursing
             </h1>
             <p className="text-gray-700 text-base sm:text-lg mb-6">
@@ -127,7 +127,7 @@ const Nursing = () => {
       {/* 2nd section - Nursing Content */}
       <div className="py-12 px-4 sm:px-6 lg:px-24 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6">
             Nursing
           </h2>
           {/* <div className="prose max-w-none text-gray-700">
@@ -159,8 +159,8 @@ const Nursing = () => {
                   <h3
                     className={`text-base md:text-lg font-medium ${
                       activeIndex === index
-                        ? "text-[#f04438]"
-                        : "text-[#f04438]"
+                        ? "text-[#f16f22]"
+                        : "text-[#f16f22]"
                     }`}
                   >
                     {item.question}
@@ -170,7 +170,7 @@ const Nursing = () => {
                   </span>
                 </div>
                 {activeIndex === index && (
-                  <p className="mt-4 text-sm md:text-base text-gray-600">
+                  <p className="mt-4 text-sm md:text-base text-black-600">
                     {item.answer}
                   </p>
                 )}
@@ -178,7 +178,7 @@ const Nursing = () => {
             ))}
           </div>
 
-          <p className="text-center text-gray-500 mt-12 text-base sm:text-lg">
+          <p className="text-center text-black-500 mt-12 text-base sm:text-lg">
             Our experts are waiting to help you take the next steps towards your
             dream.
           </p>

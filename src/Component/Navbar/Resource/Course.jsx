@@ -7,21 +7,24 @@ import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 import SuccessStories from "../../SuccessStories/SuccessStories";
+import { useNavigate } from "react-router-dom";
 
 const Course = () => {
+  const navigate = useNavigate();
+
   // 2nd section
   const courses = [
     {
       title: "Accounting",
-      image: "/study1.jpg",
+      image: "/Accounting.jpeg",
     },
     {
       title: "Nursing",
-      image: "/study3.png",
+      image: "/Nurse.jpeg",
     },
     {
       title: "Engineering",
-      image: "/study4.jpg",
+      image: "/engineering.jpeg",
     },
     {
       title: "Business Analytics",
@@ -29,9 +32,25 @@ const Course = () => {
     },
     {
       title: "Food Science",
-      image: "/university.jpg",
+      image: "/FoodandHospital.jpeg",
     },
   ];
+  const getPath = (title) => {
+    switch (title.toLowerCase()) {
+      case "nursing":
+        return "/nursing";
+      case "accounting":
+        return "/accounting";
+      case "engineering":
+        return "/engineering";
+      case "food science":
+        return "/hospitality";
+      case "business analytics":
+        return "/business-studies";
+      default:
+        return "/";
+    }
+  };
   // 2nd section
 
   //   5th section
@@ -186,18 +205,18 @@ const Course = () => {
       <div className="bg-gradient-to-r from-black via-[#064b4e] to-[#24b2c3] text-white py-24 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-block bg-[#fef1f0] text-[#f44336] text-sm font-semibold px-4 py-1 rounded mb-6">
+          <div className="inline-block bg-[#fff] text-[#f16f22] text-sm font-semibold px-4 py-1 rounded mb-6">
             Services
           </div>
 
           {/* Title */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-snug sm:leading-snug">
+          <h1 className="text-[#f16f22] text-2xl sm:text-3xl md:text-4xl font-extrabold leading-snug sm:leading-snug">
             Learn everything about Studying <br className="hidden sm:block" />
             Your Preferred Course Abroad!
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-4 text-sm sm:text-base text-white/90">
+          <p className="mt-4 text-sm sm:text-base text-white/90 ">
             Explore various factors that you need to consider before you choose
             your preferred course
           </p>
@@ -211,6 +230,10 @@ const Course = () => {
           {courses.map((course, index) => (
             <div
               key={index}
+              onClick={() => {
+                window.scrollTo(0, 0); // 🔥 Scrolls to top
+                navigate(getPath(course.title)); // 🔥 Navigate to page
+              }}
               className="bg-white rounded-xl overflow-hidden shadow-md transition hover:shadow-lg"
             >
               <img
@@ -222,7 +245,7 @@ const Course = () => {
                 <h3 className="text-md font-semibold text-[#252364]">
                   {course.title}
                 </h3>
-                <p className="text-[#f44336] text-sm font-medium mt-1">
+                <p className="text-[#f16f22] text-sm font-medium mt-1">
                   Learn More &gt;
                 </p>
               </div>
@@ -237,7 +260,7 @@ const Course = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* Left Side: Info List */}
           <div>
-            <h2 className="text-xl md:text-2xl font-semibold text-[#252364] mb-6">
+            <h2 className="text-xl md:text-2xl font-semibold text-[#f16f22] mb-6">
               Who Can Benefit from Our Counselling Services?
             </h2>
             <ul className="space-y-6">
@@ -248,10 +271,11 @@ const Course = () => {
                 "Parents and guardians seeking professional guidance for their children’s future",
               ].map((text, idx) => (
                 <li key={idx} className="flex items-start gap-4">
-                  <span className="text-[#252364] text-2xl font-bold mt-1">
+                  {/* <span className="text-[#252364] text-2xl font-bold mt-1">
                     /
-                  </span>
-                  <p className="text-gray-800 text-base">{text}</p>
+                  </span> */}
+                  <span className="mt-1 w-2 h-5 bg-[#f16f22] rotate-[20deg] rounded-sm block" />
+                  <p className="text-black-500 text-base">{text}</p>
                 </li>
               ))}
             </ul>

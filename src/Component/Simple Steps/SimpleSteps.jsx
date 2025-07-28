@@ -8,7 +8,7 @@ const SimpleSteps = () => {
       heading: "One-on-One Counselling",
       description:
         "We evaluate your profile and ambitions to pinpoint the ideal programs.",
-      bg: "bg-purple-600",
+      bg: "bg-cyan-500",
       icon: "👥",
     },
     {
@@ -55,7 +55,7 @@ const SimpleSteps = () => {
           Study Abroad in just{" "}
           <span className="text-[#f16f22]">5 Simple Steps</span>
         </h1>
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 text-black-600">
           With Global Routways by your side, your <br className="sm:hidden" />
           can make the whole process a breeze!
         </p>
@@ -77,7 +77,7 @@ const SimpleSteps = () => {
             <h3 className="font-bold text-[#000] text-md mb-2">
               {step.heading}
             </h3>
-            <p className="text-sm text-black  text-justify">{step.description}</p>
+            <p className="text-sm text-black text-justify">{step.description}</p>
           </div>
         ))}
       </div>

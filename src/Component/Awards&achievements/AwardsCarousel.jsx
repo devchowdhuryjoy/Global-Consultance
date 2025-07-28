@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import ConsultationModal from "../../Modal/ConsultationModal";
@@ -44,7 +44,7 @@ const AwardsCarousel = () => {
 
   return (
     <div className="relative py-12 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
-      <h2 className="text-3xl font-bold mb-8">
+      <h2 className="text-3xl font-bold mb-8 text-[#f16f22]">
         Collaboration <span className="text-gray-700"></span>
       </h2>
 
@@ -82,19 +82,28 @@ const AwardsCarousel = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
       </div>
-
+    
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,
         }}
-        onInit={(swiper) => {
+        onBeforeInit={(swiper) => {
           swiper.params.navigation.prevEl = prevRef.current;
           swiper.params.navigation.nextEl = nextRef.current;
-          swiper.navigation.init();
-          swiper.navigation.update();
         }}
+        onSwiper={(swiper) => {
+          setTimeout(() => {
+            swiper.navigation.init();
+            swiper.navigation.update();
+          });
+        }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
         spaceBetween={20}
         breakpoints={{
           320: { slidesPerView: 1 },

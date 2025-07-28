@@ -2,8 +2,17 @@ import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import userImage from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 const EducationService = () => {
+  const offices = [
+    {
+      name: "Mohammadpur",
+      address: `N Islam Tower, 19/C/F Block-F, Ring Road, Shamoly, Mohammadpur, Dhaka 1207, Bangladesh`,
+      phone: "01618-858541-9",
+    },
+  ];
+
   return (
     <div className="bg-[#f7f7f7] py-12 px-4 sm:px-8 md:px-16 lg:px-24">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10 text-sm text-gray-800">
@@ -11,11 +20,29 @@ const EducationService = () => {
         <div className="sm:col-span-2">
           <img src={userImage} alt="Logo" className="h-12 w-auto mb-4" />
           <p className="leading-relaxed text-black-700">
-            Since the establishment of Global Routeways in 2006, we have been
+            Since the establishment of Global Routeways in 2024, we have been
             offering higher education consultancy services to students who are
             dreaming of a quality life abroad.
           </p>
-          <div className="flex gap-4 mt-5 text-xl">
+
+          <div className="grid grid-cols-1 text-sm text-black-800">
+            {offices.map((office, idx) => (
+              <div key={idx} className=" p-6  w-full md:max-w-xl">
+                <h3 className="text-[#f16f22] font-semibold text-lg mb-2">
+                  {office.name}
+                </h3>
+                <p className="flex items-start gap-2 text-sm mb-2">
+                  <span className="text-[#f16f22] mt-1">📍</span>
+                  {office.address}
+                </p>
+                <p className="flex items-center gap-2">
+                  <FaPhone className="text-[#f16f22]" /> {office.phone}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex gap-4 text-xl">
             <FaFacebook className="text-[#3b5998] hover:text-blue-700 cursor-pointer" />
             <FaTwitter className="text-[#00acee] hover:text-sky-500 cursor-pointer" />
             <FaInstagram className="text-[#C13584] hover:text-pink-500 cursor-pointer" />

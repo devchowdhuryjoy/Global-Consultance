@@ -19,16 +19,6 @@ const destinations = [
   { title: "Study in Europe", image: "/study3.png", path: "/europe" },
 ];
 
-const Arrow = ({ className, style, onClick, icon }) => (
-  <div
-    className={`absolute z-10 bg-white text-gray-700 rounded-full shadow-md flex items-center justify-center w-8 h-8 cursor-pointer ${className}`}
-    style={{ ...style, display: "flex",  }}
-    onClick={onClick}
-  >
-    {icon}
-  </div>
-);
-
 const Textimage = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -43,20 +33,22 @@ const Textimage = () => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    nextArrow: <Arrow icon={<FaArrowRight />} />,
-    prevArrow: <Arrow icon={<FaArrowLeft />} />,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
-    ],
-  };
+ const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  responsive: [
+    { breakpoint: 1024, settings: { slidesToShow: 3 } },
+    { breakpoint: 768, settings: { slidesToShow: 2 } },
+    { breakpoint: 480, settings: { slidesToShow: 1 } },
+  ],
+};
+
 
   return (
     <div className="bg-gray-50 py-16 px-4 md:px-12 text-center">

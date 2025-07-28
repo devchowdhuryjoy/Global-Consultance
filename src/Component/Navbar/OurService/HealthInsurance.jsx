@@ -251,13 +251,13 @@ const HealthInsurance = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col-reverse lg:flex-row items-center">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
-            <div className="inline-block bg-[#ffe4e0] text-[#f16f22] px-4 py-1 rounded font-semibold text-sm">
+            <div className="inline-block bg-[#fff] text-[#f16f22] px-4 py-1 rounded font-semibold text-sm">
               Health Insurance
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#252364]">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#f16f22]">
               Overseas Health Insurance for Study Abroad Aspirants
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-black-600 text-lg">
               Discover various options that will help you take care of your
               health without breaking the bank.
             </p>
@@ -333,7 +333,7 @@ const HealthInsurance = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* LEFT TEXT SECTION */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6">
               What Is Overseas Student Health Insurance?
             </h2>
             <p className="text-gray-700 mb-4">
@@ -527,10 +527,10 @@ const HealthInsurance = () => {
       {/* 3rd section */}
       <div className="bg-[#e9f8fc] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-4">
             Types of Health Insurance Plans
           </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto mb-10">
+          <p className="text-black-700 max-w-3xl mx-auto mb-10">
             Funding medical emergencies can be a huge financial burden while
             studying abroad. To be worry-free, knowing that your health and
             well-being are taken care of, you should purchase health insurance
@@ -545,7 +545,7 @@ const HealthInsurance = () => {
               <h3 className="text-lg font-semibold text-[#f16f22] mb-3">
                 Overseas Student Health Cover (OSHC)
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black-700">
                 Overseas Student Health Cover is a health insurance plan
                 designed for international students studying abroad. It is a
                 complete coverage for expenses incurred comprising pre and
@@ -565,7 +565,7 @@ const HealthInsurance = () => {
               <h3 className="text-lg font-semibold text-[#f16f22] mb-3">
                 Overseas Visitor Health Cover (OVHC)
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black-700">
                 Overseas Visitor Health Cover is designed especially for
                 visitors to Australia who cannot access the Australian public
                 Medicare System for any hospital or medical costs. The
@@ -586,10 +586,10 @@ const HealthInsurance = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* LEFT FAQ */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-4">
               Benefits of Overseas Student Health Cover
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-black-700 mb-6">
               OVHC is mandatory to comply with visa regulations. Apart from
               that, several other benefits make it a requirement for students
               studying abroad. They are:
@@ -612,7 +612,7 @@ const HealthInsurance = () => {
                     </span>
                   </button>
                   {activeIndex === index && (
-                    <p className="mt-2 text-gray-600 text-sm">{item.answer}</p>
+                    <p className="mt-2 text-black-600 text-sm">{item.answer}</p>
                   )}
                 </div>
               ))}
@@ -674,7 +674,7 @@ const HealthInsurance = () => {
 
           {/* RIGHT Text */}
           <div className="text-white">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-[#f16f22]">
               Why Do You Need a Student Health Cover?
             </h2>
             <p className="text-gray-100 mb-4">
@@ -726,10 +726,10 @@ const HealthInsurance = () => {
       {/* 6th section */}
       <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-4">
             How to Choose the Best Health Insurance Plan?
           </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto mb-12">
+          <p className="text-black-700 max-w-3xl mx-auto mb-12">
             Buying the best health insurance plan you should not forget before
             you fly abroad for studies. Choosing the best plan from the host of
             policies under the OSHC can be overwhelming. But considering the
@@ -743,7 +743,7 @@ const HealthInsurance = () => {
             <h3 className="text-lg font-semibold text-[#f16f22] mb-2">
               University and Country Requirements
             </h3>
-            <p className="text-gray-700 text-sm">
+            <p className="text-black-700 text-sm">
               Each country and university may have different requirements
               concerning the OSHC. Check and ask about it before you decide to
               purchase a plan. Most countries insist on OSHC before commencing
@@ -757,7 +757,7 @@ const HealthInsurance = () => {
             <h3 className="text-lg font-semibold text-[#f16f22] mb-2">
               Compare Different Plans
             </h3>
-            <p className="text-gray-700 text-sm">
+            <p className="text-black-700 text-sm">
               After you are clear about the insurance specifications, you
               research and compare the plans available. You should consider the
               coverage offered as well as the exclusions. Also, consider the
@@ -773,7 +773,7 @@ const HealthInsurance = () => {
             <h3 className="text-lg font-semibold text-[#f16f22] mb-2">
               Read The Fine Print
             </h3>
-            <p className="text-gray-700 text-sm">
+            <p className="text-black-700 text-sm">
               Read between the lines to avoid surprises. Look for what is
               excluded, waiting period, hidden limits, etc., that are normally
               mentioned in the terms and conditions.
@@ -788,16 +788,16 @@ const HealthInsurance = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/* Left Text Section */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6">
               How to Buy an Online Health Insurance Plan?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-black-700 mb-4">
               You can buy a health insurance plan online by accessing the health
               insurance provider’s official website within a few minutes.
               However, for more clarity about the best insurance providers in
               your host country, you can take the assistance of Global Routeway.
             </p>
-            <p className="text-gray-700 mb-6">
+            <p className="text-black-700 mb-6">
               Global Routeway coordinates with the best insurance providers
               across the globe. Whichever country you choose to study abroad,
               Global Routeway will help you get the best insurance providers who
@@ -805,13 +805,13 @@ const HealthInsurance = () => {
             </p>
 
             {/* Bullet Points */}
-            <ul className="mb-6 space-y-3 font-semibold text-[#252364]">
+            <ul className="mb-6 space-y-3 font-semibold text-[#f16f22]">
               <li>Exclusive benefits</li>
               <li>Quick turnaround</li>
               <li>Value for money</li>
             </ul>
 
-            <p className="text-gray-700 mb-6">
+            <p className="text-black-700 mb-6">
               The team will help you compare policies and get the most relevant
               and affordable student health coverage for you.
             </p>
@@ -858,10 +858,10 @@ const HealthInsurance = () => {
 
           {/* Right content */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6">
               Health Insurance Plan Eligibility Criteria
             </h2>
-            <p className="text-gray-800 mb-4">
+            <p className="text-black-700 mb-4">
               As per the visa regulations and specific university/country
               requirements, students going to foreign countries for studies
               should have a student health cover. This will take care of their
@@ -870,7 +870,7 @@ const HealthInsurance = () => {
               eligibility criteria to purchase the health insurance plan.
             </p>
 
-            <ul className="text-gray-800 space-y-3 list-disc pl-5 mb-6">
+            <ul className="text-black-800 space-y-3 list-disc pl-5 mb-6">
               <li>
                 Should have a student visa for the duration of their stay in the
                 foreign country.
@@ -894,7 +894,7 @@ const HealthInsurance = () => {
               </li>
             </ul>
 
-            <p className="text-gray-800 mb-6">
+            <p className="text-black-800 mb-6">
               Our team will help you get the most relevant and affordable
               student health coverage for you.
             </p>
@@ -1049,7 +1049,7 @@ const HealthInsurance = () => {
       {/* 11th section */}
       <div className="bg-[#f6f4ff] py-16 px-4 sm:px-6 lg:px-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#252364] mb-10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#000] mb-10">
             Frequently Asked Questions
           </h2>
 
@@ -1069,7 +1069,7 @@ const HealthInsurance = () => {
                   </span>
                 </div>
                 {openIndex === index && item.answer && (
-                  <p className="mt-4 text-gray-700 text-sm sm:text-base">
+                  <p className="mt-4 text-black-700 text-sm sm:text-base">
                     {item.answer}
                   </p>
                 )}
@@ -1077,7 +1077,7 @@ const HealthInsurance = () => {
             ))}
           </div>
 
-          <p className="text-gray-600 mt-12 mb-6 text-sm sm:text-base">
+          <p className="text-black-600 mt-12 mb-6 text-sm sm:text-base">
             Our experts are waiting to help you take the next steps towards your
             dream.
           </p>

@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Swal from "sweetalert2";
@@ -14,7 +14,7 @@ import SimpleSteps from "../../Simple Steps/SimpleSteps";
 
 const AdmissionSupport = () => {
   const [showModal, setShowModal] = useState(false);
-
+  const swiperRef = useRef(null);
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
@@ -290,11 +290,11 @@ const AdmissionSupport = () => {
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
           {/* Left Content */}
           <div className="w-full lg:w-1/2">
-            <span className="inline-block bg-[#ffe6e1] text-[#f16f22] font-medium text-sm px-4 py-1 rounded mb-4">
+            <span className="inline-block bg-[#fff] text-[#f16f22] font-medium text-sm px-4 py-1 rounded mb-4">
               Services
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1b1b1b] leading-tight mb-4">
-              <span className="text-[#252364]">Expert Admission Support</span>{" "}
+              <span className="text-[#f16f22]">Expert Admission Support</span>{" "}
               <br />
               for Your Study Abroad Journey
             </h2>
@@ -357,7 +357,7 @@ const AdmissionSupport = () => {
             </div>
 
             {/* FREE Banner */}
-            <div className="bg-gradient-to-r from-[#1f005c] to-[#5b0060] text-white p-5 rounded-2xl shadow-lg mt-4">
+            <div className="bg-gradient-to-r from-[#f16f22] to-[#5b0060] text-white p-5 rounded-2xl shadow-lg mt-4">
               <p className="text-xl font-bold">FREE</p>
               <p className="text-sm">
                 End-to-End Guidance, Profile assessment, Career Guidance,
@@ -369,23 +369,24 @@ const AdmissionSupport = () => {
             <div className="text-gray-800 space-y-6 text-justify">
               <p className="text-base sm:text-lg">
                 Receive an individual consultation with the best educational
-                consultants in <strong>Bangladesh</strong> to obtain a
-                trouble-free experience and discover the right possibilities for
-                overseas study.
+                consultants in{" "}
+                <strong className="text-[#f16f22]">Bangladesh</strong> to obtain
+                a trouble-free experience and discover the right possibilities
+                for overseas study.
               </p>
 
               <p className="text-base sm:text-lg">
                 Every year thousands of students in Bangladesh aim to start
                 their careers abroad. In this respect,{" "}
-                <strong>Global Routeway</strong> has established themselves as
-                the best admission consultants in Bangladesh. At Global
-                Routeway, we perceive that students often feel apprehensive
-                about the surcharge of information available on the internet
-                while preparing for a new journey. Hence, with over a decade of
-                experience and professional acknowledgment, our dedicated team
-                can always make the entire admission and visa application
-                process hassle-free for the students. Ultimately, we are the
-                official representative of over <strong>550+</strong>{" "}
+                <strong className="text-[#f16f22]">Global Routeway</strong> has
+                established themselves as the best admission consultants in
+                Bangladesh. At Global Routeway, we perceive that students often
+                feel apprehensive about the surcharge of information available
+                on the internet while preparing for a new journey. Hence, with
+                over a decade of experience and professional acknowledgment, our
+                dedicated team can always make the entire admission and visa
+                application process hassle-free for the students. Ultimately, we
+                are the official representative of over <strong>550+</strong>{" "}
                 universities, colleges, and institutions that have optimum
                 prestige worldwide with phenomenal courses, ethos, culture,
                 course delivery format, cost, international student support,
@@ -583,7 +584,7 @@ const AdmissionSupport = () => {
             <h2 className="text-2xl sm:text-3xl font-bold">
               Course Selection and Admission Advice
             </h2>
-            <h3 className="text-lg sm:text-xl font-semibold text-[#252364]">
+            <h3 className="text-lg sm:text-xl font-semibold text-[#f16f22]">
               Choosing the right course and institution
             </h3>
 
@@ -701,25 +702,32 @@ const AdmissionSupport = () => {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
             Study at a World Renowned Institution
           </h2>
-          <p className="text-lg font-medium text-gray-700 mt-2">
+          <p className="text-lg font-medium text-[#f16f22] mt-2">
             with Expert Guidance
           </p>
         </div>
 
         <Swiper
-          modules={[Navigation]}
+          ref={swiperRef}
+          modules={[Navigation, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+            reverseDirection: false,
+          }}
           navigation={{
-            nextEl: ".custom-swiper-next",
             prevEl: ".custom-swiper-prev",
+            nextEl: ".custom-swiper-next",
           }}
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
             1280: { slidesPerView: 4 },
           }}
-          className="relative"
+          className="relative pb-8"
         >
           {universityData.map((item, index) => (
             <SwiperSlide key={index}>
@@ -946,8 +954,8 @@ const AdmissionSupport = () => {
                   <h3
                     className={`text-base md:text-lg font-medium ${
                       activeIndex === index
-                        ? "text-[#f04438]"
-                        : "text-[#f04438]"
+                        ? "text-[#f16f22]"
+                        : "text-[#f16f22]"
                     }`}
                   >
                     {item.question}
@@ -957,7 +965,7 @@ const AdmissionSupport = () => {
                   </span>
                 </div>
                 {activeIndex === index && (
-                  <p className="mt-4 text-sm md:text-base text-gray-600">
+                  <p className="mt-4 text-sm md:text-base text-black-500">
                     {item.answer}
                   </p>
                 )}
@@ -965,7 +973,7 @@ const AdmissionSupport = () => {
             ))}
           </div>
 
-          <p className="text-center text-gray-500 mt-12 text-base sm:text-lg">
+          <p className="text-center text-[#000] mt-12 text-base sm:text-lg">
             Our experts are waiting to help you take the next steps towards your
             dream.
           </p>

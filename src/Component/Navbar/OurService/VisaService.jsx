@@ -236,15 +236,15 @@ const VisaService = () => {
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
           {/* Left Content */}
           <div className="lg:w-1/2 text-center lg:text-left">
-            <div className="inline-block bg-[#ffe2dc] text-[#f16f22] px-4 py-1 text-sm font-medium rounded-md mb-4">
+            <div className="inline-block bg-[#fff] text-[#f16f22] px-4 py-1 text-sm font-medium rounded-md mb-4">
               Visa Services
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#252364] leading-snug mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#f16f22] leading-snug mb-4">
               Hassle-Free Visa Services for Your{" "}
               <br className="hidden sm:block" />
               Study Abroad Journey
             </h2>
-            <p className="text-gray-600 text-base sm:text-lg mb-6">
+            <p className="text-black-500 text-base sm:text-lg mb-6">
               Get expert guidance and seamless support for your student visa
               application and approval.
             </p>
@@ -284,7 +284,7 @@ const VisaService = () => {
             {/* Student Visa Section */}
             <div className="bg-white px-4 sm:px-8 lg:px-16 py-12 rounded-lg shadow">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-xl sm:text-2xl font-bold text-[#252364] mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#f16f22] mb-4">
                   Student Visa
                 </h2>
                 <p className="text-gray-700 text-base leading-relaxed mb-4">
@@ -312,10 +312,10 @@ const VisaService = () => {
             {/* Visitor Visa Section */}
             <div className="bg-white px-4 sm:px-8 lg:px-16 py-12 rounded-lg shadow">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-xl sm:text-2xl font-bold text-[#252364] mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#f16f22] mb-4">
                   Visitor Visa
                 </h2>
-                <p className="text-lg font-semibold text-[#252364] mb-4">
+                <p className="text-lg font-semibold text-[#000] mb-4">
                   If you wish to visit international countries temporarily for
                   business, tourism, or transit, we can yield a seamless visa
                   application journey for you as your devoted student visa
@@ -346,7 +346,7 @@ const VisaService = () => {
 
           {/* Right Form */}
           <div className="bg-white p-6 rounded-2xl shadow-md w-full h-fit sticky top-8">
-            <h3 className="text-lg md:text-xl font-semibold mb-4 text-center text-[#252364]">
+            <h3 className="text-lg md:text-xl font-semibold mb-4 text-center text-[#000]">
               Register with Us to Take the Next Step
             </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -547,7 +547,7 @@ const VisaService = () => {
 
       <section className="bg-[#f3f7fa] py-14 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#252364] mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#f16f22] mb-12">
             How Our Visa Services Work
           </h2>
           <div className="flex flex-wrap items-stretch justify-between gap-6">
@@ -565,7 +565,7 @@ const VisaService = () => {
                     alt={step.heading}
                     className="w-32 h-32 object-contain mb-4"
                   />
-                  <div className="bg-[#252364] text-white px-4 py-1 rounded-full text-sm font-semibold mb-2">
+                  <div className="bg-[#f16f22] text-white px-4 py-1 rounded-full text-sm font-semibold mb-2">
                     {step.title}
                   </div>
                   <h3 className="font-bold text-sm mb-1 text-left w-full">
@@ -697,8 +697,8 @@ const VisaService = () => {
                   <h3
                     className={`text-base md:text-lg font-medium ${
                       activeIndex === index
-                        ? "text-[#f04438]"
-                        : "text-[#f04438]"
+                        ? "text-[#f16f22]"
+                        : "text-[#f16f22]"
                     }`}
                   >
                     {item.question}
@@ -708,7 +708,7 @@ const VisaService = () => {
                   </span>
                 </div>
                 {activeIndex === index && (
-                  <p className="mt-4 text-sm md:text-base text-gray-600">
+                  <p className="mt-4 text-sm md:text-base text-black-500">
                     {item.answer}
                   </p>
                 )}
@@ -716,7 +716,7 @@ const VisaService = () => {
             ))}
           </div>
 
-          <p className="text-center text-gray-500 mt-12 text-base sm:text-lg">
+          <p className="text-center text-black-500 mt-12 text-base sm:text-lg">
             Our experts are waiting to help you take the next steps towards your
             dream.
           </p>

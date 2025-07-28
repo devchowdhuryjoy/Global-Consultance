@@ -1086,17 +1086,17 @@ const StudyInNewZealand = () => {
               <div
                 key={index}
                 className={`rounded-lg ${
-                  openIndex === index ? "bg-white shadow-md" : "bg-gray-200"
+                  openIndex === index ? "bg-white shadow-md" : "bg-black-200"
                 }`}
               >
                 <button
                   onClick={() => toggle(index)}
-                  className="w-full text-left p-4 font-medium text-[#f15c2a] hover:text-[#f15c2a] focus:outline-none"
+                  className="w-full text-left p-4 font-medium text-[#f16f22] hover:text-[#f16f22] focus:outline-none"
                 >
                   {item.question}
                 </button>
                 {openIndex === index && item.answer && (
-                  <div className="px-4 pb-4 text-gray-700">
+                  <div className="px-4 pb-4 text-black-700">
                     <p>{item.answer}</p>
                   </div>
                 )}
@@ -1104,7 +1104,7 @@ const StudyInNewZealand = () => {
             ))}
           </div>
 
-          <div className="text-center mt-8 text-sm text-gray-500">
+          <div className="text-center mt-8 text-sm text-black-500">
             Our experts are waiting to help you take the next steps towards your
             dream.
           </div>

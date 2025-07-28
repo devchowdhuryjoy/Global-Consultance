@@ -228,13 +228,13 @@ const VideoTestimonials = () => {
       <section className="bg-[#e8f7fd] py-16 px-4 md:px-8">
         {/* Top Title */}
         <div className="text-center mb-12">
-          <span className="inline-block bg-red-100 text-red-500 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+          <span className="inline-block bg-[#fff] text-[#f16f22] px-4 py-1 rounded-full text-sm font-semibold mb-4">
             Testimonials
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#252364]">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#f16f22]">
             22,000+ Happy Clients, Worldwide!
           </h2>
-          <p className="mt-4 text-gray-700 max-w-2xl mx-auto text-base md:text-lg">
+          <p className="mt-4 text-black max-w-2xl mx-auto text-base md:text-lg">
             Hear how we have made a difference in helping them achieve their
             aspirations.
           </p>
@@ -242,10 +242,10 @@ const VideoTestimonials = () => {
 
         {/* Section Title */}
         <div className="text-center mb-10">
-          <h3 className="text-2xl font-semibold text-[#252364] relative inline-block">
-            <span className="border-t-2 border-[#252364] w-16 inline-block absolute -top-3 left-0 md:-left-20"></span>
+          <h3 className="text-2xl font-semibold text-[#f16f22] relative inline-block">
+            <span className="border-t-2 border-black-500 w-16 inline-block absolute -top-3 left-0 md:-left-20"></span>
             Video Testimonials
-            <span className="border-t-2 border-[#252364] w-16 inline-block absolute -top-3 right-0 md:-right-20"></span>
+            <span className="border-t-2 border-black-500 w-16 inline-block absolute -top-3 right-0 md:-right-20"></span>
           </h3>
         </div>
 
@@ -294,7 +294,7 @@ const VideoTestimonials = () => {
       </div> */}
 
       <div className="bg-[#252364] py-12 px-4 md:px-16 text-white">
-        <h2 className="text-center text-2xl md:text-3xl font-bold mb-10">
+        <h2 className="text-center text-2xl md:text-3xl font-bold mb-10 text-[#f16f22]">
           Students Reviews
         </h2>
 
@@ -337,7 +337,7 @@ const VideoTestimonials = () => {
         <div className="bg-blue-50 py-12 px-4 sm:px-8 md:px-16 lg:px-24">
           <h2 className="text-3xl font-semibold text-gray-800 mb-10">
             <span className="text-black font-bold">Our </span>
-            <span className="text-blue-800 font-bold">Achievements</span>
+            <span className="text-[#f16f22] font-bold">Achievements</span>
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -348,7 +348,7 @@ const VideoTestimonials = () => {
                   key={index}
                   className="flex flex-col items-start text-left"
                 >
-                  <div className="bg-red-100 text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
+                  <div className="bg-black text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
                     🏆
                   </div>
                   <div className="text-black font-bold text-xl">
@@ -396,19 +396,19 @@ const VideoTestimonials = () => {
             <h2 className="text-2xl font-semibold">Contact Us</h2>
             <div className="flex items-center gap-4">
               <div className="bg-white p-2 rounded-full">
-                <FaCrown className="text-red-500 text-lg" />
+                <FaCrown className="text-[#f16f22] text-lg" />
               </div>
               <p className="text-lg font-medium">Free* End-to-End Assistance</p>
             </div>
             <div className="flex items-center gap-4">
               <div className="bg-white p-2 rounded-full">
-                <FaCrown className="text-red-500 text-lg" />
+                <FaCrown className="text-[#f16f22] text-lg" />
               </div>
               <p className="text-lg font-medium">Trusted by 22,000+ Students</p>
             </div>
             <div className="flex items-center gap-4">
               <div className="bg-white p-2 rounded-full">
-                <FaCrown className="text-red-500 text-lg" />
+                <FaCrown className="text-[#f16f22] text-lg" />
               </div>
               <p className="text-lg font-medium">550+ Partner Institutions</p>
             </div>

@@ -9,33 +9,45 @@ const teamMembers = [
     name: "Mohammad Shaiful Islam",
     title: "Director and Founder",
     image: "/university.jpg",
-    bgColor: "bg-[#f5f7cb]",
-    description:
-      "Driven by a strong belief in the power of education and its ability to transform lives.",
+    bgColor: "bg-[#fff]",
+    description: [
+      "Driven by a strong belief in the power of education.",
+      "Guided by certified expertise (QEAC D468) and a deep commitment to student success.",
+      "Focused on creating life-changing opportunities, high-paying careers, and brighter futures abroad.",
+    ],
   },
   {
     name: "Md. Shaidul Islam",
     title: "Chief Executive Officer",
     image: "/studyusa.jpg",
-    bgColor: "bg-[#b3e5fc]",
-    description:
-      "Founded on the belief that education and opportunity should be accessible to all.",
+    bgColor: "bg-[#fff]",
+    description: [
+      "Founded on the belief that education and opportunity should have no limits.",
+      "Backed by strong industry ties and memberships in leading associations like IEAA, MIA, ISANA, ICEF, and Migration Alliance.",
+      "Brings certified expertise as a QEAC (H018) and Registered Migration Agent (MARN 1795751).",
+    ],
   },
   {
     name: "Mosharraf Khan Yaafi",
     title: "Chief Growth Officer",
     image: "/study4.jpg",
-    bgColor: "bg-[#fff176]",
-    description:
-      "25+ years of corporate leadership across industries like FMCG, telecom and education.",
+    bgColor: "bg-[#fff]",
+    description: [
+      "25+ years of corporate leadership across industries like FMCG, Telecom, international test management, & overseas education.",
+      "Proven expertise in operations, business development, growth strategy, and commercial management.",
+      "Has led successful projects across the UK, Australia, India, Sri Lanka, and Bangladesh.",
+    ],
   },
   {
     name: "Fareha Begum",
     title: "Sr. Country Director",
     image: "/study6.jpg",
-    bgColor: "bg-[#f8bbd0]",
-    description:
-      "A seasoned education professional with a strong track record in student counseling.",
+    bgColor: "bg-[#fff]",
+    description: [
+      "A seasoned education professional with a strong foundation of knowledge and insight.",
+      "Contributing to the industry with proven expertise since 1999.",
+      "A key force behind the success and operations of PFEC Global Bangladesh.",
+    ],
   },
 ];
 
@@ -155,13 +167,32 @@ const TeamSection = () => {
                     className="w-full h-64 object-cover rounded-md"
                   />
                 </div>
-                <div className="bg-black text-white p-4">
+                <div className="bg-[#f16f22] text-white p-4">
                   <h3 className="text-lg font-semibold">{member.name}</h3>
                   <p className="text-sm">{member.title}</p>
                 </div>
                 <div className="p-4">
-                  <ul className="list-disc text-gray-700 text-sm pl-5">
-                    <li>{member.description}</li>
+                  <ul className="text-black text-base pl-3">
+                    {Array.isArray(member.description) ? (
+                      member.description.map((point, i) => (
+                        <li
+                          key={i}
+                          className="leading-relaxed flex items-start gap-1"
+                        >
+                          <span className="text-xl font-bold leading-none">
+                            .
+                          </span>
+                          <span>{point}</span>
+                        </li>
+                      ))
+                    ) : (
+                      <li className="leading-relaxed flex items-start gap-1">
+                        <span className="text-xl font-bold leading-none">
+                          .
+                        </span>
+                        <span>{member.description}</span>
+                      </li>
+                    )}
                   </ul>
                 </div>
               </div>

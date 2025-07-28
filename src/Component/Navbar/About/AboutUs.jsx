@@ -144,7 +144,7 @@ const AboutUs = () => {
           <div className="space-y-6 text-gray-800">
             <h2 className="text-2xl md:text-3xl font-bold">Who are we?</h2>
             <p>
-              Our journey started with a single office in 2006 in Melbourne,
+              Our journey started with a single office in 2024 in Melbourne,
               Australia and since then we have expanded to different
               geographies—Sydney, Adelaide, and Perth in Australia, Dhaka and
               Chattogram in Bangladesh, and Ahmedabad & Kolkata in India and
@@ -162,7 +162,7 @@ const AboutUs = () => {
               <li>Colleges and tertiary schools all across the world</li>
             </ul>
             <p>
-              Since 2006, Global Routeway Global has helped realize the dreams
+              Since 2024, Global Routeway Global has helped realize the dreams
               of 22000+ students from different nationalities with the help of
               our partners. Our defined processes, vast experience, committed
               workforce, and uncompromising work ethics help us deliver the best
@@ -503,7 +503,7 @@ const AboutUs = () => {
                   key={index}
                   className="flex flex-col items-start text-left"
                 >
-                  <div className="bg-[#f16f22] text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
+                  <div className="bg-black text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
                     🏆
                   </div>
                   <div className="text-black font-bold text-xl">
@@ -552,7 +552,7 @@ const AboutUs = () => {
             <h3 className="text-xl font-semibold text-[#f16f22] mb-3">
               Mission
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-black-500 leading-relaxed">
               Going above and beyond to ensure that each of our student's career
               aspirations has been achieved through our guidance, and we achieve
               this together.
@@ -564,7 +564,7 @@ const AboutUs = () => {
             <h3 className="text-xl font-semibold text-[#f16f22] mb-3">
               Vision
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-black-500 leading-relaxed">
               To remain an industry leader by giving the highest level of client
               experience through ethical guidance so that students can make
               informed decisions on their career goals and become global
@@ -577,7 +577,7 @@ const AboutUs = () => {
         {/* Core Values */}
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-semibold">
-            Our <span className="text-[#252364]">Core Values</span>
+            Our <span className="text-[#f16f22]">Core Values</span>
           </h2>
         </div>
 
@@ -586,7 +586,7 @@ const AboutUs = () => {
             <h4 className="text-[#f16f22] font-semibold text-lg mb-1">
               Client-centric
             </h4>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-black-500">
               Strive for client satisfaction
             </p>
           </div>
@@ -594,13 +594,13 @@ const AboutUs = () => {
             <h4 className="text-[#f16f22] font-semibold text-lg mb-1">
               Ownership
             </h4>
-            <p className="text-sm text-gray-700">Deliver as committed</p>
+            <p className="text-sm text-black-500">Deliver as committed</p>
           </div>
           <div className="border-[2px] border-black p-4 rounded-md shadow-sm">
             <h4 className="text-[#f16f22] font-semibold text-lg mb-1">
               Reliability
             </h4>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-black-500">
               Fostering trust through honesty and openness
             </p>
           </div>
@@ -608,7 +608,7 @@ const AboutUs = () => {
             <h4 className="text-[#f16f22] font-semibold text-lg mb-1">
               Teamwork
             </h4>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-black-500">
               Strong cooperation for the best conclusion
             </p>
           </div>
