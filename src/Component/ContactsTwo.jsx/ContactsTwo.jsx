@@ -95,19 +95,19 @@ const ContactsTwo = () => {
           <h2 className="text-2xl font-semibold">Contact Us</h2>
           <div className="flex items-center gap-4">
             <div className="bg-white p-2 rounded-full">
-              <FaCrown className="text-red-500 text-lg" />
+              <FaCrown className="text-[#f16f22] text-lg" />
             </div>
             <p className="text-lg font-medium">Free* End-to-End Assistance</p>
           </div>
           <div className="flex items-center gap-4">
             <div className="bg-white p-2 rounded-full">
-              <FaCrown className="text-red-500 text-lg" />
+              <FaCrown className="text-[#f16f22] text-lg" />
             </div>
             <p className="text-lg font-medium">Trusted by 22,000+ Students</p>
           </div>
           <div className="flex items-center gap-4">
             <div className="bg-white p-2 rounded-full">
-              <FaCrown className="text-red-500 text-lg" />
+              <FaCrown className="text-[#f16f22] text-lg" />
             </div>
             <p className="text-lg font-medium">550+ Partner Institutions</p>
           </div>

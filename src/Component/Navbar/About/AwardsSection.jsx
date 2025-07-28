@@ -116,10 +116,10 @@ const AwardsSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
-            <span className="bg-red-100 text-red-500 text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
+            <span className="bg-[#fff] text-[#f16f22] text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
               Awards and Achievements
             </span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#252364] leading-tight mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#000] leading-tight mb-4">
               Global Routeway: Shining with <br /> Prestigious Awards!
             </h1>
             <p className="text-gray-700 text-lg mb-6">
@@ -153,7 +153,7 @@ const AwardsSection = () => {
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-6">
-              <span className="text-[#252364]">Key</span>{" "}
+              <span className="text-[#f16f22]">Key</span>{" "}
               <span className="text-black">Highlights</span>
             </h2>
             <p className="text-gray-800 text-base md:text-lg mb-4">
@@ -221,19 +221,19 @@ const AwardsSection = () => {
             <h2 className="text-2xl font-semibold">Contact Us</h2>
             <div className="flex items-center gap-4">
               <div className="bg-white p-2 rounded-full">
-                <FaCrown className="text-red-500 text-lg" />
+                <FaCrown className="text-[#f16f22] text-lg" />
               </div>
               <p className="text-lg font-medium">Free* End-to-End Assistance</p>
             </div>
             <div className="flex items-center gap-4">
               <div className="bg-white p-2 rounded-full">
-                <FaCrown className="text-red-500 text-lg" />
+                <FaCrown className="text-[#f16f22] text-lg" />
               </div>
               <p className="text-lg font-medium">Trusted by 22,000+ Students</p>
             </div>
             <div className="flex items-center gap-4">
               <div className="bg-white p-2 rounded-full">
-                <FaCrown className="text-red-500 text-lg" />
+                <FaCrown className="text-[#f16f22] text-lg" />
               </div>
               <p className="text-lg font-medium">550+ Partner Institutions</p>
             </div>

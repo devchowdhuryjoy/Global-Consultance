@@ -110,13 +110,13 @@ const AboutUs = () => {
       <section className="bg-[#e5f6fd] py-16 px-4 md:px-8 text-center relative">
         {/* Sticky Tag */}
         <div className="absolute top-2 left-1/2 transform -translate-x-1/2 z-10">
-          <span className="bg-[#ffeae5] text-[#ff6b57] px-4 py-1 text-sm font-medium rounded-full shadow-sm">
+          <span className="bg-[#fff] text-[#f16f22] px-4 py-1 text-sm font-medium rounded-full shadow-sm">
             About Us
           </span>
         </div>
 
         {/* Heading */}
-        <h2 className="text-2xl md:text-4xl font-bold text-[#252364] mb-10 pt-8">
+        <h2 className="text-2xl md:text-4xl font-bold text-[#000] mb-10 pt-8">
           Helping Students Achieve their Study Abroad Dreams with Expert
           Guidance
         </h2>
@@ -492,7 +492,7 @@ const AboutUs = () => {
         <div className="bg-blue-50 py-12 px-4 sm:px-8 md:px-16 lg:px-24">
           <h2 className="text-3xl font-semibold text-gray-800 mb-10">
             <span className="text-black font-bold">Our </span>
-            <span className="text-blue-800 font-bold">Achievements</span>
+            <span className="text-[#f16f22] font-bold">Achievements</span>
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -503,7 +503,7 @@ const AboutUs = () => {
                   key={index}
                   className="flex flex-col items-start text-left"
                 >
-                  <div className="bg-red-100 text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
+                  <div className="bg-[#f16f22] text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
                     🏆
                   </div>
                   <div className="text-black font-bold text-xl">

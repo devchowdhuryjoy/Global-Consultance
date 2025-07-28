@@ -21,7 +21,7 @@ const OurAchievements = () => {
       <div className="bg-blue-50 py-12 px-4 sm:px-8 md:px-16 lg:px-24">
         <h2 className="text-3xl font-semibold text-gray-800 mb-10">
           <span className="text-black font-bold">Our </span>
-          <span className="text-blue-800 font-bold">Achievements</span>
+          <span className="text-[#f16f22] font-bold">Achievements</span>
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -29,7 +29,7 @@ const OurAchievements = () => {
           <div className="grid grid-cols-2 gap-8 max-w-lg w-full">
             {achievements.map((item, index) => (
               <div key={index} className="flex flex-col items-start text-left">
-                <div className="bg-red-100 text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
+                <div className="bg-[#f16f22] text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
                   🏆
                 </div>
                 <div className="text-black font-bold text-xl">{item.value}</div>

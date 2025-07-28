@@ -96,7 +96,7 @@ const SimpleSteps = () => {
       heading: "One-on-One Counselling",
       description:
         "We evaluate your profile and ambitions to pinpoint the ideal programs.",
-      bg: "bg-yellow-400",
+      bg: "bg-red-200",
       icon: "👥",
     },
     {
@@ -105,7 +105,7 @@ const SimpleSteps = () => {
       heading: "Document Assembly",
       description:
         "Guidance on transcripts, recommendation letters, and all required paperwork.",
-      bg: "bg-blue-500",
+      bg: "bg-purple-200",
       icon: "📄",
     },
     {
@@ -114,7 +114,7 @@ const SimpleSteps = () => {
       heading: "Application Management",
       description:
         "We handle deadlines, form filling, and fee payments on your behalf.",
-      bg: "bg-red-500",
+      bg: "bg-cyan-200",
       icon: "🎓",
     },
     {
@@ -122,7 +122,7 @@ const SimpleSteps = () => {
       title: "Step 4",
       heading: "Interview Coaching",
       description: "Mock interviews and personalised tips to help you shine.",
-      bg: "bg-purple-400",
+      bg: "bg-yellow-200",
       icon: "🗣️",
     },
     {
@@ -131,7 +131,7 @@ const SimpleSteps = () => {
       heading: "Acceptance & Visa Aid",
       description:
         "From offer letters to visa paperwork and pre-departure briefings.",
-      bg: "bg-lime-400",
+      bg: "bg-blue-200",
       icon: "📑",
     },
   ];

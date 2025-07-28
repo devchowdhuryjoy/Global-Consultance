@@ -51,7 +51,7 @@ const StudyAbroadServices = () => {
         <div>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-snug">
             How Global Routways{" "}
-            <span className="text-blue-900 font-bold">
+            <span className="text-[#f16f22] font-bold">
               Simplifies your Study Abroad Journey?
             </span>
           </h2>

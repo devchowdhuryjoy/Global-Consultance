@@ -291,7 +291,7 @@ const StudyInUsa = () => {
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8">
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#252364]">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#f16f22]">
               Study in the Usa <br />
               <span className="text-black">with Expert Guidance</span>
             </h2>
@@ -301,7 +301,7 @@ const StudyInUsa = () => {
             </p>
             <button
               onClick={handleOpenModal}
-              className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300"
+              className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#f16f22] transition duration-300"
             >
               Book a FREE Consultation →
             </button>
@@ -349,7 +349,7 @@ const StudyInUsa = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#f16f22] mb-4">
               Why Study in the Usa?
             </h2>
 
@@ -382,7 +382,7 @@ const StudyInUsa = () => {
             </p>
             <button
               onClick={handleOpenModal}
-              className="hover:bg-[#252364] bg-[#f16f22] text-white font-semibold px-6 py-3 rounded-lg transition duration-300"
+              className="hover:bg-[#f16f22] bg-[#f16f22] text-white font-semibold px-6 py-3 rounded-lg transition duration-300"
             >
               Book Free Consultation →
             </button>
@@ -398,7 +398,7 @@ const StudyInUsa = () => {
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="max-w-6xl mx-auto">
           {/* Title */}
-          <h2 className="text-3xl md:text-4xl font-bold text-[#252364] mb-10 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#f16f22] mb-10 text-center">
             Top 5 Reasons <br className="md:hidden" /> to Study in the Usa
           </h2>
 
@@ -436,7 +436,7 @@ const StudyInUsa = () => {
             <div className="rounded-xl bg-red-50 p-6 shadow-sm flex items-start space-x-4">
               <div className="text-3xl">{reasons[4].emoji}</div>
               <div>
-                <h3 className="text-lg font-bold text-[#252364]">
+                <h3 className="text-lg font-bold text-[#f16f22]">
                   {reasons[4].title}
                 </h3>
                 <p className="text-sm text-gray-700 mt-1">
@@ -453,7 +453,7 @@ const StudyInUsa = () => {
       <section className="bg-[#fdfafa] py-12 px-4 md:px-16">
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#f16f22] mb-6">
             Cost of Studying in the Usa
           </h2>
 
@@ -497,7 +497,7 @@ const StudyInUsa = () => {
       <section className="bg-white py-12 px-4 md:px-16">
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#252364] mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#f16f22] mb-6">
             Cost of Living in the Usa
           </h2>
 
@@ -601,7 +601,7 @@ const StudyInUsa = () => {
       {/* 7th Section */}
       <section className="bg-[#f9f6f6] py-12 px-4 md:px-8 lg:px-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#f16f22] mb-4">
             Admission Requirements for Studying in the Usa
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
@@ -670,7 +670,7 @@ const StudyInUsa = () => {
 
           <button
             onClick={handleOpenModal}
-            className="hover:bg-[#252364] bg-[#f16f22] text-white py-2 px-6 rounded-full font-semibold shadow  transition"
+            className="hover:bg-[#f16f22] bg-[#f16f22] text-white py-2 px-6 rounded-full font-semibold shadow  transition"
           >
             Book a FREE Consultation →
           </button>
@@ -681,7 +681,7 @@ const StudyInUsa = () => {
 
         {/* Language Requirements */}
         <div className="max-w-6xl mx-auto px-6 py-12">
-          <h3 className="text-2xl font-semibold text-[#1c2c6b] mb-4">
+          <h3 className="text-2xl font-semibold text-[#f16f22] mb-4">
             Language Requirements
           </h3>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
@@ -708,7 +708,7 @@ const StudyInUsa = () => {
         {/* Table Section */}
         <div className="overflow-x-auto mb-12">
           <table className="min-w-full border border-gray-200 text-left">
-            <thead className="bg-[#ffeae4] text-[#1c2c6b] text-base font-semibold">
+            <thead className="bg-[#ffeae4] text-[#f16f22] text-base font-semibold">
               <tr>
                 <th className="border px-4 py-3">English Language Test</th>
                 <th className="border px-4 py-3">Required Score</th>
@@ -747,7 +747,7 @@ const StudyInUsa = () => {
 
         {/* Visa Requirements Section */}
         <div>
-          <h3 className="text-2xl font-semibold text-[#1c2c6b] mb-4">
+          <h3 className="text-2xl font-semibold text-[#f16f22] mb-4">
             Visa Requirements
           </h3>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">
@@ -773,7 +773,7 @@ const StudyInUsa = () => {
       {/* 10th Section */}
       <div className="bg-white py-12 px-4 md:px-8 max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-6">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#f16f22] mb-6">
           Intakes in the Usa
         </h2>
 
@@ -805,7 +805,7 @@ const StudyInUsa = () => {
         {/* Table Section */}
         <div className="overflow-x-auto">
           <table className="min-w-full border border-gray-200 text-left">
-            <thead className="bg-[#ffeae4] text-[#1c2c6b] font-semibold text-base">
+            <thead className="bg-[#ffeae4] text-[#f16f22] font-semibold text-base">
               <tr>
                 <th className="border px-4 py-3">Intakes</th>
                 <th className="border px-4 py-3">Application Timeline</th>
@@ -837,7 +837,7 @@ const StudyInUsa = () => {
       {/* 11th Section */}
       <div className="bg-white py-12 px-4 md:px-8 max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-6">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#f16f22] mb-6">
           Post-Study Work Opportunities in the Usa
         </h2>
 
@@ -865,7 +865,7 @@ const StudyInUsa = () => {
         {/* Table */}
         <div className="overflow-x-auto">
           <table className="min-w-full border border-gray-200 text-left">
-            <thead className="bg-[#ffeae4] text-[#1c2c6b] font-semibold text-base">
+            <thead className="bg-[#ffeae4] text-[#f16f22] font-semibold text-base">
               <tr>
                 <th className="border px-4 py-3">Field</th>
                 <th className="border px-4 py-3">
@@ -905,7 +905,7 @@ const StudyInUsa = () => {
       {/* 12th Section */}
       <div className="bg-white py-12 px-4 md:px-8 max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#1c2c6b] mb-6">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#f16f22] mb-6">
           Scholarships in the Usa
         </h2>
 
@@ -973,7 +973,7 @@ const StudyInUsa = () => {
       <div className="px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1a1a6f] text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] text-center">
             Top Courses to Study in the Usa
           </h2>
 
@@ -1020,7 +1020,7 @@ const StudyInUsa = () => {
       <div className="px-4 sm:px-6 lg:px-8 py-12 bg-white">
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1a1a6f] mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-4">
             Top Universities to Study in the Usa
           </h2>
 
@@ -1112,7 +1112,7 @@ const StudyInUsa = () => {
         <div className="flex justify-center">
           <button
             onClick={handleOpenModal}
-            className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center"
+            className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#f16f22] transition duration-300 flex items-center justify-center"
           >
             Book a FREE Consultation →
           </button>

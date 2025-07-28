@@ -88,27 +88,27 @@ import studentImage from "../../assets/banner.jpg"; // adjust path as needed
 const courses = [
   {
     name: "Nursing",
-    icon: <FaUserNurse className="text-red-500 text-xl" />,
+    icon: <FaUserNurse className="text-[#f16f22] text-xl" />,
     path: "/nursing",
   },
   {
     name: "Accounting",
-    icon: <FaCalculator className="text-red-500 text-xl" />,
+    icon: <FaCalculator className="text-[#f16f22] text-xl" />,
     path: "/accounting",
   },
   {
     name: "Engineering",
-    icon: <FaTools className="text-red-500 text-xl" />,
+    icon: <FaTools className="text-[#f16f22] text-xl" />,
     path: "/engineering",
   },
   {
     name: "Food and Hospitality",
-    icon: <FaConciergeBell className="text-red-500 text-xl" />,
+    icon: <FaConciergeBell className="text-[#f16f22] text-xl" />,
     path: "/hospitality",
   },
   {
     name: "Business Studies",
-    icon: <FaBriefcase className="text-red-500 text-xl" />,
+    icon: <FaBriefcase className="text-[#f16f22] text-xl" />,
     path: "/business-studies",
   },
 ];
@@ -120,7 +120,7 @@ const PopularCourse = () => {
         {/* Left */}
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 leading-snug">
-            Explore <span className="text-blue-800">Popular courses</span>{" "}
+            Explore <span className="text-[#f16f22]">Popular courses</span>{" "}
             chosen by Study Abroad Aspirants in{" "}
             <span className="text-black">Bangladesh</span>
           </h2>

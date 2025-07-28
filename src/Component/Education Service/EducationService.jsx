@@ -10,7 +10,7 @@ const EducationService = () => {
         {/* Column 1-2: Logo + About */}
         <div className="sm:col-span-2">
           <img src={userImage} alt="Logo" className="h-12 w-auto mb-4" />
-          <p className="leading-relaxed text-gray-700">
+          <p className="leading-relaxed text-black-700">
             Since the establishment of Global Routeways in 2006, we have been
             offering higher education consultancy services to students who are
             dreaming of a quality life abroad.
@@ -24,10 +24,10 @@ const EducationService = () => {
 
         {/* Column 3 - Student Services */}
         <div>
-          <h4 className="text-[#252364] font-semibold mb-3">
+          <h4 className="text-[#f16f22] font-semibold mb-3">
             Student Services
           </h4>
-          <ul className="space-y-2 text-gray-700">
+          <ul className="space-y-2 text-black-700">
             <li>
               <Link
                 to="/admission-support"
@@ -44,10 +44,10 @@ const EducationService = () => {
             {/* <li>Student Accommodation</li> */}
           </ul>
 
-          <h4 className="text-[#252364] font-semibold mt-5 mb-3">
+          <h4 className="text-[#f16f22] font-semibold mt-5 mb-3">
             Scholarships
           </h4>
-          <ul className="space-y-2 text-gray-700">
+          <ul className="space-y-2 text-black-700">
             <li>
               <Link to="/scholarships" onClick={() => window.scrollTo(0, 0)}>
                 Australia Scholarships
@@ -60,8 +60,8 @@ const EducationService = () => {
             </li>
           </ul>
 
-          <h4 className="text-[#252364] font-semibold mt-5 mb-3">Resources</h4>
-          <ul className="space-y-2 text-gray-700">
+          <h4 className="text-[#f16f22] font-semibold mt-5 mb-3">Resources</h4>
+          <ul className="space-y-2 text-black-700">
             <li>
               <Link to="/blogs" onClick={() => window.scrollTo(0, 0)}>
                 Blogs
@@ -77,10 +77,10 @@ const EducationService = () => {
 
         {/* Column 4 - Study Destinations */}
         <div>
-          <h4 className="text-[#252364] font-semibold mb-3">
+          <h4 className="text-[#f16f22] font-semibold mb-3">
             Study Destinations
           </h4>
-          <ul className="space-y-2 text-gray-700">
+          <ul className="space-y-2 text-black-700">
             <li>
               <Link to="/uk" onClick={() => window.scrollTo(0, 0)}>
                 UK
@@ -125,8 +125,8 @@ const EducationService = () => {
 
         {/* Column 5 - Courses */}
         <div>
-          <h4 className="text-[#252364] font-semibold mb-3">Courses</h4>
-          <ul className="space-y-2 text-gray-700">
+          <h4 className="text-[#f16f22] font-semibold mb-3">Courses</h4>
+          <ul className="space-y-2 text-black-700">
             {/* <li>Nursing</li>
             <li>Accounting</li>
             <li>Engineering</li>
@@ -165,10 +165,10 @@ const EducationService = () => {
 
         {/* Column 6 - About */}
         <div>
-          <h4 className="text-[#252364] font-semibold mb-3">
+          <h4 className="text-[#f16f22] font-semibold mb-3">
             About Global Routeways
           </h4>
-          <ul className="space-y-2 text-gray-700">
+          <ul className="space-y-2 text-black-700">
             {/* <li>About Global Routeway</li>
             <li>Our Leadership</li>
             <li>Awards & Achievements</li>
