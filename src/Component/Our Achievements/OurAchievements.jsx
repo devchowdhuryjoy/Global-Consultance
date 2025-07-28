@@ -29,7 +29,7 @@ const OurAchievements = () => {
           <div className="grid grid-cols-2 gap-8 max-w-lg w-full">
             {achievements.map((item, index) => (
               <div key={index} className="flex flex-col items-start text-left">
-                <div className="bg-[#f16f22] text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
+                <div className="bg-[#000] text-black w-12 h-12 rounded-full flex items-center justify-center text-2xl mb-3">
                   🏆
                 </div>
                 <div className="text-black font-bold text-xl">{item.value}</div>
