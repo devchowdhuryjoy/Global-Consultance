@@ -1,13 +1,13 @@
-import React, { useRef, useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+// import React, { useRef, useEffect, useState } from "react";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Autoplay } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/navigation";
 
 // import success1 from "../../assets/images/success1.jpg";
 // import success2 from "../../assets/images/success2.jpg";
-import BASE_URL from "../../Api BaseUrl/BaseUrl";
-import IMAGE_BASE_URL from "../../Api BaseUrl/ImageBaseUrl";
+// import BASE_URL from "../../Api BaseUrl/BaseUrl";
+// import IMAGE_BASE_URL from "../../Api BaseUrl/ImageBaseUrl";
 
 // const defaultReviews = [
 //   {
@@ -50,12 +50,159 @@ import IMAGE_BASE_URL from "../../Api BaseUrl/ImageBaseUrl";
 //   },
 // ];
 
+// const SuccessStories = () => {
+//   const prevRef = useRef(null);
+//   const nextRef = useRef(null);
+//   const [swiperInstance, setSwiperInstance] = useState(null);
+//   const [allReviews, setAllReviews] = useState(defaultReviews);
+
+//   useEffect(() => {
+//     if (
+//       swiperInstance &&
+//       prevRef.current &&
+//       nextRef.current &&
+//       swiperInstance.params?.navigation
+//     ) {
+//       swiperInstance.params.navigation.prevEl = prevRef.current;
+//       swiperInstance.params.navigation.nextEl = nextRef.current;
+//       swiperInstance.navigation.destroy();
+//       swiperInstance.navigation.init();
+//       swiperInstance.navigation.update();
+//     }
+//   }, [swiperInstance]);
+
+//   useEffect(() => {
+//     const fetchDynamicReviews = async () => {
+//       try {
+//         const res = await fetch(`${BASE_URL}reviewget`);
+//         const data = await res.json();
+
+//         const dynamicReviews = data.map((item) => ({
+//           name: item.name,
+//           quote: item.review_text,
+//           image: item.image_url ? `${IMAGE_BASE_URL}${item.image_url}` : "",
+//         }));
+
+//         setAllReviews([...defaultReviews, ...dynamicReviews]);
+        
+//       } catch (error) {
+//         console.error("Failed to fetch dynamic reviews:", error);
+//       }
+//     };
+
+//     fetchDynamicReviews();
+//   }, []);
+
+//   return (
+//     <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
+//       <h2 className="text-2xl sm:text-3xl font-bold mb-10">
+//         22,000+ Success Stories{" "}
+//         <span className="text-[#f16f22]">Your could be the next.</span>
+//       </h2>
+
+//       <div
+//         ref={prevRef}
+//         className="swiper-button-prev-custom absolute left-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
+//       >
+//         <svg
+//           className="w-4 h-4 text-white"
+//           fill="none"
+//           stroke="currentColor"
+//           strokeWidth="2"
+//           viewBox="0 0 24 24"
+//         >
+//           <path
+//             strokeLinecap="round"
+//             strokeLinejoin="round"
+//             d="M15 19l-7-7 7-7"
+//           />
+//         </svg>
+//       </div>
+
+//       <div
+//         ref={nextRef}
+//         className="swiper-button-next-custom absolute right-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
+//       >
+//         <svg
+//           className="w-4 h-4 text-white"
+//           fill="none"
+//           stroke="currentColor"
+//           strokeWidth="2"
+//           viewBox="0 0 24 24"
+//         >
+//           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+//         </svg>
+//       </div>
+
+
+//       <Swiper
+//         modules={[Navigation, Autoplay]}
+//         onSwiper={setSwiperInstance}
+//         spaceBetween={20}
+//         breakpoints={{
+//           320: { slidesPerView: 1 },
+//           768: { slidesPerView: 2 },
+//           1024: { slidesPerView: 3 },
+//         }}
+//         loop={true}
+//         navigation={{
+//           prevEl: prevRef.current,
+//           nextEl: nextRef.current,
+//         }}
+//         autoplay={{
+//           delay: 2000,
+//           disableOnInteraction: false,
+//           reverseDirection: false,
+//         }}
+//         className="pb-8"
+//       >
+        
+//         {allReviews.map((review, idx) => (
+//           <SwiperSlide key={idx}>
+//             <div className="bg-white shadow-md border border-gray-100 rounded-xl p-6 text-left h-full flex flex-col justify-between max-w-md mx-auto">
+//               <p className="text-sm text-gray-800 whitespace-pre-line mb-6">
+//                 {review.quote}
+//               </p>
+//               <div className="mt-auto">
+//                 <h4 className="font-semibold text-sm text-gray-900">
+//                   {review.name}
+//                 </h4>
+//                 {review.image && (
+//                   <img
+//                     src={review.image}
+//                     alt="Success Story"
+//                     className="w-24 mt-2"
+//                   />
+//                 )}
+//                 <div className="text-yellow-500 text-xs mt-1">★★★★★</div>
+//               </div>
+//             </div>
+//           </SwiperSlide>
+//         ))}
+//       </Swiper>
+//     </div>
+//   );
+// };
+
+// export default SuccessStories;
+
+
+
+import React, { useRef, useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+
+import BASE_URL from "../../Api BaseUrl/BaseUrl";
+import IMAGE_BASE_URL from "../../Api BaseUrl/ImageBaseUrl";
+
 const SuccessStories = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [swiperInstance, setSwiperInstance] = useState(null);
-  // const [allReviews, setAllReviews] = useState(defaultReviews);
   const [allReviews, setAllReviews] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (
@@ -84,15 +231,40 @@ const SuccessStories = () => {
           image: item.image_url ? `${IMAGE_BASE_URL}${item.image_url}` : "",
         }));
 
-        // setAllReviews([...defaultReviews, ...dynamicReviews]);
         setAllReviews(dynamicReviews);
+        setLoading(false);
       } catch (error) {
         console.error("Failed to fetch dynamic reviews:", error);
+        setLoading(false);
       }
     };
 
     fetchDynamicReviews();
   }, []);
+
+  if (loading) {
+    return (
+      <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-10">
+          22,000+ Success Stories{" "}
+          <span className="text-[#f16f22]">Your could be the next.</span>
+        </h2>
+        <p>Loading reviews...</p>
+      </div>
+    );
+  }
+
+  if (allReviews.length === 0) {
+    return (
+      <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-10">
+          22,000+ Success Stories{" "}
+          <span className="text-[#f16f22]">Your could be the next.</span>
+        </h2>
+        <p>No reviews available at the moment.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
@@ -134,7 +306,6 @@ const SuccessStories = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
       </div>
-
 
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -185,3 +356,10 @@ const SuccessStories = () => {
 };
 
 export default SuccessStories;
+
+
+
+
+
+
+
