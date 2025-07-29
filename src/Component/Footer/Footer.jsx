@@ -1,14 +1,6 @@
 import React from "react";
 import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
-// const offices = [
-//   {
-//     name: "Mohammadpur",
-//     address: `N Islam Tower, 19/C/F Block-F, Ring Road, Shamoly, Mohammadpur, Dhaka 1207, Bangladesh`,
-//     phone: "01618-858541-9",
-//   },
-// ];
-
 const Footer = () => {
   return (
     <div className="bg-[#f3f3f3] pt-5 pb-4 px-4 sm:px-8 md:px-16 lg:px-24">

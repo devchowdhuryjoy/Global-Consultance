@@ -49,7 +49,6 @@ const Textimage = () => {
   ],
 };
 
-
   return (
     <div className="bg-gray-50 py-16 px-4 md:px-12 text-center">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
@@ -101,3 +100,7 @@ const Textimage = () => {
 };
 
 export default Textimage;
+
+
+
+

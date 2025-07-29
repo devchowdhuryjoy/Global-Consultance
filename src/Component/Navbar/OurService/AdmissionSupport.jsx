@@ -317,7 +317,7 @@ const AdmissionSupport = () => {
           <div className="w-full lg:w-1/2 relative flex justify-center">
             <div className="relative z-10">
               <img
-                src="/study3.png" // Replace with your image path
+                src="/AdmissionSupport.png" // Replace with your image path
                 alt="Consultation"
                 className="w-full max-w-md sm:max-w-lg rounded-lg object-cover"
               />
@@ -573,7 +573,7 @@ const AdmissionSupport = () => {
           {/* Left: Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/study6.jpg" // 🖼️ Replace with actual image path (e.g., /assets/target.jpg)
+              src="/CourseSelection.png" // 🖼️ Replace with actual image path (e.g., /assets/target.jpg)
               alt="Target with Darts"
               className="w-full rounded-lg shadow-md object-cover"
             />
@@ -652,7 +652,7 @@ const AdmissionSupport = () => {
           {/* Right: Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/study4.jpg" // 🖼️ Replace with actual image path
+              src="/Preparing.png" // 🖼️ Replace with actual image path
               alt="Preparing documents"
               className="w-full rounded-lg shadow-md object-cover"
             />
@@ -667,7 +667,7 @@ const AdmissionSupport = () => {
           {/* Left: Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/study1.jpg" // 🖼️ Replace with your actual image path
+              src="/InteractiveSessions.png" // 🖼️ Replace with your actual image path
               alt="Interactive video session"
               className="w-full rounded-lg shadow-md object-cover"
             />
@@ -800,142 +800,10 @@ const AdmissionSupport = () => {
       {/* 7th Section */}
 
       {/* 8th Section */}
-      {/* <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-10">
-          22,000+ Success Stories{" "}
-          <span className="text-blue-700">Your could be the next.</span>
-        </h2>
-
-        
-        <div
-          ref={prevRef}
-          className="swiper-button-prev-custom absolute left-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
-        >
-          <svg
-            className="w-4 h-4 text-white"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </div>
-
-        <div
-          ref={nextRef}
-          className="swiper-button-next-custom absolute right-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
-        >
-          <svg
-            className="w-4 h-4 text-white"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </div>
-
-        <Swiper
-          modules={[Navigation]}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }}
-          spaceBetween={20}
-          breakpoints={{
-            320: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          className="pb-8"
-        >
-          {reviews.slice(0, visibleCount).map((review, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="bg-white shadow-md border border-gray-100 rounded-xl p-6 text-left h-full flex flex-col justify-between max-w-md mx-auto">
-                <p className="text-sm text-gray-800 whitespace-pre-line mb-6">
-                  {review.quote}
-                </p>
-                <div className="mt-auto">
-                  <h4 className="font-semibold text-sm text-gray-900">
-                    {review.name}
-                  </h4>
-                  <img
-                    src="Google-Logo.png"
-                    alt="Google Reviews"
-                    className="w-24 mt-2"
-                  />
-                  <div className="text-yellow-500 text-xs mt-1">★★★★★</div>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div> */}
       <SuccessStories />
       {/* 8th Section */}
 
       {/* 9th section */}
-      {/* <div className="bg-gray-100 px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-semibold text-center mb-6">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-4">
-            {faqData.map((item, index) => (
-              <div
-                key={index}
-                className={`rounded-lg ${
-                  openIndex === index ? "bg-white shadow-md" : "bg-gray-200"
-                }`}
-              >
-                <button
-                  onClick={() => toggle(index)}
-                  className="w-full text-left p-4 font-medium text-[#f15c2a] hover:text-[#f15c2a] focus:outline-none"
-                >
-                  {item.question}
-                </button>
-                {openIndex === index && item.answer && (
-                  <div className="px-4 pb-4 text-gray-700">
-                    <p>{item.answer}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-8 text-sm text-gray-500">
-            Our experts are waiting to help you take the next steps towards your
-            dream.
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <button
-            onClick={handleOpenModal}
-            className="mt-6 px-6 py-3 bg-[#f16f22] text-white font-semibold rounded hover:bg-[#252364] transition duration-300 flex items-center justify-center"
-          >
-            Book a FREE Consultation →
-          </button>
-
-          
-          <ConsultationModal show={showModal} onClose={handleCloseModal} />
-        </div>
-      </div> */}
       <section className="bg-[#f7f5ff] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-10">

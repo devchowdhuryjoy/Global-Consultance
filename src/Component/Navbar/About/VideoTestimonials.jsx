@@ -180,51 +180,7 @@ const VideoTestimonials = () => {
 
   return (
     <>
-      {/* <section className="bg-[#e8f7fd] py-16 px-4 md:px-8">
-        
-        <div className="text-center mb-12">
-          <span className="inline-block bg-red-100 text-red-500 px-4 py-1 rounded-full text-sm font-semibold mb-4">
-            Testimonials
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#252364]">
-            22,000+ Happy Clients, Worldwide!
-          </h2>
-          <p className="mt-4 text-gray-700 max-w-2xl mx-auto text-base md:text-lg">
-            Hear how we have made a difference in helping them achieve their
-            aspirations.
-          </p>
-        </div>
-
-        
-        <div className="text-center mb-10">
-          <h3 className="text-2xl font-semibold text-[#252364] relative inline-block">
-            <span className="border-t-2 border-[#252364] w-16 inline-block absolute -top-3 left-0 md:-left-20"></span>
-            Video Testimonials
-            <span className="border-t-2 border-[#252364] w-16 inline-block absolute -top-3 right-0 md:-right-20"></span>
-          </h3>
-        </div>
-
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto p-4">
-          {videos.map((video, index) => (
-            <div
-              key={index}
-              className="rounded-xl overflow-hidden shadow-md bg-white"
-            >
-              <iframe
-                src={video.url}
-                title={`Testimonial Video ${index + 1}`}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-64 md:h-80"
-              ></iframe>
-            </div>
-          ))}
-        </div>
-
-      </section> */}
-
+      
       <section className="bg-[#e8f7fd] py-16 px-4 md:px-8">
         {/* Top Title */}
         <div className="text-center mb-12">
@@ -269,30 +225,6 @@ const VideoTestimonials = () => {
         </div>
       </section>
 
-      {/* <div className="bg-[#252364] py-12 px-4 md:px-16 text-white">
-        <h2 className="text-center text-2xl md:text-3xl font-bold mb-10">
-          Students Reviews
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviews.map((review, index) => (
-            <div
-              key={index}
-              className="bg-white text-black rounded-xl p-6 shadow-lg flex flex-col justify-between"
-            >
-              <p className="text-sm leading-relaxed mb-4">{review.content}</p>
-              <div className="flex items-center justify-between mt-auto">
-                <strong className="font-semibold">{review.name}</strong>
-                <img
-                  src={googleLogo}
-                  alt="Google Reviews"
-                  className="w-24 h-auto"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> */}
-
       <div className="bg-[#252364] py-12 px-4 md:px-16 text-white">
         <h2 className="text-center text-2xl md:text-3xl font-bold mb-10 text-[#f16f22]">
           Students Reviews
@@ -321,11 +253,7 @@ const VideoTestimonials = () => {
                     )}
                     <strong className="font-semibold">{review.name}</strong>
                   </div>
-                  {/* <img
-                    src={googleLogo}
-                    alt="Google Reviews"
-                    className="w-24 h-auto"
-                  /> */}
+
                 </div>
               </div>
             ))

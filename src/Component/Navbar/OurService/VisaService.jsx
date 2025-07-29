@@ -261,7 +261,7 @@ const VisaService = () => {
           {/* Right Image */}
           <div className="lg:w-1/2 w-full relative">
             <img
-              src="/study3.png" // Replace with your actual image
+              src="/Visaservice.png" // Replace with your actual image
               alt="Visa Services"
               className="w-full max-w-md mx-auto lg:max-w-full"
             />
@@ -512,39 +512,7 @@ const VisaService = () => {
       </div>
 
       {/* 3rd section */}
-      {/* <section className="bg-[#f3f7fa] py-14 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#252364] mb-12">
-            How Our Visa Services Work
-          </h2>
-          <div className="flex flex-wrap items-stretch justify-between gap-6">
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className="w-full sm:w-[48%] md:w-[18.5%] flex flex-col items-center text-center"
-              >
-                <img
-                  src={step.image}
-                  alt={step.heading}
-                  className="w-32 h-32 object-contain mb-4"
-                />
-                <div className="bg-[#252364] text-white px-4 py-1 rounded-full text-sm font-semibold mb-2">
-                  {step.title}
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-md w-full">
-                  <h3 className="font-bold text-sm mb-1 text-left">
-                    {step.heading}
-                  </h3>
-                  <p className="text-sm text-gray-700 text-left">
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
+    
       <section className="bg-[#f3f7fa] py-14 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#f16f22] mb-12">
@@ -588,93 +556,6 @@ const VisaService = () => {
       {/* 3rd section */}
 
       {/* 4rd section */}
-      {/* <div className="relative py-14 px-4 sm:px-8 md:px-16 lg:px-24 bg-white text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-10">
-          22,000+ Success Stories{" "}
-          <span className="text-blue-700">Your could be the next.</span>
-        </h2>
-
-        
-        <div
-          ref={prevRef}
-          className="swiper-button-prev-custom absolute left-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
-        >
-          <svg
-            className="w-4 h-4 text-white"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </div>
-
-        <div
-          ref={nextRef}
-          className="swiper-button-next-custom absolute right-2 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-[#f16f22] w-8 h-8 rounded-full flex items-center justify-center"
-        >
-          <svg
-            className="w-4 h-4 text-white"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </div>
-
-        <Swiper
-          modules={[Navigation]}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }}
-          spaceBetween={20}
-          breakpoints={{
-            320: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          className="pb-8"
-        >
-          {reviews.slice(0, visibleCount).map((review, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="bg-white shadow-md border border-gray-100 rounded-xl p-6 text-left h-full flex flex-col justify-between max-w-md mx-auto">
-                <p className="text-sm text-gray-800 whitespace-pre-line mb-6">
-                  {review.quote}
-                </p>
-                <div className="mt-auto">
-                  <h4 className="font-semibold text-sm text-gray-900">
-                    {review.name}
-                  </h4>
-                  <img
-                    src="Google-Logo.png"
-                    alt="Google Reviews"
-                    className="w-24 mt-2"
-                  />
-                  <div className="text-yellow-500 text-xs mt-1">★★★★★</div>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div> */}
       <SuccessStories />
       {/* 4rd section */}
 

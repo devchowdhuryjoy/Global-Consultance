@@ -154,11 +154,6 @@ const EducationService = () => {
         <div>
           <h4 className="text-[#f16f22] font-semibold mb-3">Courses</h4>
           <ul className="space-y-2 text-black-700">
-            {/* <li>Nursing</li>
-            <li>Accounting</li>
-            <li>Engineering</li>
-            <li>Business Studies</li>
-            <li>Food & Hospitality Management</li> */}
             <li>
               <Link to="/nursing" onClick={() => window.scrollTo(0, 0)}>
                 Nursing
