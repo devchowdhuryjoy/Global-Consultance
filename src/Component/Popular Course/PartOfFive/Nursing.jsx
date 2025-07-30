@@ -83,6 +83,20 @@ const Nursing = () => {
     },
   ];
 
+  useEffect(() => {
+    const handleArrowKeys = (e) => {
+      const activeEl = document.activeElement;
+      const isScrollable = activeEl?.classList?.contains("table-scroll-lock");
+
+      if (isScrollable && (e.key === "ArrowRight" || e.key === "ArrowLeft")) {
+        e.preventDefault();
+      }
+    };
+
+    window.addEventListener("keydown", handleArrowKeys);
+    return () => window.removeEventListener("keydown", handleArrowKeys);
+  }, []);
+
   return (
     <>
       {/* 1st section - Hero */}
@@ -130,13 +144,22 @@ const Nursing = () => {
           <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6">
             Nursing
           </h2>
-          {/* <div className="prose max-w-none text-gray-700">
-            <p className="mb-4 whitespace-pre-line">{nursingData.content}</p>
-          </div> */}
-          <div
+          {/* <div
             className="prose prose-li:marker:text-black prose-ol:pl-5 prose-ul:pl-5 max-w-none text-gray-800"
             dangerouslySetInnerHTML={{ __html: nursingData.content }}
-          ></div>
+          ></div> */}
+
+          <div
+            className="overflow-x-auto table-scroll-lock"
+            tabIndex={-1}
+            style={{ scrollBehavior: "smooth" }}
+          >
+            <div
+              className="prose prose-li:marker:text-black prose-ol:pl-5 prose-ul:pl-5 max-w-none text-gray-800"
+              dangerouslySetInnerHTML={{ __html: nursingData.content }}
+            ></div>
+          </div>
+          
         </div>
       </div>
 

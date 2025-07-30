@@ -89,6 +89,7 @@ const Engineering = () => {
 
   return (
     <>
+    
       {/* 1st section - Hero */}
       <div className="bg-[#e6f6fc] py-12 px-4 sm:px-6 lg:px-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
@@ -197,6 +198,7 @@ const Engineering = () => {
           </div>
         </div>
       </section>
+      
     </>
   );
 };
