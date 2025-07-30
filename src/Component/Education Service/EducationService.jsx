@@ -3,6 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import userImage from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
 
 const EducationService = () => {
   const offices = [
@@ -32,7 +33,7 @@ const EducationService = () => {
                   {office.name}
                 </h3>
                 <p className="flex items-start gap-2 text-sm mb-2">
-                  <span className="text-[#f16f22] mt-1">📍</span>
+                  <MdLocationOn className="text-[#f16f22] mt-1 text-[28px]" />
                   {office.address}
                 </p>
                 <p className="flex items-center gap-2">

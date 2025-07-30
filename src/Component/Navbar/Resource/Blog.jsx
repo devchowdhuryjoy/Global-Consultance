@@ -57,7 +57,7 @@ const Blog = () => {
 
           {/* Right Image */}
           <div className="lg:w-1/2 w-full relative flex justify-center items-center">
-            <div className="absolute -left-8 top-0 w-3/4 h-full z-0 hidden sm:block">
+            {/* <div className="absolute -left-8 top-0 w-3/4 h-full z-0 hidden sm:block">
               <svg
                 viewBox="0 0 600 400"
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,9 +80,9 @@ const Blog = () => {
                   transform="skewX(-20)"
                 />
               </svg>
-            </div>
+            </div> */}
             <img
-              src="Studyabroad.jpg"
+              src="Blogss.png"
               alt="Global Routeway Blog"
               className="relative z-10 max-w-full h-auto"
             />

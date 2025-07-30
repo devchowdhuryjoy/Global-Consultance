@@ -275,7 +275,7 @@ const HealthInsurance = () => {
           {/* Right Image */}
           <div className="w-full lg:w-1/2 mb-10 lg:mb-0 flex justify-center">
             <img
-              src="/study3.png" // Replace with your image path
+              src="Health-insurances.png" // Replace with your image path
               alt="Consultation"
               className="max-w-full h-auto"
             />
@@ -601,7 +601,7 @@ const HealthInsurance = () => {
               <div className="bg-transparent w-[40%] h-[80%]"></div>
             </div>
             <img
-              src="/university.jpg" // Replace with your actual image path
+              src="Health-cover.png" // Replace with your actual image path
               alt="Benefits of Health Cover"
               className="relative z-10 rounded-xl border border-[#252364] max-w-full h-auto"
             />
@@ -617,7 +617,7 @@ const HealthInsurance = () => {
           <div className="relative w-full">
             <div className="relative z-10 rounded-xl overflow-hidden">
               <img
-                src="/study6.jpg" // Replace with your image path
+                src="Health-cover-medical.png" // Replace with your image path
                 alt="Doctor"
                 className="rounded-xl border border-white w-full h-auto object-cover"
               />

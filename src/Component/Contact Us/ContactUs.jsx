@@ -4,6 +4,8 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import SimpleSteps from "../Simple Steps/SimpleSteps";
 import SuccessStories from "../SuccessStories/SuccessStories";
 const countries = ["Bangladesh", "Australia", "USA", "UK"];
+import { MdLocationOn } from "react-icons/md";
+import { FaPhone } from "react-icons/fa";
 
 const ContactUs = () => {
   const [selectedCountry, setSelectedCountry] = useState("Bangladesh");
@@ -31,7 +33,7 @@ const ContactUs = () => {
           {/* Right Section (Images) */}
           <div className="lg:w-1/2 flex justify-center relative">
             <img
-              src="university.jpg" // Replace with real graduate image or upload yours
+              src="Studyabroad.jpg" // Replace with real graduate image or upload yours
               alt="Graduate"
               className="w-[280px] md:w-[300px] z-10 relative"
             />
@@ -113,14 +115,15 @@ const ContactUs = () => {
                 Mohammadpur
               </h3>
               <p className="text-sm text-gray-700 mb-2">
-                <span className="inline-block text-[#f16f22] mr-1">📍</span>N
+                <span className="inline-block text-[#f16f22] mr-1"><MdLocationOn /></span>N
                 Islam Tower, 19/C/F Block-F, Ring Road, Shamoly, Mohammadpur,
                 Dhaka 1207, Bangladesh
               </p>
               <p className="text-sm text-gray-700 mb-4">
-                <span className="inline-block text-[#f16f22] mr-1">📞</span>
+                <span className="inline-block text-[#f16f22] mr-1"><FaPhone /></span>
                 01618-858541-9
               </p>
+
               <button className="w-full bg-[#f16f22] hover:bg-[#252364] text-white py-2 rounded-lg font-semibold">
                 Schedule a Virtual Meeting
               </button>

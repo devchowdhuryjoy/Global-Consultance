@@ -23,32 +23,32 @@ const VisaService = () => {
       heading: "Visa Consultation:",
       description:
         "Personalized guidance on visa requirements and eligibility.",
-      image: "/study1.jpg",
+      image: "step-1.png",
     },
     {
       title: "Step 2",
       heading: "Document Preparation:",
       description: "Assistance in gathering and verifying necessary documents.",
-      image: "/study6.jpg",
+      image: "step-2.png",
     },
     {
       title: "Step 3",
       heading: "Visa Application Submission:",
       description: "Accurate and timely submission to the appropriate embassy.",
-      image: "/study3.png",
+      image: "step-3.png",
     },
     {
       title: "Step 4",
       heading: "Interview Preparation:",
       description:
         "Mock interviews and coaching to ensure confidence in visa interviews.",
-      image: "/study4.jpg",
+      image: "step-4.png",
     },
     {
       title: "Step 5",
       heading: "Visa Grant & Post-Arrival Support:",
       description: "Guidance on visa approval, travel, and settlement.",
-      image: "/university.jpg",
+      image: "Studyabroad.jpg",
     },
   ];
   // 3th Section
@@ -276,7 +276,7 @@ const VisaService = () => {
           <div className="space-y-12">
             {/* Top Image */}
             <img
-              src="/study6.jpg" // Replace with your actual image
+              src="student-visa.png" // Replace with your actual image
               alt="Register"
               className="w-full max-w-lg mx-auto"
             />

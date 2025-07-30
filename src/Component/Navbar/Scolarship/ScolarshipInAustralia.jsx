@@ -107,32 +107,32 @@ const ScolarshipInAustralia = () => {
     {
       step: "Step 1",
       text: "Get your profile assessed & Receive Recommendations from Expert Counsellors",
-      img: "/study1.jpg", // replace with your actual image path
+      img: "/6-step-1.png", // replace with your actual image path
     },
     {
       step: "Step 2",
       text: "Shortlist your preferred institutions and courses based on your aspirations",
-      img: "/study6.jpg",
+      img: "/6-step-2.png",
     },
     {
       step: "Step 3",
       text: "Complete the application process & secure scholarships with our comprehensive assistance",
-      img: "/study3.png",
+      img: "/6-step-3.png",
     },
     {
       step: "Step 4",
       text: "Receive the offer letter from the institution & complete the necessary steps to finalize your seat",
-      img: "/study4.jpg",
+      img: "/6-step-4.png",
     },
     {
       step: "Step 5",
       text: "Apply & prepare for visa interviews. Our team will guide you at every single step of the way.",
-      img: "/university.jpg",
+      img: "/6-step-3.png",
     },
     {
       step: "Step 6",
       text: "Prepare for take-off! Get ready to board the flight and begin your first day at the institution abroad!",
-      img: "/study4.jpg",
+      img: "/6-step-1.png",
     },
   ];
   // 7th section
@@ -320,7 +320,7 @@ const ScolarshipInAustralia = () => {
           <div className="flex-1 relative">
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
-                src="university.jpg" // Replace with your actual image path
+                src="Scolarships-aus.png" // Replace with your actual image path
                 alt="Study in the Australia"
                 className="w-full object-cover"
               />
@@ -365,7 +365,7 @@ const ScolarshipInAustralia = () => {
                 {/* Highlight Box */}
                 <div className="mt-12 bg-[#fff2ed] rounded-xl p-6 shadow-md flex items-start gap-4">
                   <img
-                    src="Studyabroad.jpg" // replace with your local emoji/image
+                    src="didyou.png" // replace with your local emoji/image
                     alt="Did you know"
                     className="w-12 h-12"
                   />
@@ -696,7 +696,7 @@ const ScolarshipInAustralia = () => {
           {/* Left Image */}
           <div className="w-full lg:w-1/2 flex justify-center relative">
             <img
-              src="study6.jpg" // replace with your image path
+              src="critiriia.png" // replace with your image path
               alt="Students"
               className="max-w-full h-auto z-10 relative"
             />

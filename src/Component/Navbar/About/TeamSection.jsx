@@ -398,28 +398,14 @@
 
 // export default TeamSection;
 
-
-
-
 import React, { useState, useEffect } from "react";
-import { FaCrown } from "react-icons/fa";  // <-- এটা এখানে যোগ করো
+import { FaCrown } from "react-icons/fa";
 import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 import IMAGE_BASE_URL from "../../../Api BaseUrl/ImageBaseUrl";
 
 const TeamSection = () => {
-  const [teamMembers, setTeamMembers] = useState([]);
-
-  useEffect(() => {
-    fetch(`${BASE_URL}leadership`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Network response was not ok");
-        return res.json();
-      })
-      .then((data) => setTeamMembers(data))
-      .catch((error) => console.error("Fetch leadership error:", error));
-  }, []);
-
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -502,6 +488,18 @@ const TeamSection = () => {
     }
   };
 
+  const [teamMembers, setTeamMembers] = useState([]);
+
+  useEffect(() => {
+    fetch(`${BASE_URL}leadership`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Network response was not ok");
+        return res.json();
+      })
+      .then((data) => setTeamMembers(data))
+      .catch((error) => console.error("Fetch leadership error:", error));
+  }, []);
+
   return (
     <>
       <section className="bg-[#f9f9f9] py-16 px-4 md:px-8">
@@ -539,33 +537,21 @@ const TeamSection = () => {
                     <p className="text-sm">{member.title}</p>
                   </div>
                   <div className="p-4">
-                    <ul className="text-black text-base pl-3">
-                      {Array.isArray(member.description) ? (
-                        member.description.map((desc, idx) => (
-                          <li
-                            key={idx}
-                            className="leading-relaxed flex items-start gap-1"
-                          >
-                            <span className="text-xl font-bold leading-none">
-                              .
-                            </span>
-                            <span>{desc}</span>
-                          </li>
-                        ))
-                      ) : (
-                        <li className="leading-relaxed flex items-start gap-1">
-                          <span className="text-xl font-bold leading-none">
-                            .
-                          </span>
-                          <span>{member.description}</span>
-                        </li>
-                      )}
-                    </ul>
+                    {member.description && (
+                      <div
+                        className="text-black text-base leading-relaxed"
+                        dangerouslySetInnerHTML={{
+                          __html: member.description,
+                        }}
+                      />
+                    )}
                   </div>
                 </div>
               ))
             ) : (
-              <p>Loading leadership data...</p>
+              <div className="col-span-full text-center text-red-500 text-lg font-medium">
+                No data found
+              </div>
             )}
           </div>
         </div>
@@ -768,4 +754,3 @@ const TeamSection = () => {
 };
 
 export default TeamSection;
-
