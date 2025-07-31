@@ -83,20 +83,6 @@ const Nursing = () => {
     },
   ];
 
-  useEffect(() => {
-    const handleArrowKeys = (e) => {
-      const activeEl = document.activeElement;
-      const isScrollable = activeEl?.classList?.contains("table-scroll-lock");
-
-      if (isScrollable && (e.key === "ArrowRight" || e.key === "ArrowLeft")) {
-        e.preventDefault();
-      }
-    };
-
-    window.addEventListener("keydown", handleArrowKeys);
-    return () => window.removeEventListener("keydown", handleArrowKeys);
-  }, []);
-
   return (
     <>
       {/* 1st section - Hero */}
@@ -139,26 +125,48 @@ const Nursing = () => {
       </div>
 
       {/* 2nd section - Nursing Content */}
+      {/* <div className="py-12 px-4 sm:px-6 lg:px-24 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6">
+            Nursing
+          </h2>
+          <div
+            className="prose prose-li:marker:text-black prose-ol:pl-5 prose-ul:pl-5 max-w-none text-gray-800"
+            dangerouslySetInnerHTML={{ __html: nursingData.content }}
+          ></div>
+          
+          
+        </div>
+      </div> */}
+
       <div className="py-12 px-4 sm:px-6 lg:px-24 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6">
             Nursing
           </h2>
-          {/* <div
-            className="prose prose-li:marker:text-black prose-ol:pl-5 prose-ul:pl-5 max-w-none text-gray-800"
-            dangerouslySetInnerHTML={{ __html: nursingData.content }}
-          ></div> */}
 
           <div
-            className="overflow-x-auto table-scroll-lock"
-            tabIndex={-1}
-            style={{ scrollBehavior: "smooth" }}
-          >
-            <div
-              className="prose prose-li:marker:text-black prose-ol:pl-5 prose-ul:pl-5 max-w-none text-gray-800"
-              dangerouslySetInnerHTML={{ __html: nursingData.content }}
-            ></div>
-          </div>
+            className="
+        prose max-w-none text-black 
+        prose-li:marker:text-black 
+        prose-ol:pl-5 prose-ul:pl-5 
+        text-sm sm:text-base 
+        px-2 sm:px-4 lg:px-6 
+        break-words 
+        text-justify sm:text-left 
+        leading-relaxed sm:leading-normal 
+        overflow-x-auto 
+        hyphens-auto 
+        text-balance 
+        [&_table]:min-w-full 
+        [&_table]:border-collapse 
+        [&_table]:border [&_table]:border-gray-200 
+        [&_table]:my-4 
+        [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:break-words 
+        [&_td]:px-3 [&_td]:py-2 [&_td]:text-left [&_td]:break-words
+      "
+            dangerouslySetInnerHTML={{ __html: nursingData.content }}
+          ></div>
           
         </div>
       </div>

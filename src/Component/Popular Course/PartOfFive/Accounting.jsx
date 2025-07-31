@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
@@ -87,7 +85,6 @@ const Accounting = () => {
 
   return (
     <>
-   
       {/* 1st section - Hero */}
       <div className="bg-[#e6f6fc] py-12 px-4 sm:px-6 lg:px-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
@@ -137,9 +134,28 @@ const Accounting = () => {
             <p className="mb-4 whitespace-pre-line">{AccountingData.content}</p>
           </div> */}
           <div
-            className="prose prose-li:marker:text-black prose-ol:pl-5 prose-ul:pl-5 max-w-none text-gray-800"
+            className="
+        prose max-w-none text-black 
+        prose-li:marker:text-black 
+        prose-ol:pl-5 prose-ul:pl-5 
+        text-sm sm:text-base 
+        px-2 sm:px-4 lg:px-6 
+        break-words 
+        text-justify sm:text-left 
+        leading-relaxed sm:leading-normal 
+        overflow-x-auto 
+        hyphens-auto 
+        text-balance 
+        [&_table]:min-w-full 
+        [&_table]:border-collapse 
+        [&_table]:border [&_table]:border-gray-200 
+        [&_table]:my-4 
+        [&_th]:px-3 [&_th]:py-2 [&_th]:text-left [&_th]:break-words 
+        [&_td]:px-3 [&_td]:py-2 [&_td]:text-left [&_td]:break-words
+      "
             dangerouslySetInnerHTML={{ __html: AccountingData.content }}
           ></div>
+          
         </div>
       </div>
 
@@ -196,7 +212,6 @@ const Accounting = () => {
           </div>
         </div>
       </section>
-    
     </>
   );
 };

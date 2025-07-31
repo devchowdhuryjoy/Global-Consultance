@@ -790,7 +790,7 @@ const HealthInsurance = () => {
           {/* Right Image Section */}
           <div className="flex justify-center lg:justify-end">
             <img
-              src="/study1.jpg"
+              src="online-healths.png" // Replace with your image path
               alt="Doctor consultation"
               className="max-w-full h-auto"
             />
@@ -809,7 +809,7 @@ const HealthInsurance = () => {
               <div className="w-20 h-6 bg-[#d0c9f5] rotate-[15deg]"></div>
             </div>
             <img
-              src="/study4.jpg"
+              src="insurance-critirias.png" // Replace with your image path
               alt="Consultation"
               className="relative z-10 w-full rounded-xl shadow-lg"
             />
