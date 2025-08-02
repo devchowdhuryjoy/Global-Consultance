@@ -8,15 +8,20 @@ import ConsultationModal from "../../Modal/ConsultationModal";
 
 const destinations = [
   { title: "Study in UK", image: "Uk.jpg", path: "/uk" },
-  { title: "Study in USA", image: "/study6.jpg", path: "/usa" },
-  { title: "Study in Canada", image: "/study4.jpg", path: "/canada" },
-  { title: "Study in Australia", image: "/study3.png", path: "/australia" },
+  { title: "Study in USA", image: "/study6.jpg", path: "/uk" },
+  { title: "Study in Canada", image: "/study4.jpg", path: "/uk" },
   {
     title: "Study in Sweden",
     image: "Sweden.jpg",
-    path: "/new-zealand",
+    path: "/uk",
   },
-  { title: "Study in Europe", image: "/study3.png", path: "/europe" },
+  { title: "Study in Denmark", image: "/study3.png", path: "/uk" },
+  { title: "Study in Finland", image: "/study3.png", path: "/uk" },
+  { title: "Study in Hungary", image: "/study3.png", path: "/uk" },
+  { title: "Study in Italy", image: "/study3.png", path: "/uk" },
+  { title: "Study in France", image: "/study3.png", path: "/uk" },
+  { title: "Study in Dubai", image: "/study3.png", path: "/uk" },
+  { title: "Study in Europe", image: "/study3.png", path: "/uk" },
 ];
 
 const Textimage = () => {

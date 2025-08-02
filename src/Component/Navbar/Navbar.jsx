@@ -28,13 +28,13 @@ const Navbar = () => {
       label: "Destination",
       link: "/destination",
       submenu: [
-        { label: "Study in UK", link: "/uk" },
-        { label: "Study in USA", link: "/usa" },
-        { label: "Study in Canada", link: "/canada" },
-        { label: "Study in Australia", link: "/australia" },
-        { label: "Study in Sweden", link: "/new-zealand" },
-        { label: "Study in Finland", link: "/japan" },
-        { label: "Study in Europe", link: "/europe" },
+        { label: "Uk & Europe", link: "/uk" },
+        // { label: "Study in USA", link: "/usa" },
+        // { label: "Study in Canada", link: "/canada" },
+        // { label: "Study in Australia", link: "/australia" },
+        // { label: "Study in Sweden", link: "/new-zealand" },
+        // { label: "Study in Finland", link: "/japan" },
+        // { label: "Study in Europe", link: "/europe" },
       ],
     },
     {
@@ -47,20 +47,23 @@ const Navbar = () => {
         { label: "Visa Services", link: "/visa-service" },
       ],
     },
-    {
-      label: "Resources",
-      submenu: [
-        { label: "Blogs", link: "/blogs" },
-        { label: "Courses", link: "/courses" },
-      ],
-    },
-    {
-      label: "Scholarships",
-      submenu: [
-        { label: "Scholarships in Australia", link: "/scholarships" },
-        { label: "Scholarships in UK", link: "/scolarshipinuk" },
-      ],
-    },
+    // {
+    //   label: "Courses",
+    //   link: "/courses",
+    //   submenu: [
+    //     { label: "Blogs", link: "/blogs" },
+    //     { label: "Courses", link: "/courses" },
+    //   ],
+    // },
+    // {
+    //   label: "Scholarships",
+    //   submenu: [
+    //     { label: "Scholarships in Australia", link: "/scholarships" },
+    //     { label: "Scholarships in UK", link: "/scolarshipinuk" },
+    //   ],
+    // },
+    { label: "Scholarships", submenu: null, link: "/scholarships" },
+    { label: "Courses", submenu: null, link: "/courses" },
     { label: "Contact Us", submenu: null, link: "/contactus" },
   ];
 
