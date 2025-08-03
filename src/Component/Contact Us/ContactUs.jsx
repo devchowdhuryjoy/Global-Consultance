@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import SimpleSteps from "../Simple Steps/SimpleSteps";
 import SuccessStories from "../SuccessStories/SuccessStories";
-const countries = ["Bangladesh", "Australia", "USA", "UK"];
+const countries = ["Bangladesh", "UK",];
 import { MdLocationOn } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
 
@@ -46,8 +46,9 @@ const ContactUs = () => {
       <div className="bg-white text-center py-12 px-4 sm:px-6 lg:px-12">
         {/* Main Heading */}
         <h2 className="text-2xl sm:text-3xl font-bold text-black-900 mb-4">
-          Schedule an Appointment with your nearest<br /><span className="text-[#f16f22]">Global Routeway Office</span>
-          
+          Schedule an Appointment with your nearest
+          <br />
+          <span className="text-[#f16f22]">Global Routeway Office</span>
         </h2>
 
         {/* Subheading */}
@@ -86,7 +87,7 @@ const ContactUs = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-2">
             Our Services can be Availed in{" "}
-            <span className="text-[#f16f22]">4 Countries</span>
+            <span className="text-[#f16f22]">2 Countries</span>
           </h1>
           <p className="text-black-600 mb-6">
             Pick a country and get the details to connect with our team located
@@ -115,12 +116,16 @@ const ContactUs = () => {
                 Mohammadpur
               </h3>
               <p className="text-sm text-gray-700 mb-2">
-                <span className="inline-block text-[#f16f22] mr-1"><MdLocationOn /></span>N
-                Islam Tower, 19/C/F Block-F, Ring Road, Shamoly, Mohammadpur,
+                <span className="inline-block text-[#f16f22] mr-1">
+                  <MdLocationOn />
+                </span>
+                N Islam Tower, 19/C/F Block-F, Ring Road, Shamoly, Mohammadpur,
                 Dhaka 1207, Bangladesh
               </p>
               <p className="text-sm text-gray-700 mb-4">
-                <span className="inline-block text-[#f16f22] mr-1"><FaPhone /></span>
+                <span className="inline-block text-[#f16f22] mr-1">
+                  <FaPhone />
+                </span>
                 01618-858541-9
               </p>
 
@@ -129,6 +134,31 @@ const ContactUs = () => {
               </button>
             </div>
           )}
+
+          {selectedCountry === "UK" && (
+            <div className="bg-white rounded-xl shadow-md p-6 max-w-md mx-auto">
+              <h3 className="text-lg font-semibold text-[#f16f22] mb-3">
+                Kirkdale
+              </h3>
+              <p className="text-sm text-gray-700 mb-2">
+                <span className="inline-block text-[#f16f22] mr-1">
+                  <MdLocationOn />
+                </span>
+                Head Office: Kirkdale House, 7 Kirkdale Road, E11 1HP, London, UK
+              </p>
+              <p className="text-sm text-gray-700 mb-4">
+                <span className="inline-block text-[#f16f22] mr-1">
+                  <FaPhone />
+                </span>
+                00447935390848
+              </p>
+
+              <button className="w-full bg-[#f16f22] hover:bg-[#252364] text-white py-2 rounded-lg font-semibold">
+                Schedule a Virtual Meeting
+              </button>
+            </div>
+          )}
+
         </div>
       </div>
 

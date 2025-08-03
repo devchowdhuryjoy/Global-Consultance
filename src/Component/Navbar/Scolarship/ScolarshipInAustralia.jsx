@@ -873,47 +873,154 @@ import SuccessStories from "../../SuccessStories/SuccessStories";
 const scholarships = [
   {
     country: "UK",
-    description: `The UK offers world-class education with a variety of scholarship options for international students. Universities like Oxford, Cambridge, and Imperial College provide partial and full scholarships based on merit and financial need. Many scholarships are offered through Chevening, Commonwealth, and university-specific programs. These programs cover tuition fees, living expenses, and sometimes travel costs. The UK government and private foundations are also key providers of support for postgraduate studies. Students from developing countries get priority in some schemes. There are scholarships tailored for research students and others for coursework programs. Students need strong academic results, IELTS/TOEFL scores, and recommendation letters.`,
+    description: `1.Chevening Scholarships
+    2.Commonwealth Scholarships
+    3.Rhodes Scholarships
+    4.Gates Cambridge Scholarships
+    5.Clarendon Scholarships
+    6.Edinburgh Global Research Scholarships
+    7.University of Westminster Scholarships
+    8.University of Bristol Think Big Scholarships
+    9.UCL Global Scholarships
+    10.Imperial College London Scholarships`,
   },
   {
     country: "USA",
-    description: `The USA provides the most diverse range of scholarships globally. Opportunities exist at both undergraduate and postgraduate levels, through universities, government bodies (like Fulbright), and private foundations. Scholarships cover tuition, books, and even accommodation. Ivy League universities and state universities alike provide generous funding. Academic excellence, leadership, and community involvement improve your chances. Athletic and artistic scholarships are also available. International students are encouraged to apply early. Visa processes may require proof of financial support even with a scholarship. Deadlines vary per university. Research and preparation are key to winning scholarships in the USA.`,
+      description: `1.Fulbright Foreign Student Program
+    2.Hubert H. Humphrey Fellowship Program
+    3.AAUW International Fellowships
+    4.Harvard University Scholarships
+    5.Yale University Scholarships
+    6.Stanford University Knight-Hennessy Scholars
+    7.MIT Scholarships
+    8.Clark Global Scholarship Program
+    9.MasterCard Foundation Scholars Program
+    10.Rotary Peace Fellowships`,
   },
   {
     country: "Canada",
-    description: `Canada is a top destination for international students due to its safe environment and excellent education. Scholarships in Canada are provided by institutions like University of Toronto, McGill, and UBC. The Canadian government offers support through programs like Vanier Canada Graduate Scholarships. Funding covers full or partial tuition, living expenses, and research grants. Many scholarships are awarded automatically upon admission, while others require separate applications. High academic scores and community contributions improve chances. French-speaking students can benefit from specific Quebec scholarships. International PhD candidates are highly favored. Apply early to meet deadlines.`,
+       description: `1.Vanier Canada Graduate Scholarships
+    2.Canada Graduate Scholarships
+    3.Lester B. Pearson International Scholarships
+    4.University of British Columbia (UBC) International Leader of Tomorrow Award
+    5.Pierre Elliott Trudeau Foundation Scholarships
+    6.University of Alberta Scholarships
+    7.University of Waterloo International Master’s and Doctoral Awards
+    8.McGill University Scholarships
+    9.University of Calgary Scholarships
+    10.York University International Student Scholarships`,
   },
   {
     country: "Sweden",
-    description: `Sweden offers numerous scholarships for international students, mainly at the master’s level. The Swedish Institute provides government-funded scholarships that cover tuition, living costs, and insurance. Universities like Lund, KTH, and Uppsala also offer their own funding. Sweden values equality and access, so many of these scholarships are designed to help students from developing countries. Applicants need a strong academic background, motivation letter, and English proficiency. The competition is high, but the reward is studying in a country known for innovation and sustainability. Apply between October and January for most scholarships.`,
+    description: `1. Swedish Institute Scholarships for Global Professionals
+2. Karolinska Institutet Global Master’s Scholarships
+3. Lund University Global Scholarship Program
+4. Uppsala University Global Scholarships
+5. Chalmers IPOET Scholarships
+6. Stockholm University Scholarships
+7. Malmö University Master’s Scholarships
+8. Blekinge Institute of Technology Scholarship Program
+9. Halmstad University Scholarships
+10. KTH Royal Institute of Technology Scholarships`,
+
   },
   {
     country: "Denmark",
-    description: `Denmark provides scholarships through its Ministry of Higher Education and Science and via universities like University of Copenhagen and Aarhus University. These scholarships are mainly for master's programs. They may include full tuition and a monthly living allowance. EU and non-EU students are eligible based on academic merit. Denmark has a strong focus on research and student-centered learning. Application usually includes motivation letter, academic transcript, and English test scores. Some universities collaborate with global institutions to offer joint scholarship programs. Deadlines are typically between December and March.`,
+   description: `1. Danish Government Scholarships
+2. University of Copenhagen Scholarships
+3. Aarhus University Scholarships
+4. Technical University of Denmark
+5. Copenhagen Business School Scholarships
+6. Roskilde University Scholarships
+7. Aalborg University Scholarships
+8. IT University of Copenhagen Scholarships
+9. Denmark-America Foundation Grants
+10. Erasmus+ Scholarships for Denmark`,
+
   },
   {
     country: "Finland",
-    description: `Finland offers tuition fee waivers and scholarships to non-EU/EEA students pursuing bachelor’s and master’s programs. Universities like the University of Helsinki, Aalto University, and Tampere University provide merit-based scholarships. The Finland Scholarship includes a 100% tuition fee waiver and a €5,000 relocation grant. Applicants should demonstrate excellent academic performance and motivation. Scholarships are competitive and require separate applications during university admission.`,
+    description: `1. Finland Government Scholarships
+2. University of Helsinki Scholarships
+3. Aalto University Scholarships
+4. University of Turku Scholarships
+5. University of Oulu International Scholarships
+6. Tampere University Scholarships
+7. Lappeenranta-Lahti University of Technology LUT Scholarships
+8. University of Eastern Finland Scholarships
+9. Hanken School of Economics Scholarships
+10. Arcada University of Applied Sciences Scholarships`,
+
   },
   {
     country: "Hungary",
-    description: `Hungary provides the Stipendium Hungaricum scholarship for international students. It covers tuition, accommodation, monthly stipend, and medical insurance. Popular among students from Asia and Africa. Universities like Eötvös Loránd and University of Debrecen participate. Programs are offered in English. Applications open around November and close by January. Requires academic transcripts, health certificate, and a strong motivation letter.`,
+    description: `1. Stipendium Hungaricum Scholarship Program
+2. Hungarian Diaspora Scholarship
+3. Erasmus+ Scholarships in Hungary
+4. University of Debrecen Scholarships
+5. Central European University Scholarships
+6. Budapest University of Technology and Economics Scholarships
+7. University of Pécs Scholarships
+8. Eötvös Loránd University (ELTE) Scholarships
+9. Szent István University Scholarships
+10. Corvinus University of Budapest Scholarships`,
+
   },
   {
     country: "Italy",
-    description: `Italy offers government and university scholarships to international students. Regional scholarships like LazioDisco and university grants cover tuition, meals, and accommodation. Universities like University of Bologna, Politecnico di Milano, and Sapienza offer generous funding. Some programs are merit-based, others are need-based. Application usually requires academic transcripts, financial proof, and language certificates (English or Italian).`,
+    description: `1. Italian Government Scholarships for Foreign Students
+2. Scuola Normale Superiore PhD Scholarships
+3. University of Bologna Study Grants for International Students
+4. Bocconi Merit and International Awards
+5. Politecnico di Milano Merit-Based Scholarships
+6. University of Padua Scholarships
+7. University of Pavia Scholarships
+8. Sapienza University of Rome Scholarships
+9. University of Milan Scholarships
+10. University of Trento Scholarships`,
+
   },
   {
     country: "France",
-    description: `France offers scholarships like Eiffel Excellence and Emile Boutmy for master's and PhD programs. Institutions like Sciences Po, Sorbonne, and École Polytechnique offer partial and full funding. Benefits include tuition waivers, monthly stipends, and travel assistance. French government and Campus France promote these opportunities. Requirements include academic records, research proposal, and language proficiency (English or French).`,
+    description: `1. Eiffel Excellence Scholarship Program
+2. École Normale Supérieure (ENS) International Selection
+3. Emile Boutmy Scholarships (Sciences Po)
+4. Université Paris-Saclay International Master’s Scholarships
+5. INSEAD MBA Scholarships
+6. Erasmus+ Scholarships (France)
+7. Grenoble Institute of Technology Foundation Scholarships
+8. Ampère Scholarships of Excellence (ENS Lyon)
+9. École Polytechnique Scholarships
+10. HEC Paris MBA Scholarships`,
+
   },
   {
     country: "Dubai",
-    description: `Dubai offers scholarships primarily through its private and international universities like University of Dubai, Hult, and American University in Dubai. Scholarships are merit-based and can cover partial to full tuition fees. Some institutions offer need-based support. Dubai’s Knowledge and Human Development Authority promotes higher education accessibility. Applicants must provide academic records, personal statements, and sometimes interviews.`,
+    description: `1. Khalifa University Scholarships
+2. Mohamed bin Zayed University Scholarships (MBZUAI)
+3. United Arab Emirates University Scholarships
+4. American University in Dubai Scholarships
+5. University of Dubai Scholarships
+6. Zayed University Scholarships
+7. Canadian University Dubai Scholarships
+8. Middlesex University Dubai Scholarships
+9. Al Qasimia University Scholarships
+10. Emirates Aviation University Scholarships`,
+
   },
   {
     country: "Malaysia",
-    description: `Malaysia offers affordable education and international programs in English. The Malaysian International Scholarship (MIS) and university-based grants like UTP and Taylor’s scholarships are available. These can cover tuition, monthly living expenses, and research support. Malaysia's strategic location and multi-ethnic culture make it a great place to study. Universities like University of Malaya, UTM, and Monash Malaysia are top choices. Applications require transcripts, English scores, and recommendation letters. Most scholarships are aimed at master's and PhD students, but some UG scholarships exist.`,
+    description: `1. Malaysian International Scholarship (MIS)
+2. MTCP Scholarship (Malaysian Technical Cooperation Programme)
+3. University of Malaya Scholarships
+4. Universiti Kebangsaan Malaysia (UKM) Vice Chancellor’s Scholarships
+5. Universiti Putra Malaysia (UPM) Scholarships
+6. Universiti Sains Malaysia (USM) Scholarships
+7. Multimedia University (MMU) Scholarships
+8. UCSI University Trust Scholarships
+9. Asia Pacific University (APU) Merit Scholarships
+10. Taylor’s University Scholarships`,
+
   },
 ];
 

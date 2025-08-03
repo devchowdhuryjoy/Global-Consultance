@@ -29,12 +29,12 @@ const Navbar = () => {
       link: "/destination",
       submenu: [
         { label: "Uk & Europe", link: "/uk" },
-        // { label: "Study in USA", link: "/usa" },
-        // { label: "Study in Canada", link: "/canada" },
-        // { label: "Study in Australia", link: "/australia" },
-        // { label: "Study in Sweden", link: "/new-zealand" },
-        // { label: "Study in Finland", link: "/japan" },
-        // { label: "Study in Europe", link: "/europe" },
+        { label: "Study in USA", link: "/usa" },
+        { label: "Study in Canada", link: "/canada" },
+        { label: "Study in France", link: "/australia" },
+        { label: "Study in Sweden", link: "/new-zealand" },
+        { label: "Study in Finland", link: "/japan" },
+        { label: "Study in Hungary", link: "/europe" },
       ],
     },
     {

@@ -8,20 +8,20 @@ import ConsultationModal from "../../Modal/ConsultationModal";
 
 const destinations = [
   { title: "Study in UK", image: "Uk.jpg", path: "/uk" },
-  { title: "Study in USA", image: "/study6.jpg", path: "/uk" },
-  { title: "Study in Canada", image: "/study4.jpg", path: "/uk" },
+  { title: "Study in USA", image: "usaupdate.jpg", path: "/usa" },
+  { title: "Study in Canada", image: "canadaupdate.jpg", path: "/canada" },
   {
     title: "Study in Sweden",
     image: "Sweden.jpg",
-    path: "/uk",
+    path: "/new-zealand",
   },
-  { title: "Study in Denmark", image: "/study3.png", path: "/uk" },
-  { title: "Study in Finland", image: "/study3.png", path: "/uk" },
-  { title: "Study in Hungary", image: "/study3.png", path: "/uk" },
-  { title: "Study in Italy", image: "/study3.png", path: "/uk" },
-  { title: "Study in France", image: "/study3.png", path: "/uk" },
-  { title: "Study in Dubai", image: "/study3.png", path: "/uk" },
-  { title: "Study in Europe", image: "/study3.png", path: "/uk" },
+  { title: "Study in Denmark", image: "denmarkupdate.jpg", path: "/uk" },
+  { title: "Study in Finland", image: "finlandupdate.jpg", path: "/japan" },
+  { title: "Study in Hungary", image: "hungaryupdate.jpg", path: "/europe" },
+  { title: "Study in Italy", image: "italyupdate.jpg", path: "/uk" },
+  { title: "Study in France", image: "franceupdate.jpg", path: "/australia" },
+  { title: "Study in Dubai", image: "dubaiupdate.jpg", path: "/uk" },
+  { title: "Study in Europe", image: "europeupdate.jpg", path: "/uk" },
 ];
 
 const Textimage = () => {

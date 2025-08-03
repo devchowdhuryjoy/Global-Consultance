@@ -1128,9 +1128,15 @@
 
 // export default StudyInUk;
 
+
+
+
+
+
+
 import React, { useState } from "react";
-import ConsultationModal from "../../../Modal/ConsultationModal";
 import SuccessStories from "../../SuccessStories/SuccessStories";
+import CountryUniversityModal from "../../../Modal/CountryUniversityModal";
 
 const data = {
   UK: [
@@ -1142,197 +1148,113 @@ const data = {
       name: "University of Cambridge",
       details: "Known for excellence in science and humanities.",
     },
-    {
-      name: "Imperial College London",
-      details: "Top ranked for engineering and medicine.",
-    },
-    {
-      name: "University College London",
-      details: "Globally recognized multi-disciplinary university.",
-    },
-    {
-      name: "University of Edinburgh",
-      details: "Prestigious university in Scotland.",
-    },
   ],
   USA: [
-    { name: "Harvard University", details: "Top Ivy League university." },
     {
-      name: "Stanford University",
-      details: "Renowned for innovation and entrepreneurship.",
+      name: "Harvard University",
+      details: "Famous for its law, business, and medical schools.",
     },
-    { name: "MIT", details: "World leader in technology and research." },
     {
-      name: "University of Chicago",
-      details: "Top ranked for economics and law.",
+      name: "Massachusetts Institute of Technology (MIT)",
+      details: "Renowned for science, engineering, and technology.",
     },
-    { name: "Columbia University", details: "Elite Ivy League school in NYC." },
   ],
   Canada: [
-    { name: "University of Toronto", details: "Leading university in Canada." },
-    { name: "McGill University", details: "Known for medical research." },
     {
-      name: "University of British Columbia",
-      details: "Ranked among the top 40 globally.",
+      name: "University of Toronto",
+      details: "Leading research university in Canada with diverse programs.",
     },
     {
-      name: "University of Alberta",
-      details: "Strong in research and innovation.",
+      name: "McGill University",
+      details: "One of Canada’s oldest universities with strong global reputation.",
     },
-    { name: "McMaster University", details: "Top-tier medical school." },
   ],
   Sweden: [
-    { name: "Lund University", details: "Prestigious research university." },
     {
-      name: "KTH Royal Institute of Technology",
-      details: "Top technical university.",
+      name: "Karolinska Institute",
+      details: "World-class medical university in Sweden.",
     },
-    { name: "Uppsala University", details: "Oldest university in Sweden." },
-    { name: "Chalmers University", details: "Strong in engineering & IT." },
     {
-      name: "Stockholm University",
-      details: "Large public research university.",
+      name: "Lund University",
+      details: "Known for strong research and international collaboration.",
     },
   ],
   Denmark: [
     {
       name: "University of Copenhagen",
-      details: "Denmark's largest university.",
-    },
-    { name: "Aarhus University", details: "Leading research institution." },
-    {
-      name: "Technical University of Denmark",
-      details: "Top for tech & engineering.",
+      details: "Denmark’s largest university with a broad range of disciplines.",
     },
     {
-      name: "Copenhagen Business School",
-      details: "Known for business programs.",
-    },
-    {
-      name: "Aalborg University",
-      details: "Focused on problem-based learning.",
+      name: "Aarhus University",
+      details: "Strong in research and teaching across many fields.",
     },
   ],
   Finland: [
     {
       name: "University of Helsinki",
-      details: "Top Finnish research university.",
+      details: "Finland’s oldest and largest university with diverse programs.",
     },
     {
       name: "Aalto University",
-      details: "Focuses on tech, business, and arts.",
-    },
-    {
-      name: "University of Turku",
-      details: "Second largest university in Finland.",
-    },
-    { name: "Tampere University", details: "Strong in health and technology." },
-    {
-      name: "University of Oulu",
-      details: "Known for IT and wireless communications.",
+      details: "Known for technology, business, and arts.",
     },
   ],
   Hungary: [
     {
       name: "Eötvös Loránd University",
-      details: "Oldest university in Hungary.",
-    },
-    { name: "Semmelweis University", details: "Best for medical studies." },
-    {
-      name: "University of Szeged",
-      details: "Known for science and humanities.",
+      details: "One of the most prestigious universities in Hungary.",
     },
     {
-      name: "Budapest University of Technology",
-      details: "Top engineering school.",
-    },
-    {
-      name: "Corvinus University",
-      details: "Top-ranked for business and economics.",
+      name: "Budapest University of Technology and Economics",
+      details: "Focus on engineering and technology disciplines.",
     },
   ],
   Italy: [
     {
       name: "University of Bologna",
-      details: "Oldest university in the world.",
+      details: "The oldest university in the Western world with a rich history.",
     },
     {
       name: "Sapienza University of Rome",
-      details: "Large and historic university.",
+      details: "One of Europe’s largest universities with diverse programs.",
     },
-    { name: "University of Milan", details: "Known for law and humanities." },
-    {
-      name: "Politecnico di Milano",
-      details: "Top engineering and design school.",
-    },
-    { name: "University of Padua", details: "Strong in science and medicine." },
   ],
   France: [
     {
       name: "Sorbonne University",
-      details: "Historic and top-tier in humanities.",
-    },
-    { name: "École Polytechnique", details: "Premier engineering school." },
-    {
-      name: "Sciences Po",
-      details: "Known for political science and international affairs.",
+      details: "Famous for humanities, science, and medicine.",
     },
     {
-      name: "University of Paris-Saclay",
-      details: "Top for science and tech.",
-    },
-    {
-      name: "Université PSL",
-      details: "Prestigious research-focused institution.",
+      name: "École Polytechnique",
+      details: "Prestigious engineering school in France.",
     },
   ],
   Dubai: [
     {
-      name: "University of Dubai",
-      details: "Recognized for business and law.",
-    },
-    {
       name: "American University in Dubai",
-      details: "Offers US-style education.",
+      details: "Offers American-style education with diverse programs.",
     },
     {
-      name: "Heriot-Watt University Dubai",
-      details: "Engineering and business focused.",
-    },
-    {
-      name: "University of Wollongong in Dubai",
-      details: "Australian university branch.",
-    },
-    {
-      name: "Middlesex University Dubai",
-      details: "UK-based university campus.",
+      name: "Dubai International Academic City",
+      details: "Home to several international universities and colleges.",
     },
   ],
   Malaysia: [
     {
       name: "University of Malaya",
-      details: "Malaysia’s oldest and highest-ranked university.",
-    },
-    {
-      name: "Universiti Teknologi Malaysia",
-      details: "Engineering and tech excellence.",
+      details: "Malaysia’s oldest university with strong research programs.",
     },
     {
       name: "Universiti Kebangsaan Malaysia",
-      details: "Top local university.",
+      details: "Known for academic excellence and research.",
     },
-    {
-      name: "Monash University Malaysia",
-      details: "Branch of Monash Australia.",
-    },
-    { name: "Taylor's University", details: "Well-known private university." },
   ],
 };
 
-const StudyInAbroad = () => {
-  const [selectedCountry, setSelectedCountry] = useState("");
-  const [selectedUniversity, setSelectedUniversity] = useState("");
 
+const StudyInUk = () => {
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedUniversities, setSelectedUniversities] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => setShowModal(true);
@@ -1340,30 +1262,34 @@ const StudyInAbroad = () => {
 
   const handleCountryChange = (e) => {
     setSelectedCountry(e.target.value);
-    setSelectedUniversity("");
+    setSelectedUniversities([]);
   };
 
   const handleUniversityChange = (e) => {
-    setSelectedUniversity(e.target.value);
+    const universityName = e.target.value;
+    const isChecked = e.target.checked;
+
+    setSelectedUniversities((prev) =>
+      isChecked ? [...prev, universityName] : prev.filter((name) => name !== universityName)
+    );
   };
 
   const universities = selectedCountry ? data[selectedCountry] : [];
-  const universityDetails = universities.find(
-    (u) => u.name === selectedUniversity
+  const selectedUniversityDetails = universities.filter((u) =>
+    selectedUniversities.includes(u.name)
   );
 
   return (
     <>
       <div className="px-4 py-10 max-w-5xl mx-auto">
         <h1 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-4">
-          Study Abroad
+          Study Abroad-(UK & Europe)
         </h1>
         <p className="text-black mb-8">
           Select a country and explore top universities with their descriptions.
         </p>
 
         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
-          {/* Country Dropdown */}
           <div className="flex-1">
             <label className="block text-black font-medium mb-2">
               Select Country
@@ -1382,58 +1308,80 @@ const StudyInAbroad = () => {
             </select>
           </div>
 
-          {/* University Dropdown */}
           <div className="flex-1">
             <label className="block text-black font-medium mb-2">
-              Select University
+              Select Universities
             </label>
-            <select
-              value={selectedUniversity}
-              onChange={handleUniversityChange}
-              disabled={!selectedCountry}
-              className={`w-full border rounded px-4 py-2 ${
+            <div
+              className={`w-full border rounded px-4 py-2 max-h-60 overflow-y-auto ${
                 selectedCountry
                   ? "focus:ring-[#f16f22]"
                   : "bg-gray-100 text-gray-400"
               } focus:outline-none focus:ring-2`}
             >
-              <option value="">-- Choose University --</option>
-              {universities.map((uni) => (
-                <option key={uni.name} value={uni.name}>
-                  {uni.name}
-                </option>
-              ))}
-            </select>
+              {selectedCountry ? (
+                universities.map((uni) => (
+                  <div key={uni.name} className="mb-2 last:mb-0">
+                    <label className="flex items-center space-x-2 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        value={uni.name}
+                        checked={selectedUniversities.includes(uni.name)}
+                        onChange={handleUniversityChange}
+                        className="text-[#f16f22] focus:ring-[#f16f22] rounded"
+                      />
+                      <span>{uni.name}</span>
+                    </label>
+                  </div>
+                ))
+              ) : (
+                <div className="text-gray-400">-- Select a country first --</div>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* University Details */}
-        {selectedUniversity && universityDetails && (
-          <div className="bg-white shadow rounded p-6 border border-gray-100">
-            <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
-              {universityDetails.name}
-            </h2>
-            <p className="text-black">{universityDetails.details}</p>
-
-            <div className="w-full flex justify-start mt-5">
-              <button
-                onClick={handleOpenModal}
-                className="bg-[#f16f22] hover:bg-[#252364] text-white font-medium py-2 px-4 text-sm rounded transition w-full sm:w-auto"
+        {selectedUniversities.length > 0 && (
+          <div className="space-y-4 mb-6">
+            {selectedUniversityDetails.map((uni) => (
+              <div
+                key={uni.name}
+                className="bg-white shadow rounded p-6 border border-gray-100"
               >
-                Apply Now
-              </button>
-            </div>
+                <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
+                  {uni.name}
+                </h2>
+                <p className="text-gray-800">{uni.details}</p>
+              </div>
+            ))}
+          </div>
+        )}
 
+        {selectedUniversities.length > 0 && (
+          <div className="w-full flex justify-start">
+            <button
+              onClick={handleOpenModal}
+              className="bg-[#f16f22] hover:bg-[#252364] text-white font-medium py-2 px-4 text-sm rounded transition w-full sm:w-auto"
+            >
+              Apply Now ({selectedUniversities.length} selected)
+            </button>
           </div>
         )}
       </div>
 
-      {/* ✅ Modal */}
-      <ConsultationModal show={showModal} onClose={handleCloseModal} />
+      {/* ✅ Pass selectedCountry & selectedUniversities here */}
+      <CountryUniversityModal
+        show={showModal}
+        onClose={handleCloseModal}
+        selectedCountry={selectedCountry}
+        selectedUniversities={selectedUniversities}
+      />
 
-       <SuccessStories/>
+      <SuccessStories />
     </>
   );
 };
 
-export default StudyInAbroad;
+export default StudyInUk;
+
+
