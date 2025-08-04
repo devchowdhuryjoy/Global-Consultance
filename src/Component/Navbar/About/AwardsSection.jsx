@@ -117,10 +117,10 @@ const AwardsSection = () => {
           {/* Text */}
           <div className="md:w-1/2 text-center md:text-left">
             <span className="bg-[#fff] text-[#f16f22] text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
-              Awards and Achievements
+              Visa Success
             </span>
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-[#000] leading-tight mb-4">
-              Global Routeway: Shining with Prestigious<span className="text-[#f16f22]"> Awards</span>
+              Global Routeway: Shining with Prestigious<span className="text-[#f16f22]"> Visa Success</span>
             </h1>
             <p className="text-black-700 text-lg mb-6">
               Our efforts have been recognized with many prestigious accolades
@@ -192,7 +192,7 @@ const AwardsSection = () => {
       <div className="bg-white py-12 px-4 md:px-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-            <span className="text-[#f16f22]">Awards</span>{" "}
+            <span className="text-[#f16f22]">Visa Success</span>{" "}
             <span className="text-black">Gallery</span>
           </h2>
 

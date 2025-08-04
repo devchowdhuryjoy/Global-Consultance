@@ -12,7 +12,7 @@ const destinations = [
   { title: "Study in Canada", image: "canadaupdate.png", path: "/canada" },
   {
     title: "Study in Sweden",
-    image: "Sweden.jpg",
+    image: "swedenupdate.jpg",
     path: "/new-zealand",
   },
   { title: "Study in Denmark", image: "denmarkupdate.jpg", path: "/uk" },
