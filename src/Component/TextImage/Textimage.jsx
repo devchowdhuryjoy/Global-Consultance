@@ -9,7 +9,7 @@ import ConsultationModal from "../../Modal/ConsultationModal";
 const destinations = [
   { title: "Study in UK", image: "Uk.jpg", path: "/uk" },
   { title: "Study in USA", image: "usaupdate.jpg", path: "/usa" },
-  { title: "Study in Canada", image: "canadaupdate.jpg", path: "/canada" },
+  { title: "Study in Canada", image: "canadaupdate.png", path: "/canada" },
   {
     title: "Study in Sweden",
     image: "Sweden.jpg",
@@ -21,7 +21,7 @@ const destinations = [
   { title: "Study in Italy", image: "italyupdate.jpg", path: "/uk" },
   { title: "Study in France", image: "franceupdate.jpg", path: "/australia" },
   { title: "Study in Dubai", image: "dubaiupdate.jpg", path: "/uk" },
-  { title: "Study in Europe", image: "europeupdate.jpg", path: "/uk" },
+  { title: "Study in Europe", image: "uk1.jpg", path: "/uk" },
 ];
 
 const Textimage = () => {
