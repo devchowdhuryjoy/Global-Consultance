@@ -101,37 +101,37 @@ const AdmissionSupport = () => {
   };
 
   // 6th Section
-  const universityData = [
-    {
-      country: "Malaysia",
-      logos: ["malishia.jpg", "malishia.jpg", "malishia.jpg", "malishia.jpg"],
-    },
-    {
-      country: "Australia",
-      logos: [
-        "austrolia.jpg",
-        "austrolia.jpg",
-        "austrolia.jpg",
-        "austrolia.jpg",
-      ],
-    },
-    {
-      country: "UK",
-      logos: ["uklogo.png", "uklogo.png", "uklogo.png", "uklogo.png"],
-    },
-    {
-      country: "USA",
-      logos: ["usa.png", "usa.png", "usa.png", "usa.png"],
-    },
-    {
-      country: "Canada",
-      logos: ["canada.jpg", "canada.jpg", "canada.jpg", "canada.jpg"],
-    },
-    {
-      country: "Ireland",
-      logos: ["ireland.jpg", "ireland.jpg", "ireland.jpg", "ireland.jpg"],
-    },
-  ];
+  // const universityData = [
+  //   {
+  //     country: "Malaysia",
+  //     logos: ["malishia.jpg", "malishia.jpg", "malishia.jpg", "malishia.jpg"],
+  //   },
+  //   {
+  //     country: "Australia",
+  //     logos: [
+  //       "austrolia.jpg",
+  //       "austrolia.jpg",
+  //       "austrolia.jpg",
+  //       "austrolia.jpg",
+  //     ],
+  //   },
+  //   {
+  //     country: "UK",
+  //     logos: ["uklogo.png", "uklogo.png", "uklogo.png", "uklogo.png"],
+  //   },
+  //   {
+  //     country: "USA",
+  //     logos: ["usa.png", "usa.png", "usa.png", "usa.png"],
+  //   },
+  //   {
+  //     country: "Canada",
+  //     logos: ["canada.jpg", "canada.jpg", "canada.jpg", "canada.jpg"],
+  //   },
+  //   {
+  //     country: "Ireland",
+  //     logos: ["ireland.jpg", "ireland.jpg", "ireland.jpg", "ireland.jpg"],
+  //   },
+  // ];
   // 6th Section
 
   // 7th Section
@@ -697,7 +697,7 @@ const AdmissionSupport = () => {
       {/* 5rd section */}
 
       {/* 6th Section */}
-      <div className="bg-[#f4f9fd] py-16 px-4 sm:px-6 lg:px-20 relative">
+      {/* <div className="bg-[#f4f9fd] py-16 px-4 sm:px-6 lg:px-20 relative">
         <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
             Study at a World Renowned Institution
@@ -754,7 +754,7 @@ const AdmissionSupport = () => {
             </SwiperSlide>
           ))}
 
-          {/* Custom Arrows */}
+          
           <div className="custom-swiper-prev absolute top-1/2 left-0 -translate-y-1/2 z-10 hidden xl:block">
             <button className="w-10 h-10 bg-[#f16f22] rounded-full flex items-center justify-center shadow-md hover:bg-[#d9540f] transition">
               <svg
@@ -792,7 +792,7 @@ const AdmissionSupport = () => {
             </button>
           </div>
         </Swiper>
-      </div>
+      </div> */}
       {/* 6th Section */}
 
       {/* 7th Section */}

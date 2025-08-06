@@ -867,8 +867,8 @@
 // export default ScolarshipInAustralia;
 
 import React, { useState, useEffect } from "react";
-import ConsultationModal from "../../../Modal/ConsultationModal";
 import SuccessStories from "../../SuccessStories/SuccessStories";
+import ScholarshipModal from "../../../Modal/ScholarshipModal";
 
 const scholarships = [
   {
@@ -1111,7 +1111,7 @@ const ScolarshipInAustralia = () => {
         </div>
 
         {/* ✅ Modal */}
-        <ConsultationModal show={showModal} onClose={handleCloseModal} />
+        <ScholarshipModal show={showModal} onClose={handleCloseModal} />
       </div>
 
       <SuccessStories />

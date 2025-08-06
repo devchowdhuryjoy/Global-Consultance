@@ -1,27 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 import { FaCrown } from "react-icons/fa";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import BASE_URL from "../../../Api BaseUrl/BaseUrl";
+import IMAGE_BASE_URL from "../../../Api BaseUrl/ImageBaseUrl";
 import ConsultationModal from "../../../Modal/ConsultationModal";
 
 // Awards Data
-const awards = [
-  {
-    img: "success1.jpg", // ✅ update with your actual path
-    title: "Double Platinum Eagle Award",
-  },
-  {
-    img: "success2.jpg",
-    title: "Partner of the Year (2024)",
-  },
-  {
-    img: "success1.jpg",
-    title: "Outstanding Service Award",
-  },
-];
+// const awards = [
+//   {
+//     img: "success1.jpg", // ✅ update with your actual path
+//     title: "Double Platinum Eagle Award",
+//   },
+//   {
+//     img: "success2.jpg",
+//     title: "Partner of the Year (2024)",
+//   },
+//   {
+//     img: "success1.jpg",
+//     title: "Outstanding Service Award",
+//   },
+// ];
 
 const AwardsSection = () => {
+  const [awards, setAwards] = useState([]);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
+  useEffect(() => {
+    fetch(`${BASE_URL}visa-success`)
+      .then((res) => res.json())
+      .then((data) => setAwards(data))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => setShowModal(true);
@@ -120,7 +136,8 @@ const AwardsSection = () => {
               Visa Success
             </span>
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-[#000] leading-tight mb-4">
-              Global Routeway: Shining with Prestigious<span className="text-[#f16f22]"> Visa Success</span>
+              Global Routeway: Shining with Prestigious
+              <span className="text-[#f16f22]"> Visa Success</span>
             </h1>
             <p className="text-black-700 text-lg mb-6">
               Our efforts have been recognized with many prestigious accolades
@@ -189,7 +206,7 @@ const AwardsSection = () => {
       </div>
 
       {/* Awards Gallery */}
-      <div className="bg-white py-12 px-4 md:px-16">
+      {/* <div className="bg-white py-12 px-4 md:px-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
             <span className="text-[#f16f22]">Visa Success</span>{" "}
@@ -210,6 +227,74 @@ const AwardsSection = () => {
               </div>
             ))}
           </div>
+        </div>
+      </div> */}
+      {/* <div className="bg-white py-12 px-4 md:px-16">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+            <span className="text-[#f16f22]">Visa Success</span>{" "}
+            <span className="text-black">Gallery</span>
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {awards.map((award, index) => (
+              <div key={index} className="text-center">
+                <img
+                  src={`${IMAGE_BASE_URL}${award.image}`}
+                  alt={`award-${index}`}
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="mt-4 text-base md:text-lg font-medium text-gray-800">
+                  {award.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div> */}
+
+      <div className="bg-white py-12 px-4 md:px-16">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+            <span className="text-[#f16f22]">Visa Success</span>{" "}
+            <span className="text-black">Gallery</span>
+          </h2>
+
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            onInit={(swiper) => {
+              swiper.params.navigation.prevEl = prevRef.current;
+              swiper.params.navigation.nextEl = nextRef.current;
+              swiper.navigation.init();
+              swiper.navigation.update();
+            }}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            spaceBetween={20}
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1280: { slidesPerView: 4 },
+            }}
+            className="pb-10"
+          >
+            {awards.map((award, index) => (
+              <SwiperSlide key={index} className="text-center">
+                <img
+                  src={`${IMAGE_BASE_URL}${award.image}`}
+                  alt={`award-${index}`}
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="mt-4 text-base md:text-lg font-medium text-gray-800">
+                  {award.text}
+                </p>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
 

@@ -21,7 +21,7 @@ const destinations = [
   { title: "Study in Italy", image: "italyupdate.jpg", path: "/uk" },
   { title: "Study in France", image: "franceupdate.jpg", path: "/australia" },
   { title: "Study in Dubai", image: "dubaiupdate.jpg", path: "/uk" },
-  { title: "Study in Europe", image: "uk1.jpg", path: "/uk" },
+  { title: "Study in Europe", image: "europeupdate.jpg", path: "/uk" },
 ];
 
 const Textimage = () => {
