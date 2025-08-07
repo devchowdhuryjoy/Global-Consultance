@@ -1137,22 +1137,46 @@ import CountryUniversityModal from "../../../Modal/CountryUniversityModal";
 const data = {
   UK: [
     {
-      name: "University of Oxford",
-      details: "World-renowned for its history and academic excellence.",
+      name: "Imperial College London",
+      details: "Imperial is a science-focused institution known for its excellence in engineering, medicine, and technology. It's especially respected for STEM subjects.",
     },
     {
-      name: "University of Cambridge",
-      details: "Known for excellence in science and humanities.",
+      name: "University College London (UCL)",
+      details: "A multidisciplinary university located in the heart of London, UCL is known for research innovation and global outlook.",
+    },
+    {
+      name: "University of Edinburgh",
+      details: "One of the most prestigious universities in Scotland and the UK, it has a rich history and is known for a strong focus on research and international collaboration.",
+    },
+    {
+      name: "King's College London (KCL)",
+      details: "A historic university with strengths in health sciences, social sciences, and humanities. It’s known for its research and teaching in the heart of London.",
+    },
+    {
+      name: "University of Manchester",
+      details: "A member of the Russell Group, it's known for strong research impact and vibrant student life. It’s especially strong in science and engineering.",
     },
   ],
   USA: [
     {
-      name: "Harvard University",
-      details: "Famous for its law, business, and medical schools.",
+      name: "Massachusetts Institute of Technology (MIT)",
+      details: "MIT is a world leader in science, engineering, and technology education and research.",
     },
     {
-      name: "Massachusetts Institute of Technology (MIT)",
-      details: "Renowned for science, engineering, and technology.",
+      name: "University of California, Berkeley",
+      details: "A top public university known for liberal arts, science programs, and a long history of activism.",
+    },
+    {
+      name: "California Institute of Technology (Caltech)",
+      details: "A small but elite science-focused university, famous for its cutting-edge research.",
+    },
+    {
+      name: "Princeton University",
+      details: "Known for undergraduate teaching and a strong emphasis on the humanities and sciences.",
+    },
+    {
+      name: "Yale University",
+      details: "Famous for its strong arts, law, and humanities programs. Also known for theater and music.",
     },
   ],
   Canada: [
@@ -1174,6 +1198,18 @@ const data = {
       name: "Lund University",
       details: "Known for strong research and international collaboration.",
     },
+    {
+      name: "McGill University",
+      details: "A globally respected research university known for its high academic standards, located in a bilingual city with strong cultural heritage.",
+    },
+    {
+      name: " University of Toronto (U of T)",
+      details: "Canada’s top-ranked university, globally recognized for research, innovation, and academic excellence. It has three campuses: St. George (downtown Toronto), Mississauga, and Scarborough.",
+    },
+    {
+      name: "University of British Columbia (UBC)",
+      details: "One of Canada’s most prestigious universities, UBC is known for strong sustainability and environmental research, as well as a diverse international student population.",
+    },
   ],
   Denmark: [
     {
@@ -1183,6 +1219,18 @@ const data = {
     {
       name: "Aarhus University",
       details: "Strong in research and teaching across many fields.",
+    },
+    {
+      name: "University of Copenhagen (UCPH)",
+      details: "The largest and oldest university in Denmark, UCPH is internationally recognized for high-impact research and offers a wide range of English-taught master’s programs.",
+    },
+    {
+      name: "Aarhus University (AU)",
+      details: "A top-ranking public research university offering internationally oriented education and strong focus on interdisciplinary research.",
+    },
+    {
+      name: "Technical University of Denmark (DTU)",
+      details: "A leading technical university in Scandinavia, DTU specializes in engineering and technology and collaborates with global industry leaders.",
     },
   ],
   Finland: [
@@ -1194,6 +1242,18 @@ const data = {
       name: "Aalto University",
       details: "Known for technology, business, and arts.",
     },
+    {
+      name: "University of Helsinki",
+      details: "Finland’s oldest and largest university, known for high-quality research and international rankings. It offers many master's and doctoral programs in English.",
+    },
+    {
+      name: "Aalto University",
+      details: "Formed from the merger of three major Finnish institutions (technology, business, and art/design), Aalto is a leader in innovation and entrepreneurship.",
+    },
+    {
+      name: "University of Turku",
+      details: "A multidisciplinary university known for research and a strong international orientation, especially in biosciences and humanities.",
+    },
   ],
   Hungary: [
     {
@@ -1203,6 +1263,18 @@ const data = {
     {
       name: "Budapest University of Technology and Economics",
       details: "Focus on engineering and technology disciplines.",
+    },
+    {
+      name: "Semmelweis University",
+      details: "Hungary’s top medical university, Semmelweis is world-renowned for health sciences, medicine, and dentistry. Programs are available in English, German, and Hungarian.",
+    },
+    {
+      name: "University of Szeged (SZTE)",
+      details: "Ranked among the best in Central Europe, SZTE is known for research excellence and offers a wide range of English-taught programs.",
+    },
+    {
+      name: "Budapest University of Technology and Economics (BME)",
+      details: "One of the top technical universities in Central Europe, BME is known for engineering, technology, and innovation.",
     },
   ],
   Italy: [
@@ -1214,6 +1286,18 @@ const data = {
       name: "Sapienza University of Rome",
       details: "One of Europe’s largest universities with diverse programs.",
     },
+    {
+      name: " Politecnico di Milano (Polytechnic University of Milan)",
+      details: "Italy’s top technical university, highly ranked globally for engineering, architecture, and design.",
+    },
+    {
+      name: " University of Milan (Università degli Studi di Milano)",
+      details: "A major research university offering a wide range of programs in science, economics, and health sciences.",
+    },
+    {
+      name: "University of Padua (Università di Padova)",
+      details: "Founded in 1222, this is one of Italy’s most respected universities, known for strong research, especially in medicine and sciences.",
+    },
   ],
   France: [
     {
@@ -1223,6 +1307,18 @@ const data = {
     {
       name: "École Polytechnique",
       details: "Prestigious engineering school in France.",
+    },
+    {
+      name: "Sciences Po",
+      details: "One of Europe’s top universities for social sciences, especially international relations and political studies.",
+    },
+    {
+      name: "Université PSL (Paris Sciences et Lettres)",
+      details: "An elite research university made up of several prestigious institutions, including ENS and Collège de France. Strong in both sciences and humanities.",
+    },
+    {
+      name: "Université Grenoble Alpes (UGA)",
+      details: "One of France’s major public universities, UGA has a strong reputation in science and technology and hosts a vibrant international student community.",
     },
   ],
   Dubai: [
@@ -1234,6 +1330,18 @@ const data = {
       name: "Dubai International Academic City",
       details: "Home to several international universities and colleges.",
     },
+    {
+      name: "Heriot-Watt University Dubai",
+      details: "A UK-based university with a well-established campus in Dubai, especially strong in engineering, business, and data science.",
+    },
+    {
+      name: "Middlesex University Dubai",
+      details: "The first overseas campus of London’s Middlesex University. Offers a wide range of undergraduate and postgraduate programs.",
+    },
+    {
+      name: "University of Wollongong in Dubai (UOWD)",
+      details: "One of the oldest international universities in Dubai, affiliated with the University of Wollongong (Australia).",
+    },
   ],
   Malaysia: [
     {
@@ -1243,6 +1351,18 @@ const data = {
     {
       name: "Universiti Kebangsaan Malaysia",
       details: "Known for academic excellence and research.",
+    },
+    {
+      name: "Universiti Putra Malaysia (UPM)",
+      details: "A top public research university with strengths in agriculture, biotechnology, and engineering.",
+    },
+    {
+      name: "Universiti Sains Malaysia (USM)",
+      details: "Known as a leading science and technology university, with a focus on innovation and research.",
+    },
+    {
+      name: "Monash University Malaysia",
+      details: "The Malaysian campus of Australia’s Monash University, offering international education and research.",
     },
   ],
 };
