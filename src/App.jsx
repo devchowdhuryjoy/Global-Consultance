@@ -71,12 +71,12 @@ function App() {
           {/* Our Services */}
 
           {/* Blog */}
-          <Route path="/blogs" element={<Blog />} />
+          {/* <Route path="/blogs" element={<Blog />} /> */}
           <Route path="/courses" element={<Course />} />
 
           {/* ReadMore */}
 
-          <Route path="/blog/:slug" element={<BlogDetails />} />
+          {/* <Route path="/blog/:slug" element={<BlogDetails />} /> */}
 
           {/* Blog */}
 

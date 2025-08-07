@@ -78,23 +78,23 @@ const EducationService = () => {
           <ul className="space-y-2 text-black-700">
             <li>
               <Link to="/scholarships" onClick={() => window.scrollTo(0, 0)}>
-                Australia Scholarships
+                Scholarships
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/scolarshipinuk" onClick={() => window.scrollTo(0, 0)}>
                 UK Scholarships
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           <h4 className="text-[#f16f22] font-semibold mt-5 mb-3">Resources</h4>
           <ul className="space-y-2 text-black-700">
-            <li>
+            {/* <li>
               <Link to="/blogs" onClick={() => window.scrollTo(0, 0)}>
                 Blogs
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/courses" onClick={() => window.scrollTo(0, 0)}>
                 Course
