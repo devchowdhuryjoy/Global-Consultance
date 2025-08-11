@@ -230,6 +230,7 @@ const ScholarshipModal = ({ show, onClose }) => {
       });
 
       onClose();
+      window.location.reload();
     } catch (error) {
       Swal.fire({
         title: "Error!",

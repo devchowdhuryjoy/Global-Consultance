@@ -10,21 +10,6 @@ import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 import IMAGE_BASE_URL from "../../../Api BaseUrl/ImageBaseUrl";
 import ConsultationModal from "../../../Modal/ConsultationModal";
 
-// Awards Data
-// const awards = [
-//   {
-//     img: "success1.jpg", // ✅ update with your actual path
-//     title: "Double Platinum Eagle Award",
-//   },
-//   {
-//     img: "success2.jpg",
-//     title: "Partner of the Year (2024)",
-//   },
-//   {
-//     img: "success1.jpg",
-//     title: "Outstanding Service Award",
-//   },
-// ];
 
 const AwardsSection = () => {
   const [awards, setAwards] = useState([]);
@@ -206,53 +191,6 @@ const AwardsSection = () => {
       </div>
 
       {/* Awards Gallery */}
-      {/* <div className="bg-white py-12 px-4 md:px-16">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-            <span className="text-[#f16f22]">Visa Success</span>{" "}
-            <span className="text-black">Gallery</span>
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {awards.map((award, index) => (
-              <div key={index} className="text-center">
-                <img
-                  src={award.img}
-                  alt={award.title}
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="mt-4 text-base md:text-lg font-medium text-gray-800">
-                  {award.title}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="bg-white py-12 px-4 md:px-16">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-            <span className="text-[#f16f22]">Visa Success</span>{" "}
-            <span className="text-black">Gallery</span>
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {awards.map((award, index) => (
-              <div key={index} className="text-center">
-                <img
-                  src={`${IMAGE_BASE_URL}${award.image}`}
-                  alt={`award-${index}`}
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="mt-4 text-base md:text-lg font-medium text-gray-800">
-                  {award.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-
       <div className="bg-white py-12 px-4 md:px-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
