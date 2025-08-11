@@ -31,9 +31,9 @@ const Navbar = () => {
         { label: "Study in Uk", link: "/uk" },
         { label: "Study in USA", link: "/usa" },
         { label: "Study in Canada", link: "/canada" },
+        { label: "Study in Australia", link: "/japan" },
+        { label: "Study in New-Zealand", link: "/new-zealand" },
         { label: "Study in Europe", link: "/australia" },
-        // { label: "Study in Sweden", link: "/new-zealand" },
-        // { label: "Study in Finland", link: "/japan" },
         { label: "Study in Asia", link: "/europe" },
       ],
     },
@@ -258,7 +258,6 @@ const Navbar = () => {
                     {item.label}
                   </Link>
                 )}
-                
               </div>
             ))}
           </div>
@@ -292,7 +291,8 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Menu (Dropdown Accordion) */}
-      {menuOpen && (
+
+      {/* {menuOpen && (
         <div className="md:hidden mt-4" ref={dropdownRef}>
           <ul className="space-y-2">
             {menuItems.map((item, index) => (
@@ -306,6 +306,61 @@ const Navbar = () => {
                   <Link
                     to={item.link}
                     onClick={() => setMenuOpen(false)}
+                    className="flex-1"
+                  >
+                    {item.label}
+                  </Link>
+                  {item.submenu && (
+                    <span className="text-xl">
+                      {openIndex === index ? "▲" : "▼"}
+                    </span>
+                  )}
+                </div>
+                {item.submenu && openIndex === index && (
+                  <ul className="pl-4 pb-2">
+                    {item.submenu.map((subItem, subIndex) => (
+                      <li key={subIndex}>
+                        <Link
+                          to={subItem.link}
+                          onClick={() => setMenuOpen(false)}
+                          className="block py-1 text-sm text-gray-700 hover:text-[#f16f22]"
+                        >
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )} */}
+
+      {menuOpen && (
+        <div className="md:hidden mt-4" ref={dropdownRef}>
+          <ul className="space-y-2">
+            {menuItems.map((item, index) => (
+              <li key={index} className="border-b border-gray-200">
+                <div
+                  onClick={() => {
+                    if (item.submenu) {
+                      setOpenIndex(openIndex === index ? null : index);
+                    } else {
+                      setMenuOpen(false);
+                    }
+                  }}
+                  className="flex justify-between items-center py-2 font-semibold text-gray-800 cursor-pointer px-2"
+                >
+                  <Link
+                    to={item.link}
+                    onClick={(e) => {
+                      if (item.submenu) {
+                        e.preventDefault();
+                      } else {
+                        setMenuOpen(false);
+                      }
+                    }}
                     className="flex-1"
                   >
                     {item.label}

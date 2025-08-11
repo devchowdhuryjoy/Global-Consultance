@@ -866,251 +866,291 @@
 
 // export default ScolarshipInAustralia;
 
-// import React, { useState, useEffect } from "react";
+
+
+// import React, { useState } from "react";
 // import SuccessStories from "../../SuccessStories/SuccessStories";
 // import ScholarshipModal from "../../../Modal/ScholarshipModal";
+
+// // const scholarships = [
+// //   {
+// //     country: "UK",
+// //     description: `1.Chevening Scholarships
+// // 2.Commonwealth Scholarships
+// // 3.Rhodes Scholarships
+// // 4.Gates Cambridge Scholarships
+// // 5.Clarendon Scholarships
+// // 6.Edinburgh Global Research Scholarships
+// // 7.University of Westminster Scholarships
+// // 8.University of Bristol Think Big Scholarships
+// // 9.UCL Global Scholarships
+// // 10.Imperial College London Scholarships`,
+// //   },
+// //   {
+// //     country: "USA",
+// //     description: `1.Fulbright Foreign Student Program
+// // 2.Hubert H. Humphrey Fellowship Program
+// // 3.AAUW International Fellowships
+// // 4.Harvard University Scholarships
+// // 5.Yale University Scholarships
+// // 6.Stanford University Knight-Hennessy Scholars
+// // 7.MIT Scholarships
+// // 8.Clark Global Scholarship Program
+// // 9.MasterCard Foundation Scholars Program
+// // 10.Rotary Peace Fellowships`,
+// //   },
+// //   {
+// //     country: "Canada",
+// //     description: `1.Vanier Canada Graduate Scholarships
+// // 2.Canada Graduate Scholarships
+// // 3.Lester B. Pearson International Scholarships
+// // 4.University of British Columbia (UBC) International Leader of Tomorrow Award
+// // 5.Pierre Elliott Trudeau Foundation Scholarships
+// // 6.University of Alberta Scholarships
+// // 7.University of Waterloo International Master's and Doctoral Awards
+// // 8.McGill University Scholarships
+// // 9.University of Calgary Scholarships
+// // 10.York University International Student Scholarships`,
+// //   },
+// //   {
+// //     country: "Sweden",
+// //     description: `1. Swedish Institute Scholarships for Global Professionals
+// // 2. Karolinska Institutet Global Master's Scholarships
+// // 3. Lund University Global Scholarship Program
+// // 4. Uppsala University Global Scholarships
+// // 5. Chalmers IPOET Scholarships
+// // 6. Stockholm University Scholarships
+// // 7. Malmö University Master's Scholarships
+// // 8. Blekinge Institute of Technology Scholarship Program
+// // 9. Halmstad University Scholarships
+// // 10. KTH Royal Institute of Technology Scholarships`,
+// //   },
+// //   {
+// //     country: "Denmark",
+// //     description: `1. Danish Government Scholarships
+// // 2. University of Copenhagen Scholarships
+// // 3. Aarhus University Scholarships
+// // 4. Technical University of Denmark
+// // 5. Copenhagen Business School Scholarships
+// // 6. Roskilde University Scholarships
+// // 7. Aalborg University Scholarships
+// // 8. IT University of Copenhagen Scholarships
+// // 9. Denmark-America Foundation Grants
+// // 10. Erasmus+ Scholarships for Denmark`,
+// //   },
+// //   {
+// //     country: "Finland",
+// //     description: `1. Finland Government Scholarships
+// // 2. University of Helsinki Scholarships
+// // 3. Aalto University Scholarships
+// // 4. University of Turku Scholarships
+// // 5. University of Oulu International Scholarships
+// // 6. Tampere University Scholarships
+// // 7. Lappeenranta-Lahti University of Technology LUT Scholarships
+// // 8. University of Eastern Finland Scholarships
+// // 9. Hanken School of Economics Scholarships
+// // 10. Arcada University of Applied Sciences Scholarships`,
+// //   },
+// //   {
+// //     country: "Hungary",
+// //     description: `1. Stipendium Hungaricum Scholarship Program
+// // 2. Hungarian Diaspora Scholarship
+// // 3. Erasmus+ Scholarships in Hungary
+// // 4. University of Debrecen Scholarships
+// // 5. Central European University Scholarships
+// // 6. Budapest University of Technology and Economics Scholarships
+// // 7. University of Pécs Scholarships
+// // 8. Eötvös Loránd University (ELTE) Scholarships
+// // 9. Szent István University Scholarships
+// // 10. Corvinus University of Budapest Scholarships`,
+// //   },
+// //   {
+// //     country: "Italy",
+// //     description: `1. Italian Government Scholarships for Foreign Students
+// // 2. Scuola Normale Superiore PhD Scholarships
+// // 3. University of Bologna Study Grants for International Students
+// // 4. Bocconi Merit and International Awards
+// // 5. Politecnico di Milano Merit-Based Scholarships
+// // 6. University of Padua Scholarships
+// // 7. University of Pavia Scholarships
+// // 8. Sapienza University of Rome Scholarships
+// // 9. University of Milan Scholarships
+// // 10. University of Trento Scholarships`,
+// //   },
+// //   {
+// //     country: "France",
+// //     description: `1. Eiffel Excellence Scholarship Program
+// // 2. École Normale Supérieure (ENS) International Selection
+// // 3. Emile Boutmy Scholarships (Sciences Po)
+// // 4. Université Paris-Saclay International Master's Scholarships
+// // 5. INSEAD MBA Scholarships
+// // 6. Erasmus+ Scholarships (France)
+// // 7. Grenoble Institute of Technology Foundation Scholarships
+// // 8. Ampère Scholarships of Excellence (ENS Lyon)
+// // 9. École Polytechnique Scholarships
+// // 10. HEC Paris MBA Scholarships`,
+// //   },
+// //   {
+// //     country: "Dubai",
+// //     description: `1. Khalifa University Scholarships
+// // 2. Mohamed bin Zayed University Scholarships (MBZUAI)
+// // 3. United Arab Emirates University Scholarships
+// // 4. American University in Dubai Scholarships
+// // 5. University of Dubai Scholarships
+// // 6. Zayed University Scholarships
+// // 7. Canadian University Dubai Scholarships
+// // 8. Middlesex University Dubai Scholarships
+// // 9. Al Qasimia University Scholarships
+// // 10. Emirates Aviation University Scholarships`,
+// //   },
+// //   {
+// //     country: "Malaysia",
+// //     description: `1. Malaysian International Scholarship (MIS)
+// // 2. MTCP Scholarship (Malaysian Technical Cooperation Programme)
+// // 3. University of Malaya Scholarships
+// // 4. Universiti Kebangsaan Malaysia (UKM) Vice Chancellor's Scholarships
+// // 5. Universiti Putra Malaysia (UPM) Scholarships
+// // 6. Universiti Sains Malaysia (USM) Scholarships
+// // 7. Multimedia University (MMU) Scholarships
+// // 8. UCSI University Trust Scholarships
+// // 9. Asia Pacific University (APU) Merit Scholarships
+// // 10. Taylor's University Scholarships`,
+// //   },
+// // ];
 
 // const scholarships = [
 //   {
 //     country: "UK",
-//     description: `1.Chevening Scholarships
-//     2.Commonwealth Scholarships
-//     3.Rhodes Scholarships
-//     4.Gates Cambridge Scholarships
-//     5.Clarendon Scholarships
-//     6.Edinburgh Global Research Scholarships
-//     7.University of Westminster Scholarships
-//     8.University of Bristol Think Big Scholarships
-//     9.UCL Global Scholarships
-//     10.Imperial College London Scholarships`,
+//     description:
+//       "The UK offers prestigious scholarships such as Chevening Scholarships, Commonwealth Scholarships, Rhodes Scholarships, and Gates Cambridge Scholarships. Other notable awards include Clarendon Scholarships, Edinburgh Global Research Scholarships, University of Westminster Scholarships, University of Bristol Think Big Scholarships, UCL Global Scholarships, and Imperial College London Scholarships.",
 //   },
 //   {
 //     country: "USA",
-//       description: `1.Fulbright Foreign Student Program
-//     2.Hubert H. Humphrey Fellowship Program
-//     3.AAUW International Fellowships
-//     4.Harvard University Scholarships
-//     5.Yale University Scholarships
-//     6.Stanford University Knight-Hennessy Scholars
-//     7.MIT Scholarships
-//     8.Clark Global Scholarship Program
-//     9.MasterCard Foundation Scholars Program
-//     10.Rotary Peace Fellowships`,
+//     description:
+//       "In the USA, there are many renowned scholarships including the Fulbright Foreign Student Program, Hubert H. Humphrey Fellowship Program, and AAUW International Fellowships. Top universities like Harvard, Yale, Stanford, and MIT offer various scholarships. Other opportunities include the Clark Global Scholarship Program, MasterCard Foundation Scholars Program, and Rotary Peace Fellowships.",
 //   },
 //   {
 //     country: "Canada",
-//        description: `1.Vanier Canada Graduate Scholarships
-//     2.Canada Graduate Scholarships
-//     3.Lester B. Pearson International Scholarships
-//     4.University of British Columbia (UBC) International Leader of Tomorrow Award
-//     5.Pierre Elliott Trudeau Foundation Scholarships
-//     6.University of Alberta Scholarships
-//     7.University of Waterloo International Master’s and Doctoral Awards
-//     8.McGill University Scholarships
-//     9.University of Calgary Scholarships
-//     10.York University International Student Scholarships`,
+//     description:
+//       "Canada provides numerous scholarships such as Vanier Canada Graduate Scholarships and Canada Graduate Scholarships. Universities like the University of British Columbia, University of Alberta, McGill University, and York University offer international scholarships. There are also Lester B. Pearson International Scholarships and awards from the Pierre Elliott Trudeau Foundation.",
 //   },
 //   {
 //     country: "Sweden",
-//     description: `1. Swedish Institute Scholarships for Global Professionals
-// 2. Karolinska Institutet Global Master’s Scholarships
-// 3. Lund University Global Scholarship Program
-// 4. Uppsala University Global Scholarships
-// 5. Chalmers IPOET Scholarships
-// 6. Stockholm University Scholarships
-// 7. Malmö University Master’s Scholarships
-// 8. Blekinge Institute of Technology Scholarship Program
-// 9. Halmstad University Scholarships
-// 10. KTH Royal Institute of Technology Scholarships`,
-
+//     description:
+//       "Sweden has scholarships like the Swedish Institute Scholarships for Global Professionals and Karolinska Institutet Global Master's Scholarships. Other scholarships include Lund University Global Scholarship Program, Uppsala University Global Scholarships, Chalmers IPOET Scholarships, and scholarships from Stockholm University, Malmö University, Blekinge Institute of Technology, Halmstad University, and KTH Royal Institute of Technology.",
 //   },
 //   {
 //     country: "Denmark",
-//    description: `1. Danish Government Scholarships
-// 2. University of Copenhagen Scholarships
-// 3. Aarhus University Scholarships
-// 4. Technical University of Denmark
-// 5. Copenhagen Business School Scholarships
-// 6. Roskilde University Scholarships
-// 7. Aalborg University Scholarships
-// 8. IT University of Copenhagen Scholarships
-// 9. Denmark-America Foundation Grants
-// 10. Erasmus+ Scholarships for Denmark`,
-
+//     description:
+//       "In Denmark, scholarships are offered by the Danish Government, University of Copenhagen, Aarhus University, and the Technical University of Denmark. Additional opportunities are available through Copenhagen Business School, Roskilde University, Aalborg University, IT University of Copenhagen, Denmark-America Foundation Grants, and Erasmus+ Scholarships.",
 //   },
 //   {
 //     country: "Finland",
-//     description: `1. Finland Government Scholarships
-// 2. University of Helsinki Scholarships
-// 3. Aalto University Scholarships
-// 4. University of Turku Scholarships
-// 5. University of Oulu International Scholarships
-// 6. Tampere University Scholarships
-// 7. Lappeenranta-Lahti University of Technology LUT Scholarships
-// 8. University of Eastern Finland Scholarships
-// 9. Hanken School of Economics Scholarships
-// 10. Arcada University of Applied Sciences Scholarships`,
-
+//     description:
+//       "Finland offers government scholarships and awards from the University of Helsinki, Aalto University, University of Turku, and University of Oulu. Tampere University, Lappeenranta-Lahti University of Technology, University of Eastern Finland, Hanken School of Economics, and Arcada University of Applied Sciences also provide scholarships.",
 //   },
 //   {
 //     country: "Hungary",
-//     description: `1. Stipendium Hungaricum Scholarship Program
-// 2. Hungarian Diaspora Scholarship
-// 3. Erasmus+ Scholarships in Hungary
-// 4. University of Debrecen Scholarships
-// 5. Central European University Scholarships
-// 6. Budapest University of Technology and Economics Scholarships
-// 7. University of Pécs Scholarships
-// 8. Eötvös Loránd University (ELTE) Scholarships
-// 9. Szent István University Scholarships
-// 10. Corvinus University of Budapest Scholarships`,
-
+//     description:
+//       "Hungary provides scholarships through programs like the Stipendium Hungaricum Scholarship Program and Hungarian Diaspora Scholarship. Erasmus+ Scholarships are also available. Universities such as University of Debrecen, Central European University, Budapest University of Technology and Economics, University of Pécs, Eötvös Loránd University, Szent István University, and Corvinus University of Budapest offer various scholarships.",
 //   },
 //   {
 //     country: "Italy",
-//     description: `1. Italian Government Scholarships for Foreign Students
-// 2. Scuola Normale Superiore PhD Scholarships
-// 3. University of Bologna Study Grants for International Students
-// 4. Bocconi Merit and International Awards
-// 5. Politecnico di Milano Merit-Based Scholarships
-// 6. University of Padua Scholarships
-// 7. University of Pavia Scholarships
-// 8. Sapienza University of Rome Scholarships
-// 9. University of Milan Scholarships
-// 10. University of Trento Scholarships`,
-
+//     description:
+//       "Italy offers scholarships from the Italian Government for foreign students and specific awards like Scuola Normale Superiore PhD Scholarships. Universities including Bologna, Bocconi, Politecnico di Milano, Padua, Pavia, Sapienza University of Rome, Milan, and Trento provide merit-based scholarships and study grants.",
 //   },
 //   {
 //     country: "France",
-//     description: `1. Eiffel Excellence Scholarship Program
-// 2. École Normale Supérieure (ENS) International Selection
-// 3. Emile Boutmy Scholarships (Sciences Po)
-// 4. Université Paris-Saclay International Master’s Scholarships
-// 5. INSEAD MBA Scholarships
-// 6. Erasmus+ Scholarships (France)
-// 7. Grenoble Institute of Technology Foundation Scholarships
-// 8. Ampère Scholarships of Excellence (ENS Lyon)
-// 9. École Polytechnique Scholarships
-// 10. HEC Paris MBA Scholarships`,
-
+//     description:
+//       "In France, students can apply for the Eiffel Excellence Scholarship Program and scholarships from École Normale Supérieure. Other notable scholarships include Emile Boutmy Scholarships at Sciences Po, Université Paris-Saclay International Master's Scholarships, INSEAD MBA Scholarships, Erasmus+ Scholarships, Grenoble Institute of Technology Foundation Scholarships, Ampère Scholarships of Excellence at ENS Lyon, École Polytechnique Scholarships, and HEC Paris MBA Scholarships.",
 //   },
 //   {
 //     country: "Dubai",
-//     description: `1. Khalifa University Scholarships
-// 2. Mohamed bin Zayed University Scholarships (MBZUAI)
-// 3. United Arab Emirates University Scholarships
-// 4. American University in Dubai Scholarships
-// 5. University of Dubai Scholarships
-// 6. Zayed University Scholarships
-// 7. Canadian University Dubai Scholarships
-// 8. Middlesex University Dubai Scholarships
-// 9. Al Qasimia University Scholarships
-// 10. Emirates Aviation University Scholarships`,
-
+//     description:
+//       "Dubai offers scholarships from Khalifa University, Mohamed bin Zayed University, United Arab Emirates University, American University in Dubai, University of Dubai, Zayed University, Canadian University Dubai, Middlesex University Dubai, Al Qasimia University, and Emirates Aviation University.",
 //   },
 //   {
 //     country: "Malaysia",
-//     description: `1. Malaysian International Scholarship (MIS)
-// 2. MTCP Scholarship (Malaysian Technical Cooperation Programme)
-// 3. University of Malaya Scholarships
-// 4. Universiti Kebangsaan Malaysia (UKM) Vice Chancellor’s Scholarships
-// 5. Universiti Putra Malaysia (UPM) Scholarships
-// 6. Universiti Sains Malaysia (USM) Scholarships
-// 7. Multimedia University (MMU) Scholarships
-// 8. UCSI University Trust Scholarships
-// 9. Asia Pacific University (APU) Merit Scholarships
-// 10. Taylor’s University Scholarships`,
-
+//     description:
+//       "Malaysia provides scholarships such as the Malaysian International Scholarship (MIS) and the MTCP Scholarship. Universities like University of Malaya, Universiti Kebangsaan Malaysia, Universiti Putra Malaysia, Universiti Sains Malaysia, Multimedia University, UCSI University, Asia Pacific University, and Taylor's University offer a wide range of scholarships and merit awards.",
 //   },
 // ];
 
 // const ScolarshipInAustralia = () => {
-//   const [expandedIndex, setExpandedIndex] = useState(null);
-
+//   const [selectedIndex, setSelectedIndex] = useState(null);
 //   const [showModal, setShowModal] = useState(false);
 
 //   const handleOpenModal = () => setShowModal(true);
 //   const handleCloseModal = () => setShowModal(false);
 
-//   const handleReadMore = (index) => {
-//     setExpandedIndex(index);
+//   const handleSelect = (index) => {
+//     setSelectedIndex(index);
+//     window.scrollTo({ top: 0, behavior: "smooth" });
 //   };
 
 //   const handleBack = () => {
-//     setExpandedIndex(null);
-//   };
-
-//   useEffect(() => {
-//     if (expandedIndex !== null) {
-//       window.scrollTo({ top: 0, behavior: "smooth" });
-//     }
-//   }, [expandedIndex]);
-
-//   const renderDescription = (text) => {
-//     const maxChars = 300; // approx 4 lines on most screens
-//     return text.length > maxChars ? text.slice(0, maxChars) + "..." : text;
+//     setSelectedIndex(null);
 //   };
 
 //   return (
 //     <>
 //       <div className="px-4 py-10 max-w-6xl mx-auto">
-//         <h1 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6 text-center">
+//         <h1 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6 text-center font-[Poppins]">
 //           Scholarships by Country
 //         </h1>
 //         <p className="text-black mb-10 text-center max-w-2xl mx-auto">
 //           Discover fully funded and partial scholarships available in top study
-//           destinations. Click "Read More" to explore.
+//           destinations. Click a country to see details.
 //         </p>
 
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-//           {(expandedIndex === null
-//             ? scholarships
-//             : [scholarships[expandedIndex]]
-//           ).map((item, index) => (
-//             <div
-//               key={index}
-//               className={`bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-transform duration-300 ease-in-out border
-//               ${expandedIndex !== null ? "col-span-full max-w-2xl mx-auto" : ""}`}
+//         {/* LIST VIEW */}
 
-//               // className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-transform duration-300 ease-in-out border"
-//             >
-//               <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
-//                 {item.country}
-//               </h2>
-//               <p className="text-black text-sm mb-4 text-justify whitespace-pre-line">
-//                 {expandedIndex === null
-//                   ? renderDescription(item.description)
-//                   : item.description}
-//               </p>
+//         {selectedIndex === null && (
+//           <div className="flex flex-wrap justify-center gap-4 font-[Poppins]">
+//             {scholarships.map((item, idx) => (
+//               <div
+//                 key={item.country}
+//                 onClick={() => handleSelect(idx)}
+//                 className="cursor-pointer w-full sm:w-auto px-4 py-3 text-center group max-w-xs"
+//               >
+//                 <h2 className="text-xl text-black mb-0 relative inline-block">
+//                   {item.country}
+//                   <span className="absolute bottom-0 left-0 h-0.5 bg-[#f16f22] w-full scale-x-0 scale-x-100 transition-transform duration-300 origin-left"></span>
+//                 </h2>
+//               </div>
+//             ))}
+//           </div>
+//         )}
 
-//               {expandedIndex === null ? (
-//                 <button
-//                   onClick={() => handleReadMore(index)}
-//                   className="mt-auto bg-gray-200 hover:bg-[#f16f22] text-black font-medium py-2 px-3 md:px-4 md:py-2 text-sm rounded transition w-fit self-start"
-//                 >
-//                   Read More
-//                 </button>
-//               ) : (
-//                 <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
-//                   <button
-//                     onClick={handleBack}
-//                     className="bg-[#252364] hover:bg-[#f16f22] text-white font-medium py-2 px-3 text-sm rounded w-full transition"
-//                   >
-//                     Back
-//                   </button>
-//                   <button
-//                     onClick={handleOpenModal}
-//                     className="bg-[#f16f22] hover:bg-[#252364] text-white font-medium py-2 px-3 text-sm rounded w-full transition"
-//                   >
-//                     Apply Now
-//                   </button>
-//                 </div>
-//               )}
+//         {/* DETAIL VIEW */}
+//         {selectedIndex !== null && (
+//           <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-8 font-[Poppins]">
+//             <h2 className="text-3xl  text-[#f16f22] mb-4 border-b-2 border-[#f16f22] pb-2 font-[Poppins]">
+//               {scholarships[selectedIndex].country} Scholarships
+//             </h2>
+//             <pre className="whitespace-pre-line text-black text-lg mb-6 font-[Poppins]">
+//               {scholarships[selectedIndex].description}
+//             </pre>
+
+//             <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0">
+//               <button
+//                 onClick={handleBack}
+//                 className="bg-gray-800 hover:bg-[#f16f22] text-white font-semibold py-3 px-6 rounded transition"
+//               >
+//                 Back to Countries
+//               </button>
+
+//               <button
+//                 onClick={handleOpenModal}
+//                 className="bg-[#f16f22] hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded transition"
+//               >
+//                 Apply Now
+//               </button>
 //             </div>
-//           ))}
-//         </div>
+//           </div>
+//         )}
 
-//         {/* ✅ Modal */}
+//         {/* Modal */}
 //         <ScholarshipModal show={showModal} onClose={handleCloseModal} />
 //       </div>
 
@@ -1121,155 +1161,11 @@
 
 // export default ScolarshipInAustralia;
 
+
+
 import React, { useState } from "react";
 import SuccessStories from "../../SuccessStories/SuccessStories";
 import ScholarshipModal from "../../../Modal/ScholarshipModal";
-
-// const scholarships = [
-//   {
-//     country: "UK",
-//     description: `1.Chevening Scholarships
-// 2.Commonwealth Scholarships
-// 3.Rhodes Scholarships
-// 4.Gates Cambridge Scholarships
-// 5.Clarendon Scholarships
-// 6.Edinburgh Global Research Scholarships
-// 7.University of Westminster Scholarships
-// 8.University of Bristol Think Big Scholarships
-// 9.UCL Global Scholarships
-// 10.Imperial College London Scholarships`,
-//   },
-//   {
-//     country: "USA",
-//     description: `1.Fulbright Foreign Student Program
-// 2.Hubert H. Humphrey Fellowship Program
-// 3.AAUW International Fellowships
-// 4.Harvard University Scholarships
-// 5.Yale University Scholarships
-// 6.Stanford University Knight-Hennessy Scholars
-// 7.MIT Scholarships
-// 8.Clark Global Scholarship Program
-// 9.MasterCard Foundation Scholars Program
-// 10.Rotary Peace Fellowships`,
-//   },
-//   {
-//     country: "Canada",
-//     description: `1.Vanier Canada Graduate Scholarships
-// 2.Canada Graduate Scholarships
-// 3.Lester B. Pearson International Scholarships
-// 4.University of British Columbia (UBC) International Leader of Tomorrow Award
-// 5.Pierre Elliott Trudeau Foundation Scholarships
-// 6.University of Alberta Scholarships
-// 7.University of Waterloo International Master's and Doctoral Awards
-// 8.McGill University Scholarships
-// 9.University of Calgary Scholarships
-// 10.York University International Student Scholarships`,
-//   },
-//   {
-//     country: "Sweden",
-//     description: `1. Swedish Institute Scholarships for Global Professionals
-// 2. Karolinska Institutet Global Master's Scholarships
-// 3. Lund University Global Scholarship Program
-// 4. Uppsala University Global Scholarships
-// 5. Chalmers IPOET Scholarships
-// 6. Stockholm University Scholarships
-// 7. Malmö University Master's Scholarships
-// 8. Blekinge Institute of Technology Scholarship Program
-// 9. Halmstad University Scholarships
-// 10. KTH Royal Institute of Technology Scholarships`,
-//   },
-//   {
-//     country: "Denmark",
-//     description: `1. Danish Government Scholarships
-// 2. University of Copenhagen Scholarships
-// 3. Aarhus University Scholarships
-// 4. Technical University of Denmark
-// 5. Copenhagen Business School Scholarships
-// 6. Roskilde University Scholarships
-// 7. Aalborg University Scholarships
-// 8. IT University of Copenhagen Scholarships
-// 9. Denmark-America Foundation Grants
-// 10. Erasmus+ Scholarships for Denmark`,
-//   },
-//   {
-//     country: "Finland",
-//     description: `1. Finland Government Scholarships
-// 2. University of Helsinki Scholarships
-// 3. Aalto University Scholarships
-// 4. University of Turku Scholarships
-// 5. University of Oulu International Scholarships
-// 6. Tampere University Scholarships
-// 7. Lappeenranta-Lahti University of Technology LUT Scholarships
-// 8. University of Eastern Finland Scholarships
-// 9. Hanken School of Economics Scholarships
-// 10. Arcada University of Applied Sciences Scholarships`,
-//   },
-//   {
-//     country: "Hungary",
-//     description: `1. Stipendium Hungaricum Scholarship Program
-// 2. Hungarian Diaspora Scholarship
-// 3. Erasmus+ Scholarships in Hungary
-// 4. University of Debrecen Scholarships
-// 5. Central European University Scholarships
-// 6. Budapest University of Technology and Economics Scholarships
-// 7. University of Pécs Scholarships
-// 8. Eötvös Loránd University (ELTE) Scholarships
-// 9. Szent István University Scholarships
-// 10. Corvinus University of Budapest Scholarships`,
-//   },
-//   {
-//     country: "Italy",
-//     description: `1. Italian Government Scholarships for Foreign Students
-// 2. Scuola Normale Superiore PhD Scholarships
-// 3. University of Bologna Study Grants for International Students
-// 4. Bocconi Merit and International Awards
-// 5. Politecnico di Milano Merit-Based Scholarships
-// 6. University of Padua Scholarships
-// 7. University of Pavia Scholarships
-// 8. Sapienza University of Rome Scholarships
-// 9. University of Milan Scholarships
-// 10. University of Trento Scholarships`,
-//   },
-//   {
-//     country: "France",
-//     description: `1. Eiffel Excellence Scholarship Program
-// 2. École Normale Supérieure (ENS) International Selection
-// 3. Emile Boutmy Scholarships (Sciences Po)
-// 4. Université Paris-Saclay International Master's Scholarships
-// 5. INSEAD MBA Scholarships
-// 6. Erasmus+ Scholarships (France)
-// 7. Grenoble Institute of Technology Foundation Scholarships
-// 8. Ampère Scholarships of Excellence (ENS Lyon)
-// 9. École Polytechnique Scholarships
-// 10. HEC Paris MBA Scholarships`,
-//   },
-//   {
-//     country: "Dubai",
-//     description: `1. Khalifa University Scholarships
-// 2. Mohamed bin Zayed University Scholarships (MBZUAI)
-// 3. United Arab Emirates University Scholarships
-// 4. American University in Dubai Scholarships
-// 5. University of Dubai Scholarships
-// 6. Zayed University Scholarships
-// 7. Canadian University Dubai Scholarships
-// 8. Middlesex University Dubai Scholarships
-// 9. Al Qasimia University Scholarships
-// 10. Emirates Aviation University Scholarships`,
-//   },
-//   {
-//     country: "Malaysia",
-//     description: `1. Malaysian International Scholarship (MIS)
-// 2. MTCP Scholarship (Malaysian Technical Cooperation Programme)
-// 3. University of Malaya Scholarships
-// 4. Universiti Kebangsaan Malaysia (UKM) Vice Chancellor's Scholarships
-// 5. Universiti Putra Malaysia (UPM) Scholarships
-// 6. Universiti Sains Malaysia (USM) Scholarships
-// 7. Multimedia University (MMU) Scholarships
-// 8. UCSI University Trust Scholarships
-// 9. Asia Pacific University (APU) Merit Scholarships
-// 10. Taylor's University Scholarships`,
-//   },
-// ];
 
 const scholarships = [
   {
@@ -1329,7 +1225,6 @@ const scholarships = [
   },
 ];
 
-
 const ScolarshipInAustralia = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [showModal, setShowModal] = useState(false);
@@ -1337,13 +1232,8 @@ const ScolarshipInAustralia = () => {
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
-  const handleSelect = (index) => {
-    setSelectedIndex(index);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const handleBack = () => {
-    setSelectedIndex(null);
+  const toggleSelect = (index) => {
+    setSelectedIndex(selectedIndex === index ? null : index);
   };
 
   return (
@@ -1352,50 +1242,56 @@ const ScolarshipInAustralia = () => {
         <h1 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-6 text-center font-[Poppins]">
           Scholarships by Country
         </h1>
-        <p className="text-black mb-10 text-center max-w-2xl mx-auto">
+        <p className="text-gray-600 mb-10 text-center max-w-2xl mx-auto text-sm sm:text-base">
           Discover fully funded and partial scholarships available in top study
           destinations. Click a country to see details.
         </p>
 
-        {/* LIST VIEW */}
-        {selectedIndex === null && (
-          <div className="flex justify-center gap-4 font-[Poppins] ">
-            {scholarships.map((item, idx) => (
-              <div
-                key={item.country}
-                onClick={() => handleSelect(idx)}
-                className="cursor-pointer w-full sm:w-auto px-6 py-3 text-center group"
-              >
-                <h2 className="text-xl  text-black mb-0 relative inline-block">
-                  {item.country}
-                  <span className="absolute bottom-0 left-0 h-0.5 bg-[#f16f22] w-full scale-x-0 scale-x-100 transition-transform duration-300 origin-left"></span>
-                </h2>
-              </div>
-            ))}
-          </div>
-        )}
+        {/* Country List - All items in one row */}
+        <div className="flex flex-wrap justify-center gap-4 font-[Poppins] max-w-4xl mx-auto mb-8">
+          {scholarships.map((item, idx) => (
+            <div
+              key={item.country}
+              onClick={() => toggleSelect(idx)}
+              className={`cursor-pointer px-6 py-3 text-center group rounded-lg transition-all duration-200 ${
+                selectedIndex === idx
+                  ? 'bg-[#f16f22] text-white shadow-lg'
+                  : 'bg-white border border-gray-200 hover:border-[#f16f22] hover:shadow-md'
+              }`}
+            >
+              <h2 className="text-lg sm:text-xl font-medium relative inline-block pb-1">
+                {item.country}
+                <span className={`absolute bottom-0 left-0 h-0.5 ${
+                  selectedIndex === idx ? 'bg-white' : 'bg-[#f16f22]'
+                } w-full ${
+                  selectedIndex === idx || selectedIndex === null
+                    ? 'scale-x-100'
+                    : 'scale-x-0 group-hover:scale-x-100'
+                } transition-transform duration-300 origin-left`}></span>
+              </h2>
+            </div>
+          ))}
+        </div>
 
-        {/* DETAIL VIEW */}
+        {/* Details Section - Shows below all items */}
         {selectedIndex !== null && (
-          <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-8 font-[Poppins]">
-            <h2 className="text-3xl  text-[#f16f22] mb-4 border-b-2 border-[#f16f22] pb-2 font-[Poppins]">
+          <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100 max-w-4xl mx-auto animate-fadeIn">
+            <h3 className="text-xl sm:text-2xl text-[#f16f22] mb-3 border-b-2 border-[#f16f22] pb-2 font-semibold">
               {scholarships[selectedIndex].country} Scholarships
-            </h2>
-            <pre className="whitespace-pre-line text-black text-lg mb-6 font-[Poppins]">
+            </h3>
+            <p className="text-gray-700 mb-6 whitespace-pre-line text-sm sm:text-base">
               {scholarships[selectedIndex].description}
-            </pre>
-
-            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0">
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
               <button
-                onClick={handleBack}
-                className="bg-gray-800 hover:bg-[#f16f22] text-white font-semibold py-3 px-6 rounded transition"
+                onClick={() => setSelectedIndex(null)}
+                className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded transition"
               >
-                Back to Countries
+                Close
               </button>
-
               <button
                 onClick={handleOpenModal}
-                className="bg-[#f16f22] hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded transition"
+                className="flex-1 bg-[#f16f22] hover:bg-[#e05a1a] text-white font-medium py-2 px-4 rounded transition"
               >
                 Apply Now
               </button>
@@ -1411,5 +1307,4 @@ const ScolarshipInAustralia = () => {
     </>
   );
 };
-
 export default ScolarshipInAustralia;
