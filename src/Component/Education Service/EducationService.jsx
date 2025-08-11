@@ -131,21 +131,31 @@ const EducationService = () => {
             </li>
             {/* <li>Denmark</li> */}
             <li>
-              <Link to="/japan" onClick={() => window.scrollTo(0, 0)}>
+              <Link to="/australia" onClick={() => window.scrollTo(0, 0)}>
                 Finland
               </Link>
             </li>
 
             <li>
-              <Link to="/new-zealand" onClick={() => window.scrollTo(0, 0)}>
+              <Link to="/australia" onClick={() => window.scrollTo(0, 0)}>
                 Sweden
               </Link>
             </li>
             {/* <li>Dubai</li> */}
             {/* <li>Malaysia</li> */}
             <li>
-              <Link to="/europe" onClick={() => window.scrollTo(0, 0)}>
+              <Link to="/australia" onClick={() => window.scrollTo(0, 0)}>
                 Hungary
+              </Link>
+            </li>
+            <li>
+              <Link to="/europe" onClick={() => window.scrollTo(0, 0)}>
+                Dubai
+              </Link>
+            </li>
+            <li>
+              <Link to="/europe" onClick={() => window.scrollTo(0, 0)}>
+                Malaysia
               </Link>
             </li>
           </ul>

@@ -1130,246 +1130,730 @@
 
 
 
+// import React, { useState } from "react";
+// import SuccessStories from "../../SuccessStories/SuccessStories";
+// import CountryUniversityModal from "../../../Modal/CountryUniversityModal";
+
+// const data = {
+ 
+//   Sweden: [
+//     {
+//       name: "Karolinska Institute",
+//       details: "World-class medical university in Sweden.",
+//     },
+//     {
+//       name: "Lund University",
+//       details: "Known for strong research and international collaboration.",
+//     },
+//     {
+//       name: "McGill University",
+//       details: "A globally respected research university known for its high academic standards, located in a bilingual city with strong cultural heritage.",
+//     },
+//     {
+//       name: " University of Toronto (U of T)",
+//       details: "Canada’s top-ranked university, globally recognized for research, innovation, and academic excellence. It has three campuses: St. George (downtown Toronto), Mississauga, and Scarborough.",
+//     },
+//     {
+//       name: "University of British Columbia (UBC)",
+//       details: "One of Canada’s most prestigious universities, UBC is known for strong sustainability and environmental research, as well as a diverse international student population.",
+//     },
+//   ],
+//   Denmark: [
+//     {
+//       name: "University of Copenhagen",
+//       details: "Denmark’s largest university with a broad range of disciplines.",
+//     },
+//     {
+//       name: "Aarhus University",
+//       details: "Strong in research and teaching across many fields.",
+//     },
+//     {
+//       name: "University of Copenhagen (UCPH)",
+//       details: "The largest and oldest university in Denmark, UCPH is internationally recognized for high-impact research and offers a wide range of English-taught master’s programs.",
+//     },
+//     {
+//       name: "Aarhus University (AU)",
+//       details: "A top-ranking public research university offering internationally oriented education and strong focus on interdisciplinary research.",
+//     },
+//     {
+//       name: "Technical University of Denmark (DTU)",
+//       details: "A leading technical university in Scandinavia, DTU specializes in engineering and technology and collaborates with global industry leaders.",
+//     },
+//   ],
+//   Finland: [
+//     {
+//       name: "University of Helsinki",
+//       details: "Finland’s oldest and largest university with diverse programs.",
+//     },
+//     {
+//       name: "Aalto University",
+//       details: "Known for technology, business, and arts.",
+//     },
+//     {
+//       name: "University of Helsinki",
+//       details: "Finland’s oldest and largest university, known for high-quality research and international rankings. It offers many master's and doctoral programs in English.",
+//     },
+//     {
+//       name: "Aalto University",
+//       details: "Formed from the merger of three major Finnish institutions (technology, business, and art/design), Aalto is a leader in innovation and entrepreneurship.",
+//     },
+//     {
+//       name: "University of Turku",
+//       details: "A multidisciplinary university known for research and a strong international orientation, especially in biosciences and humanities.",
+//     },
+//   ],
+//   Hungary: [
+//     {
+//       name: "Eötvös Loránd University",
+//       details: "One of the most prestigious universities in Hungary.",
+//     },
+//     {
+//       name: "Budapest University of Technology and Economics",
+//       details: "Focus on engineering and technology disciplines.",
+//     },
+//     {
+//       name: "Semmelweis University",
+//       details: "Hungary’s top medical university, Semmelweis is world-renowned for health sciences, medicine, and dentistry. Programs are available in English, German, and Hungarian.",
+//     },
+//     {
+//       name: "University of Szeged (SZTE)",
+//       details: "Ranked among the best in Central Europe, SZTE is known for research excellence and offers a wide range of English-taught programs.",
+//     },
+//     {
+//       name: "Budapest University of Technology and Economics (BME)",
+//       details: "One of the top technical universities in Central Europe, BME is known for engineering, technology, and innovation.",
+//     },
+//   ],
+//   Italy: [
+//     {
+//       name: "University of Bologna",
+//       details: "The oldest university in the Western world with a rich history.",
+//     },
+//     {
+//       name: "Sapienza University of Rome",
+//       details: "One of Europe’s largest universities with diverse programs.",
+//     },
+//     {
+//       name: " Politecnico di Milano (Polytechnic University of Milan)",
+//       details: "Italy’s top technical university, highly ranked globally for engineering, architecture, and design.",
+//     },
+//     {
+//       name: " University of Milan (Università degli Studi di Milano)",
+//       details: "A major research university offering a wide range of programs in science, economics, and health sciences.",
+//     },
+//     {
+//       name: "University of Padua (Università di Padova)",
+//       details: "Founded in 1222, this is one of Italy’s most respected universities, known for strong research, especially in medicine and sciences.",
+//     },
+//   ],
+//   France: [
+//     {
+//       name: "Sorbonne University",
+//       details: "Famous for humanities, science, and medicine.",
+//     },
+//     {
+//       name: "École Polytechnique",
+//       details: "Prestigious engineering school in France.",
+//     },
+//     {
+//       name: "Sciences Po",
+//       details: "One of Europe’s top universities for social sciences, especially international relations and political studies.",
+//     },
+//     {
+//       name: "Université PSL (Paris Sciences et Lettres)",
+//       details: "An elite research university made up of several prestigious institutions, including ENS and Collège de France. Strong in both sciences and humanities.",
+//     },
+//     {
+//       name: "Université Grenoble Alpes (UGA)",
+//       details: "One of France’s major public universities, UGA has a strong reputation in science and technology and hosts a vibrant international student community.",
+//     },
+//   ],
+//   Dubai: [
+//     {
+//       name: "American University in Dubai",
+//       details: "Offers American-style education with diverse programs.",
+//     },
+//     {
+//       name: "Dubai International Academic City",
+//       details: "Home to several international universities and colleges.",
+//     },
+//     {
+//       name: "Heriot-Watt University Dubai",
+//       details: "A UK-based university with a well-established campus in Dubai, especially strong in engineering, business, and data science.",
+//     },
+//     {
+//       name: "Middlesex University Dubai",
+//       details: "The first overseas campus of London’s Middlesex University. Offers a wide range of undergraduate and postgraduate programs.",
+//     },
+//     {
+//       name: "University of Wollongong in Dubai (UOWD)",
+//       details: "One of the oldest international universities in Dubai, affiliated with the University of Wollongong (Australia).",
+//     },
+//   ],
+//   Malaysia: [
+//     {
+//       name: "University of Malaya",
+//       details: "Malaysia’s oldest university with strong research programs.",
+//     },
+//     {
+//       name: "Universiti Kebangsaan Malaysia",
+//       details: "Known for academic excellence and research.",
+//     },
+//     {
+//       name: "Universiti Putra Malaysia (UPM)",
+//       details: "A top public research university with strengths in agriculture, biotechnology, and engineering.",
+//     },
+//     {
+//       name: "Universiti Sains Malaysia (USM)",
+//       details: "Known as a leading science and technology university, with a focus on innovation and research.",
+//     },
+//     {
+//       name: "Monash University Malaysia",
+//       details: "The Malaysian campus of Australia’s Monash University, offering international education and research.",
+//     },
+//   ],
+// };
+
+
+// const StudyInAustralia = () => {
+//   const [selectedCountry, setSelectedCountry] = useState("Sweden","Denmark","Finland","Hungary","Italy","France");
+//   const [selectedUniversities, setSelectedUniversities] = useState([]);
+//   const [showModal, setShowModal] = useState(false);
+
+//   const handleOpenModal = () => setShowModal(true);
+//   const handleCloseModal = () => setShowModal(false);
+
+//   const handleCountryChange = (e) => {
+//     setSelectedCountry(e.target.value);
+//     setSelectedUniversities([]);
+//   };
+
+//   const handleUniversityChange = (e) => {
+//     const universityName = e.target.value;
+//     const isChecked = e.target.checked;
+
+//     setSelectedUniversities((prev) =>
+//       isChecked ? [...prev, universityName] : prev.filter((name) => name !== universityName)
+//     );
+//   };
+
+//   const universities = selectedCountry ? data[selectedCountry] : [];
+//   const selectedUniversityDetails = universities.filter((u) =>
+//     selectedUniversities.includes(u.name)
+//   );
+
+//   return (
+//     <>
+//       <div className="px-4 py-10 max-w-5xl mx-auto">
+//         <h1 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-4">
+//           Study Abroad-(Europe)
+//         </h1>
+//         <p className="text-black mb-8">
+//           Select a country and explore top universities with their descriptions.
+//         </p>
+
+//         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
+//           <div className="flex-1">
+//             <label className="block text-black font-medium mb-2">
+//               Select Country
+//             </label>
+//             <select
+//               value={selectedCountry}
+//               onChange={handleCountryChange}
+//               className="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#f16f22]"
+//             >
+//               <option value="">-- Choose Country --</option>
+//               {Object.keys(data).map((country) => (
+//                 <option key={country} value={country}>
+//                   {country}
+//                 </option>
+//               ))}
+//             </select>
+//           </div>
+
+//           <div className="flex-1">
+//             <label className="block text-black font-medium mb-2">
+//               Select Universities
+//             </label>
+//             <div
+//               className={`w-full border rounded px-4 py-2 max-h-60 overflow-y-auto ${
+//                 selectedCountry
+//                   ? "focus:ring-[#f16f22]"
+//                   : "bg-gray-100 text-gray-400"
+//               } focus:outline-none focus:ring-2`}
+//             >
+//               {selectedCountry ? (
+//                 universities.map((uni) => (
+//                   <div key={uni.name} className="mb-2 last:mb-0">
+//                     <label className="flex items-center space-x-2 cursor-pointer">
+//                       <input
+//                         type="checkbox"
+//                         value={uni.name}
+//                         checked={selectedUniversities.includes(uni.name)}
+//                         onChange={handleUniversityChange}
+//                         className="text-[#f16f22] focus:ring-[#f16f22] rounded"
+//                       />
+//                       <span>{uni.name}</span>
+//                     </label>
+//                   </div>
+//                 ))
+//               ) : (
+//                 <div className="text-gray-400">-- Select a country first --</div>
+//               )}
+//             </div>
+//           </div>
+//         </div>
+
+//         {selectedUniversities.length > 0 && (
+//           <div className="space-y-4 mb-6">
+//             {selectedUniversityDetails.map((uni) => (
+//               <div
+//                 key={uni.name}
+//                 className="bg-white shadow rounded p-6 border border-gray-100"
+//               >
+//                 <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
+//                   {uni.name}
+//                 </h2>
+//                 <p className="text-gray-800">{uni.details}</p>
+//               </div>
+//             ))}
+//           </div>
+//         )}
+
+//         {selectedUniversities.length > 0 && (
+//           <div className="w-full flex justify-start">
+//             <button
+//               onClick={handleOpenModal}
+//               className="bg-[#f16f22] hover:bg-[#252364] text-white font-medium py-2 px-4 text-sm rounded transition w-full sm:w-auto"
+//             >
+//               Apply Now ({selectedUniversities.length} selected)
+//             </button>
+//           </div>
+//         )}
+//       </div>
+
+//       {/* ✅ Pass selectedCountry & selectedUniversities here */}
+//       <CountryUniversityModal
+//         show={showModal}
+//         onClose={handleCloseModal}
+//         selectedCountry={selectedCountry}
+//         selectedUniversities={selectedUniversities}
+//       />
+
+//       <SuccessStories />
+//     </>
+//   );
+// };
+
+// export default StudyInAustralia;
+
+
+// import React, { useState } from "react";
+// import SuccessStories from "../../SuccessStories/SuccessStories";
+// import MultipleCountryUniversityModal from "../../../Modal/MultipleCountryUniversityModal";
+
+// const data = {
+//   Sweden: [
+//     {
+//       name: "Karolinska Institute",
+//       details: "World-class medical university in Sweden.",
+//     },
+//     {
+//       name: "Lund University",
+//       details: "Known for strong research and international collaboration.",
+//     },
+//     {
+//       name: "McGill University",
+//       details: "A globally respected research university known for its high academic standards, located in a bilingual city with strong cultural heritage.",
+//     },
+//     {
+//       name: "University of Toronto (U of T)",
+//       details: "Canada's top-ranked university, globally recognized for research, innovation, and academic excellence. It has three campuses: St. George (downtown Toronto), Mississauga, and Scarborough.",
+//     },
+//     {
+//       name: "University of British Columbia (UBC)",
+//       details: "One of Canada's most prestigious universities, UBC is known for strong sustainability and environmental research, as well as a diverse international student population.",
+//     },
+//   ],
+//   Denmark: [
+//     {
+//       name: "University of Copenhagen",
+//       details: "Denmark's largest university with a broad range of disciplines.",
+//     },
+//     {
+//       name: "Aarhus University",
+//       details: "Strong in research and teaching across many fields.",
+//     },
+//     {
+//       name: "University of Copenhagen (UCPH)",
+//       details: "The largest and oldest university in Denmark, UCPH is internationally recognized for high-impact research and offers a wide range of English-taught master's programs.",
+//     },
+//     {
+//       name: "Aarhus University (AU)",
+//       details: "A top-ranking public research university offering internationally oriented education and strong focus on interdisciplinary research.",
+//     },
+//     {
+//       name: "Technical University of Denmark (DTU)",
+//       details: "A leading technical university in Scandinavia, DTU specializes in engineering and technology and collaborates with global industry leaders.",
+//     },
+//   ],
+//   Finland: [
+//     {
+//       name: "University of Helsinki",
+//       details: "Finland's oldest and largest university with diverse programs.",
+//     },
+//     {
+//       name: "Aalto University",
+//       details: "Known for technology, business, and arts.",
+//     },
+//     {
+//       name: "University of Helsinki",
+//       details: "Finland's oldest and largest university, known for high-quality research and international rankings. It offers many master's and doctoral programs in English.",
+//     },
+//     {
+//       name: "Aalto University",
+//       details: "Formed from the merger of three major Finnish institutions (technology, business, and art/design), Aalto is a leader in innovation and entrepreneurship.",
+//     },
+//     {
+//       name: "University of Turku",
+//       details: "A multidisciplinary university known for research and a strong international orientation, especially in biosciences and humanities.",
+//     },
+//   ],
+//   Hungary: [
+//     {
+//       name: "Eötvös Loránd University",
+//       details: "One of the most prestigious universities in Hungary.",
+//     },
+//     {
+//       name: "Budapest University of Technology and Economics",
+//       details: "Focus on engineering and technology disciplines.",
+//     },
+//     {
+//       name: "Semmelweis University",
+//       details: "Hungary's top medical university, Semmelweis is world-renowned for health sciences, medicine, and dentistry. Programs are available in English, German, and Hungarian.",
+//     },
+//     {
+//       name: "University of Szeged (SZTE)",
+//       details: "Ranked among the best in Central Europe, SZTE is known for research excellence and offers a wide range of English-taught programs.",
+//     },
+//     {
+//       name: "Budapest University of Technology and Economics (BME)",
+//       details: "One of the top technical universities in Central Europe, BME is known for engineering, technology, and innovation.",
+//     },
+//   ],
+//   Italy: [
+//     {
+//       name: "University of Bologna",
+//       details: "The oldest university in the Western world with a rich history.",
+//     },
+//     {
+//       name: "Sapienza University of Rome",
+//       details: "One of Europe's largest universities with diverse programs.",
+//     },
+//     {
+//       name: "Politecnico di Milano (Polytechnic University of Milan)",
+//       details: "Italy's top technical university, highly ranked globally for engineering, architecture, and design.",
+//     },
+//     {
+//       name: "University of Milan (Università degli Studi di Milano)",
+//       details: "A major research university offering a wide range of programs in science, economics, and health sciences.",
+//     },
+//     {
+//       name: "University of Padua (Università di Padova)",
+//       details: "Founded in 1222, this is one of Italy's most respected universities, known for strong research, especially in medicine and sciences.",
+//     },
+//   ],
+//   France: [
+//     {
+//       name: "Sorbonne University",
+//       details: "Famous for humanities, science, and medicine.",
+//     },
+//     {
+//       name: "École Polytechnique",
+//       details: "Prestigious engineering school in France.",
+//     },
+//     {
+//       name: "Sciences Po",
+//       details: "One of Europe's top universities for social sciences, especially international relations and political studies.",
+//     },
+//     {
+//       name: "Université PSL (Paris Sciences et Lettres)",
+//       details: "An elite research university made up of several prestigious institutions, including ENS and Collège de France. Strong in both sciences and humanities.",
+//     },
+//     {
+//       name: "Université Grenoble Alpes (UGA)",
+//       details: "One of France's major public universities, UGA has a strong reputation in science and technology and hosts a vibrant international student community.",
+//     },
+//   ],
+//   Dubai: [
+//     {
+//       name: "American University in Dubai",
+//       details: "Offers American-style education with diverse programs.",
+//     },
+//     {
+//       name: "Dubai International Academic City",
+//       details: "Home to several international universities and colleges.",
+//     },
+//     {
+//       name: "Heriot-Watt University Dubai",
+//       details: "A UK-based university with a well-established campus in Dubai, especially strong in engineering, business, and data science.",
+//     },
+//     {
+//       name: "Middlesex University Dubai",
+//       details: "The first overseas campus of London's Middlesex University. Offers a wide range of undergraduate and postgraduate programs.",
+//     },
+//     {
+//       name: "University of Wollongong in Dubai (UOWD)",
+//       details: "One of the oldest international universities in Dubai, affiliated with the University of Wollongong (Australia).",
+//     },
+//   ],
+//   Malaysia: [
+//     {
+//       name: "University of Malaya",
+//       details: "Malaysia's oldest university with strong research programs.",
+//     },
+//     {
+//       name: "Universiti Kebangsaan Malaysia",
+//       details: "Known for academic excellence and research.",
+//     },
+//     {
+//       name: "Universiti Putra Malaysia (UPM)",
+//       details: "A top public research university with strengths in agriculture, biotechnology, and engineering.",
+//     },
+//     {
+//       name: "Universiti Sains Malaysia (USM)",
+//       details: "Known as a leading science and technology university, with a focus on innovation and research.",
+//     },
+//     {
+//       name: "Monash University Malaysia",
+//       details: "The Malaysian campus of Australia's Monash University, offering international education and research.",
+//     },
+//   ],
+// };
+
+// const StudyInAustralia = () => {
+//   const [selectedCountries, setSelectedCountries] = useState([]);
+//   const [selectedUniversities, setSelectedUniversities] = useState([]);
+//   const [showModal, setShowModal] = useState(false);
+
+//   const handleOpenModal = () => setShowModal(true);
+//   const handleCloseModal = () => setShowModal(false);
+
+//   const handleCountryChange = (e) => {
+//     const country = e.target.value;
+//     const isChecked = e.target.checked;
+
+//     setSelectedCountries(prev =>
+//       isChecked 
+//         ? [...prev, country] 
+//         : prev.filter(c => c !== country)
+//     );
+    
+//     setSelectedUniversities([]);
+//   };
+
+//   const handleUniversityChange = (e) => {
+//     const universityName = e.target.value;
+//     const isChecked = e.target.checked;
+
+//     setSelectedUniversities((prev) =>
+//       isChecked 
+//         ? [...prev, universityName] 
+//         : prev.filter((name) => name !== universityName)
+//     );
+//   };
+
+//   // Create an array of universities with their country information
+//   const universitiesWithCountry = selectedCountries.flatMap(country => 
+//     data[country] ? data[country].map(uni => ({ ...uni, country })) : []
+//   );
+
+//   const selectedUniversityDetails = universitiesWithCountry.filter((u) =>
+//     selectedUniversities.includes(u.name)
+//   );
+
+//   return (
+//     <>
+//       <div className="px-4 py-10 max-w-5xl mx-auto">
+//         <h1 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-4">
+//           Study Abroad-(Europe)
+//         </h1>
+//         <p className="text-black mb-8">
+//           Select countries and explore top universities with their descriptions.
+//         </p>
+
+//         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
+//           <div className="flex-1">
+//             <label className="block text-black font-medium mb-2">
+//               Select Countries
+//             </label>
+//             <div className="w-full border rounded px-4 py-2 max-h-60 overflow-y-auto focus:ring-2 focus:ring-[#f16f22]">
+//               {Object.keys(data).map((country) => (
+//                 <div key={country} className="mb-2 last:mb-0">
+//                   <label className="flex items-center space-x-2 cursor-pointer">
+//                     <input
+//                       type="checkbox"
+//                       value={country}
+//                       checked={selectedCountries.includes(country)}
+//                       onChange={handleCountryChange}
+//                       className="text-[#f16f22] focus:ring-[#f16f22] rounded"
+//                     />
+//                     <span>{country}</span>
+//                   </label>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+
+//           <div className="flex-1">
+//             <label className="block text-black font-medium mb-2">
+//               Select Universities
+//             </label>
+//             <div
+//               className={`w-full border rounded px-4 py-2 max-h-60 overflow-y-auto ${
+//                 selectedCountries.length > 0
+//                   ? "focus:ring-[#f16f22]"
+//                   : "bg-gray-100 text-gray-400"
+//               } focus:outline-none focus:ring-2`}
+//             >
+//               {selectedCountries.length > 0 ? (
+//                 universitiesWithCountry.map((uni) => (
+//                   <div key={`${uni.country}-${uni.name}`} className="mb-2 last:mb-0">
+//                     <label className="flex items-center space-x-2 cursor-pointer">
+//                       <input
+//                         type="checkbox"
+//                         value={uni.name}
+//                         checked={selectedUniversities.includes(uni.name)}
+//                         onChange={handleUniversityChange}
+//                         className="text-[#f16f22] focus:ring-[#f16f22] rounded"
+//                       />
+//                       <span>
+//                         {uni.name} <span className="text-sm text-gray-500">({uni.country})</span>
+//                       </span>
+//                     </label>
+//                   </div>
+//                 ))
+//               ) : (
+//                 <div className="text-gray-400">-- Select countries first --</div>
+//               )}
+//             </div>
+//           </div>
+//         </div>
+
+//         {selectedUniversities.length > 0 && (
+//           <div className="space-y-4 mb-6">
+//             {selectedUniversityDetails.map((uni) => (
+//               <div
+//                 key={`${uni.country}-${uni.name}`}
+//                 className="bg-white shadow rounded p-6 border border-gray-100"
+//               >
+//                 <div className="flex justify-between items-start">
+//                   <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
+//                     {uni.name}
+//                   </h2>
+//                   <span className="text-sm bg-gray-100 px-2 py-1 rounded text-gray-600">
+//                     {uni.country}
+//                   </span>
+//                 </div>
+//                 <p className="text-gray-800">{uni.details}</p>
+//               </div>
+//             ))}
+//           </div>
+//         )}
+
+//         {selectedUniversities.length > 0 && (
+//           <div className="w-full flex justify-start">
+//             <button
+//               onClick={handleOpenModal}
+//               className="bg-[#f16f22] hover:bg-[#252364] text-white font-medium py-2 px-4 text-sm rounded transition w-full sm:w-auto"
+//             >
+//               Apply Now ({selectedUniversities.length} selected)
+//             </button>
+//           </div>
+//         )}
+//       </div>
+
+//       <MultipleCountryUniversityModal
+//         show={showModal}
+//         onClose={handleCloseModal}
+//         selectedCountries={selectedCountries}
+//         selectedUniversities={selectedUniversities}
+//       />
+
+//       <SuccessStories />
+//     </>
+//   );
+// };
+
+// export default StudyInAustralia;
+
+
+
 import React, { useState } from "react";
 import SuccessStories from "../../SuccessStories/SuccessStories";
-import CountryUniversityModal from "../../../Modal/CountryUniversityModal";
+import MultipleCountryUniversityModal from "../../../Modal/MultipleCountryUniversityModal";
 
 const data = {
-  UK: [
-    {
-      name: "Imperial College London",
-      details: "Imperial is a science-focused institution known for its excellence in engineering, medicine, and technology. It's especially respected for STEM subjects.",
-    },
-    {
-      name: "University College London (UCL)",
-      details: "A multidisciplinary university located in the heart of London, UCL is known for research innovation and global outlook.",
-    },
-    {
-      name: "University of Edinburgh",
-      details: "One of the most prestigious universities in Scotland and the UK, it has a rich history and is known for a strong focus on research and international collaboration.",
-    },
-    {
-      name: "King's College London (KCL)",
-      details: "A historic university with strengths in health sciences, social sciences, and humanities. It’s known for its research and teaching in the heart of London.",
-    },
-    {
-      name: "University of Manchester",
-      details: "A member of the Russell Group, it's known for strong research impact and vibrant student life. It’s especially strong in science and engineering.",
-    },
-  ],
-  USA: [
-    {
-      name: "Massachusetts Institute of Technology (MIT)",
-      details: "MIT is a world leader in science, engineering, and technology education and research.",
-    },
-    {
-      name: "University of California, Berkeley",
-      details: "A top public university known for liberal arts, science programs, and a long history of activism.",
-    },
-    {
-      name: "California Institute of Technology (Caltech)",
-      details: "A small but elite science-focused university, famous for its cutting-edge research.",
-    },
-    {
-      name: "Princeton University",
-      details: "Known for undergraduate teaching and a strong emphasis on the humanities and sciences.",
-    },
-    {
-      name: "Yale University",
-      details: "Famous for its strong arts, law, and humanities programs. Also known for theater and music.",
-    },
-  ],
-  Canada: [
-    {
-      name: "University of Toronto",
-      details: "Leading research university in Canada with diverse programs.",
-    },
-    {
-      name: "McGill University",
-      details: "One of Canada’s oldest universities with strong global reputation.",
-    },
-  ],
   Sweden: [
-    {
-      name: "Karolinska Institute",
-      details: "World-class medical university in Sweden.",
-    },
-    {
-      name: "Lund University",
-      details: "Known for strong research and international collaboration.",
-    },
-    {
-      name: "McGill University",
-      details: "A globally respected research university known for its high academic standards, located in a bilingual city with strong cultural heritage.",
-    },
-    {
-      name: " University of Toronto (U of T)",
-      details: "Canada’s top-ranked university, globally recognized for research, innovation, and academic excellence. It has three campuses: St. George (downtown Toronto), Mississauga, and Scarborough.",
-    },
-    {
-      name: "University of British Columbia (UBC)",
-      details: "One of Canada’s most prestigious universities, UBC is known for strong sustainability and environmental research, as well as a diverse international student population.",
-    },
+    { name: "Karolinska Institute", details: "World-class medical university in Sweden." },
+    { name: "Lund University", details: "Known for strong research and international collaboration." },
+    { name: "McGill University", details: "A globally respected research university known for its high academic standards, located in a bilingual city with strong cultural heritage." },
+    { name: "University of Toronto (U of T)", details: "Canada's top-ranked university, globally recognized for research, innovation, and academic excellence. It has three campuses: St. George (downtown Toronto), Mississauga, and Scarborough." },
+    { name: "University of British Columbia (UBC)", details: "One of Canada's most prestigious universities, UBC is known for strong sustainability and environmental research, as well as a diverse international student population." },
   ],
   Denmark: [
-    {
-      name: "University of Copenhagen",
-      details: "Denmark’s largest university with a broad range of disciplines.",
-    },
-    {
-      name: "Aarhus University",
-      details: "Strong in research and teaching across many fields.",
-    },
-    {
-      name: "University of Copenhagen (UCPH)",
-      details: "The largest and oldest university in Denmark, UCPH is internationally recognized for high-impact research and offers a wide range of English-taught master’s programs.",
-    },
-    {
-      name: "Aarhus University (AU)",
-      details: "A top-ranking public research university offering internationally oriented education and strong focus on interdisciplinary research.",
-    },
-    {
-      name: "Technical University of Denmark (DTU)",
-      details: "A leading technical university in Scandinavia, DTU specializes in engineering and technology and collaborates with global industry leaders.",
-    },
+    { name: "University of Copenhagen", details: "Denmark's largest university with a broad range of disciplines." },
+    { name: "Aarhus University", details: "Strong in research and teaching across many fields." },
+    { name: "University of Copenhagen (UCPH)", details: "The largest and oldest university in Denmark, UCPH is internationally recognized for high-impact research and offers a wide range of English-taught master's programs." },
+    { name: "Aarhus University (AU)", details: "A top-ranking public research university offering internationally oriented education and strong focus on interdisciplinary research." },
+    { name: "Technical University of Denmark (DTU)", details: "A leading technical university in Scandinavia, DTU specializes in engineering and technology and collaborates with global industry leaders." },
   ],
   Finland: [
-    {
-      name: "University of Helsinki",
-      details: "Finland’s oldest and largest university with diverse programs.",
-    },
-    {
-      name: "Aalto University",
-      details: "Known for technology, business, and arts.",
-    },
-    {
-      name: "University of Helsinki",
-      details: "Finland’s oldest and largest university, known for high-quality research and international rankings. It offers many master's and doctoral programs in English.",
-    },
-    {
-      name: "Aalto University",
-      details: "Formed from the merger of three major Finnish institutions (technology, business, and art/design), Aalto is a leader in innovation and entrepreneurship.",
-    },
-    {
-      name: "University of Turku",
-      details: "A multidisciplinary university known for research and a strong international orientation, especially in biosciences and humanities.",
-    },
+    { name: "University of Helsinki", details: "Finland's oldest and largest university with diverse programs." },
+    { name: "Aalto University", details: "Known for technology, business, and arts." },
+    { name: "University of Helsinki", details: "Finland's oldest and largest university, known for high-quality research and international rankings. It offers many master's and doctoral programs in English." },
+    { name: "Aalto University", details: "Formed from the merger of three major Finnish institutions (technology, business, and art/design), Aalto is a leader in innovation and entrepreneurship." },
+    { name: "University of Turku", details: "A multidisciplinary university known for research and a strong international orientation, especially in biosciences and humanities." },
   ],
   Hungary: [
-    {
-      name: "Eötvös Loránd University",
-      details: "One of the most prestigious universities in Hungary.",
-    },
-    {
-      name: "Budapest University of Technology and Economics",
-      details: "Focus on engineering and technology disciplines.",
-    },
-    {
-      name: "Semmelweis University",
-      details: "Hungary’s top medical university, Semmelweis is world-renowned for health sciences, medicine, and dentistry. Programs are available in English, German, and Hungarian.",
-    },
-    {
-      name: "University of Szeged (SZTE)",
-      details: "Ranked among the best in Central Europe, SZTE is known for research excellence and offers a wide range of English-taught programs.",
-    },
-    {
-      name: "Budapest University of Technology and Economics (BME)",
-      details: "One of the top technical universities in Central Europe, BME is known for engineering, technology, and innovation.",
-    },
+    { name: "Eötvös Loránd University", details: "One of the most prestigious universities in Hungary." },
+    { name: "Budapest University of Technology and Economics", details: "Focus on engineering and technology disciplines." },
+    { name: "Semmelweis University", details: "Hungary's top medical university, Semmelweis is world-renowned for health sciences, medicine, and dentistry. Programs are available in English, German, and Hungarian." },
+    { name: "University of Szeged (SZTE)", details: "Ranked among the best in Central Europe, SZTE is known for research excellence and offers a wide range of English-taught programs." },
+    { name: "Budapest University of Technology and Economics (BME)", details: "One of the top technical universities in Central Europe, BME is known for engineering, technology, and innovation." },
   ],
   Italy: [
-    {
-      name: "University of Bologna",
-      details: "The oldest university in the Western world with a rich history.",
-    },
-    {
-      name: "Sapienza University of Rome",
-      details: "One of Europe’s largest universities with diverse programs.",
-    },
-    {
-      name: " Politecnico di Milano (Polytechnic University of Milan)",
-      details: "Italy’s top technical university, highly ranked globally for engineering, architecture, and design.",
-    },
-    {
-      name: " University of Milan (Università degli Studi di Milano)",
-      details: "A major research university offering a wide range of programs in science, economics, and health sciences.",
-    },
-    {
-      name: "University of Padua (Università di Padova)",
-      details: "Founded in 1222, this is one of Italy’s most respected universities, known for strong research, especially in medicine and sciences.",
-    },
+    { name: "University of Bologna", details: "The oldest university in the Western world with a rich history." },
+    { name: "Sapienza University of Rome", details: "One of Europe's largest universities with diverse programs." },
+    { name: "Politecnico di Milano (Polytechnic University of Milan)", details: "Italy's top technical university, highly ranked globally for engineering, architecture, and design." },
+    { name: "University of Milan (Università degli Studi di Milano)", details: "A major research university offering a wide range of programs in science, economics, and health sciences." },
+    { name: "University of Padua (Università di Padova)", details: "Founded in 1222, this is one of Italy's most respected universities, known for strong research, especially in medicine and sciences." },
   ],
   France: [
-    {
-      name: "Sorbonne University",
-      details: "Famous for humanities, science, and medicine.",
-    },
-    {
-      name: "École Polytechnique",
-      details: "Prestigious engineering school in France.",
-    },
-    {
-      name: "Sciences Po",
-      details: "One of Europe’s top universities for social sciences, especially international relations and political studies.",
-    },
-    {
-      name: "Université PSL (Paris Sciences et Lettres)",
-      details: "An elite research university made up of several prestigious institutions, including ENS and Collège de France. Strong in both sciences and humanities.",
-    },
-    {
-      name: "Université Grenoble Alpes (UGA)",
-      details: "One of France’s major public universities, UGA has a strong reputation in science and technology and hosts a vibrant international student community.",
-    },
+    { name: "Sorbonne University", details: "Famous for humanities, science, and medicine." },
+    { name: "École Polytechnique", details: "Prestigious engineering school in France." },
+    { name: "Sciences Po", details: "One of Europe's top universities for social sciences, especially international relations and political studies." },
+    { name: "Université PSL (Paris Sciences et Lettres)", details: "An elite research university made up of several prestigious institutions, including ENS and Collège de France. Strong in both sciences and humanities." },
+    { name: "Université Grenoble Alpes (UGA)", details: "One of France's major public universities, UGA has a strong reputation in science and technology and hosts a vibrant international student community." },
   ],
-  Dubai: [
-    {
-      name: "American University in Dubai",
-      details: "Offers American-style education with diverse programs.",
-    },
-    {
-      name: "Dubai International Academic City",
-      details: "Home to several international universities and colleges.",
-    },
-    {
-      name: "Heriot-Watt University Dubai",
-      details: "A UK-based university with a well-established campus in Dubai, especially strong in engineering, business, and data science.",
-    },
-    {
-      name: "Middlesex University Dubai",
-      details: "The first overseas campus of London’s Middlesex University. Offers a wide range of undergraduate and postgraduate programs.",
-    },
-    {
-      name: "University of Wollongong in Dubai (UOWD)",
-      details: "One of the oldest international universities in Dubai, affiliated with the University of Wollongong (Australia).",
-    },
+  Romania: [
+    { name: "American University in Dubai", details: "Offers American-style education with diverse programs." },
+    { name: "Dubai International Academic City", details: "Home to several international universities and colleges." },
+    { name: "Heriot-Watt University Dubai", details: "A UK-based university with a well-established campus in Dubai, especially strong in engineering, business, and data science." },
+    { name: "Middlesex University Dubai", details: "The first overseas campus of London's Middlesex University. Offers a wide range of undergraduate and postgraduate programs." },
+    { name: "University of Wollongong in Dubai (UOWD)", details: "One of the oldest international universities in Dubai, affiliated with the University of Wollongong (Australia)." },
   ],
-  Malaysia: [
-    {
-      name: "University of Malaya",
-      details: "Malaysia’s oldest university with strong research programs.",
-    },
-    {
-      name: "Universiti Kebangsaan Malaysia",
-      details: "Known for academic excellence and research.",
-    },
-    {
-      name: "Universiti Putra Malaysia (UPM)",
-      details: "A top public research university with strengths in agriculture, biotechnology, and engineering.",
-    },
-    {
-      name: "Universiti Sains Malaysia (USM)",
-      details: "Known as a leading science and technology university, with a focus on innovation and research.",
-    },
-    {
-      name: "Monash University Malaysia",
-      details: "The Malaysian campus of Australia’s Monash University, offering international education and research.",
-    },
+  Austria: [
+    { name: "University of Malaya", details: "Malaysia's oldest university with strong research programs." },
+    { name: "Universiti Kebangsaan Malaysia", details: "Known for academic excellence and research." },
+    { name: "Universiti Putra Malaysia (UPM)", details: "A top public research university with strengths in agriculture, biotechnology, and engineering." },
+    { name: "Universiti Sains Malaysia (USM)", details: "Known as a leading science and technology university, with a focus on innovation and research." },
+    { name: "Monash University Malaysia", details: "The Malaysian campus of Australia's Monash University, offering international education and research." },
   ],
 };
 
-
 const StudyInAustralia = () => {
-  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedCountries, setSelectedCountries] = useState([]);
   const [selectedUniversities, setSelectedUniversities] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
@@ -1377,8 +1861,16 @@ const StudyInAustralia = () => {
   const handleCloseModal = () => setShowModal(false);
 
   const handleCountryChange = (e) => {
-    setSelectedCountry(e.target.value);
-    setSelectedUniversities([]);
+    const country = e.target.value;
+    const isChecked = e.target.checked;
+
+    setSelectedCountries((prev) =>
+      isChecked
+        ? [...prev, country]
+        : prev.filter((c) => c !== country)
+    );
+
+    setSelectedUniversities([]); // reset universities when countries change
   };
 
   const handleUniversityChange = (e) => {
@@ -1386,12 +1878,18 @@ const StudyInAustralia = () => {
     const isChecked = e.target.checked;
 
     setSelectedUniversities((prev) =>
-      isChecked ? [...prev, universityName] : prev.filter((name) => name !== universityName)
+      isChecked
+        ? [...prev, universityName]
+        : prev.filter((name) => name !== universityName)
     );
   };
 
-  const universities = selectedCountry ? data[selectedCountry] : [];
-  const selectedUniversityDetails = universities.filter((u) =>
+  // Create an array of universities with their country info for selected countries
+  const universitiesWithCountry = selectedCountries.flatMap((country) =>
+    data[country] ? data[country].map((uni) => ({ ...uni, country })) : []
+  );
+
+  const selectedUniversityDetails = universitiesWithCountry.filter((u) =>
     selectedUniversities.includes(u.name)
   );
 
@@ -1399,29 +1897,33 @@ const StudyInAustralia = () => {
     <>
       <div className="px-4 py-10 max-w-5xl mx-auto">
         <h1 className="text-2xl sm:text-3xl font-bold text-[#f16f22] mb-4">
-          Study Abroad-(France)
+          Study Abroad-(Europe)
         </h1>
         <p className="text-black mb-8">
-          Select a country and explore top universities with their descriptions.
+          Select countries and explore top universities with their descriptions.
         </p>
 
         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
           <div className="flex-1">
             <label className="block text-black font-medium mb-2">
-              Select Country
+              Select Countries
             </label>
-            <select
-              value={selectedCountry}
-              onChange={handleCountryChange}
-              className="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#f16f22]"
-            >
-              <option value="">-- Choose Country --</option>
+            <div className="w-full border rounded px-4 py-2 max-h-60 overflow-y-auto focus:ring-2 focus:ring-[#f16f22]">
               {Object.keys(data).map((country) => (
-                <option key={country} value={country}>
-                  {country}
-                </option>
+                <div key={country} className="mb-2 last:mb-0">
+                  <label className="flex items-center space-x-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      value={country}
+                      checked={selectedCountries.includes(country)}
+                      onChange={handleCountryChange}
+                      className="text-[#f16f22] focus:ring-[#f16f22] rounded"
+                    />
+                    <span>{country}</span>
+                  </label>
+                </div>
               ))}
-            </select>
+            </div>
           </div>
 
           <div className="flex-1">
@@ -1430,14 +1932,14 @@ const StudyInAustralia = () => {
             </label>
             <div
               className={`w-full border rounded px-4 py-2 max-h-60 overflow-y-auto ${
-                selectedCountry
+                selectedCountries.length > 0
                   ? "focus:ring-[#f16f22]"
                   : "bg-gray-100 text-gray-400"
               } focus:outline-none focus:ring-2`}
             >
-              {selectedCountry ? (
-                universities.map((uni) => (
-                  <div key={uni.name} className="mb-2 last:mb-0">
+              {selectedCountries.length > 0 ? (
+                universitiesWithCountry.map((uni) => (
+                  <div key={`${uni.country}-${uni.name}`} className="mb-2 last:mb-0">
                     <label className="flex items-center space-x-2 cursor-pointer">
                       <input
                         type="checkbox"
@@ -1446,12 +1948,14 @@ const StudyInAustralia = () => {
                         onChange={handleUniversityChange}
                         className="text-[#f16f22] focus:ring-[#f16f22] rounded"
                       />
-                      <span>{uni.name}</span>
+                      <span>
+                        {uni.name} <span className="text-sm text-gray-500">({uni.country})</span>
+                      </span>
                     </label>
                   </div>
                 ))
               ) : (
-                <div className="text-gray-400">-- Select a country first --</div>
+                <div className="text-gray-400">-- Select countries first --</div>
               )}
             </div>
           </div>
@@ -1461,12 +1965,17 @@ const StudyInAustralia = () => {
           <div className="space-y-4 mb-6">
             {selectedUniversityDetails.map((uni) => (
               <div
-                key={uni.name}
+                key={`${uni.country}-${uni.name}`}
                 className="bg-white shadow rounded p-6 border border-gray-100"
               >
-                <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
-                  {uni.name}
-                </h2>
+                <div className="flex justify-between items-start">
+                  <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
+                    {uni.name}
+                  </h2>
+                  <span className="text-sm bg-gray-100 px-2 py-1 rounded text-gray-600">
+                    {uni.country}
+                  </span>
+                </div>
                 <p className="text-gray-800">{uni.details}</p>
               </div>
             ))}
@@ -1485,11 +1994,10 @@ const StudyInAustralia = () => {
         )}
       </div>
 
-      {/* ✅ Pass selectedCountry & selectedUniversities here */}
-      <CountryUniversityModal
+      <MultipleCountryUniversityModal
         show={showModal}
         onClose={handleCloseModal}
-        selectedCountry={selectedCountry}
+        selectedCountry={selectedCountries}  // CHANGED: prop name matches modal
         selectedUniversities={selectedUniversities}
       />
 

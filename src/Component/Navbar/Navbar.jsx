@@ -28,13 +28,13 @@ const Navbar = () => {
       label: "Destination",
       link: "/destination",
       submenu: [
-        { label: "Uk & Europe", link: "/uk" },
+        { label: "Study in Uk", link: "/uk" },
         { label: "Study in USA", link: "/usa" },
         { label: "Study in Canada", link: "/canada" },
-        { label: "Study in France", link: "/australia" },
-        { label: "Study in Sweden", link: "/new-zealand" },
-        { label: "Study in Finland", link: "/japan" },
-        { label: "Study in Hungary", link: "/europe" },
+        { label: "Study in Europe", link: "/australia" },
+        // { label: "Study in Sweden", link: "/new-zealand" },
+        // { label: "Study in Finland", link: "/japan" },
+        { label: "Study in Asia", link: "/europe" },
       ],
     },
     {
@@ -189,7 +189,7 @@ const Navbar = () => {
           >
             {menuItems.map((item, i) => (
               <div key={i} className="relative group">
-                {item.submenu ? (
+                {/* {item.submenu ? (
                   <>
                     <Link
                       to={item.link}
@@ -219,7 +219,46 @@ const Navbar = () => {
                   >
                     {item.label}
                   </Link>
+                )} */}
+
+                {item.submenu ? (
+                  <>
+                    {["Destination", "Our Services"].includes(item.label) ? (
+                      <span className="flex items-center gap-1 cursor-default font-bold hover:text-[#f16f22] select-none">
+                        {item.label}
+                        <AiOutlineDown className="text-xs mt-[1px]" />
+                      </span>
+                    ) : (
+                      <Link
+                        to={item.link}
+                        className="flex items-center gap-1 cursor-pointer font-bold hover:text-[#f16f22]"
+                      >
+                        {item.label}
+                        <AiOutlineDown className="text-xs mt-[1px]" />
+                      </Link>
+                    )}
+
+                    <div className="absolute top-full left-0 mt-2 bg-white shadow-md border border-gray-200 rounded-md py-2 min-w-[12rem] z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200">
+                      {item.submenu.map((subItem, index) => (
+                        <Link
+                          key={index}
+                          to={subItem.link}
+                          className="block px-4 py-2 hover:bg-gray-100 text-gray-800 font-semibold whitespace-nowrap"
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <Link
+                    to={item.link}
+                    className="cursor-pointer font-bold hover:text-[#f16f22]"
+                  >
+                    {item.label}
+                  </Link>
                 )}
+                
               </div>
             ))}
           </div>

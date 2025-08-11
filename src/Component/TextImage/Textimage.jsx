@@ -13,15 +13,15 @@ const destinations = [
   {
     title: "Study in Sweden",
     image: "swedenupdate.jpg",
-    path: "/new-zealand",
+    path: "/australia",
   },
-  { title: "Study in Denmark", image: "denmarkupdate.jpg", path: "/uk" },
-  { title: "Study in Finland", image: "finlandupdate.jpg", path: "/japan" },
-  { title: "Study in Hungary", image: "hungaryupdate.jpg", path: "/europe" },
-  { title: "Study in Italy", image: "italyupdate.jpg", path: "/uk" },
+  { title: "Study in Denmark", image: "denmarkupdate.jpg", path: "/australia" },
+  { title: "Study in Finland", image: "finlandupdate.jpg", path: "/australia" },
+  { title: "Study in Hungary", image: "hungaryupdate.jpg", path: "/australia" },
+  { title: "Study in Italy", image: "italyupdate.jpg", path: "/australia" },
   { title: "Study in France", image: "franceupdate.jpg", path: "/australia" },
-  { title: "Study in Dubai", image: "dubaiupdate.jpg", path: "/uk" },
-  { title: "Study in Europe", image: "europeupdate.jpg", path: "/uk" },
+  { title: "Study in Dubai", image: "dubaiupdate.jpg", path: "/europe" },
+  { title: "Study in Europe", image: "europeupdate.jpg", path: "/australia" },
 ];
 
 const Textimage = () => {
