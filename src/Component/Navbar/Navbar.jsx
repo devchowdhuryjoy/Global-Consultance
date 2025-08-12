@@ -5,6 +5,7 @@ import userImage from "../../assets/logo.png";
 import Swal from "sweetalert2";
 import BASE_URL from "../../Api BaseUrl/BaseUrl";
 import { AiOutlineDown } from "react-icons/ai";
+import GoogleTranslate from "../Google Translate/GoogleTranslate";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -263,7 +264,18 @@ const Navbar = () => {
           </div>
 
           {/* Register Now Button */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
+            <button
+              onClick={handleToggleForm}
+              className="bg-[#f16f22] hover:bg-[#252364] text-white text-base font-medium rounded-full px-6 py-2 transition duration-300 "
+            >
+              Register Now
+            </button>
+          </div> */}
+
+          {/* Right Section (Desktop Only) */}
+          <div className="hidden md:flex items-center space-x-4">
+            <GoogleTranslate />
             <button
               onClick={handleToggleForm}
               className="bg-[#f16f22] hover:bg-[#252364] text-white text-base font-medium rounded-full px-6 py-2 transition duration-300 "
@@ -274,12 +286,12 @@ const Navbar = () => {
 
           {/* Mobile Toggle */}
           <div className="md:hidden flex items-center space-x-4">
-            <button
+            {/* <button
               onClick={handleToggleForm}
               className="bg-[#f16f22] hover:bg-[#252364] text-white text-sm font-medium rounded-full px-4 py-2"
             >
               Register
-            </button>
+            </button> */}
             <button
               onClick={handleMenuToggle}
               className="text-2xl text-gray-700"
@@ -346,7 +358,6 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-
 
       {/* Registration Form Modal */}
       {showForm && (

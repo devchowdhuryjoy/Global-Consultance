@@ -10,7 +10,6 @@ import BASE_URL from "../../../Api BaseUrl/BaseUrl";
 import IMAGE_BASE_URL from "../../../Api BaseUrl/ImageBaseUrl";
 import ConsultationModal from "../../../Modal/ConsultationModal";
 
-
 const AwardsSection = () => {
   const [awards, setAwards] = useState([]);
   const prevRef = useRef(null);
@@ -27,6 +26,7 @@ const AwardsSection = () => {
 
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
+  
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -209,6 +209,7 @@ const AwardsSection = () => {
             autoplay={{
               delay: 2000,
               disableOnInteraction: false,
+              
             }}
             loop={true}
             spaceBetween={20}
@@ -220,6 +221,8 @@ const AwardsSection = () => {
             }}
             className="pb-10"
           >
+          
+          
             {awards.map((award, index) => (
               <SwiperSlide key={index} className="text-center">
                 <img
@@ -233,6 +236,8 @@ const AwardsSection = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          
         </div>
       </div>
 

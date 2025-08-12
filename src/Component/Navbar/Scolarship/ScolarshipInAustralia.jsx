@@ -1273,6 +1273,9 @@ const ScolarshipInAustralia = () => {
           ))}
         </div>
 
+
+
+
         {/* Details Section - Shows below all items */}
         {selectedIndex !== null && (
           <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100 max-w-4xl mx-auto animate-fadeIn">
