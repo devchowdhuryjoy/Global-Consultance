@@ -292,6 +292,7 @@ const Navbar = () => {
             >
               Register
             </button> */}
+            {/* <GoogleTranslate /> */}
             <button
               onClick={handleMenuToggle}
               className="text-2xl text-gray-700"

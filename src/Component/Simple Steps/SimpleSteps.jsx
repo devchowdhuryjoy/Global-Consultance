@@ -73,11 +73,28 @@ const SimpleSteps = () => {
             >
               {step.icon}
             </div>
-            <h2 className="text-red-600 font-semibold text-[#f16f22]">{step.title}</h2>
+            <h2 className="text-red-600 font-semibold text-[#f16f22]">
+              {step.title}
+            </h2>
             <h3 className="font-bold text-[#000] text-md mb-2">
               {step.heading}
             </h3>
-            <p className="text-sm text-black text-justify">{step.description}</p>
+            <div
+              style={{
+                maxWidth: "600px",
+                textAlign: "justify",
+                textJustify: "inter-word",
+                hyphens: "auto",
+              }}
+              className="hyphenate"
+            >
+              <p
+                className="text-sm text-black"
+                style={{ letterSpacing: "-0.02em" }}
+              >
+                {step.description}
+              </p>
+            </div>
           </div>
         ))}
       </div>
