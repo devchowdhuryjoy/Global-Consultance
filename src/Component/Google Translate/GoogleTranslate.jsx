@@ -118,7 +118,7 @@ const languages = [
 
 const GoogleTranslate = () => {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState("English"); // Default English
+  const [selected, setSelected] = useState("English");
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -152,7 +152,14 @@ const GoogleTranslate = () => {
     const select = document.querySelector(".goog-te-combo");
     if (select) {
       select.value = lang.code;
+
+      
       select.dispatchEvent(new Event("change"));
+
+      
+      setTimeout(() => {
+        select.dispatchEvent(new Event("change"));
+      }, 100);
     }
   };
 
@@ -164,16 +171,6 @@ const GoogleTranslate = () => {
         className="flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-200 shadow-sm 
                      bg-[#f16f22] hover:bg-[#252364] text-white"
       >
-        {/* Globe Icon */}
-        {/* <svg
-          className="w-5 h-5 text-[#252364]"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 2.06c1.8.3 3.4 1.06 4.66 2.12a8 8 0 00-7.66-.02A8.03 8.03 0 0113 4.06zM6.7 7.1A8 8 0 003.9 12H6c0-1.63.56-3.13 1.7-4.9zM6 14H3.9a8 8 0 002.8 4.9A8.15 8.15 0 016 14zm7 6.94c-1.8-.3-3.4-1.06-4.66-2.12A8 8 0 0016 19.94 8.05 8.05 0 0013 20.94zM18.3 16.9A8.03 8.03 0 0020.1 12H18c0 1.63-.56 3.13-1.7 4.9z" />
-        </svg> */}
-
         <span>{selected}</span>
         <svg
           className={`w-4 h-4 text-white transition-transform duration-200 ${open ? "rotate-180" : ""}`}
@@ -209,9 +206,6 @@ const GoogleTranslate = () => {
 };
 
 export default GoogleTranslate;
-
-
-
 
 
 
