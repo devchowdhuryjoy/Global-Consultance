@@ -508,7 +508,7 @@ const TeamSection = () => {
             <span className="inline-block bg-[#fff] text-[#f16f22] px-4 py-1 rounded-full text-sm font-semibold mb-4">
               Our Leadership Team
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#000] leading-snug">
+            <h2 className="text-2xl md:text-4xl font-bold text-[#000] leading-snug">
               Rich with Experience. Fueled by Passion.
               <br />
               Driven by the Dreams of Study Abroad Aspirants.

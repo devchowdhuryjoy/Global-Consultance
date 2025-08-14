@@ -136,30 +136,77 @@ import ApplyModal from "../../../Modal/ApplyModal";
 
 const data = {
   Dubai: [
-    {
-      name: "American University in Dubai",
-      details: "Offers American-style education with diverse programs.",
-    },
-    {
-      name: "Dubai International Academic City",
-      details: "Home to several international universities and colleges.",
-    },
-    {
-      name: "Heriot-Watt University Dubai",
-      details:
-        "A UK-based university with a well-established campus in Dubai, especially strong in engineering, business, and data science.",
-    },
-    {
-      name: "Middlesex University Dubai",
-      details:
-        "The first overseas campus of London's Middlesex University. Offers a wide range of undergraduate and postgraduate programs.",
-    },
-    {
-      name: "University of Wollongong in Dubai (UOWD)",
-      details:
-        "One of the oldest international universities in Dubai, affiliated with the University of Wollongong (Australia).",
-    },
-  ],
+  {
+    name: "American University in Dubai (AUD)",
+    country: "Dubai",
+    historicalPrestige: "",
+    academicExcellence: "A respected American-style institution known for its business, arts, media, architecture programs, and U.S. accreditation",
+    nobelLegacy: "",
+    distance: "Driving from Abu Dhabi ~125–130 km (~1h 7m)",
+    preferredSubjects: "Architecture, MBA, Construction Management, Media Studies",
+    tuitionFees: "Undergraduate: AED 97,100; Master’s: AED 50,400–53,000"
+  },
+  {
+    name: "University of Wollongong in Dubai (UOWD)",
+    country: "Dubai",
+    historicalPrestige: "",
+    academicExcellence: "A branch campus of the University of Wollongong, Australia; independent and offering strong business, engineering, IT programs",
+    nobelLegacy: "",
+    distance: "Approx 125 km from Abu Dhabi",
+    preferredSubjects: "Business, International Relations, Engineering Management, Computer Science",
+    tuitionFees: "Undergraduate: AED 57,600–62,600; Master’s: AED 7,846–9,415"
+  },
+  {
+    name: "Middlesex University Dubai",
+    country: "Dubai",
+    historicalPrestige: "",
+    academicExcellence: "First overseas campus of Middlesex University UK; accredited by KHDA and MoHESR; strong business, arts, education programs",
+    nobelLegacy: "",
+    distance: "Approximately 125–130 km from Abu Dhabi",
+    preferredSubjects: "MSc in Robotics, Data Science, International Business; Business and Arts programs",
+    tuitionFees: "Undergraduate: AED 60,000; Master’s: AED 35,000–53,800"
+  },
+  {
+    name: "Manipal Academy of Higher Education, Dubai",
+    country: "Dubai",
+    historicalPrestige: "",
+    academicExcellence: "Branch of Manipal University (India), offering more than 50 programs across engineering, business, architecture",
+    nobelLegacy: "",
+    distance: "Approx 125 km from Abu Dhabi",
+    preferredSubjects: "Engineering, Business, Architecture, Computer Science, Biotechnology",
+    tuitionFees: "Undergraduate: AED 35,500–48,000; Master’s: AED 33,000–48,000"
+  },
+  {
+    name: "Rochester Institute of Technology, Dubai (RIT Dubai)",
+    country: "Dubai",
+    historicalPrestige: "",
+    academicExcellence: "Satellite campus of RIT (New York), strong in engineering and tech with excellent labs and resources",
+    nobelLegacy: "",
+    distance: "Approx 125–130 km from Abu Dhabi",
+    preferredSubjects: "Electrical Engineering, Mechanical Engineering, Networking & Systems Administration",
+    tuitionFees: "Master’s: AED 76,000–85,000"
+  },
+  {
+    name: "Heriot-Watt University Dubai",
+    country: "Dubai",
+    historicalPrestige: "",
+    academicExcellence: "First overseas UK campus in Dubai; awarded Middle East’s Best University; KHDA five-star rating; strong engineering, energy, business, design programs",
+    nobelLegacy: "",
+    distance: "Approx 125–140 km from Abu Dhabi",
+    preferredSubjects: "Engineering, Mathematical & Computer Sciences, Social Sciences, Textiles & Design, Edinburgh Business School",
+    tuitionFees: "Master’s: AED 58,000–65,000"
+  },
+  {
+    name: "British University in Dubai (BUiD)",
+    country: "Dubai",
+    historicalPrestige: "",
+    academicExcellence: "Research-intensive, strong in business, engineering, IT",
+    nobelLegacy: "",
+    distance: "Approx 125–130 km from Abu Dhabi",
+    preferredSubjects: "Business, Engineering, IT",
+    tuitionFees: "Undergraduate: AED 56,300–62,500; Master’s: AED 70,000–85,000"
+  }
+],
   Malaysia: [
     {
       name: "University of Malaya (UM)",
@@ -379,7 +426,7 @@ const StudyInEurope = () => {
           </div>
         )} */}
 
-        {selectedUniversities.length > 0 && (
+         {selectedUniversities.length > 0 && (
           <div className="space-y-4 mb-6">
             {selectedUniversityDetails.map((uni) => (
               <div
@@ -396,7 +443,7 @@ const StudyInEurope = () => {
                 </div>
 
                 {/* Image er moto design */}
-                <ul className="space-y-3 text-black mb-4">
+                <ul className="space-y-3 text-black mb-4 text-justify break-words hyphens-auto">
                   <li>
                     <strong>Historical Prestige:</strong>{" "}
                     {uni.historicalPrestige}
@@ -410,13 +457,14 @@ const StudyInEurope = () => {
                   </li>
                 </ul>
 
-                <p className="mb-1">
+                <p className="mb-1 text-justify break-words hyphens-auto">
                   <strong>Distance:</strong> {uni.distance}
                 </p>
-                <p className="mb-1">
+                <p
+                  className="mb-1">
                   <strong>Preferred Subjects:</strong> {uni.preferredSubjects}
                 </p>
-                <p>
+                <p className="mb-1 text-justify break-words hyphens-auto">
                   <strong>Tuition Fees:</strong> {uni.tuitionFees}
                 </p>
               </div>

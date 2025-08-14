@@ -293,7 +293,8 @@ const ScholarshipModal = ({ show, onClose }) => {
               required
             />
           </div>
-
+          
+          
           <select
             name="scholarshipCountry"
             className="border border-black rounded-lg px-4 py-2 w-full"

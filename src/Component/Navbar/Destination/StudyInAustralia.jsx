@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import SuccessStories from "../../SuccessStories/SuccessStories";
 import MultipleCountryUniversityModal from "../../../Modal/MultipleCountryUniversityModal";
@@ -343,30 +341,78 @@ const data = {
   ],
 
   France: [
-    {
-      name: "Sorbonne University",
-      details: "Famous for humanities, science, and medicine.",
-    },
-    {
-      name: "École Polytechnique",
-      details: "Prestigious engineering school in France.",
-    },
-    {
-      name: "Sciences Po",
-      details:
-        "One of Europe's top universities for social sciences, especially international relations and political studies.",
-    },
-    {
-      name: "Université PSL (Paris Sciences et Lettres)",
-      details:
-        "An elite research university made up of several prestigious institutions, including ENS and Collège de France. Strong in both sciences and humanities.",
-    },
-    {
-      name: "Université Grenoble Alpes (UGA)",
-      details:
-        "One of France's major public universities, UGA has a strong reputation in science and technology and hosts a vibrant international student community.",
-    },
-  ],
+  {
+    name: "Paris Sciences & Lettres – PSL Research University (PSL)",
+    country: "France",
+    historicalPrestige: "",
+    academicExcellence: "A collegiate university comprising 25+ prestigious institutions, known for excellence in humanities, sciences, economics, physics, biology, and research prestige",
+    nobelLegacy: "",
+    distance: "0 km (within the city)",
+    preferredSubjects: "Physics, Chemistry, Economics, History, Biology",
+    tuitionFees: "About €200–€400/year for public universities (approximate)"
+  },
+  {
+    name: "Sorbonne University",
+    country: "France",
+    historicalPrestige: "",
+    academicExcellence: "Legacy of the historic University of Paris—prestigious in humanities, social sciences, physics, biology, computer science",
+    nobelLegacy: "",
+    distance: "0 km (city center)",
+    preferredSubjects: "Humanities, Social Sciences, Physics, Biology, Computer Science",
+    tuitionFees: "Around €200–€400/year"
+  },
+  {
+    name: "École Polytechnique",
+    country: "France",
+    historicalPrestige: "",
+    academicExcellence: "Elite engineering grande école, highly selective; excellence in engineering, computer science, physics, economics, chemistry",
+    nobelLegacy: "",
+    distance: "0–10 km within greater Paris",
+    preferredSubjects: "Engineering, Computer Science, Physics, Economics, Chemistry",
+    tuitionFees: "Around €12,000/year"
+  },
+  {
+    name: "Université Paris-Saclay",
+    country: "France",
+    historicalPrestige: "",
+    academicExcellence: "STEM research power, cluster of top science and engineering schools (e.g., CentraleSupélec, ENS)",
+    nobelLegacy: "",
+    distance: "~20 km south of Paris",
+    preferredSubjects: "Sciences, Engineering, Pharmacy, Chemistry, Physics",
+    tuitionFees: "Approx. €170 (Bachelor), €243 (Master)"
+  },
+  {
+    name: "Université Grenoble Alpes",
+    country: "France",
+    historicalPrestige: "",
+    academicExcellence: "Large-scale research university in sciences, engineering, humanities, management; strong in technology, AI, micro-nano research",
+    nobelLegacy: "",
+    distance: "~457 km (air); driving ~587 km",
+    preferredSubjects: "Sciences, Engineering, Computer Science, AI, Humanities, Medicine, Architecture, Social Sciences",
+    tuitionFees: "€170 (Bachelor), €243 (Master)"
+  },
+  {
+    name: "Université de Montpellier",
+    country: "France",
+    historicalPrestige: "",
+    academicExcellence: "One of the world’s oldest (est. 1220); robust in research across disciplines and noted for excellence",
+    nobelLegacy: "",
+    distance: "~595 km (air) from Paris",
+    preferredSubjects: "Sciences, Medicine, Humanities, Social Sciences",
+    tuitionFees: "€170 (Bachelor), €243 (Master)"
+  },
+  {
+    name: "Aix-Marseille Université",
+    country: "France",
+    historicalPrestige: "",
+    academicExcellence: "Oldest Francophone institution (origins 1409), largest in France by student body and budget, notable alumni including Nobel laureates",
+    nobelLegacy: "",
+    distance: "~660 km from Paris",
+    preferredSubjects: "Law, Political Science, Economics, Literature, Science, Management, Health, Technology",
+    tuitionFees: "€170 (Bachelor), €243 (Master)"
+  }
+],
+
 
   Romania: [
     {
@@ -678,7 +724,7 @@ const StudyInAustralia = () => {
                 </div>
 
                 {/* Image er moto design */}
-                <ul className="space-y-3 text-black mb-4">
+                <ul className="space-y-3 text-black mb-4 text-justify break-words hyphens-auto">
                   <li>
                     <strong>Historical Prestige:</strong>{" "}
                     {uni.historicalPrestige}
@@ -692,13 +738,14 @@ const StudyInAustralia = () => {
                   </li>
                 </ul>
 
-                <p className="mb-1">
+                <p className="mb-1 text-justify break-words hyphens-auto">
                   <strong>Distance:</strong> {uni.distance}
                 </p>
-                <p className="mb-1">
+                <p
+                  className="mb-1">
                   <strong>Preferred Subjects:</strong> {uni.preferredSubjects}
                 </p>
-                <p>
+                <p className="mb-1 text-justify break-words hyphens-auto">
                   <strong>Tuition Fees:</strong> {uni.tuitionFees}
                 </p>
               </div>

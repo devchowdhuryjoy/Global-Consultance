@@ -287,7 +287,7 @@ const VisaService = () => {
                 <h2 className="text-xl sm:text-2xl font-bold text-[#f16f22] mb-4">
                   Student Visa
                 </h2>
-                <p className="text-gray-700 text-base leading-relaxed mb-4">
+                <p className="text-black text-base leading-relaxed mb-4 text-justify">
                   As border protection laws update frequently and vary with
                   nationality, we implement our extensive experience to direct
                   you toward a well-position for visa compliance. Once you get
@@ -299,7 +299,7 @@ const VisaService = () => {
                   complete visa applications for those who struggle to find
                   authentic information. Our visa processing services include:
                 </p>
-                <ul className="list-decimal list-inside text-gray-700 space-y-1 mt-4">
+                <ul className="list-decimal list-inside text-black space-y-1 mt-4">
                   <li>Student visa for Australia</li>
                   <li>Student visa for Canada</li>
                   <li>Student visa for UK</li>
@@ -315,13 +315,13 @@ const VisaService = () => {
                 <h2 className="text-xl sm:text-2xl font-bold text-[#f16f22] mb-4">
                   Visitor Visa
                 </h2>
-                <p className="text-lg font-semibold text-[#000] mb-4">
+                <p className="text-lg font-semibold text-[#000] mb-4 text-justify">
                   If you wish to visit international countries temporarily for
                   business, tourism, or transit, we can yield a seamless visa
                   application journey for you as your devoted student visa
                   agency in Dhaka.
                 </p>
-                <p className="text-gray-700 text-base leading-relaxed">
+                <p className="text-black text-base leading-relaxed text-justify">
                   Global Routeway, the most reputed visa agency in Bangladesh,
                   has an unrivaled group of overseas education consultants in
                   Bangladesh who can guide you through the whole process of
@@ -541,7 +541,7 @@ const VisaService = () => {
                     {/* ✅ CHANGED: added w-full for proper alignment */}
                     {step.heading}
                   </h3>
-                  <p className="text-sm text-gray-700 text-left w-full">
+                  <p className="text-sm text-black text-left w-full">
                     {" "}
                     {/* ✅ CHANGED: added w-full for consistent alignment */}
                     {step.description}

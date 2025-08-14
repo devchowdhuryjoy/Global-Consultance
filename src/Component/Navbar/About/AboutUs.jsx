@@ -116,7 +116,7 @@ const AboutUs = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-2xl md:text-4xl font-bold text-[#000] mb-10 pt-8">
+        <h2 className="text-xl md:text-4xl font-bold text-[#000] mb-10 pt-8 ">
           Helping Students Achieve their Study Abroad Dreams with Expert
           Guidance
         </h2>
@@ -141,9 +141,9 @@ const AboutUs = () => {
       <div className="bg-gray-50 py-10 px-4 md:px-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Left Side - Text */}
-          <div className="space-y-6 text-gray-800">
-            <h2 className="text-2xl md:text-3xl font-bold">Who are we?</h2>
-            <p>
+          <div className="space-y-6 text-black">
+            <h2 className="text-2xl md:text-3xl font-bold ">Who are we?</h2>
+            <p className="text-black-500 text-justify">
               Our journey started with a single office in 2024 in Melbourne,
               Australia and since then we have expanded to different
               geographies—Sydney, Adelaide, and Perth in Australia, Dhaka and
@@ -152,16 +152,16 @@ const AboutUs = () => {
               a testimony to our commitment to professionalism, persistent hard
               work, as well as efficient and effective teamwork.
             </p>
-            <p>
+            <p className="text-black-500 text-justify">
               At present, Global Routeway Global represents over 550 educational
               institutions globally. Our partners include:
             </p>
-            <ul className="list-disc list-inside ml-2">
+            <ul className="list-disc list-inside ml-2 text-black-500 text-justify">
               <li>Renowned universities</li>
               <li>TAFES</li>
               <li>Colleges and tertiary schools all across the world</li>
             </ul>
-            <p>
+            <p className="text-black-500 text-justify">
               Since 2024, Global Routeway Global has helped realize the dreams
               of 22000+ students from different nationalities with the help of
               our partners. Our defined processes, vast experience, committed
@@ -404,7 +404,7 @@ const AboutUs = () => {
             <h3 className="text-xl font-semibold text-[#f16f22] mb-3">
               Mission
             </h3>
-            <p className="text-black-500 leading-relaxed">
+            <p className="text-black-500 leading-relaxed text-justify">
               Going above and beyond to ensure that each of our student's career
               aspirations has been achieved through our guidance, and we achieve
               this together.
@@ -416,7 +416,7 @@ const AboutUs = () => {
             <h3 className="text-xl font-semibold text-[#f16f22] mb-3">
               Vision
             </h3>
-            <p className="text-black-500 leading-relaxed">
+            <p className="text-black-500 leading-relaxed text-justify">
               To remain an industry leader by giving the highest level of client
               experience through ethical guidance so that students can make
               informed decisions on their career goals and become global

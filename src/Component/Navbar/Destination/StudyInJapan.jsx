@@ -1135,28 +1135,69 @@ import SuccessStories from "../../SuccessStories/SuccessStories";
 import CountryUniversityModal from "../../../Modal/CountryUniversityModal";
 
 const data = {
-  Australia: [
-    {
-      name: "Imperial College London",
-      details: "Imperial is a science-focused institution known for its excellence in engineering, medicine, and technology. It's especially respected for STEM subjects.",
-    },
-    {
-      name: "University College London (UCL)",
-      details: "A multidisciplinary university located in the heart of London, UCL is known for research innovation and global outlook.",
-    },
-    {
-      name: "University of Edinburgh",
-      details: "One of the most prestigious universities in Scotland and the UK, it has a rich history and is known for a strong focus on research and international collaboration.",
-    },
-    {
-      name: "King's College London (KCL)",
-      details: "A historic university with strengths in health sciences, social sciences, and humanities. It’s known for its research and teaching in the heart of London.",
-    },
-    {
-      name: "University of Manchester",
-      details: "A member of the Russell Group, it's known for strong research impact and vibrant student life. It’s especially strong in science and engineering.",
-    },
-  ],
+ Australia: [
+  {
+    name: "Australian National University (ANU) – Canberra, ACT",
+    country: "Australia",
+    historicalPrestige: "",
+    academicExcellence: "Leading national research university located in Canberra’s Acton suburb, highly ranked globally and home to multiple national academies and institutes",
+    nobelLegacy: "",
+    distance: "Within Canberra — about 1–2 km from the city center",
+    preferredSubjects: "Political Science, International Relations, Public Policy, Natural Sciences, Sustainability, Humanities",
+    tuitionFees: "Undergraduate: approx AUD 39,900–53,400; Postgraduate: AUD 45,400–48,000"
+  },
+  {
+    name: "University of Canberra (UC) – Canberra, ACT",
+    country: "Australia",
+    historicalPrestige: "",
+    academicExcellence: "Known for strong student support, graduate employment outcomes, and local impact",
+    nobelLegacy: "",
+    distance: "Located in Bruce, roughly 5–7 km from central Canberra",
+    preferredSubjects: "Health Sciences, Education, Public Health, Sports and Rehabilitation, Design",
+    tuitionFees: "Approximately AUD 29,000–32,800 (Bachelor’s)"
+  },
+  {
+    name: "University of Melbourne – Melbourne, VIC",
+    country: "Australia",
+    historicalPrestige: "",
+    academicExcellence: "Australia’s second-oldest university (founded 1853), a member of the Group of Eight, top-ranked in reputation (47th globally in 2025 THE ranking)",
+    nobelLegacy: "",
+    distance: "Flying distance: ~466 km; Driving distance: ~661 km (~6–7 h drive)",
+    preferredSubjects: "Medicine, Law, Business, Arts, Engineering, Creative Arts (Southbank campus)",
+    tuitionFees: "Approx AUD 32,900–67,400 for undergrad; specialized programs (e.g., medicine) up to AUD 113,000"
+  },
+  {
+    name: "University of Sydney – Sydney, NSW",
+    country: "Australia",
+    historicalPrestige: "",
+    academicExcellence: "Australia’s oldest university (founded 1850), a Group of Eight member, produced numerous national leaders, Nobel laureates, and Rhodes Scholars",
+    nobelLegacy: "",
+    distance: "Flight: ~244 km; Driving: ~275 km (about 3 h 17 min)",
+    preferredSubjects: "Law, Medicine, Social Sciences, Arts, Architecture, Business",
+    tuitionFees: "Approx AUD 45,000–52,000 (undergraduate) and AUD 41,000–59,000 (postgraduate)"
+  },
+  {
+    name: "University of Queensland (UQ) – Brisbane, QLD",
+    country: "Australia",
+    historicalPrestige: "",
+    academicExcellence: "A prominent Group of Eight member, top research output, high reputation, and affordable relative to prestige",
+    nobelLegacy: "",
+    distance: "Approx 1,000 km north of Canberra (about 1.5 h flight)",
+    preferredSubjects: "Engineering, Science, Business, Medicine, Humanities",
+    tuitionFees: "Approx AUD 33,900–47,300 for undergrad; general range AUD 30,000–45,000"
+  },
+  {
+    name: "Monash University – Melbourne, VIC",
+    country: "Australia",
+    historicalPrestige: "",
+    academicExcellence: "Massive research institution, pioneer in IVF (1970s), large international student body",
+    nobelLegacy: "",
+    distance: "Same as University of Melbourne (~466 km straight-line, ~661 km drive)",
+    preferredSubjects: "Medicine, Engineering, Pharmacy, Arts, Business",
+    tuitionFees: "Approx AUD 34,700–48,300"
+  }
+],
+
  
 };
 
@@ -1250,7 +1291,7 @@ const StudyInJapan = () => {
           </div>
         </div>
 
-        {selectedUniversities.length > 0 && (
+        {/* {selectedUniversities.length > 0 && (
           <div className="space-y-4 mb-6">
             {selectedUniversityDetails.map((uni) => (
               <div
@@ -1261,6 +1302,52 @@ const StudyInJapan = () => {
                   {uni.name}
                 </h2>
                 <p className="text-gray-800">{uni.details}</p>
+              </div>
+            ))}
+          </div>
+        )} */}
+
+         {selectedUniversities.length > 0 && (
+          <div className="space-y-4 mb-6">
+            {selectedUniversityDetails.map((uni) => (
+              <div
+                key={`${uni.country}-${uni.name}`}
+                className="bg-white shadow rounded p-6 border border-gray-100"
+              >
+                <div className="flex justify-between items-start">
+                  <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
+                    {uni.name}
+                  </h2>
+                  <span className="text-sm bg-gray-100 px-2 py-1 rounded text-gray-600">
+                    {uni.country}
+                  </span>
+                </div>
+
+                {/* Image er moto design */}
+                <ul className="space-y-3 text-black mb-4 text-justify break-words hyphens-auto">
+                  <li>
+                    <strong>Historical Prestige:</strong>{" "}
+                    {uni.historicalPrestige}
+                  </li>
+                  <li>
+                    <strong>Academic Excellence:</strong>{" "}
+                    {uni.academicExcellence}
+                  </li>
+                  <li>
+                    <strong>Nobel Legacy:</strong> {uni.nobelLegacy}
+                  </li>
+                </ul>
+
+                <p className="mb-1 text-justify break-words hyphens-auto">
+                  <strong>Distance:</strong> {uni.distance}
+                </p>
+                <p
+                  className="mb-1">
+                  <strong>Preferred Subjects:</strong> {uni.preferredSubjects}
+                </p>
+                <p className="mb-1 text-justify break-words hyphens-auto">
+                  <strong>Tuition Fees:</strong> {uni.tuitionFees}
+                </p>
               </div>
             ))}
           </div>

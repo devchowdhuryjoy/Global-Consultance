@@ -1171,59 +1171,60 @@ const scholarships = [
   {
     country: "UK",
     description:
-      "The UK offers prestigious scholarships such as Chevening Scholarships, Commonwealth Scholarships, Rhodes Scholarships, and Gates Cambridge Scholarships. Other notable awards include Clarendon Scholarships, Edinburgh Global Research Scholarships, University of Westminster Scholarships, University of Bristol Think Big Scholarships, UCL Global Scholarships, and Imperial College London Scholarships.",
+      "The UK offers prestigious scholarships such as Chevening, Commonwealth, Rhodes, and Gates Cambridge. Universities like Oxford, Cambridge, Imperial, and UCL provide merit-based awards. Other options include Clarendon, Edinburgh Global Research, and Bristol Think Big Scholarships. Focus areas include leadership, science, arts, and business. Opportunities support both undergraduate and graduate students.",
   },
   {
     country: "USA",
     description:
-      "In the USA, there are many renowned scholarships including the Fulbright Foreign Student Program, Hubert H. Humphrey Fellowship Program, and AAUW International Fellowships. Top universities like Harvard, Yale, Stanford, and MIT offer various scholarships. Other opportunities include the Clark Global Scholarship Program, MasterCard Foundation Scholars Program, and Rotary Peace Fellowships.",
+      "The USA has renowned programs like Fulbright, Hubert H. Humphrey Fellowship, and AAUW International Fellowships. Top universities include Harvard, Yale, Stanford, and MIT. Additional opportunities are Clark Global Scholarships, MasterCard Foundation, and Rotary Peace Fellowships. Covers various fields including business, engineering, arts, and social sciences. Open to students with academic excellence and leadership potential.",
   },
   {
     country: "Canada",
     description:
-      "Canada provides numerous scholarships such as Vanier Canada Graduate Scholarships and Canada Graduate Scholarships. Universities like the University of British Columbia, University of Alberta, McGill University, and York University offer international scholarships. There are also Lester B. Pearson International Scholarships and awards from the Pierre Elliott Trudeau Foundation.",
+      "Canada offers Vanier Canada Graduate Scholarships and Canada Graduate Scholarships. Universities like UBC, McGill, Alberta, and York provide international awards. Lester B. Pearson and Pierre Elliott Trudeau Foundation scholarships are also available. Fields include science, engineering, arts, leadership, and research. Scholarships support both undergraduate and graduate students.",
   },
   {
     country: "Sweden",
     description:
-      "Sweden has scholarships like the Swedish Institute Scholarships for Global Professionals and Karolinska Institutet Global Master's Scholarships. Other scholarships include Lund University Global Scholarship Program, Uppsala University Global Scholarships, Chalmers IPOET Scholarships, and scholarships from Stockholm University, Malmö University, Blekinge Institute of Technology, Halmstad University, and KTH Royal Institute of Technology.",
+      "Sweden provides scholarships through Swedish Institute and Karolinska Institutet. Other options include Lund, Uppsala, Chalmers, Stockholm, Malmö, Blekinge, Halmstad, and KTH scholarships. Focused on global master's programs and research excellence. Fields include engineering, medicine, science, arts, and leadership. Open to international students with academic merit.",
   },
   {
     country: "Denmark",
     description:
-      "In Denmark, scholarships are offered by the Danish Government, University of Copenhagen, Aarhus University, and the Technical University of Denmark. Additional opportunities are available through Copenhagen Business School, Roskilde University, Aalborg University, IT University of Copenhagen, Denmark-America Foundation Grants, and Erasmus+ Scholarships.",
+      "Denmark offers government scholarships, Erasmus+ grants, and university awards. Major universities include Copenhagen, Aarhus, DTU, CBS, Roskilde, and Aalborg. Supports studies in business, engineering, science, and arts. Opportunities are available for undergraduate and postgraduate students. Encourages international applicants and research programs.",
   },
   {
     country: "Finland",
     description:
-      "Finland offers government scholarships and awards from the University of Helsinki, Aalto University, University of Turku, and University of Oulu. Tampere University, Lappeenranta-Lahti University of Technology, University of Eastern Finland, Hanken School of Economics, and Arcada University of Applied Sciences also provide scholarships.",
+      "Finland provides government and university-specific scholarships. Top universities include Helsinki, Aalto, Turku, Oulu, Tampere, Lappeenranta, Hanken, and Arcada. Covers engineering, science, business, and arts programs. Scholarships are for international students with academic excellence. Both short-term and full-degree funding available.",
   },
   {
     country: "Hungary",
     description:
-      "Hungary provides scholarships through programs like the Stipendium Hungaricum Scholarship Program and Hungarian Diaspora Scholarship. Erasmus+ Scholarships are also available. Universities such as University of Debrecen, Central European University, Budapest University of Technology and Economics, University of Pécs, Eötvös Loránd University, Szent István University, and Corvinus University of Budapest offer various scholarships.",
+      "Hungary offers Stipendium Hungaricum and Hungarian Diaspora Scholarships. Erasmus+ scholarships are also available. Universities include Debrecen, Central European University, BME, Pécs, Eötvös Loránd, Szent István, and Corvinus. Fields include engineering, science, arts, and business. Open for international students with academic merit.",
   },
   {
     country: "Italy",
     description:
-      "Italy offers scholarships from the Italian Government for foreign students and specific awards like Scuola Normale Superiore PhD Scholarships. Universities including Bologna, Bocconi, Politecnico di Milano, Padua, Pavia, Sapienza University of Rome, Milan, and Trento provide merit-based scholarships and study grants.",
+      "Italy provides government and Scuola Normale Superiore PhD scholarships. Universities include Bologna, Bocconi, Politecnico di Milano, Padua, Pavia, Rome, Milan, and Trento. Merit-based scholarships cover science, arts, engineering, and business. Opportunities for undergraduate and graduate students. Supports academic excellence and international applicants.",
   },
   {
     country: "France",
     description:
-      "In France, students can apply for the Eiffel Excellence Scholarship Program and scholarships from École Normale Supérieure. Other notable scholarships include Emile Boutmy Scholarships at Sciences Po, Université Paris-Saclay International Master's Scholarships, INSEAD MBA Scholarships, Erasmus+ Scholarships, Grenoble Institute of Technology Foundation Scholarships, Ampère Scholarships of Excellence at ENS Lyon, École Polytechnique Scholarships, and HEC Paris MBA Scholarships.",
+      "France offers Eiffel Excellence Scholarships and awards from École Normale Supérieure. Other options include Sciences Po, Université Paris-Saclay, INSEAD, Grenoble Institute of Technology, ENS Lyon, École Polytechnique, and HEC Paris. Covers business, engineering, arts, and sciences. Open to international students with strong academic performance. Funding supports full-degree or research programs.",
   },
   {
     country: "Dubai",
     description:
-      "Dubai offers scholarships from Khalifa University, Mohamed bin Zayed University, United Arab Emirates University, American University in Dubai, University of Dubai, Zayed University, Canadian University Dubai, Middlesex University Dubai, Al Qasimia University, and Emirates Aviation University.",
+      "Dubai scholarships include Khalifa University, Mohamed bin Zayed University, American University in Dubai, University of Dubai, Zayed University, Canadian University Dubai, Middlesex University Dubai, Al Qasimia, and Emirates Aviation University. Focus on engineering, business, media, and architecture. Open for international students. Supports both undergraduate and graduate programs. Merit-based and competitive awards.",
   },
   {
     country: "Malaysia",
     description:
-      "Malaysia provides scholarships such as the Malaysian International Scholarship (MIS) and the MTCP Scholarship. Universities like University of Malaya, Universiti Kebangsaan Malaysia, Universiti Putra Malaysia, Universiti Sains Malaysia, Multimedia University, UCSI University, Asia Pacific University, and Taylor's University offer a wide range of scholarships and merit awards.",
+      "Malaysia offers MIS and MTCP scholarships. Universities include UM, UTP, USM, UKM, Sunway, UCSI, Multimedia University, Asia Pacific University, and Taylor's University. Covers engineering, law, business, science, and arts programs. Scholarships available for international students with academic merit. Supports undergraduate and postgraduate studies.",
   },
 ];
+
 
 const ScolarshipInAustralia = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -1253,7 +1254,7 @@ const ScolarshipInAustralia = () => {
             <div
               key={item.country}
               onClick={() => toggleSelect(idx)}
-              className={`cursor-pointer px-6 py-3 text-center group rounded-lg transition-all duration-200 ${
+              className={`cursor-pointer px-3 py-2 text-center group rounded-lg transition-all duration-200 ${
                 selectedIndex === idx
                   ? 'bg-[#f16f22] text-white shadow-lg'
                   : 'bg-white border border-gray-200 hover:border-[#f16f22] hover:shadow-md'
@@ -1282,7 +1283,7 @@ const ScolarshipInAustralia = () => {
             <h3 className="text-xl sm:text-2xl text-[#f16f22] mb-3 border-b-2 border-[#f16f22] pb-2 font-semibold">
               {scholarships[selectedIndex].country} Scholarships
             </h3>
-            <p className="text-gray-700 mb-6 whitespace-pre-line text-sm sm:text-base">
+            <p className="text-black mb-6 text-justify text-sm sm:text-base">
               {scholarships[selectedIndex].description}
             </p>
             <div className="flex flex-col sm:flex-row gap-3">

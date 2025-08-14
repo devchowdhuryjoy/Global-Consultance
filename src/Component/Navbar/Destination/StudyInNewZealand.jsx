@@ -1136,27 +1136,78 @@ import CountryUniversityModal from "../../../Modal/CountryUniversityModal";
 
 const data = {
   NewZealand: [
-    {
-      name: "Imperial College London",
-      details: "Imperial is a science-focused institution known for its excellence in engineering, medicine, and technology. It's especially respected for STEM subjects.",
-    },
-    {
-      name: "University College London (UCL)",
-      details: "A multidisciplinary university located in the heart of London, UCL is known for research innovation and global outlook.",
-    },
-    {
-      name: "University of Edinburgh",
-      details: "One of the most prestigious universities in Scotland and the UK, it has a rich history and is known for a strong focus on research and international collaboration.",
-    },
-    {
-      name: "King's College London (KCL)",
-      details: "A historic university with strengths in health sciences, social sciences, and humanities. It’s known for its research and teaching in the heart of London.",
-    },
-    {
-      name: "University of Manchester",
-      details: "A member of the Russell Group, it's known for strong research impact and vibrant student life. It’s especially strong in science and engineering.",
-    },
-  ],
+  {
+    name: "University of Auckland",
+    country: "New Zealand",
+    historicalPrestige: "",
+    academicExcellence: "The largest and highest-ranked university in NZ, offering a comprehensive range of programs, known for strong research output, excellent facilities, and industry ties",
+    nobelLegacy: "",
+    distance: "Straight-line ~641 km from Wellington; around 7 h 15 min drive",
+    preferredSubjects: "Engineering, Commerce, Fine Arts, Education, Health Sciences, Biomedical Sciences, Science, Mathematics",
+    tuitionFees: "Undergraduate: NZD 30,000–55,000; Postgraduate: NZD 40,000–52,000 depending on program"
+  },
+  {
+    name: "University of Otago",
+    country: "New Zealand",
+    historicalPrestige: "",
+    academicExcellence: "New Zealand’s oldest university, celebrated for its picturesque campus and excellence in health sciences, humanities, sciences, and business",
+    nobelLegacy: "",
+    distance: "Dunedin to Wellington: ~356 km by road; around 4 hours drive",
+    preferredSubjects: "Commerce, Health Sciences, Humanities, Sciences",
+    tuitionFees: "Undergraduate: NZD 25,000–70,000; Postgraduate: NZD 35,000–50,000"
+  },
+  {
+    name: "Victoria University of Wellington",
+    country: "New Zealand",
+    historicalPrestige: "",
+    academicExcellence: "Located in the capital, renowned for focus on research, innovation, and creativity; close to government, cultural institutions, and industry",
+    nobelLegacy: "",
+    distance: "Within Wellington — about 1.6 km (~10 min walk)",
+    preferredSubjects: "Law, Architectural Studies, Environmental Science, Literature, Creative Writing, Business, History, Philosophy, Health",
+    tuitionFees: "Undergraduate: NZD 24,650–33,360; Postgraduate: NZD 27,966–36,445"
+  },
+  {
+    name: "University of Canterbury",
+    country: "New Zealand",
+    historicalPrestige: "",
+    academicExcellence: "Based in Christchurch—well-known for research, teaching excellence, and community engagement in engineering, sciences, arts, business, and law",
+    nobelLegacy: "",
+    distance: "From Dunedin ~354 km (~4 hours drive)",
+    preferredSubjects: "Arts, Business, Science, Engineering, Law",
+    tuitionFees: "Undergraduate: NZD 31,600–48,000; Postgraduate: NZD 35,000–48,000"
+  },
+  {
+    name: "University of Waikato",
+    country: "New Zealand",
+    historicalPrestige: "",
+    academicExcellence: "Located in Hamilton, known for innovation in environmental sciences, freshwater ecology, engineering, computer science, and management",
+    nobelLegacy: "",
+    distance: "About 537 km from Wellington (~6 hours drive)",
+    preferredSubjects: "Accounting and Finance, Business, Economics, Computer Science, Media Studies, Geography",
+    tuitionFees: "Undergraduate: NZD 24,425–35,700; Postgraduate/Diplomas: NZD 12,000–53,550; Research degrees up to NZD 38,840"
+  },
+  {
+    name: "Massey University",
+    country: "New Zealand",
+    historicalPrestige: "",
+    academicExcellence: "Multicampus (Auckland, Palmerston North, Wellington, extramural) institution; NZ’s second largest, especially known for veterinary school (top in Australasia, ranked 19th globally), agriculture, creative arts, aviation",
+    nobelLegacy: "",
+    distance: "Palmerston North campus ~135 km north of Wellington (~1.5–2 hours drive)",
+    preferredSubjects: "Veterinary Science, Agriculture, Business Administration, Communication, Engineering, Computer Science",
+    tuitionFees: "Agriculture UG: NZD 37,640; Business: NZD 33,880; Engineering: NZD 40,560; Computer Science: NZD 36,490; Postgraduate Veterinary Science: NZD 50,520"
+  },
+  {
+    name: "Lincoln University",
+    country: "New Zealand",
+    historicalPrestige: "",
+    academicExcellence: "Specialist in Agriculture, Agribusiness, Environmental Science; globally ranked top 1.5% and top 100 for land-based education",
+    nobelLegacy: "",
+    distance: "By road from Christchurch ~80 km (~4–5 hours from Wellington, inferred)",
+    preferredSubjects: "Agriculture, Horticulture, Viticulture, Business, Environment, Architecture, Food and Wine, Tourism",
+    tuitionFees: "Undergraduate: NZD 29,000–32,000; Master’s up to NZD 57,000; PhD: NZD 7,000"
+  }
+],
+
  
 };
 
@@ -1250,7 +1301,7 @@ const StudyInNewZealand = () => {
           </div>
         </div>
 
-        {selectedUniversities.length > 0 && (
+        {/* {selectedUniversities.length > 0 && (
           <div className="space-y-4 mb-6">
             {selectedUniversityDetails.map((uni) => (
               <div
@@ -1261,6 +1312,52 @@ const StudyInNewZealand = () => {
                   {uni.name}
                 </h2>
                 <p className="text-gray-800">{uni.details}</p>
+              </div>
+            ))}
+          </div>
+        )} */}
+
+         {selectedUniversities.length > 0 && (
+          <div className="space-y-4 mb-6">
+            {selectedUniversityDetails.map((uni) => (
+              <div
+                key={`${uni.country}-${uni.name}`}
+                className="bg-white shadow rounded p-6 border border-gray-100"
+              >
+                <div className="flex justify-between items-start">
+                  <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
+                    {uni.name}
+                  </h2>
+                  <span className="text-sm bg-gray-100 px-2 py-1 rounded text-gray-600">
+                    {uni.country}
+                  </span>
+                </div>
+
+                {/* Image er moto design */}
+                <ul className="space-y-3 text-black mb-4 text-justify break-words hyphens-auto">
+                  <li>
+                    <strong>Historical Prestige:</strong>{" "}
+                    {uni.historicalPrestige}
+                  </li>
+                  <li>
+                    <strong>Academic Excellence:</strong>{" "}
+                    {uni.academicExcellence}
+                  </li>
+                  <li>
+                    <strong>Nobel Legacy:</strong> {uni.nobelLegacy}
+                  </li>
+                </ul>
+
+                <p className="mb-1 text-justify break-words hyphens-auto">
+                  <strong>Distance:</strong> {uni.distance}
+                </p>
+                <p
+                  className="mb-1">
+                  <strong>Preferred Subjects:</strong> {uni.preferredSubjects}
+                </p>
+                <p className="mb-1 text-justify break-words hyphens-auto">
+                  <strong>Tuition Fees:</strong> {uni.tuitionFees}
+                </p>
               </div>
             ))}
           </div>
