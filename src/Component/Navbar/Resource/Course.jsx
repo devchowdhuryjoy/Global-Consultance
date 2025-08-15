@@ -20,7 +20,7 @@ const Course = () => {
     },
     {
       title: "Nursing",
-      image: "/Nurse.jpeg",
+      image: "/Nurse.jpg",
     },
     {
       title: "Engineering",
@@ -28,7 +28,7 @@ const Course = () => {
     },
     {
       title: "Business Analytics",
-      image: "/study6.jpg",
+      image: "/business.jpg",
     },
     {
       title: "Food Science",

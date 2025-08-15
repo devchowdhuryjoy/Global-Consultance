@@ -539,7 +539,7 @@ const TeamSection = () => {
                   <div className="p-4">
                     {member.description && (
                       <div
-                        className="text-black text-base leading-relaxed"
+                        className="text-black text-base leading-relaxed text-justify hyphens-auto"
                         dangerouslySetInnerHTML={{
                           __html: member.description,
                         }}
