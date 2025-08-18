@@ -32,121 +32,136 @@ const data = {
     {
       name: "University of Copenhagen",
       country: "Denmark",
-      historicalPrestige:
-        "Founded in 1479; currently has 37,000 students and 10,000 employees, of whom over 5,000 are researchers.",
-      academicExcellence:
-        "A knowledge and culture-bearing institution based on independence of research and research-based education at the highest level; fosters critical thinking and insights for societal benefit.",
-      nobelLegacy: "10 Nobel Prizes awarded to researchers at the University.",
+      historicalPrestige: "Founded in 1479, it is Denmark’s oldest university and a major knowledge and culture-bearing institution, providing a framework for critical thinking, insights, and research-based education.",
+      academicExcellence: "Consistently ranks as the top university in Denmark. QS ranking 101. Has 37,000 students and over 5,000 researchers.",
+      nobelLegacy: "10 Nobel Prizes have been awarded to researchers at the University.",
       distance: "Located in Copenhagen (Capital)",
       preferredSubjects: "",
-      tuitionFees: "Approximately €10,000–€16,000 per year",
+      tuitionFees: "Approximately €10,000–€16,000 per year"
     },
     {
       name: "Aarhus University",
       country: "Denmark",
-      historicalPrestige: "",
-      academicExcellence: "",
+      historicalPrestige: "Founded on September 11, 1928, it is Denmark’s second-oldest and second-largest university with strong national and international research contributions.",
+      academicExcellence: "Renowned for high-quality research, strong international focus, research-based teaching, and English-taught programs.",
       nobelLegacy: "",
-      distance: "",
+      distance: "192 km from Copenhagen",
       preferredSubjects: "",
-      tuitionFees: "",
+      tuitionFees: "€8,000–€16,300 per year"
     },
     {
       name: "Technical University of Denmark (DTU)",
       country: "Denmark",
-      historicalPrestige: "",
-      academicExcellence: "",
+      historicalPrestige: "Founded in 1829 by Hans Christian Ørsted as Denmark's first polytechnic. Today a leading engineering institution in Europe.",
+      academicExcellence: "Strong focus on engineering, technology, and innovation, close collaboration with industry and international research partners. QS ranking 107.",
       nobelLegacy: "",
-      distance: "",
-      preferredSubjects: "",
-      tuitionFees: "",
+      distance: "13.6 km from Copenhagen",
+      preferredSubjects: "Engineering, Technology",
+      tuitionFees: "Approximately €15,000 per year"
     },
     {
       name: "University of Southern Denmark (SDU)",
       country: "Denmark",
-      historicalPrestige: "",
-      academicExcellence: "",
+      historicalPrestige: "Known for excellent research forming the foundation for societally relevant education, with interdisciplinary collaboration across faculties.",
+      academicExcellence: "Leading public university in Denmark, ranked #303 in QS World University Rankings 2025.",
       nobelLegacy: "",
-      distance: "",
+      distance: "Odense, 161.1 km from Copenhagen",
       preferredSubjects: "",
-      tuitionFees: "",
+      tuitionFees: "€6,000–€15,000 per year"
     },
     {
       name: "Roskilde University",
       country: "Denmark",
-      historicalPrestige: "",
-      academicExcellence: "",
+      historicalPrestige: "Founded in 1972, a Danish public university awarding bachelor's, master's, and PhD degrees.",
+      academicExcellence: "Known for unique project-oriented education and emphasis on student involvement in knowledge creation.",
       nobelLegacy: "",
-      distance: "",
+      distance: "Roskilde, 31.2 km from Copenhagen",
       preferredSubjects: "",
-      tuitionFees: "",
+      tuitionFees: "€8,000–€14,000 per year"
     },
     {
       name: "Aalborg University",
       country: "Denmark",
-      historicalPrestige: "",
-      academicExcellence: "",
+      historicalPrestige: "Founded in 1974, an international public university with campuses in Aalborg, Esbjerg, and Copenhagen.",
+      academicExcellence: "Focus on interdisciplinary, inter-faculty studies. QS ranking 306.",
       nobelLegacy: "",
-      distance: "",
+      distance: "Odense, 306.9 km from Copenhagen",
       preferredSubjects: "",
-      tuitionFees: "",
+      tuitionFees: "€7,000–€15,000 per year"
     },
     {
       name: "Copenhagen Business School (CBS)",
       country: "Denmark",
-      historicalPrestige: "",
-      academicExcellence: "",
+      historicalPrestige: "Established in 1917, integrated into Danish higher education in 1965.",
+      academicExcellence: "Famous for business-related subjects. QS Business and Management Studies ranking 15th.",
       nobelLegacy: "",
-      distance: "",
-      preferredSubjects: "",
-      tuitionFees: "",
+      distance: "Very close to Copenhagen, 3 km",
+      preferredSubjects: "Business, Management",
+      tuitionFees: "€16,000 per year"
     },
     {
       name: "Niels Brock Copenhagen Business College",
       country: "Denmark",
-      historicalPrestige: "",
+      historicalPrestige: "Established in 1981, Denmark's oldest business college providing degrees in collaboration with De Montfort University, UK.",
       academicExcellence: "",
       nobelLegacy: "",
-      distance: "",
-      preferredSubjects: "",
-      tuitionFees: "",
+      distance: "Copenhagen (Capital)",
+      preferredSubjects: "Business",
+      tuitionFees: "Approximately €13,500 per year"
     },
     {
       name: "International Business Academy (IBA)",
       country: "Denmark",
-      historicalPrestige: "",
-      academicExcellence: "",
+      historicalPrestige: "Located in Kolding, offers AP, Bachelor, Master, and MBA-level programs in business, marketing, and finance.",
+      academicExcellence: "Known for practical, applied business education with global perspective, English-taught programs, and industry connections.",
       nobelLegacy: "",
-      distance: "",
-      preferredSubjects: "",
-      tuitionFees: "",
-    },
+      distance: "Kolding, 232 km from Copenhagen",
+      preferredSubjects: "Business, Marketing, Finance",
+      tuitionFees: "€10,000–€13,000 per year"
+    }
   ],
 
   Finland: [
     {
       name: "University of Helsinki",
-      details: "Finland's oldest and largest university with diverse programs.",
+      country: "Finland",
+      historicalPrestige: "Founded in Turku in 1640 under the Swedish Empire, moved to Helsinki in 1828. Oldest and largest university in Finland with 11 faculties and 11 research institutes.",
+      academicExcellence: "Ranked 116th in QS World University Rankings 2026. Offers a wide range of disciplines and strong research programs.",
+      nobelLegacy: "",
+      distance: "Located in Helsinki (Capital)",
+      preferredSubjects: "",
+      tuitionFees: "€13,000–€18,000 per year. Scholarships 0–100%"
     },
     {
-      name: "Aalto University",
-      details: "Known for technology, business, and arts.",
+      name: "Tampere University",
+      country: "Finland",
+      historicalPrestige: "Established January 1, 2019, as a merger of the former University of Tampere and Tampere University of Technology. Second largest university in Finland by student enrollment.",
+      academicExcellence: "Ranked 423rd in QS World University Rankings. Known for technology, business, and health sciences.",
+      nobelLegacy: "",
+      distance: "178 km from Helsinki",
+      preferredSubjects: "Technology, Business, Health Sciences",
+      tuitionFees: "€10,000–€12,000 per year. Scholarships 0–100%"
     },
     {
-      name: "University of Helsinki",
-      details:
-        "Finland's oldest and largest university, known for high-quality research and international rankings. It offers many master's and doctoral programs in English.",
+      name: "LUT University",
+      country: "Finland",
+      historicalPrestige: "Lappeenranta-Lahti University of Technology LUT, established in 1969 as a Finnish public research university.",
+      academicExcellence: "Ranked 397th in QS World University Rankings 2026. Overall score 4.6 stars based on student reviews.",
+      nobelLegacy: "",
+      distance: "223.2 km from Helsinki",
+      preferredSubjects: "Engineering, Technology",
+      tuitionFees: "€12,000–€15,000 per year. Scholarships 0–100%"
     },
     {
-      name: "Aalto University",
-      details:
-        "Formed from the merger of three major Finnish institutions (technology, business, and art/design), Aalto is a leader in innovation and entrepreneurship.",
-    },
-    {
-      name: "University of Turku",
-      details:
-        "A multidisciplinary university known for research and a strong international orientation, especially in biosciences and humanities.",
-    },
+      name: "University of Vaasa",
+      country: "Finland",
+      historicalPrestige: "Multidisciplinary, business-oriented university in Vaasa, Finland.",
+      academicExcellence: "Ranked between 401–500 in QS World University Rankings 2025.",
+      nobelLegacy: "",
+      distance: "424.4 km from Helsinki",
+      preferredSubjects: "Business, Economics",
+      tuitionFees: "€10,000–€14,000 per year"
+    }
   ],
 
   Hungary: [

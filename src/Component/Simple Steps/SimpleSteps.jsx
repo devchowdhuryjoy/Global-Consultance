@@ -73,7 +73,7 @@ const SimpleSteps = () => {
             >
               {step.icon}
             </div>
-            <h2 className="text-red-600 font-semibold text-[#f16f22]">
+            <h2 className="font-semibold text-[#f16f22]">
               {step.title}
             </h2>
             <h3 className="font-bold text-[#000] text-md mb-2">
