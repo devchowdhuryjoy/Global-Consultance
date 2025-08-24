@@ -27,7 +27,7 @@ const StudyAbroadServices = () => {
       title: "Student Accommodation",
       icon: <FaHome className="text-rose-500 text-xl" />,
       bg: "bg-rose-100",
-      path: null, // No path yet
+      path: "/student-accommodation",
     },
     {
       title: "Visa Services",

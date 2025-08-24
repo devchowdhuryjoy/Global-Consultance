@@ -1,62 +1,124 @@
 import React from "react";
-import { FaClock } from "react-icons/fa";
+import { ArrowRight } from "lucide-react";
+import SuccessStories from "../../SuccessStories/SuccessStories";
+import SimpleSteps from "../../Simple Steps/SimpleSteps";
 
 const StudenntsAccom = () => {
-  const countries = [
-    "UK",
-    "Ireland",
-    "Australia",
-    "Canada",
-    "New Zealand",
-    "USA",
-    "France",
-    "Germany",
-    "Spain",
+  const factors = [
+    {
+      title: "Location & Connectivity",
+      description:
+        "Choose accommodation close to your university or with easy access to public transport, shops, and essentials.",
+    },
+    {
+      title: "Safety & Security",
+      description:
+        "Check for secure entry, CCTV, and emergency support to ensure a safe living environment.",
+    },
+    {
+      title: "Budget & Inclusions",
+      description:
+        "Compare costs and see what’s included—utilities, internet, furnishings, etc.—to avoid hidden expenses.",
+    },
+    {
+      title: "Amenities & Facilities",
+      description:
+        "Look for features like laundry, kitchen, study areas, and social spaces that support both study and lifestyle.",
+    },
+    {
+      title: "Contract Flexibility",
+      description:
+        "Review lease terms, cancellation policies, and notice periods in case your plans change.",
+    },
   ];
 
   return (
-    <div className="bg-[#f6f4ff] py-10 px-4 sm:px-6 lg:px-12">
-      {/* Tabs */}
-      <div className="flex flex-wrap justify-center gap-4 mb-10">
-        {countries.map((country, index) => (
-          <button
-            key={index}
-            className="text-[#252364] font-semibold hover:text-[#f16f22] transition"
-          >
-            {country}
-          </button>
-        ))}
-      </div>
+    <>
+      <section className="bg-[#E6F6FA] py-12 px-6 md:px-16 lg:px-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div>
+            <span className="text-[#f16f22] font-medium text-sm bg-red-50 px-3 py-1 rounded">
+              Services
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0B2B61] mt-4 leading-snug">
+              Find Affordable and Trusted <br /> Student Accomodations
+            </h2>
+            <p className="text-blackmt-4 max-w-lg">
+              Unlock global opportunities with seamless guidance from
+              application to acceptance.
+            </p>
+            <button className="mt-6 inline-flex items-center bg-[#f16f22] hover:bg-[#252364] text-white font-medium px-6 py-3 rounded-lg shadow-md transition-all">
+              Book a Free Consultation
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </button>
+          </div>
 
-      {/* Blog Card */}
-      <div className="bg-white rounded-2xl shadow-md p-6 sm:p-8 flex flex-col md:flex-row items-center gap-6 max-w-6xl mx-auto">
-        {/* Left Content */}
-        <div className="md:w-1/2 w-full">
-          <h3 className="text-lg sm:text-xl font-semibold text-[#252364] mb-3">
-            How Much Does it Cost to Study Abroad in 2024?
-          </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
-            Summary | IELTS is a globally recognized English proficiency test
-            for study, work, and migration. It assesses Listening, Reading,
-            Writing, and Speaking through Academic and General Training formats.
-            A high score boosts […]
-          </p>
-          <div className="flex items-center text-gray-500 text-sm gap-2">
-            <FaClock />
-            <span>7 days ago</span>
+          {/* Right Image */}
+          <div className="flex justify-center lg:justify-end relative">
+            <div className="relative max-w-sm">
+              {/* Background Shape */}
+              <div className="absolute inset-0 rounded-lg -rotate-2 z-0"></div>
+              {/* Foreground Image */}
+              <img
+                src="student-2.png"
+                alt="Student Accommodation"
+                className="relative z-10 rounded-lg shadow-lg"
+              />
+            </div>
           </div>
         </div>
+      </section>
 
-        {/* Right Image */}
-        <div className="md:w-1/2 w-full">
-          <img
-            src="studyuk.jpg" // replace with your actual image path
-            alt="Study Abroad"
-            className="rounded-xl w-full object-cover"
-          />
+      <section className="bg-white py-12 px-6 md:px-16 lg:px-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Text */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0B2B61] mb-4">
+              Factors to Consider before Finalizing a Student Accommodation
+            </h2>
+            <p className="text-gray-700 mb-8">
+              Here are some of the key factors that will vary based on the needs
+              of each student:
+            </p>
+
+            <ul className="space-y-6">
+              {factors.map((item, index) => (
+                <li key={index} className="flex items-start">
+                  {/* Icon / Shape */}
+                  <div className="w-3 h-6 bg-[#252364] rotate-12 mt-1 mr-4"></div>
+                  <div>
+                    <h3 className="font-bold text-lg text-[#252364]">
+                      {item.title}
+                    </h3>
+                    <p className="text-black text-sm md:text-base">
+                      {item.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative">
+              <img
+                src="Studyabroad.jpg"
+                alt="Student unpacking"
+                className="rounded-2xl shadow-lg relative z-10"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+      
+
+      <SuccessStories/>
+
+      <SimpleSteps/>
+
+    </>
   );
 };
 
