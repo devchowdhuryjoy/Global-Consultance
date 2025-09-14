@@ -1171,59 +1171,60 @@ const scholarships = [
   {
     country: "UK",
     description:
-      "The UK offers prestigious scholarships such as Chevening, Commonwealth, Rhodes, and Gates Cambridge. Universities like Oxford, Cambridge, Imperial, and UCL provide merit-based awards. Other options include Clarendon, Edinburgh Global Research, and Bristol Think Big Scholarships. Focus areas include leadership, science, arts, and business. Opportunities support both undergraduate and graduate students.",
+      "The UK offers prestigious scholarships like Chevening, Commonwealth, and Rhodes. These focus on leadership, research, science, arts, and business. Both undergraduate and postgraduate students can apply. Most awards are merit-based and open to international students.",
   },
   {
     country: "USA",
     description:
-      "The USA has renowned programs like Fulbright, Hubert H. Humphrey Fellowship, and AAUW International Fellowships. Top universities include Harvard, Yale, Stanford, and MIT. Additional opportunities are Clark Global Scholarships, MasterCard Foundation, and Rotary Peace Fellowships. Covers various fields including business, engineering, arts, and social sciences. Open to students with academic excellence and leadership potential.",
+      "The USA provides well-known scholarships such as Fulbright and Humphrey. They support students with strong academic and leadership potential. Opportunities cover business, engineering, arts, and social sciences. Available for both undergraduate and postgraduate levels.",
   },
   {
     country: "Canada",
     description:
-      "Canada offers Vanier Canada Graduate Scholarships and Canada Graduate Scholarships. Universities like UBC, McGill, Alberta, and York provide international awards. Lester B. Pearson and Pierre Elliott Trudeau Foundation scholarships are also available. Fields include science, engineering, arts, leadership, and research. Scholarships support both undergraduate and graduate students.",
+      "Canada offers scholarships for talented international students. They focus on research, science, engineering, arts, and leadership. Support is available for undergraduate and postgraduate studies. Many awards cover full or partial tuition fees.",
   },
   {
     country: "Sweden",
     description:
-      "Sweden provides scholarships through Swedish Institute and Karolinska Institutet. Other options include Lund, Uppsala, Chalmers, Stockholm, Malmö, Blekinge, Halmstad, and KTH scholarships. Focused on global master's programs and research excellence. Fields include engineering, medicine, science, arts, and leadership. Open to international students with academic merit.",
+      "Sweden provides scholarships through government and national programs. They mainly support master's and research studies. Fields include engineering, medicine, science, arts, and leadership. Open to international students with academic merit.",
   },
   {
     country: "Denmark",
     description:
-      "Denmark offers government scholarships, Erasmus+ grants, and university awards. Major universities include Copenhagen, Aarhus, DTU, CBS, Roskilde, and Aalborg. Supports studies in business, engineering, science, and arts. Opportunities are available for undergraduate and postgraduate students. Encourages international applicants and research programs.",
+      "Denmark offers government scholarships, Erasmus+ grants, and other awards. Opportunities are available for undergraduate and postgraduate students. Popular areas include business, engineering, science, and arts. Many programs welcome international applicants.",
   },
   {
     country: "Finland",
     description:
-      "Finland provides government and university-specific scholarships. Top universities include Helsinki, Aalto, Turku, Oulu, Tampere, Lappeenranta, Hanken, and Arcada. Covers engineering, science, business, and arts programs. Scholarships are for international students with academic excellence. Both short-term and full-degree funding available.",
+      "Finland provides scholarships funded by government and institutions. They cover engineering, science, business, and arts studies. Awards are based on academic excellence and merit. Options include both short-term and full-degree support.",
   },
   {
     country: "Hungary",
     description:
-      "Hungary offers Stipendium Hungaricum and Hungarian Diaspora Scholarships. Erasmus+ scholarships are also available. Universities include Debrecen, Central European University, BME, Pécs, Eötvös Loránd, Szent István, and Corvinus. Fields include engineering, science, arts, and business. Open for international students with academic merit.",
+      "Hungary offers scholarships such as Stipendium Hungaricum and other state-funded programs. These are open to international students with strong academic results. Fields include engineering, science, business, and arts. Support is available for undergraduate and postgraduate levels.",
   },
   {
     country: "Italy",
     description:
-      "Italy provides government and Scuola Normale Superiore PhD scholarships. Universities include Bologna, Bocconi, Politecnico di Milano, Padua, Pavia, Rome, Milan, and Trento. Merit-based scholarships cover science, arts, engineering, and business. Opportunities for undergraduate and graduate students. Supports academic excellence and international applicants.",
+      "Italy provides government and research-based scholarships. They support both undergraduate and postgraduate students. Awards often focus on science, arts, business, and engineering. Most are merit-based and encourage international applicants.",
   },
   {
     country: "France",
     description:
-      "France offers Eiffel Excellence Scholarships and awards from École Normale Supérieure. Other options include Sciences Po, Université Paris-Saclay, INSEAD, Grenoble Institute of Technology, ENS Lyon, École Polytechnique, and HEC Paris. Covers business, engineering, arts, and sciences. Open to international students with strong academic performance. Funding supports full-degree or research programs.",
+      "France offers scholarships through national and international programs. They cover fields such as business, science, engineering, and arts. Many awards support tuition and living costs. Scholarships are merit-based and open to global students.",
   },
   {
     country: "Dubai",
     description:
-      "Dubai scholarships include Khalifa University, Mohamed bin Zayed University, American University in Dubai, University of Dubai, Zayed University, Canadian University Dubai, Middlesex University Dubai, Al Qasimia, and Emirates Aviation University. Focus on engineering, business, media, and architecture. Open for international students. Supports both undergraduate and graduate programs. Merit-based and competitive awards.",
+      "Dubai provides competitive scholarships for international students. They support studies in engineering, business, media, and architecture. Opportunities are available for both undergraduate and postgraduate levels. Most are merit-based and cover tuition fees.",
   },
   {
     country: "Malaysia",
     description:
-      "Malaysia offers MIS and MTCP scholarships. Universities include UM, UTP, USM, UKM, Sunway, UCSI, Multimedia University, Asia Pacific University, and Taylor's University. Covers engineering, law, business, science, and arts programs. Scholarships available for international students with academic merit. Supports undergraduate and postgraduate studies.",
+      "Malaysia offers scholarships through government and national programs. Fields include engineering, law, business, science, and arts. Both undergraduate and postgraduate students can apply. Awards are merit-based and may cover full or partial tuition fees.",
   },
 ];
+
 
 
 const ScolarshipInAustralia = () => {

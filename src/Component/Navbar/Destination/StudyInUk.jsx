@@ -1140,27 +1140,107 @@ import CountryUniversityModal from "../../../Modal/CountryUniversityModal";
 
 const data = {
   UK: [
-    {
-      name: "Imperial College London",
-      details: "Imperial is a science-focused institution known for its excellence in engineering, medicine, and technology. It's especially respected for STEM subjects.",
-    },
-    {
-      name: "University College London (UCL)",
-      details: "A multidisciplinary university located in the heart of London, UCL is known for research innovation and global outlook.",
-    },
-    {
-      name: "University of Edinburgh",
-      details: "One of the most prestigious universities in Scotland and the UK, it has a rich history and is known for a strong focus on research and international collaboration.",
-    },
-    {
-      name: "King's College London (KCL)",
-      details: "A historic university with strengths in health sciences, social sciences, and humanities. It’s known for its research and teaching in the heart of London.",
-    },
-    {
-      name: "University of Manchester",
-      details: "A member of the Russell Group, it's known for strong research impact and vibrant student life. It’s especially strong in science and engineering.",
-    },
-  ],
+  {
+    name: "University of Hertfordshire",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Ranked in the 601–800 band globally (THE, 2019).",
+    nobelLegacy: "",
+    distance: "Hatfield, Hertfordshire—approx. 20 mi north of London (~25-minute train).",
+    preferredSubjects: "Animation (Top 20 globally), Pharmacy, Business, Computer Science, Engineering, Health Sciences, Law",
+    tuitionFees: "UG: £15,965 (2025–26, £1,000 discount for upfront payment, scholarships up to £2,000); PG: £17,250 (1-year), £18,800–£19,800 (non-standard)"
+  },
+  {
+    name: "University of Greenwich",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Awarded Gold in the Teaching Excellence Framework (TEF) – 2023.",
+    nobelLegacy: "",
+    distance: "Located within London (Greenwich campus).",
+    preferredSubjects: "Events, Tourism, Hospitality, Chemistry, Forensic Science, Criminology, Engineering, Business, Computing, Architecture",
+    tuitionFees: "UG: £16,700–£17,700; PG: £17,450–£21,000; Scholarships: up to £3,500"
+  },
+  {
+    name: "University of Huddersfield",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Five-Star rating; QS top 300 in 14 subjects; Performing Arts #37 globally; Petroleum Engineering Top 100.",
+    nobelLegacy: "",
+    distance: "West Yorkshire—~200 mi north of London (~2–2.5 hours by train).",
+    preferredSubjects: "Performing Arts, Petroleum Engineering, Placement-oriented courses",
+    tuitionFees: "UG/PG: Around £15,700 (before discount)"
+  },
+  {
+    name: "London South Bank University (LSBU)",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Awarded Silver in TEF (2023).",
+    nobelLegacy: "",
+    distance: "Located centrally in London (Elephant & Castle).",
+    preferredSubjects: "Health, Engineering, Creative Industries",
+    tuitionFees: "UG: from £15,500; PG: from £16,000; MSc/MA programs: £18,600–£19,840"
+  },
+  {
+    name: "Ulster University",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Awarded UK & Ireland University of the Year 2024 (THE Awards); top 150 globally among under-50 universities.",
+    nobelLegacy: "",
+    distance: "Based in Northern Ireland (Belfast, Coleraine) – accessible via flight or long transit.",
+    preferredSubjects: "Law, Biomedical Sciences, Nursing, Media/Film, Sport, Architecture, Business, Computing",
+    tuitionFees: "UG: ~£14,000; PG: £15,000–£17,000; London campus UG: £12,600; PG: £15,450–£25,050"
+  },
+  {
+    name: "University of Portsmouth",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Ranked 401–500 globally (THE 2025); QS ~635 (2026).",
+    nobelLegacy: "",
+    distance: "Southern coast, ~70 miles from London (~1.5 hours by train).",
+    preferredSubjects: "Law, Business, Psychology, Computer Science, Engineering, Nursing, Health Professions",
+    tuitionFees: "UG/PG: £16,200–£19,200; Placement: additional £2,875–£19,200; Scholarships: £2,000–£2,500 available"
+  },
+  {
+    name: "Anglia Ruskin University (ARU) — ARU London",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Ranked within THE’s top 301–350 (2022); UK rank ~114 (Complete), ~97 (Guardian).",
+    nobelLegacy: "",
+    distance: "London campus (ARU London), also in Cambridge and Peterborough.",
+    preferredSubjects: "Business, Computing, Social Sciences, Applied Subjects",
+    tuitionFees: "UG: £16,700; PG: £18,600 (MSc programs), £20,200 (MBA)"
+  },
+  {
+    name: "Coventry University",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Ranked 38th UK (Guardian 2023), 44th UK (Complete Guide); QS 601–650 globally (2020).",
+    nobelLegacy: "",
+    distance: "~95 miles northwest of London (1–1.5 hours by train).",
+    preferredSubjects: "Food Science, Hospitality, Architecture, Media/Film, Engineering, Nursing, Mathematics, Design, International Relations",
+    tuitionFees: "UG: ~£13,900; PG MSc: £16,600–£16,700; MBA: ~£18,600"
+  },
+  {
+    name: "University of Bedfordshire",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Awarded Queen’s Award for Enterprise (International Trade); noted for strong community collaborations.",
+    nobelLegacy: "",
+    distance: "Luton campus ~35 miles north of London (~25 minutes by train).",
+    preferredSubjects: "Business, Health/Nursing, Social Sciences, Education, Computing",
+    tuitionFees: "UG: £15,500; PG: £15,600; MBA: £17,000; 2-year Master’s: £18,300; 2-year MBA: £19,700; Scholarships up to £6,000"
+  },
+  {
+    name: "University of Winchester",
+    country: "UK",
+    historicalPrestige: "",
+    academicExcellence: "Recognized for teaching quality and student support; modest global profile.",
+    nobelLegacy: "",
+    distance: "~65 miles southwest of London (~1 hour by train).",
+    preferredSubjects: "Humanities, Arts, Education, Health, Creative Industries",
+    tuitionFees: "UG: £16,700; PG: £17,450; Distance learning MSc: £11,820/year"
+  }
+]
   
 };
 
@@ -1254,7 +1334,7 @@ const StudyInUk = () => {
           </div>
         </div>
 
-        {selectedUniversities.length > 0 && (
+        {/* {selectedUniversities.length > 0 && (
           <div className="space-y-4 mb-6">
             {selectedUniversityDetails.map((uni) => (
               <div
@@ -1265,6 +1345,52 @@ const StudyInUk = () => {
                   {uni.name}
                 </h2>
                 <p className="text-gray-800">{uni.details}</p>
+              </div>
+            ))}
+          </div>
+        )} */}
+
+          {selectedUniversities.length > 0 && (
+          <div className="space-y-4 mb-6">
+            {selectedUniversityDetails.map((uni) => (
+              <div
+                key={`${uni.country}-${uni.name}`}
+                className="bg-white shadow rounded p-6 border border-gray-100"
+              >
+                <div className="flex justify-between items-start">
+                  <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
+                    {uni.name}
+                  </h2>
+                  <span className="text-sm bg-gray-100 px-2 py-1 rounded text-gray-600">
+                    {uni.country}
+                  </span>
+                </div>
+
+                {/* Image er moto design */}
+                <ul className="space-y-3 text-black mb-4 text-justify break-words hyphens-auto">
+                  <li>
+                    <strong>Historical Prestige:</strong>{" "}
+                    {uni.historicalPrestige}
+                  </li>
+                  <li>
+                    <strong>Academic Excellence:</strong>{" "}
+                    {uni.academicExcellence}
+                  </li>
+                  <li>
+                    <strong>Nobel Legacy:</strong> {uni.nobelLegacy}
+                  </li>
+                </ul>
+
+                <p className="mb-1 text-justify break-words hyphens-auto">
+                  <strong>Distance:</strong> {uni.distance}
+                </p>
+                <p
+                  className="mb-1">
+                  <strong>Preferred Subjects:</strong> {uni.preferredSubjects}
+                </p>
+                <p className="mb-1 text-justify break-words hyphens-auto">
+                  <strong>Tuition Fees:</strong> {uni.tuitionFees}
+                </p>
               </div>
             ))}
           </div>
