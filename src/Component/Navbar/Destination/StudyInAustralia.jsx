@@ -5,163 +5,254 @@ import MultipleCountryUniversityModal from "../../../Modal/MultipleCountryUniver
 const data = {
   Sweden: [
     {
-      name: "Karolinska Institute",
-      details: "World-class medical university in Sweden.",
+      name: "Stockholm University (SU), Stockholm",
+      country: "Sweden",
+      historicalPrestige:
+        "Founded as a college in 1878, granted university status in 1960, making it the fourth oldest Swedish university.",
+      academicExcellence:
+        "One of Scandinavia’s largest universities with ~33,000 students; strong in law, humanities, social sciences, and natural sciences.",
+      nobelLegacy: "",
+      distance: "0 km (located in the capital, Stockholm)",
+      preferredSubjects: "Law, Humanities, Social Sciences, Natural Sciences",
+      tuitionFees:
+        "€7,000–€12,000 per year; partial/full scholarships available",
     },
     {
-      name: "Lund University",
-      details: "Known for strong research and international collaboration.",
+      name: "Uppsala University (UU), Uppsala",
+      country: "Sweden",
+      historicalPrestige:
+        "Founded in 1477, the oldest university in Sweden and the Nordic countries still in operation.",
+      academicExcellence:
+        "Famous for high-quality education and research; notable alumni include Carl Linnaeus and Anders Celsius.",
+      nobelLegacy: "",
+      distance: "~72.4 km north of Stockholm",
+      preferredSubjects: "Sciences, Humanities, Social Sciences",
+      tuitionFees: "€8,000–€14,000 per year",
     },
     {
-      name: "McGill University",
-      details:
-        "A globally respected research university known for its high academic standards, located in a bilingual city with strong cultural heritage.",
+      name: "Lund University, Lund",
+      country: "Sweden",
+      historicalPrestige:
+        "Officially founded in 1666; one of Northern Europe’s oldest and most prestigious universities.",
+      academicExcellence:
+        "Globally top-ranked; strong in Geography, Development Studies, Environmental Sciences, and Sustainability.",
+      nobelLegacy: "",
+      distance: "~605 km from Stockholm",
+      preferredSubjects:
+        "Geography, Development Studies, Environmental Sciences",
+      tuitionFees: "€9,000–€14,000 per year",
     },
     {
-      name: "University of Toronto (U of T)",
-      details:
-        "Canada's top-ranked university, globally recognized for research, innovation, and academic excellence. It has three campuses: St. George (downtown Toronto), Mississauga, and Scarborough.",
+      name: "University of Gothenburg, Gothenburg",
+      country: "Sweden",
+      historicalPrestige:
+        "Founded in 1891; third-oldest of current Swedish universities, with over 53,000 students.",
+      academicExcellence:
+        "Covers eight faculties including Arts, Social Sciences, Natural Sciences, Education, IT, Business, Law, and Health Sciences.",
+      nobelLegacy: "",
+      distance: "~469 km from Stockholm",
+      preferredSubjects:
+        "Business, Law, Social Sciences, Natural Sciences, Health Sciences, Arts",
+      tuitionFees: "€7,000–€25,000 per year",
     },
     {
-      name: "University of British Columbia (UBC)",
-      details:
-        "One of Canada's most prestigious universities, UBC is known for strong sustainability and environmental research, as well as a diverse international student population.",
+      name: "Malmö University, Malmö",
+      country: "Sweden",
+      historicalPrestige:
+        "Established in 1998; Sweden’s ninth largest higher education institution with strong international orientation.",
+      academicExcellence:
+        "Known for global exchange programs and diversity; ranked #28 in Business & Management Studies (QS by Subject 2025).",
+      nobelLegacy: "",
+      distance: "~614 km from Stockholm",
+      preferredSubjects: "Business, Management, International Studies",
+      tuitionFees: "€7,000–€12,000 per year",
+    },
+    {
+      name: "Mid Sweden University, Östersund & Sundsvall",
+      country: "Sweden",
+      historicalPrestige:
+        "Founded in 1993; located near the geographical center of Sweden with two campuses.",
+      academicExcellence:
+        "Recognized for sustainability and regional development; QS Europe University Rankings (2024): #601+.",
+      nobelLegacy: "",
+      distance: "~557 km from Stockholm",
+      preferredSubjects: "Sustainability, Regional Studies, Social Sciences",
+      tuitionFees: "€9,000–€18,000 per year",
+    },
+    {
+      name: "Linnaeus University (LNU), Växjö & Kalmar",
+      country: "Sweden",
+      historicalPrestige:
+        "Established in 2010 by merging Växjö University and Kalmar University; named after Carl Linnaeus.",
+      academicExcellence:
+        "Committed to research and industry collaboration; QS World University Rankings 2024: #601–650.",
+      nobelLegacy: "",
+      distance: "~459 km from Stockholm",
+      preferredSubjects: "Interdisciplinary Studies, Business, Technology",
+      tuitionFees: "€7,500–€23,000 per year",
     },
   ],
+
   Denmark: [
     {
       name: "University of Copenhagen",
       country: "Denmark",
-      historicalPrestige: "Founded in 1479, it is Denmark’s oldest university and a major knowledge and culture-bearing institution, providing a framework for critical thinking, insights, and research-based education.",
-      academicExcellence: "Consistently ranks as the top university in Denmark. QS ranking 101. Has 37,000 students and over 5,000 researchers.",
-      nobelLegacy: "10 Nobel Prizes have been awarded to researchers at the University.",
+      historicalPrestige:
+        "Founded in 1479, it is Denmark’s oldest university and a major knowledge and culture-bearing institution, providing a framework for critical thinking, insights, and research-based education.",
+      academicExcellence:
+        "Consistently ranks as the top university in Denmark. QS ranking 101. Has 37,000 students and over 5,000 researchers.",
+      nobelLegacy:
+        "10 Nobel Prizes have been awarded to researchers at the University.",
       distance: "Located in Copenhagen (Capital)",
       preferredSubjects: "",
-      tuitionFees: "Approximately €10,000–€16,000 per year"
+      tuitionFees: "Approximately €10,000–€16,000 per year",
     },
     {
       name: "Aarhus University",
       country: "Denmark",
-      historicalPrestige: "Founded on September 11, 1928, it is Denmark’s second-oldest and second-largest university with strong national and international research contributions.",
-      academicExcellence: "Renowned for high-quality research, strong international focus, research-based teaching, and English-taught programs.",
+      historicalPrestige:
+        "Founded on September 11, 1928, it is Denmark’s second-oldest and second-largest university with strong national and international research contributions.",
+      academicExcellence:
+        "Renowned for high-quality research, strong international focus, research-based teaching, and English-taught programs.",
       nobelLegacy: "",
       distance: "192 km from Copenhagen",
       preferredSubjects: "",
-      tuitionFees: "€8,000–€16,300 per year"
+      tuitionFees: "€8,000–€16,300 per year",
     },
     {
       name: "Technical University of Denmark (DTU)",
       country: "Denmark",
-      historicalPrestige: "Founded in 1829 by Hans Christian Ørsted as Denmark's first polytechnic. Today a leading engineering institution in Europe.",
-      academicExcellence: "Strong focus on engineering, technology, and innovation, close collaboration with industry and international research partners. QS ranking 107.",
+      historicalPrestige:
+        "Founded in 1829 by Hans Christian Ørsted as Denmark's first polytechnic. Today a leading engineering institution in Europe.",
+      academicExcellence:
+        "Strong focus on engineering, technology, and innovation, close collaboration with industry and international research partners. QS ranking 107.",
       nobelLegacy: "",
       distance: "13.6 km from Copenhagen",
       preferredSubjects: "Engineering, Technology",
-      tuitionFees: "Approximately €15,000 per year"
+      tuitionFees: "Approximately €15,000 per year",
     },
     {
       name: "University of Southern Denmark (SDU)",
       country: "Denmark",
-      historicalPrestige: "Known for excellent research forming the foundation for societally relevant education, with interdisciplinary collaboration across faculties.",
-      academicExcellence: "Leading public university in Denmark, ranked #303 in QS World University Rankings 2025.",
+      historicalPrestige:
+        "Known for excellent research forming the foundation for societally relevant education, with interdisciplinary collaboration across faculties.",
+      academicExcellence:
+        "Leading public university in Denmark, ranked #303 in QS World University Rankings 2025.",
       nobelLegacy: "",
       distance: "Odense, 161.1 km from Copenhagen",
       preferredSubjects: "",
-      tuitionFees: "€6,000–€15,000 per year"
+      tuitionFees: "€6,000–€15,000 per year",
     },
     {
       name: "Roskilde University",
       country: "Denmark",
-      historicalPrestige: "Founded in 1972, a Danish public university awarding bachelor's, master's, and PhD degrees.",
-      academicExcellence: "Known for unique project-oriented education and emphasis on student involvement in knowledge creation.",
+      historicalPrestige:
+        "Founded in 1972, a Danish public university awarding bachelor's, master's, and PhD degrees.",
+      academicExcellence:
+        "Known for unique project-oriented education and emphasis on student involvement in knowledge creation.",
       nobelLegacy: "",
       distance: "Roskilde, 31.2 km from Copenhagen",
       preferredSubjects: "",
-      tuitionFees: "€8,000–€14,000 per year"
+      tuitionFees: "€8,000–€14,000 per year",
     },
     {
       name: "Aalborg University",
       country: "Denmark",
-      historicalPrestige: "Founded in 1974, an international public university with campuses in Aalborg, Esbjerg, and Copenhagen.",
-      academicExcellence: "Focus on interdisciplinary, inter-faculty studies. QS ranking 306.",
+      historicalPrestige:
+        "Founded in 1974, an international public university with campuses in Aalborg, Esbjerg, and Copenhagen.",
+      academicExcellence:
+        "Focus on interdisciplinary, inter-faculty studies. QS ranking 306.",
       nobelLegacy: "",
       distance: "Odense, 306.9 km from Copenhagen",
       preferredSubjects: "",
-      tuitionFees: "€7,000–€15,000 per year"
+      tuitionFees: "€7,000–€15,000 per year",
     },
     {
       name: "Copenhagen Business School (CBS)",
       country: "Denmark",
-      historicalPrestige: "Established in 1917, integrated into Danish higher education in 1965.",
-      academicExcellence: "Famous for business-related subjects. QS Business and Management Studies ranking 15th.",
+      historicalPrestige:
+        "Established in 1917, integrated into Danish higher education in 1965.",
+      academicExcellence:
+        "Famous for business-related subjects. QS Business and Management Studies ranking 15th.",
       nobelLegacy: "",
       distance: "Very close to Copenhagen, 3 km",
       preferredSubjects: "Business, Management",
-      tuitionFees: "€16,000 per year"
+      tuitionFees: "€16,000 per year",
     },
     {
       name: "Niels Brock Copenhagen Business College",
       country: "Denmark",
-      historicalPrestige: "Established in 1981, Denmark's oldest business college providing degrees in collaboration with De Montfort University, UK.",
+      historicalPrestige:
+        "Established in 1981, Denmark's oldest business college providing degrees in collaboration with De Montfort University, UK.",
       academicExcellence: "",
       nobelLegacy: "",
       distance: "Copenhagen (Capital)",
       preferredSubjects: "Business",
-      tuitionFees: "Approximately €13,500 per year"
+      tuitionFees: "Approximately €13,500 per year",
     },
     {
       name: "International Business Academy (IBA)",
       country: "Denmark",
-      historicalPrestige: "Located in Kolding, offers AP, Bachelor, Master, and MBA-level programs in business, marketing, and finance.",
-      academicExcellence: "Known for practical, applied business education with global perspective, English-taught programs, and industry connections.",
+      historicalPrestige:
+        "Located in Kolding, offers AP, Bachelor, Master, and MBA-level programs in business, marketing, and finance.",
+      academicExcellence:
+        "Known for practical, applied business education with global perspective, English-taught programs, and industry connections.",
       nobelLegacy: "",
       distance: "Kolding, 232 km from Copenhagen",
       preferredSubjects: "Business, Marketing, Finance",
-      tuitionFees: "€10,000–€13,000 per year"
-    }
+      tuitionFees: "€10,000–€13,000 per year",
+    },
   ],
 
   Finland: [
     {
       name: "University of Helsinki",
       country: "Finland",
-      historicalPrestige: "Founded in Turku in 1640 under the Swedish Empire, moved to Helsinki in 1828. Oldest and largest university in Finland with 11 faculties and 11 research institutes.",
-      academicExcellence: "Ranked 116th in QS World University Rankings 2026. Offers a wide range of disciplines and strong research programs.",
+      historicalPrestige:
+        "Founded in Turku in 1640 under the Swedish Empire, moved to Helsinki in 1828. Oldest and largest university in Finland with 11 faculties and 11 research institutes.",
+      academicExcellence:
+        "Ranked 116th in QS World University Rankings 2026. Offers a wide range of disciplines and strong research programs.",
       nobelLegacy: "",
       distance: "Located in Helsinki (Capital)",
       preferredSubjects: "",
-      tuitionFees: "€13,000–€18,000 per year. Scholarships 0–100%"
+      tuitionFees: "€13,000–€18,000 per year. Scholarships 0–100%",
     },
     {
       name: "Tampere University",
       country: "Finland",
-      historicalPrestige: "Established January 1, 2019, as a merger of the former University of Tampere and Tampere University of Technology. Second largest university in Finland by student enrollment.",
-      academicExcellence: "Ranked 423rd in QS World University Rankings. Known for technology, business, and health sciences.",
+      historicalPrestige:
+        "Established January 1, 2019, as a merger of the former University of Tampere and Tampere University of Technology. Second largest university in Finland by student enrollment.",
+      academicExcellence:
+        "Ranked 423rd in QS World University Rankings. Known for technology, business, and health sciences.",
       nobelLegacy: "",
       distance: "178 km from Helsinki",
       preferredSubjects: "Technology, Business, Health Sciences",
-      tuitionFees: "€10,000–€12,000 per year. Scholarships 0–100%"
+      tuitionFees: "€10,000–€12,000 per year. Scholarships 0–100%",
     },
     {
       name: "LUT University",
       country: "Finland",
-      historicalPrestige: "Lappeenranta-Lahti University of Technology LUT, established in 1969 as a Finnish public research university.",
-      academicExcellence: "Ranked 397th in QS World University Rankings 2026. Overall score 4.6 stars based on student reviews.",
+      historicalPrestige:
+        "Lappeenranta-Lahti University of Technology LUT, established in 1969 as a Finnish public research university.",
+      academicExcellence:
+        "Ranked 397th in QS World University Rankings 2026. Overall score 4.6 stars based on student reviews.",
       nobelLegacy: "",
       distance: "223.2 km from Helsinki",
       preferredSubjects: "Engineering, Technology",
-      tuitionFees: "€12,000–€15,000 per year. Scholarships 0–100%"
+      tuitionFees: "€12,000–€15,000 per year. Scholarships 0–100%",
     },
     {
       name: "University of Vaasa",
       country: "Finland",
-      historicalPrestige: "Multidisciplinary, business-oriented university in Vaasa, Finland.",
-      academicExcellence: "Ranked between 401–500 in QS World University Rankings 2025.",
+      historicalPrestige:
+        "Multidisciplinary, business-oriented university in Vaasa, Finland.",
+      academicExcellence:
+        "Ranked between 401–500 in QS World University Rankings 2025.",
       nobelLegacy: "",
       distance: "424.4 km from Helsinki",
       preferredSubjects: "Business, Economics",
-      tuitionFees: "€10,000–€14,000 per year"
-    }
+      tuitionFees: "€10,000–€14,000 per year",
+    },
   ],
 
   Hungary: [
@@ -356,78 +447,88 @@ const data = {
   ],
 
   France: [
-  {
-    name: "Paris Sciences & Lettres – PSL Research University (PSL)",
-    country: "France",
-    historicalPrestige: "",
-    academicExcellence: "A collegiate university comprising 25+ prestigious institutions, known for excellence in humanities, sciences, economics, physics, biology, and research prestige",
-    nobelLegacy: "",
-    distance: "0 km (within the city)",
-    preferredSubjects: "Physics, Chemistry, Economics, History, Biology",
-    tuitionFees: "About €200–€400/year for public universities (approximate)"
-  },
-  {
-    name: "Sorbonne University",
-    country: "France",
-    historicalPrestige: "",
-    academicExcellence: "Legacy of the historic University of Paris—prestigious in humanities, social sciences, physics, biology, computer science",
-    nobelLegacy: "",
-    distance: "0 km (city center)",
-    preferredSubjects: "Humanities, Social Sciences, Physics, Biology, Computer Science",
-    tuitionFees: "Around €200–€400/year"
-  },
-  {
-    name: "École Polytechnique",
-    country: "France",
-    historicalPrestige: "",
-    academicExcellence: "Elite engineering grande école, highly selective; excellence in engineering, computer science, physics, economics, chemistry",
-    nobelLegacy: "",
-    distance: "0–10 km within greater Paris",
-    preferredSubjects: "Engineering, Computer Science, Physics, Economics, Chemistry",
-    tuitionFees: "Around €12,000/year"
-  },
-  {
-    name: "Université Paris-Saclay",
-    country: "France",
-    historicalPrestige: "",
-    academicExcellence: "STEM research power, cluster of top science and engineering schools (e.g., CentraleSupélec, ENS)",
-    nobelLegacy: "",
-    distance: "~20 km south of Paris",
-    preferredSubjects: "Sciences, Engineering, Pharmacy, Chemistry, Physics",
-    tuitionFees: "Approx. €170 (Bachelor), €243 (Master)"
-  },
-  {
-    name: "Université Grenoble Alpes",
-    country: "France",
-    historicalPrestige: "",
-    academicExcellence: "Large-scale research university in sciences, engineering, humanities, management; strong in technology, AI, micro-nano research",
-    nobelLegacy: "",
-    distance: "~457 km (air); driving ~587 km",
-    preferredSubjects: "Sciences, Engineering, Computer Science, AI, Humanities, Medicine, Architecture, Social Sciences",
-    tuitionFees: "€170 (Bachelor), €243 (Master)"
-  },
-  {
-    name: "Université de Montpellier",
-    country: "France",
-    historicalPrestige: "",
-    academicExcellence: "One of the world’s oldest (est. 1220); robust in research across disciplines and noted for excellence",
-    nobelLegacy: "",
-    distance: "~595 km (air) from Paris",
-    preferredSubjects: "Sciences, Medicine, Humanities, Social Sciences",
-    tuitionFees: "€170 (Bachelor), €243 (Master)"
-  },
-  {
-    name: "Aix-Marseille Université",
-    country: "France",
-    historicalPrestige: "",
-    academicExcellence: "Oldest Francophone institution (origins 1409), largest in France by student body and budget, notable alumni including Nobel laureates",
-    nobelLegacy: "",
-    distance: "~660 km from Paris",
-    preferredSubjects: "Law, Political Science, Economics, Literature, Science, Management, Health, Technology",
-    tuitionFees: "€170 (Bachelor), €243 (Master)"
-  }
-],
-
+    {
+      name: "Paris Sciences & Lettres – PSL Research University (PSL)",
+      country: "France",
+      historicalPrestige: "",
+      academicExcellence:
+        "A collegiate university comprising 25+ prestigious institutions, known for excellence in humanities, sciences, economics, physics, biology, and research prestige",
+      nobelLegacy: "",
+      distance: "0 km (within the city)",
+      preferredSubjects: "Physics, Chemistry, Economics, History, Biology",
+      tuitionFees: "About €200–€400/year for public universities (approximate)",
+    },
+    {
+      name: "Sorbonne University",
+      country: "France",
+      historicalPrestige: "",
+      academicExcellence:
+        "Legacy of the historic University of Paris—prestigious in humanities, social sciences, physics, biology, computer science",
+      nobelLegacy: "",
+      distance: "0 km (city center)",
+      preferredSubjects:
+        "Humanities, Social Sciences, Physics, Biology, Computer Science",
+      tuitionFees: "Around €200–€400/year",
+    },
+    {
+      name: "École Polytechnique",
+      country: "France",
+      historicalPrestige: "",
+      academicExcellence:
+        "Elite engineering grande école, highly selective; excellence in engineering, computer science, physics, economics, chemistry",
+      nobelLegacy: "",
+      distance: "0–10 km within greater Paris",
+      preferredSubjects:
+        "Engineering, Computer Science, Physics, Economics, Chemistry",
+      tuitionFees: "Around €12,000/year",
+    },
+    {
+      name: "Université Paris-Saclay",
+      country: "France",
+      historicalPrestige: "",
+      academicExcellence:
+        "STEM research power, cluster of top science and engineering schools (e.g., CentraleSupélec, ENS)",
+      nobelLegacy: "",
+      distance: "~20 km south of Paris",
+      preferredSubjects: "Sciences, Engineering, Pharmacy, Chemistry, Physics",
+      tuitionFees: "Approx. €170 (Bachelor), €243 (Master)",
+    },
+    {
+      name: "Université Grenoble Alpes",
+      country: "France",
+      historicalPrestige: "",
+      academicExcellence:
+        "Large-scale research university in sciences, engineering, humanities, management; strong in technology, AI, micro-nano research",
+      nobelLegacy: "",
+      distance: "~457 km (air); driving ~587 km",
+      preferredSubjects:
+        "Sciences, Engineering, Computer Science, AI, Humanities, Medicine, Architecture, Social Sciences",
+      tuitionFees: "€170 (Bachelor), €243 (Master)",
+    },
+    {
+      name: "Université de Montpellier",
+      country: "France",
+      historicalPrestige: "",
+      academicExcellence:
+        "One of the world’s oldest (est. 1220); robust in research across disciplines and noted for excellence",
+      nobelLegacy: "",
+      distance: "~595 km (air) from Paris",
+      preferredSubjects: "Sciences, Medicine, Humanities, Social Sciences",
+      tuitionFees: "€170 (Bachelor), €243 (Master)",
+    },
+    {
+      name: "Aix-Marseille Université",
+      country: "France",
+      historicalPrestige: "",
+      academicExcellence:
+        "Oldest Francophone institution (origins 1409), largest in France by student body and budget, notable alumni including Nobel laureates",
+      nobelLegacy: "",
+      distance: "~660 km from Paris",
+      preferredSubjects:
+        "Law, Political Science, Economics, Literature, Science, Management, Health, Technology",
+      tuitionFees: "€170 (Bachelor), €243 (Master)",
+    },
+  ],
 
   Romania: [
     {
@@ -580,6 +681,80 @@ const data = {
       tuitionFees: "",
     },
   ],
+
+  Netherlands: [
+  {
+    name: "University of Amsterdam (UvA), Amsterdam",
+    country: "Netherlands",
+    historicalPrestige: "Founded in 1632; one of Europe’s largest research universities.",
+    academicExcellence: "Ranked consistently in the global top 60; strong in social sciences, humanities, law, economics, data science, and communications.",
+    nobelLegacy: "",
+    distance: "0 km (located in the capital, Amsterdam)",
+    preferredSubjects: "Social Sciences, Humanities, Law, Economics, Data Science, Communications",
+    tuitionFees: "Bachelor’s: €9,000–€15,000; Master’s: €11,000–€22,000; Medicine up to €37,500; MBA up to €39,000"
+  },
+  {
+    name: "Delft University of Technology (TU Delft), Delft",
+    country: "Netherlands",
+    historicalPrestige: "Established in 1842; leading technical university in Europe.",
+    academicExcellence: "Top 15 globally in QS Engineering & Technology; renowned for architecture, engineering, and applied sciences.",
+    nobelLegacy: "",
+    distance: "~60 km driving (~55 km straight-line) from Amsterdam",
+    preferredSubjects: "Engineering, Architecture, Computer Science, Applied Sciences",
+    tuitionFees: "Bachelor’s: ~€17,000; Master’s: up to €22,000 (ranges €10,000–€15,000 in some sources)"
+  },
+  {
+    name: "Utrecht University, Utrecht",
+    country: "Netherlands",
+    historicalPrestige: "Founded in 1636; one of the oldest and most prestigious Dutch universities.",
+    academicExcellence: "Consistently in the world’s top 100; strong in life sciences, sustainability, humanities, and law.",
+    nobelLegacy: "",
+    distance: "~35 km straight-line, ~47 km driving from Amsterdam",
+    preferredSubjects: "Life Sciences, Sustainability, Humanities, Law, Social Sciences",
+    tuitionFees: "Bachelor’s: €11,000–€16,000; Master’s: €20,000–€24,000"
+  },
+  {
+    name: "Leiden University, Leiden",
+    country: "Netherlands",
+    historicalPrestige: "Founded in 1575; the oldest university in the Netherlands.",
+    academicExcellence: "Renowned for law, politics, history, linguistics, and life sciences.",
+    nobelLegacy: "",
+    distance: "~40–50 km from Amsterdam",
+    preferredSubjects: "Law, Politics, International Relations, History, Linguistics, Life Sciences",
+    tuitionFees: "Bachelor’s: €13,000–€18,000; Master’s: €21,000–€32,000"
+  },
+  {
+    name: "Erasmus University Rotterdam (EUR), Rotterdam",
+    country: "Netherlands",
+    historicalPrestige: "Founded in 1913; globally recognized for economics, business, and health sciences.",
+    academicExcellence: "Ranked top 50 worldwide in business and economics; strong public health research.",
+    nobelLegacy: "",
+    distance: "~57 km straight-line, ~74 km driving from Amsterdam",
+    preferredSubjects: "Business, Economics, Econometrics, Public Health, Social Sciences",
+    tuitionFees: "€12,000–€18,000 per year"
+  },
+  {
+    name: "Wageningen University & Research (WUR), Wageningen",
+    country: "Netherlands",
+    historicalPrestige: "Established in 1918; world leader in agricultural and environmental sciences.",
+    academicExcellence: "Ranked #1 globally in Agriculture and Forestry; strong in food technology and sustainability.",
+    nobelLegacy: "",
+    distance: "~85–92 km from Amsterdam",
+    preferredSubjects: "Food Technology, Sustainable Development, Environmental Sciences, Biology",
+    tuitionFees: "Bachelor’s: €10,000–€15,000; Master’s: €8,000–€20,000"
+  },
+  {
+    name: "Vrije Universiteit Amsterdam (VU), Amsterdam",
+    country: "Netherlands",
+    historicalPrestige: "Founded in 1880; research-intensive university with strong international focus.",
+    academicExcellence: "Known for strengths in business, law, health sciences, computer science, and natural sciences.",
+    nobelLegacy: "",
+    distance: "0 km (located in Amsterdam)",
+    preferredSubjects: "Business, Law, Health Sciences, Computer Science, Natural Sciences",
+    tuitionFees: "Bachelor’s: €9,000–€12,000 (some €18,000+); Master’s: ~€18,000–€20,000"
+  }
+],
+
 };
 
 const StudyInAustralia = () => {
@@ -697,31 +872,6 @@ const StudyInAustralia = () => {
           </div>
         </div>
 
-        {/* {selectedUniversities.length > 0 && (
-          <div className="space-y-4 mb-6">
-            {selectedUniversityDetails.map((uni) => (
-              <div
-                key={`${uni.country}-${uni.name}`}
-                className="bg-white shadow rounded p-6 border border-gray-100"
-              >
-                <div className="flex justify-between items-start">
-                  <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
-                    {uni.name}
-                  </h2>
-                  <span className="text-sm bg-gray-100 px-2 py-1 rounded text-gray-600">
-                    {uni.country}
-                  </span>
-                </div>
-                <p className="text-black-800">{uni.details}</p>
-                
-              </div>
-            ))}
-
-            
-
-          </div>
-        )} */}
-
         {selectedUniversities.length > 0 && (
           <div className="space-y-4 mb-6">
             {selectedUniversityDetails.map((uni) => (
@@ -756,8 +906,7 @@ const StudyInAustralia = () => {
                 <p className="mb-1 text-justify break-words hyphens-auto">
                   <strong>Distance:</strong> {uni.distance}
                 </p>
-                <p
-                  className="mb-1">
+                <p className="mb-1">
                   <strong>Preferred Subjects:</strong> {uni.preferredSubjects}
                 </p>
                 <p className="mb-1 text-justify break-words hyphens-auto">
@@ -783,7 +932,7 @@ const StudyInAustralia = () => {
       <MultipleCountryUniversityModal
         show={showModal}
         onClose={handleCloseModal}
-        selectedCountry={selectedCountries} // CHANGED: prop name matches modal
+        selectedCountry={selectedCountries}
         selectedUniversities={selectedUniversities}
       />
 

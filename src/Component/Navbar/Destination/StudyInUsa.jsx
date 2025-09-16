@@ -1128,39 +1128,105 @@
 
 // export default StudyInUsa;
 
-
-
 import React, { useState } from "react";
 import SuccessStories from "../../SuccessStories/SuccessStories";
 import CountryUniversityModal from "../../../Modal/CountryUniversityModal";
 
 const data = {
-
   USA: [
-    {
-      name: "Massachusetts Institute of Technology (MIT)",
-      details: "MIT is a world leader in science, engineering, and technology education and research.",
-    },
-    {
-      name: "University of California, Berkeley",
-      details: "A top public university known for liberal arts, science programs, and a long history of activism.",
-    },
-    {
-      name: "California Institute of Technology (Caltech)",
-      details: "A small but elite science-focused university, famous for its cutting-edge research.",
-    },
-    {
-      name: "Princeton University",
-      details: "Known for undergraduate teaching and a strong emphasis on the humanities and sciences.",
-    },
-    {
-      name: "Yale University",
-      details: "Famous for its strong arts, law, and humanities programs. Also known for theater and music.",
-    },
-  ],
+  {
+    name: "University of Pennsylvania (UPenn – Ivy League), Philadelphia",
+    country: "USA",
+    historicalPrestige: "Founded in 1740; one of the nine colonial colleges, member of the Ivy League.",
+    academicExcellence: "Home to the Wharton School of Business, ranked among the world’s top B-schools; strong in Law, Medicine, and Engineering.",
+    nobelLegacy: "",
+    distance: "~225 km (140 mi) from Washington, D.C.; ~2.5–3 hrs by train/car",
+    preferredSubjects: "Business, Law, Medicine, Engineering, Social Sciences",
+    tuitionFees: "Tuition ~$89k; after aid ~$26k (average aid ~$70k)"
+  },
+  {
+    name: "Princeton University, Princeton (Ivy League)",
+    country: "USA",
+    historicalPrestige: "Established in 1746; consistently ranked among the top global research universities.",
+    academicExcellence: "Renowned for Humanities, Natural Sciences, and Public Policy.",
+    nobelLegacy: "",
+    distance: "~305 km (190 mi) from Washington, D.C.; ~3.5 hrs by car/train",
+    preferredSubjects: "Humanities, Social Sciences, Natural Sciences, Engineering",
+    tuitionFees: "~$73.5k per year (undergraduate)"
+  },
+  {
+    name: "University of California System (Berkeley, UCLA, etc.)",
+    country: "USA",
+    historicalPrestige: "Founded in 1868 (UC Berkeley, first campus); globally recognized public research university system.",
+    academicExcellence: "Strong in Computer Science, Engineering, and Biology; multiple top-ranked campuses.",
+    nobelLegacy: "",
+    distance: "~4,500 km (2,800–2,900 mi) from Washington, D.C.; ~5–6 hr flight",
+    preferredSubjects: "Computer Science, Engineering, Environmental Studies, Life Sciences",
+    tuitionFees: "~$45k (CA resident) / ~$83k (non-resident)"
+  },
+  {
+    name: "Cornell University, Ithaca (Ivy League)",
+    country: "USA",
+    historicalPrestige: "Founded in 1865; Ivy League member with a unique land-grant mission.",
+    academicExcellence: "Strong in Engineering, Agriculture, Hotel Administration, and Computer Science.",
+    nobelLegacy: "",
+    distance: "~385 km (240 mi) from Washington, D.C.; ~5 hrs by car",
+    preferredSubjects: "Computer Science, Biology, Agriculture, Hotel Management",
+    tuitionFees: "~$60–70k per year"
+  },
+  {
+    name: "Boston University (BU), Massachusetts",
+    country: "USA",
+    historicalPrestige: "Founded in 1839; prestigious private research university.",
+    academicExcellence: "Notable in Biomedical Engineering, Law, and International Relations.",
+    nobelLegacy: "",
+    distance: "~710 km (440 mi) from Washington, D.C.; ~7 hr drive/train",
+    preferredSubjects: "Biomedical Engineering, Biology, Politics, Physics, Math",
+    tuitionFees: "~$66.7k; total ~$90k (with housing & fees)"
+  },
+  {
+    name: "Arizona State University (ASU), Tempe",
+    country: "USA",
+    historicalPrestige: "Founded in 1885; one of the largest public universities in the U.S.",
+    academicExcellence: "Known for innovation and top programs in Engineering, Business, and Sustainability.",
+    nobelLegacy: "",
+    distance: "~3,700 km (2,300 mi) from Washington, D.C.; ~5 hr flight",
+    preferredSubjects: "Business, Engineering, Sustainability, Journalism",
+    tuitionFees: "~$34k (international undergrad); total ~$50k with housing/fees"
+  },
+  {
+    name: "University of Michigan, Ann Arbor",
+    country: "USA",
+    historicalPrestige: "Founded in 1817; known as a ‘Public Ivy’.",
+    academicExcellence: "Globally top-ranked for Business, Engineering, Medicine, and Law.",
+    nobelLegacy: "",
+    distance: "~835 km (520 mi) from Washington, D.C.; ~1.5 hr flight or 8 hr drive",
+    preferredSubjects: "Business, Law, Medicine, Engineering, Computer Science",
+    tuitionFees: "~$56k (out-of-state); ~$33k (in-state)"
+  },
+  {
+    name: "Ohio State University, Columbus",
+    country: "USA",
+    historicalPrestige: "Founded in 1870; one of the largest U.S. universities.",
+    academicExcellence: "Strong in Medicine, Business, and Sports Science.",
+    nobelLegacy: "",
+    distance: "~600 km (370 mi) from Washington, D.C.; ~6.5 hr drive",
+    preferredSubjects: "Medicine, Business, Engineering, Sports Science",
+    tuitionFees: "~$36k (out-of-state); ~$12k (in-state)"
+  },
+  {
+    name: "New York University (NYU), New York City",
+    country: "USA",
+    historicalPrestige: "Founded in 1831; a major global private research university.",
+    academicExcellence: "Renowned for Arts & Humanities, Stern School of Business, Law, and Film.",
+    nobelLegacy: "",
+    distance: "~360 km (225 mi) from Washington, D.C.; ~4 hr drive/train",
+    preferredSubjects: "Business, Law, Arts, International Relations, Economics",
+    tuitionFees: "~$62k per year; total ~$85k with housing"
+  }
+]
 
 };
-
 
 const StudyInUsa = () => {
   const [selectedCountry, setSelectedCountry] = useState("USA");
@@ -1180,7 +1246,9 @@ const StudyInUsa = () => {
     const isChecked = e.target.checked;
 
     setSelectedUniversities((prev) =>
-      isChecked ? [...prev, universityName] : prev.filter((name) => name !== universityName)
+      isChecked
+        ? [...prev, universityName]
+        : prev.filter((name) => name !== universityName)
     );
   };
 
@@ -1245,13 +1313,15 @@ const StudyInUsa = () => {
                   </div>
                 ))
               ) : (
-                <div className="text-gray-400">-- Select a country first --</div>
+                <div className="text-gray-400">
+                  -- Select a country first --
+                </div>
               )}
             </div>
           </div>
         </div>
 
-        {selectedUniversities.length > 0 && (
+        {/* {selectedUniversities.length > 0 && (
           <div className="space-y-4 mb-6">
             {selectedUniversityDetails.map((uni) => (
               <div
@@ -1262,6 +1332,51 @@ const StudyInUsa = () => {
                   {uni.name}
                 </h2>
                 <p className="text-gray-800">{uni.details}</p>
+              </div>
+            ))}
+          </div>
+        )} */}
+
+        {selectedUniversities.length > 0 && (
+          <div className="space-y-4 mb-6">
+            {selectedUniversityDetails.map((uni) => (
+              <div
+                key={`${uni.country}-${uni.name}`}
+                className="bg-white shadow rounded p-6 border border-gray-100"
+              >
+                <div className="flex justify-between items-start">
+                  <h2 className="text-xl font-semibold text-[#f16f22] mb-2">
+                    {uni.name}
+                  </h2>
+                  <span className="text-sm bg-gray-100 px-2 py-1 rounded text-gray-600">
+                    {uni.country}
+                  </span>
+                </div>
+
+                {/* Image er moto design */}
+                <ul className="space-y-3 text-black mb-4 text-justify break-words hyphens-auto">
+                  <li>
+                    <strong>Historical Prestige:</strong>{" "}
+                    {uni.historicalPrestige}
+                  </li>
+                  <li>
+                    <strong>Academic Excellence:</strong>{" "}
+                    {uni.academicExcellence}
+                  </li>
+                  <li>
+                    <strong>Nobel Legacy:</strong> {uni.nobelLegacy}
+                  </li>
+                </ul>
+
+                <p className="mb-1 text-justify break-words hyphens-auto">
+                  <strong>Distance:</strong> {uni.distance}
+                </p>
+                <p className="mb-1">
+                  <strong>Preferred Subjects:</strong> {uni.preferredSubjects}
+                </p>
+                <p className="mb-1 text-justify break-words hyphens-auto">
+                  <strong>Tuition Fees:</strong> {uni.tuitionFees}
+                </p>
               </div>
             ))}
           </div>
