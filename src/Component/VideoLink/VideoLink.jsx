@@ -6,7 +6,7 @@ const VideoLink = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch(`${BASE_URL}videos`, {
+    fetch(`${BASE_URL}/videos`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

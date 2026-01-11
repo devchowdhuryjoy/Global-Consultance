@@ -74,7 +74,7 @@
 //   useEffect(() => {
 //     const fetchDynamicReviews = async () => {
 //       try {
-//         const res = await fetch(`${BASE_URL}reviewget`);
+//         const res = await fetch(`${BASE_URL}/reviewget`);
 //         const data = await res.json();
 
 //         const dynamicReviews = data.map((item) => ({
@@ -222,7 +222,7 @@ const SuccessStories = () => {
   useEffect(() => {
     const fetchDynamicReviews = async () => {
       try {
-        const res = await fetch(`${BASE_URL}reviewget`);
+        const res = await fetch(`${BASE_URL}/reviewget`);
         const data = await res.json();
 
         const dynamicReviews = data.map((item) => ({

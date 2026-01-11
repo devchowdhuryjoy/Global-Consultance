@@ -38,7 +38,7 @@ const FoodandHospitality = () => {
 
   // Fetch data from GET API
   useEffect(() => {
-    fetch(`${BASE_URL}course-food-hospitality-get`)
+    fetch(`${BASE_URL}/course-food-hospitality-get`)
       .then((res) => res.json())
       .then((data) => {
         if (data && data.length > 0) {

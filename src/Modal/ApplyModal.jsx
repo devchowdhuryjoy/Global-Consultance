@@ -86,7 +86,7 @@ const ApplyModal = ({
         universities: formData.universities,
       };
 
-      const response = await fetch(`${BASE_URL}countryregister`, {
+      const response = await fetch(`${BASE_URL}/countryregister`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

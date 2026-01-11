@@ -92,7 +92,7 @@
 //         fundingPlan: formData.fundingPlan,
 //       };
 
-//       const response = await fetch(`${BASE_URL}register`, {
+//       const response = await fetch(`${BASE_URL}/register`, {
 //         method: "POST",
 //         headers: { "Content-Type": "application/json" },
 //         body: JSON.stringify(sendData),
@@ -446,7 +446,7 @@ const TeamSection = () => {
         fundingPlan: formData.fundingPlan,
       };
 
-      const response = await fetch(`${BASE_URL}register`, {
+      const response = await fetch(`${BASE_URL}/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(sendData),
@@ -491,7 +491,7 @@ const TeamSection = () => {
   const [teamMembers, setTeamMembers] = useState([]);
 
   useEffect(() => {
-    fetch(`${BASE_URL}leadership`)
+    fetch(`${BASE_URL}/leadership`)
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();

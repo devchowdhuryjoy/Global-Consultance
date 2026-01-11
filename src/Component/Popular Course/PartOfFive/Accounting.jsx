@@ -38,7 +38,7 @@ const Accounting = () => {
 
   // Fetch data from GET API
   useEffect(() => {
-    fetch(`${BASE_URL}course-accounting-get`)
+    fetch(`${BASE_URL}/course-accounting-get`)
       .then((res) => res.json())
       .then((data) => {
         if (data && data.length > 0) {

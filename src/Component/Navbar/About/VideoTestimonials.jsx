@@ -25,7 +25,7 @@ const VideoTestimonials = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch(`${BASE_URL}videos`, {
+    fetch(`${BASE_URL}/videos`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -121,7 +121,7 @@ const VideoTestimonials = () => {
         fundingPlan: formData.fundingPlan,
       };
 
-      const response = await fetch(`${BASE_URL}register`, {
+      const response = await fetch(`${BASE_URL}/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(sendData),
@@ -166,7 +166,7 @@ const VideoTestimonials = () => {
   const [reviewstwo, setReviewstwo] = useState([]); // ✅ renamed here
 
   useEffect(() => {
-    fetch(`${BASE_URL}reviewtwoget`)
+    fetch(`${BASE_URL}/reviewtwoget`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch");
         return res.json();

@@ -17,7 +17,7 @@
   
 
 //   useEffect(() => {
-//     fetch(`${BASE_URL}visa-success`)
+//     fetch(`${BASE_URL}/visa-success`)
 //       .then((res) => res.json())
 //       .then((data) => setAwards(data))
 //       .catch((error) => console.error("Error fetching data:", error));
@@ -69,7 +69,7 @@
 //         fundingPlan: formData.fundingPlan,
 //       };
 
-//       const response = await fetch(`${BASE_URL}register`, {
+//       const response = await fetch(`${BASE_URL}/register`, {
 //         method: "POST",
 //         headers: { "Content-Type": "application/json" },
 //         body: JSON.stringify(sendData),
@@ -463,7 +463,7 @@ const AwardsSection = () => {
   useEffect(() => {
     const fetchAwards = async () => {
       try {
-        const response = await fetch(`${BASE_URL}visa-success`);
+        const response = await fetch(`${BASE_URL}/visa-success`);
         if (!response.ok) {
           throw new Error("Failed to fetch awards data");
         }
@@ -529,7 +529,7 @@ const AwardsSection = () => {
         fundingPlan: formData.fundingPlan,
       };
 
-      const response = await fetch(`${BASE_URL}register`, {
+      const response = await fetch(`${BASE_URL}/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(sendData),

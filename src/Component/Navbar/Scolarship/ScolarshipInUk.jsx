@@ -239,7 +239,7 @@ const ScolarshipInUk = () => {
         fundingPlan: formData.fundingPlan,
       };
 
-      const response = await fetch(`${BASE_URL}register`, {
+      const response = await fetch(`${BASE_URL}/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(sendData),

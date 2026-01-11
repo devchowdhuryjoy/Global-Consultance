@@ -14,7 +14,7 @@ const BlogDetails = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`${BASE_URL}blogs/${slug}`);
+        const response = await fetch(`${BASE_URL}/blogs/${slug}`);
         const data = await response.json();
         setBlog(data);
       } catch (error) {
