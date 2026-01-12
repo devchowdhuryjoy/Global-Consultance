@@ -180,7 +180,7 @@ const AwardsCarousel = () => {
   useEffect(() => {
   const fetchAwards = async () => {
     try {
-      const response = await fetch(`${BASE_URL}//collaborations`);
+      const response = await fetch(`${BASE_URL}/collaborations`);
       if (!response.ok) {
         throw new Error("Failed to fetch awards data");
       }
